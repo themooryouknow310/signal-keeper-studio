@@ -106,7 +106,7 @@ const ProgramSection = () => {
             <img 
               src="/lovable-uploads/bc72b68e-82d2-4701-8e0d-4bff2f710d1f.png" 
               alt="Sacred Signal OS Mentorship"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-top"
             />
           </div>
           <h2 className="heading-ritual text-4xl md:text-6xl mb-8 glow-text">
