@@ -14,6 +14,7 @@ import writingNewslettersImage from "@/assets/cinema/writing-newsletters.jpg";
 import valueCommunicationImage from "@/assets/cinema/value-communication.jpg";
 import leadGenerationImage from "@/assets/cinema/lead-generation.jpg";
 import audienceGrowthImage from "@/assets/cinema/audience-growth.jpg";
+import sacredProgramSymbolImage from "@/assets/cinema/sacred-program-symbol.jpg";
 
 const ProgramSection = () => {
   const modules = [
@@ -103,9 +104,13 @@ const ProgramSection = () => {
           <div className="flex items-center justify-center mb-8">
             <BrassRule width={300} />
           </div>
-          <BrassMedallion size={80} className="mx-auto mb-8">
-            <Icon name="signal-ring" size={40} className="text-signal" />
-          </BrassMedallion>
+          <div className="w-20 h-20 mx-auto mb-8 rounded-full overflow-hidden border-2 border-brass/30">
+            <img 
+              src={sacredProgramSymbolImage} 
+              alt="Sacred Signal OS Program"
+              className="w-full h-full object-cover"
+            />
+          </div>
           <h2 className="heading-ritual text-4xl md:text-6xl mb-8 glow-text">
             THE 12-WEEK SACRED SIGNAL OS PROGRAM
           </h2>
