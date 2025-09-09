@@ -217,7 +217,7 @@ const ApplySection = () => {
         </div>
 
         {/* Recognition & Influence Section */}
-        <div className="max-w-5xl mx-auto mb-32">
+        <div className="max-w-5xl mx-auto mb-32 mt-40">
           <h3 className="heading-ritual text-3xl md:text-4xl mb-16 text-center glow-text">
             RECOGNITION & INFLUENCE
           </h3>
