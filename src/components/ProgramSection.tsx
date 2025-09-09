@@ -102,7 +102,7 @@ const ProgramSection = () => {
           <div className="flex items-center justify-center mb-8">
             <BrassRule width={300} />
           </div>
-          <div className="w-40 h-32 mx-auto mb-8 rounded-2xl overflow-hidden border border-brass/30 shadow-[0_8px_32px_hsl(var(--signal-glow)/0.2)]">
+          <div className="w-80 h-56 mx-auto mb-8 rounded-2xl overflow-hidden border border-brass/30 shadow-[0_8px_32px_hsl(var(--signal-glow)/0.2)]">
             <img 
               src={sacredSignalLighthouseImage} 
               alt="Sacred Signal OS Lighthouse"
