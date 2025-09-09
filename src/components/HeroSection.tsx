@@ -22,7 +22,7 @@ const HeroSection = () => {
           alt="Sacred Signal OS Background" 
           className="w-full h-full object-cover opacity-70"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/10 to-background/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/20 to-background/50" />
       </div>
       
       {/* Content */}
