@@ -15,7 +15,7 @@ import valueCommunicationImage from "@/assets/cinema/value-communication.jpg";
 import leadGenerationImage from "@/assets/cinema/lead-generation.jpg";
 import audienceGrowthImage from "@/assets/cinema/audience-growth.jpg";
 import sacredProgramSymbolImage from "@/assets/cinema/sacred-program-symbol.jpg";
-import sacredSignalLighthouseImage from "@/assets/cinema/sacred-signal-lighthouse.jpg";
+import spiritualMentorshipImage from "@/assets/cinema/spiritual-mentorship.jpg";
 
 const ProgramSection = () => {
   const modules = [
@@ -104,8 +104,8 @@ const ProgramSection = () => {
           </div>
           <div className="w-80 h-56 mx-auto mb-8 rounded-2xl overflow-hidden border border-brass/30 shadow-[0_8px_32px_hsl(var(--signal-glow)/0.2)]">
             <img 
-              src={sacredSignalLighthouseImage} 
-              alt="Sacred Signal OS Lighthouse"
+              src={spiritualMentorshipImage} 
+              alt="Sacred Signal OS Mentorship"
               className="w-full h-full object-cover"
             />
           </div>
