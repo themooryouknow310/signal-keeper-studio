@@ -28,18 +28,8 @@ const HeroSection = () => {
       {/* Cinema Bloom Effect */}
       <div className="cinema-bloom absolute inset-0" />
       
-      {/* Subtle Sacred Geometry Elements */}
-      <div className="absolute bottom-20 right-20 opacity-25">
-        <EightPointStar size={60} />
-      </div>
-
       {/* Content */}
       <div className="cinema-text-overlay relative z-10 container mx-auto px-6 text-center max-w-6xl">
-        {/* Cinematic Signal Icon */}
-        <AnimatedSection className="mb-16 relative">
-          <SignalRing size={100} className="mx-auto text-signal" />
-        </AnimatedSection>
-
         {/* Main Headline with Cinematic Typography */}
         <AnimatedSection delay={200}>
           <h1 className="heading-display text-6xl md:text-7xl lg:text-9xl mb-20 leading-[0.9] max-w-6xl mx-auto tracking-tight cinema-text-shadow">
