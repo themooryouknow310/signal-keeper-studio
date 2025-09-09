@@ -15,7 +15,7 @@ import valueCommunicationImage from "@/assets/cinema/value-communication.jpg";
 import leadGenerationImage from "@/assets/cinema/lead-generation.jpg";
 import audienceGrowthImage from "@/assets/cinema/audience-growth.jpg";
 import sacredProgramSymbolImage from "@/assets/cinema/sacred-program-symbol.jpg";
-import background3DMandalaImage from "@/assets/cinema/background-3d-mandala.jpg";
+import backgroundAccentElementImage from "@/assets/cinema/background-accent-element.jpg";
 
 const ProgramSection = () => {
   const modules = [
@@ -92,8 +92,8 @@ const ProgramSection = () => {
       <div className="absolute top-20 left-16 opacity-15">
         <div className="w-32 h-32 rounded-full overflow-hidden">
           <img 
-            src={background3DMandalaImage} 
-            alt="3D Sacred Mandala"
+            src={backgroundAccentElementImage} 
+            alt="Sacred Accent Element"
             className="w-full h-full object-cover"
           />
         </div>
