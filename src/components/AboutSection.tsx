@@ -1,9 +1,9 @@
 import SacredGeometry from "@/components/SacredGeometry";
 import SignalRing from "@/components/SignalRing";
-import contentTreadmillImage from "@/assets/cinema/content-treadmill.jpg";
-import algorithmWhiplashImage from "@/assets/cinema/algorithm-whiplash.jpg";
-import leakyFunnelImage from "@/assets/cinema/leaky-funnel.jpg";
-import exhaustionBurnoutImage from "@/assets/cinema/exhaustion-burnout.jpg";
+import contentTreadmillImage from "@/assets/cinema/content-treadmill-new.jpg";
+import algorithmWhiplashImage from "@/assets/cinema/algorithm-whiplash-new.jpg";
+import leakyFunnelImage from "@/assets/cinema/leaky-funnel-new.jpg";
+import exhaustionBurnoutImage from "@/assets/cinema/exhaustion-burnout-new.jpg";
 
 import { SacredMandala, EightPointStar, LinearAccent, GoldenRatioGrid } from "@/components/AccentElements";
 
@@ -89,22 +89,20 @@ const AboutSection = () => {
                 key={index}
                 className="ssos-card"
               >
-                <div className="flex items-start space-x-6">
-                  <div className="flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border border-brass/30">
+                <div className="text-center">
+                  <div className="w-24 h-24 mx-auto mb-6 rounded-lg overflow-hidden border border-brass/30">
                     <img 
                       src={problem.image} 
                       alt={problem.title}
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className="flex-1">
-                    <h3 className="ssos-card-title text-xl mb-4">
-                      {problem.title}
-                    </h3>
-                    <p className="body-premium text-foreground/75 leading-relaxed">
-                      {problem.description}
-                    </p>
-                  </div>
+                  <h3 className="ssos-card-title text-xl mb-4">
+                    {problem.title}
+                  </h3>
+                  <p className="body-premium text-foreground/75 leading-relaxed">
+                    {problem.description}
+                  </p>
                 </div>
               </div>
             ))}
