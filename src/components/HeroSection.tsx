@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import SignalRing from "@/components/SignalRing";
 import { EightPointStar } from "@/components/AccentElements";
-import heroImage from "@/assets/cinema/hero-sacred-signals.jpg";
+import heroImage from "@/assets/cinema/hero-spiritual-teacher.jpg";
 import AnimatedSection from "@/components/AnimatedSection";
 import "../styles/cinema.css";
 
