@@ -82,26 +82,43 @@ const ApplySection = () => {
               </p>
             </div>
 
-            <div className="premium-card p-8 text-left bg-background/30">
-              <h4 className="heading-section text-xl font-semibold text-foreground mb-6">
+            <div className="premium-card p-10 text-left bg-background/30 border border-signal/20">
+              <h4 className="heading-section text-xl font-semibold text-foreground mb-8 flex items-center">
+                <div className="w-2 h-2 bg-signal rounded-full mr-4"></div>
                 What Happens Next:
               </h4>
-              <div className="space-y-4 text-foreground/80">
-                <div className="flex items-center space-x-4">
-                  <SacredGeometry size={16} />
-                  <span className="body-premium">Complete Application & Values Alignment Assessment</span>
+              <div className="space-y-6 text-foreground/80">
+                <div className="premium-card p-4 bg-card/20 border-l-4 border-signal/60">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-8 h-8 bg-signal/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <span className="text-signal font-bold text-sm">1</span>
+                    </div>
+                    <span className="body-premium font-medium">Complete Application & Values Alignment Assessment</span>
+                  </div>
                 </div>
-                <div className="flex items-center space-x-4">
-                  <SacredGeometry size={16} />
-                  <span className="body-premium">Brief Discovery Call To Ensure Mutual Fit</span>
+                <div className="premium-card p-4 bg-card/20 border-l-4 border-brass/60">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-8 h-8 bg-brass/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <span className="text-brass font-bold text-sm">2</span>
+                    </div>
+                    <span className="body-premium font-medium">Brief Discovery Call To Ensure Mutual Fit</span>
+                  </div>
                 </div>
-                <div className="flex items-center space-x-4">
-                  <SacredGeometry size={16} />
-                  <span className="body-premium">Receive Program Materials & Community Access</span>
+                <div className="premium-card p-4 bg-card/20 border-l-4 border-signal/60">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-8 h-8 bg-signal/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <span className="text-signal font-bold text-sm">3</span>
+                    </div>
+                    <span className="body-premium font-medium">Receive Program Materials & Community Access</span>
+                  </div>
                 </div>
-                <div className="flex items-center space-x-4">
-                  <SacredGeometry size={16} />
-                  <span className="body-premium">Begin Your 12-Week Transformation</span>
+                <div className="premium-card p-4 bg-card/20 border-l-4 border-brass/60">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-8 h-8 bg-brass/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <span className="text-brass font-bold text-sm">4</span>
+                    </div>
+                    <span className="body-premium font-medium">Begin Your 12-Week Transformation</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -114,16 +131,21 @@ const ApplySection = () => {
             FREQUENTLY ASKED QUESTIONS
           </h3>
           
-          <div className="space-y-8">
+          <div className="space-y-10">
             {faqs.map((faq, index) => (
-              <Card 
+              <div 
                 key={index}
-                className="premium-card p-8 hover:border-brass/30"
+                className="premium-card p-8 hover:border-brass/30 group relative overflow-hidden"
               >
-                <div className="flex items-start space-x-6">
-                  <SignalRing size={24} className="flex-shrink-0 mt-2" />
-                  <div>
-                    <h4 className="heading-section text-xl font-semibold text-foreground mb-4">
+                <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-signal to-brass opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="flex items-start space-x-8">
+                  <div className="flex-shrink-0 mt-2">
+                    <div className="w-12 h-12 bg-signal/20 rounded-full flex items-center justify-center group-hover:bg-signal/30 transition-colors duration-300">
+                      <span className="text-signal font-bold text-lg">{index + 1}</span>
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="heading-section text-xl font-semibold text-foreground mb-6 group-hover:text-signal transition-colors duration-300">
                       {faq.question}
                     </h4>
                     <p className="body-premium text-foreground/80 leading-relaxed text-lg">
@@ -131,7 +153,7 @@ const ApplySection = () => {
                     </p>
                   </div>
                 </div>
-              </Card>
+              </div>
             ))}
           </div>
         </div>

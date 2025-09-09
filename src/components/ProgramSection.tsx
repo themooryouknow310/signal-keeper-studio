@@ -159,18 +159,33 @@ const ProgramSection = () => {
             </p>
           </div>
 
-          <div className="space-y-6 mb-12 text-left max-w-lg mx-auto">
-            <div className="flex justify-between items-center border-b border-border/30 pb-4">
-              <span className="body-premium text-foreground/80 text-lg">Pay in Full:</span>
-              <span className="font-semibold text-foreground text-xl">$1,497</span>
+          <div className="space-y-8 mb-12 text-left max-w-lg mx-auto">
+            <div className="premium-card p-6 hover:border-signal/40 transition-all duration-300">
+              <div className="flex justify-between items-center">
+                <span className="body-premium text-foreground/80 text-lg font-medium">Pay In Full:</span>
+                <div className="text-right">
+                  <span className="font-bold text-foreground text-2xl">$1,497</span>
+                  <div className="text-xs text-signal uppercase tracking-wide font-medium">Save $100</div>
+                </div>
+              </div>
             </div>
-            <div className="flex justify-between items-center border-b border-border/30 pb-4">
-              <span className="body-premium text-foreground/80 text-lg">2-Pay Option:</span>
-              <span className="font-semibold text-foreground text-xl">2 × $799</span>
+            <div className="premium-card p-6 hover:border-brass/40 transition-all duration-300">
+              <div className="flex justify-between items-center">
+                <span className="body-premium text-foreground/80 text-lg font-medium">2-Pay Option:</span>
+                <div className="text-right">
+                  <span className="font-bold text-foreground text-2xl">2 × $799</span>
+                  <div className="text-xs text-foreground/60 uppercase tracking-wide">Monthly</div>
+                </div>
+              </div>
             </div>
-            <div className="flex justify-between items-center border-b border-border/30 pb-4">
-              <span className="body-premium text-foreground/80 text-lg">3-Pay Option:</span>
-              <span className="font-semibold text-foreground text-xl">3 × $533</span>
+            <div className="premium-card p-6 hover:border-brass/40 transition-all duration-300">
+              <div className="flex justify-between items-center">
+                <span className="body-premium text-foreground/80 text-lg font-medium">3-Pay Option:</span>
+                <div className="text-right">
+                  <span className="font-bold text-foreground text-2xl">3 × $533</span>
+                  <div className="text-xs text-foreground/60 uppercase tracking-wide">Monthly</div>
+                </div>
+              </div>
             </div>
           </div>
 
