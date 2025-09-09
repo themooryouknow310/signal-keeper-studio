@@ -2,21 +2,24 @@ import Icon from "@/components/icons/Icon";
 import BrassMedallion from "@/components/accents/BrassMedallion";
 import BrassRule from "@/components/accents/BrassRule";
 import SignalEclipse from "@/components/accents/SignalEclipse";
+import nichePositioningImage from "@/assets/cinema/niche-positioning.jpg";
+import offerDesignImage from "@/assets/cinema/offer-design.jpg";
+import programArchitectureImage from "@/assets/cinema/program-architecture.jpg";
 
 const ProgramSection = () => {
   const modules = [
     {
-      icon: "target",
+      image: nichePositioningImage,
       title: "Niche & Positioning",
       description: "Understand your ideal customer profile and craft a resonant positioning kernel that cuts through noise."
     },
     {
-      icon: "diamond", 
+      image: offerDesignImage, 
       title: "Offer Design",
       description: "Create an irresistible high-ticket program that delivers transformation and commands premium pricing."
     },
     {
-      icon: "structure",
+      image: programArchitectureImage,
       title: "Program Architecture", 
       description: "Design a program structure that clients actually complete, creating powerful testimonials and referrals."
     }
@@ -98,9 +101,13 @@ const ProgramSection = () => {
                 <div className="absolute top-4 right-4 text-brass/40 font-display font-bold text-lg">
                   {String(index + 1).padStart(2, '0')}
                 </div>
-                <BrassMedallion size={80} className="mb-8 mx-auto group-hover:scale-110 transition-transform duration-300">
-                  <Icon name={module.icon} size={32} className="text-signal" />
-                </BrassMedallion>
+                <div className="mb-8 mx-auto w-20 h-20 rounded-full overflow-hidden group-hover:scale-110 transition-transform duration-300 border-2 border-brass/30">
+                  <img 
+                    src={module.image} 
+                    alt={module.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <h3 className="ssos-card-title text-2xl mb-6">
                   {module.title}
                 </h3>
