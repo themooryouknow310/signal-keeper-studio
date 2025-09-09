@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import SignalRing from "@/components/SignalRing";
-import { SacredMandala, SignalWave, CrosshairTarget, EightPointStar, SacredSpiral } from "@/components/AccentElements";
-import heroImage from "@/assets/sacred-geometry-hero.jpg";
+import { EightPointStar } from "@/components/AccentElements";
+import heroImage from "@/assets/cinema/hero-eclipse-rim.jpg";
+import "../styles/cinema.css";
 
 const HeroSection = () => {
   const scrollToApply = () => {
@@ -12,62 +13,49 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Cinematic Background with Deep Mystical Overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ 
-          backgroundImage: `url(${heroImage})`,
-          filter: 'brightness(0.2) contrast(1.4) saturate(1.2)'
-        }}
-      />
-      <div className="absolute inset-0 bg-gradient-to-b from-background/10 via-background/70 to-background" />
-      
-      {/* Mystical Glow Effects */}
-      <div className="absolute inset-0">
-        <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-signal/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/3 right-1/3 w-64 h-64 bg-brass/10 rounded-full blur-2xl"></div>
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden cinema-surface-with-grain">
+      {/* Cinematic Background */}
+      <div className="cinema-hero absolute inset-0">
+        <img 
+          src={heroImage} 
+          alt="Sacred Signal OS Eclipse" 
+          className="w-full h-full object-cover"
+        />
+        <div className="cinema-hero-overlay" />
       </div>
+      
+      {/* Cinema Bloom Effect */}
+      <div className="cinema-bloom absolute inset-0" />
       
       {/* Subtle Sacred Geometry Elements */}
-      <div className="absolute top-20 left-20 opacity-8">
-        <SignalRing size={100} />
+      <div className="absolute top-20 left-20 opacity-30">
+        <SignalRing size={80} />
       </div>
-      <div className="absolute bottom-20 right-20 opacity-6">
-        <SacredMandala size={120} />
-      </div>
-      <div className="absolute top-1/3 right-16 opacity-4">
+      <div className="absolute bottom-20 right-20 opacity-25">
         <EightPointStar size={60} />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 text-center max-w-6xl">
-        {/* Mystical Signal Icon with Halo */}
-        <div className="mb-16 relative">
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-32 h-32 bg-signal/10 rounded-full blur-2xl"></div>
-          </div>
-          <SignalRing size={100} className="mx-auto relative z-10" />
+      <div className="cinema-text-overlay relative z-10 container mx-auto px-6 text-center max-w-6xl">
+        {/* Cinematic Signal Icon */}
+        <div className="mb-16 relative motion-fade">
+          <SignalRing size={100} className="mx-auto text-signal" />
         </div>
 
-        {/* Main Headline with Dramatic Typography */}
-        <h1 className="heading-display text-6xl md:text-7xl lg:text-9xl mb-20 leading-[0.9] max-w-6xl mx-auto tracking-tight">
+        {/* Main Headline with Cinematic Typography */}
+        <h1 className="heading-display text-6xl md:text-7xl lg:text-9xl mb-20 leading-[0.9] max-w-6xl mx-auto tracking-tight cinema-text-shadow motion-fade">
           TIRED OF SHOUTING
           <br />
-          <span className="text-signal glow-text relative">
+          <span className="text-signal">
             INTO THE VOID?
-            <div className="absolute inset-0 bg-gradient-to-b from-signal/20 to-transparent blur-xl scale-110 -z-10"></div>
           </span>
         </h1>
 
-        {/* Video Section with Premium Styling */}
-        <div className="mb-20 max-w-4xl mx-auto">
-          <div className="relative aspect-video border border-signal/30 rounded-2xl bg-gradient-to-br from-background/20 to-card/30 backdrop-blur-md flex items-center justify-center group hover:border-signal/50 transition-all duration-500 overflow-hidden">
-            {/* Ambient Glow */}
-            <div className="absolute inset-0 bg-gradient-to-br from-signal/5 via-transparent to-brass/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            
+        {/* Video Section with Cinematic Styling */}
+        <div className="mb-20 max-w-4xl mx-auto motion-fade">
+          <div className="cinema-hero relative aspect-video rounded-2xl cinema-surface flex items-center justify-center group motion-glow-hover overflow-hidden">
             {/* Play Button */}
-            <button className="relative z-10 w-24 h-24 bg-signal/20 border-2 border-signal rounded-full flex items-center justify-center group-hover:bg-signal/30 group-hover:scale-110 transition-all duration-300 backdrop-blur-sm">
+            <button className="cinema-glow relative z-10 w-24 h-24 bg-signal/20 border-2 border-signal rounded-full flex items-center justify-center group-hover:bg-signal/30 transition-all duration-300">
               <div className="w-0 h-0 border-l-[20px] border-l-signal border-t-[15px] border-t-transparent border-b-[15px] border-b-transparent ml-2"></div>
             </button>
           </div>
@@ -77,35 +65,35 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Elegant Subheading Section */}
-        <div className="space-y-12 mb-16">
+        {/* Cinematic Subheading Section */}
+        <div className="space-y-12 mb-16 motion-fade">
           <div className="relative max-w-5xl mx-auto">
-            <p className="body-premium text-2xl md:text-3xl text-foreground max-w-4xl mx-auto leading-relaxed font-light">
+            <p className="body-premium text-2xl md:text-3xl text-foreground max-w-4xl mx-auto leading-relaxed font-light cinema-text-shadow">
               For The Spiritual Entrepreneur Who Is Ready To Stop Chasing Clients And Start Attracting Them.
             </p>
             
-            {/* Decorative Element */}
+            {/* Brass Decorative Element */}
             <div className="flex items-center justify-center mt-12 mb-8">
-              <div className="w-24 h-px bg-gradient-to-r from-transparent via-brass to-transparent"></div>
-              <div className="mx-6">
-                <EightPointStar size={20} className="text-brass" />
+              <div className="brass-rule w-24"></div>
+              <div className="cinema-brass-medallion w-10 h-10 mx-6">
+                <EightPointStar size={16} className="text-alabaster" />
               </div>
-              <div className="w-24 h-px bg-gradient-to-l from-transparent via-brass to-transparent"></div>
+              <div className="brass-rule w-24"></div>
             </div>
           </div>
           
-          <p className="body-premium text-xl md:text-2xl text-foreground/90 max-w-4xl mx-auto leading-relaxed font-light">
+          <p className="body-premium text-xl md:text-2xl text-foreground/90 max-w-4xl mx-auto leading-relaxed font-light cinema-text-shadow">
             Install A Calm, Predictable Pipeline To Attract, Convert, And Enroll 
-            <span className="text-signal font-medium glow-text"> 3-5 New High-Ticket Clients Per Month</span>, 
+            <span className="text-signal font-medium"> 3-5 New High-Ticket Clients Per Month</span>, 
             Without Paid Ads Or Content Burnout.
           </p>
         </div>
 
-        {/* Mystical CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
+        {/* Cinematic CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-8 justify-center items-center motion-fade">
           <Button 
             size="lg"
-            className="bg-transparent border-2 border-signal text-signal hover:bg-signal hover:text-background font-body font-medium px-12 py-6 text-xl transition-all duration-500 backdrop-blur-sm rounded-full relative overflow-hidden group"
+            className="cinema-glow bg-transparent border-2 border-signal text-signal hover:bg-signal hover:text-background font-body font-medium px-12 py-6 text-xl motion-glow-hover rounded-full relative overflow-hidden group"
             onClick={scrollToApply}
           >
             <span className="relative z-10">BEGIN YOUR TRANSFORMATION</span>
@@ -115,7 +103,7 @@ const HeroSection = () => {
           <Button 
             variant="ghost"
             size="lg"
-            className="text-foreground/80 hover:text-foreground font-body font-light px-8 py-6 text-lg transition-all duration-300 border border-foreground/20 hover:border-foreground/40 rounded-full"
+            className="text-foreground/80 hover:text-foreground font-body font-light px-8 py-6 text-lg motion-scale-hover border border-foreground/20 hover:border-foreground/40 rounded-full"
             onClick={() => {
               const element = document.getElementById('about');
               if (element) element.scrollIntoView({ behavior: 'smooth' });
