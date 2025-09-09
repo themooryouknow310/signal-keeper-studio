@@ -133,7 +133,7 @@ const ApplySection = () => {
               <div className="flex flex-col items-center text-center mb-6">
                 <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-signal/30 mb-4 shadow-[0_4px_16px_hsl(var(--signal-glow)/0.2)]">
                   <img 
-                    src={marissaFontanaImage} 
+                    src="/lovable-uploads/83b74022-00a0-44c6-80b7-80c1741ef70b.png" 
                     alt="Marissa Fontana" 
                     className="w-full h-full object-cover"
                   />
