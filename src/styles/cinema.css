@@ -2,15 +2,13 @@
 
 /* Base Cinema Surfaces */
 .cinema-surface {
-  background: linear-gradient(180deg, var(--ssos-indigo), var(--ssos-charcoal));
+  background: linear-gradient(180deg, hsl(var(--ssos-indigo)), hsl(var(--ssos-charcoal)));
 }
 
 .cinema-surface-with-grain {
   background: 
-    linear-gradient(180deg, var(--ssos-indigo), var(--ssos-charcoal)),
-    url('/src/assets/cinema/grain-texture-01.jpg');
-  background-blend-mode: normal, soft-light;
-  background-size: cover, 400px 400px;
+    linear-gradient(180deg, hsl(var(--ssos-indigo)), hsl(var(--ssos-charcoal)));
+  background-size: cover;
 }
 
 .cinema-grain {
@@ -21,10 +19,9 @@
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('/src/assets/cinema/grain-texture-01.jpg');
-  background-size: 400px 400px;
+  background: radial-gradient(circle at 50% 50%, hsl(var(--ssos-indigo) / 0.1), transparent 70%);
   mix-blend-mode: soft-light;
-  opacity: 0.08;
+  opacity: 0.15;
   pointer-events: none;
 }
 
@@ -32,8 +29,8 @@
 .cinema-hero {
   position: relative;
   overflow: hidden;
-  border-radius: var(--ssos-radius-2xl);
-  box-shadow: var(--ssos-shadow-ambient);
+  border-radius: 24px; /* --ssos-radius-2xl equivalent */
+  box-shadow: 0 12px 30px hsl(0 0% 0% / 35%); /* --ssos-shadow-ambient equivalent */
 }
 
 .cinema-hero img {
@@ -47,8 +44,8 @@
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, 
-    color-mix(in oklab, var(--ssos-indigo) 20%, transparent),
-    color-mix(in oklab, var(--ssos-charcoal) 70%, transparent)
+    hsl(var(--ssos-indigo) / 20%),
+    hsl(var(--ssos-charcoal) / 70%)
   );
 }
 
@@ -61,8 +58,8 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: url('/src/assets/cinema/light-bloom-overlay.png') center/cover;
-  opacity: 0.06;
+  background: radial-gradient(circle at 30% 20%, hsl(var(--ssos-cyan) / 8%), transparent 60%);
+  opacity: 0.6;
   pointer-events: none;
   mix-blend-mode: screen;
 }
@@ -79,7 +76,9 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: url('/src/assets/cinema/testimonial-ring-overlay.png') center/cover;
+  border: 2px solid hsl(var(--ssos-cyan));
+  border-radius: 50%;
+  box-shadow: 0 0 20px hsl(var(--ssos-cyan) / 30%);
   pointer-events: none;
 }
 
@@ -89,11 +88,15 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: url('/src/assets/cinema/brass-medallion-macro.jpg') center/cover;
+  background: linear-gradient(135deg, hsl(var(--ssos-brass)), hsl(var(--ssos-brass) / 80%));
   border-radius: 50%;
   box-shadow: 
-    inset 0 2px 4px color-mix(in oklab, var(--ssos-brass) 40%, transparent),
-    0 4px 12px color-mix(in oklab, black 30%, transparent);
+    inset 0 2px 4px hsl(var(--ssos-brass) / 40%),
+    0 4px 12px hsl(0 0% 0% / 30%);
+}
+
+.brass-rule {
+  border-top: 1px solid hsl(var(--ssos-brass) / 38%);
 }
 
 /* Motion System */
@@ -126,14 +129,14 @@
 
 .motion-glow-hover:hover {
   transform: translateY(-1px);
-  box-shadow: 0 0 18px color-mix(in oklab, var(--ssos-cyan) 20%, transparent);
+  box-shadow: 0 0 18px hsl(var(--ssos-cyan) / 20%);
 }
 
 /* Focus States - Single Glow Rule */
 .cinema-glow:focus-visible {
-  outline: 2px solid var(--ssos-cyan);
+  outline: 2px solid hsl(var(--ssos-cyan));
   outline-offset: 2px;
-  box-shadow: 0 0 22px color-mix(in oklab, var(--ssos-cyan) 30%, transparent);
+  box-shadow: 0 0 22px hsl(var(--ssos-cyan) / 30%);
 }
 
 /* Cinematic Text Overlays */
@@ -144,18 +147,14 @@
 
 .cinema-text-shadow {
   text-shadow: 
-    0 2px 8px color-mix(in oklab, black 60%, transparent),
-    0 0 20px color-mix(in oklab, black 40%, transparent);
+    0 2px 8px hsl(0 0% 0% / 60%),
+    0 0 20px hsl(0 0% 0% / 40%);
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .cinema-hero {
-    border-radius: var(--ssos-radius-xl);
-  }
-  
-  .cinema-grain::after {
-    background-size: 200px 200px;
+    border-radius: 16px; /* --ssos-radius-xl equivalent */
   }
 }
 

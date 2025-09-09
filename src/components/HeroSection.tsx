@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import SignalRing from "@/components/SignalRing";
 import { EightPointStar } from "@/components/AccentElements";
 import heroImage from "@/assets/cinema/hero-eclipse-rim.jpg";
+import AnimatedSection from "@/components/AnimatedSection";
 import "../styles/cinema.css";
 
 const HeroSection = () => {
@@ -38,18 +39,20 @@ const HeroSection = () => {
       {/* Content */}
       <div className="cinema-text-overlay relative z-10 container mx-auto px-6 text-center max-w-6xl">
         {/* Cinematic Signal Icon */}
-        <div className="mb-16 relative motion-fade">
+        <AnimatedSection className="mb-16 relative">
           <SignalRing size={100} className="mx-auto text-signal" />
-        </div>
+        </AnimatedSection>
 
         {/* Main Headline with Cinematic Typography */}
-        <h1 className="heading-display text-6xl md:text-7xl lg:text-9xl mb-20 leading-[0.9] max-w-6xl mx-auto tracking-tight cinema-text-shadow motion-fade">
-          TIRED OF SHOUTING
-          <br />
-          <span className="text-signal">
-            INTO THE VOID?
-          </span>
-        </h1>
+        <AnimatedSection delay={200}>
+          <h1 className="heading-display text-6xl md:text-7xl lg:text-9xl mb-20 leading-[0.9] max-w-6xl mx-auto tracking-tight cinema-text-shadow">
+            TIRED OF SHOUTING
+            <br />
+            <span className="text-signal">
+              INTO THE VOID?
+            </span>
+          </h1>
+        </AnimatedSection>
 
         {/* Video Section with Cinematic Styling */}
         <div className="mb-20 max-w-4xl mx-auto motion-fade">

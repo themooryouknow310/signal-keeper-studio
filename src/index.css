@@ -48,6 +48,14 @@
 
     /* SSOS Brand Design Tokens - Exact brand specification */
     --ssos-indigo: 221 61% 10%;         /* #0f1224 - Deep indigo base */
+    --ssos-charcoal: 224 24% 8%;        /* #0b0d14 - Rich charcoal */
+    --ssos-alabaster: 44 15% 88%;       /* #f4f3ef - Warm white text */
+    --ssos-cyan: 187 91% 65%;           /* #11e6ff - Signal cyan */
+    --ssos-brass: 43 74% 66%;           /* #b08d57 - Brass gold */
+
+    /* Signal and brass aliases for consistency */
+    --signal: var(--ssos-cyan);
+    --brass: var(--ssos-brass);
     --ssos-charcoal: 225 56% 8%;        /* #0b0d14 - Charcoal darker */
     --ssos-alabaster: 44 17% 95%;       /* #f4f3ef - Alabaster text */
     --ssos-cyan: 190 100% 53%;          /* #11e6ff - Cyan signal/action */
