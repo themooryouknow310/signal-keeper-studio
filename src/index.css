@@ -174,7 +174,6 @@
       0 0 40px hsl(var(--signal-glow) / 0.6),
       0 0 80px hsl(var(--signal-glow) / 0.4),
       0 0 120px hsl(var(--signal-glow) / 0.2);
-    filter: brightness(1.2);
   }
 
   /* Sacred Interactive Elements */
