@@ -5,6 +5,7 @@ import SignalRing from "@/components/SignalRing";
 import marissaFontanaImage from "@/assets/testimonials/marissa-fontana.jpg";
 import leoraLeonImage from "@/assets/testimonials/leora-leon.jpg";
 import susieCollesImage from "@/assets/testimonials/susie-colles.jpg";
+import recognitionInfluenceHero from "@/assets/recognition-influence-hero.jpg";
 // Using uploaded image instead of asset
 
 const ApplySection = () => {
@@ -218,9 +219,19 @@ const ApplySection = () => {
 
         {/* Recognition & Influence Section */}
         <div className="max-w-5xl mx-auto mb-32 mt-40">
-          <h3 className="heading-ritual text-3xl md:text-4xl mb-16 text-center glow-text">
-            RECOGNITION & INFLUENCE
-          </h3>
+          {/* Header with Image */}
+          <div className="text-center mb-20">
+            <div className="w-[48rem] h-[32rem] mx-auto mb-10 rounded-2xl overflow-hidden border border-brass/30 shadow-[0_8px_32px_hsl(var(--signal-glow)/0.2)]">
+              <img 
+                src={recognitionInfluenceHero}
+                alt="Professional recognition and awards ceremony"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="heading-ritual text-3xl md:text-4xl mb-16 glow-text">
+              RECOGNITION & INFLUENCE
+            </h3>
+          </div>
           
           <div className="ssos-grid grid-cols-1">
             <div className="ssos-card">
