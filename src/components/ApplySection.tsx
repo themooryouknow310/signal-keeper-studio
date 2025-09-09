@@ -138,7 +138,7 @@ const ApplySection = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <img src="/lovable-uploads/3577b1e4-f101-4b3d-a7ac-74b52ee58e57.png" alt="Sacred geometry pattern" className="w-5 h-5 mb-4 mx-auto" />
+                <img src="/lovable-uploads/3577b1e4-f101-4b3d-a7ac-74b52ee58e57.png" alt="Sacred geometry pattern" className="w-8 h-8 mb-4 mx-auto" />
                 <p className="body-premium text-foreground/80 leading-relaxed mb-6">
                   "Barack is the real deal with a business grounded in purpose. Since getting to know Barack and collaborating with him on multiple projects, it's evident how devoted Barack is to the mission of empowering women and nurturing the emergence of the divine feminine in all of us."
                 </p>
@@ -157,7 +157,7 @@ const ApplySection = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <img src="/lovable-uploads/3577b1e4-f101-4b3d-a7ac-74b52ee58e57.png" alt="Sacred geometry pattern" className="w-5 h-5 mb-4 mx-auto" />
+                <img src="/lovable-uploads/3577b1e4-f101-4b3d-a7ac-74b52ee58e57.png" alt="Sacred geometry pattern" className="w-8 h-8 mb-4 mx-auto" />
                 <p className="body-premium text-foreground/80 leading-relaxed mb-6">
                   "Barack El is a force to be reckoned with. Not only is Barack a talented entrepreneur who created Femigod, a brilliant company that evokes spiritually and smart business techniques, he is also the real deal, a beautiful, kind and authentic human. It's a pleasure to know him and work with him."
                 </p>
@@ -176,7 +176,7 @@ const ApplySection = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <img src="/lovable-uploads/3577b1e4-f101-4b3d-a7ac-74b52ee58e57.png" alt="Sacred geometry pattern" className="w-5 h-5 mb-4 mx-auto" />
+                <img src="/lovable-uploads/3577b1e4-f101-4b3d-a7ac-74b52ee58e57.png" alt="Sacred geometry pattern" className="w-8 h-8 mb-4 mx-auto" />
                 <p className="body-premium text-foreground/80 leading-relaxed mb-6">
                   "I recently had the pleasure of chatting with Barack about all things spiritual. What a pleasure to be associated with an individual so committed to helping women find and develop their spiritual nature. Of course, it stands to reason that Barack, so focused on helping others thrive, has a vibrant spirit himself!"
                 </p>
