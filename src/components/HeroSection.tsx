@@ -14,7 +14,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden cinema-surface-with-grain">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden cinema-surface-with-grain py-20">
       {/* Cinematic Background */}
       <div className="cinema-hero absolute inset-0">
         <img 
@@ -32,7 +32,7 @@ const HeroSection = () => {
       <div className="cinema-text-overlay relative z-10 container mx-auto px-6 text-center max-w-6xl">
         {/* Main Headline with Cinematic Typography */}
         <AnimatedSection delay={200}>
-          <h1 className="heading-display text-6xl md:text-7xl lg:text-9xl mb-20 leading-[0.9] max-w-6xl mx-auto tracking-tight cinema-text-shadow">
+          <h1 className="heading-display text-4xl md:text-6xl lg:text-7xl mb-16 leading-[0.95] max-w-5xl mx-auto tracking-tight cinema-text-shadow">
             TIRED OF SHOUTING
             <br />
             <span className="text-signal">
