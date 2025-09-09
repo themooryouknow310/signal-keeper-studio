@@ -38,11 +38,25 @@ const HeroSection = () => {
         </div>
 
         {/* Main Headline */}
-        <h1 className="heading-display text-4xl md:text-6xl lg:text-7xl mb-6 leading-tight">
+        <h1 className="heading-display text-4xl md:text-6xl lg:text-7xl mb-12 leading-tight">
           TIRED OF SHOUTING
           <br />
           <span className="text-signal">INTO THE VOID?</span>
         </h1>
+
+        {/* Video Section */}
+        <div className="mb-12 max-w-3xl mx-auto">
+          <div className="relative aspect-video border-2 border-dashed border-signal/40 rounded-lg bg-background/5 backdrop-blur-sm flex items-center justify-center group hover:border-signal/60 transition-all duration-300">
+            {/* Play Button */}
+            <button className="w-20 h-20 bg-signal/20 border-2 border-signal rounded-full flex items-center justify-center group-hover:bg-signal/30 transition-all duration-300">
+              <div className="w-0 h-0 border-l-[16px] border-l-signal border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent ml-1"></div>
+            </button>
+          </div>
+          <div className="text-center mt-4">
+            <p className="text-signal font-medium mb-2">Sacred Signal OS Introduction Video</p>
+            <p className="text-foreground/60 text-sm">Video placeholder - Replace with your actual video embed</p>
+          </div>
+        </div>
 
         {/* Subheading */}
         <div className="space-y-4 mb-8">
