@@ -29,9 +29,6 @@ const HeroSection = () => {
       <div className="cinema-bloom absolute inset-0" />
       
       {/* Subtle Sacred Geometry Elements */}
-      <div className="absolute top-20 left-20 opacity-30">
-        <SignalRing size={80} />
-      </div>
       <div className="absolute bottom-20 right-20 opacity-25">
         <EightPointStar size={60} />
       </div>
