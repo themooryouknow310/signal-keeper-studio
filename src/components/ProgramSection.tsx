@@ -164,9 +164,15 @@ const ProgramSection = () => {
             INVESTMENT IN YOUR TRANSFORMATION
           </h3>
           
-          <BrassMedallion size={120} className="mx-auto mb-8">
-            <span className="font-display font-bold text-2xl text-signal">$1,497</span>
-          </BrassMedallion>
+          <div className="relative mb-8">
+            <div className="bg-gradient-to-br from-signal/20 via-signal/10 to-transparent p-12 rounded-2xl border border-signal/30 backdrop-blur-sm">
+              <div className="text-center">
+                <div className="text-sm uppercase tracking-wider text-brass font-medium mb-2">Investment</div>
+                <div className="text-5xl md:text-6xl font-display font-bold text-signal mb-2">$1,497</div>
+                <div className="w-16 h-px bg-signal/50 mx-auto"></div>
+              </div>
+            </div>
+          </div>
           
           <p className="body-premium text-foreground text-xl mb-12">
             Complete 12-Week Transformation Program
