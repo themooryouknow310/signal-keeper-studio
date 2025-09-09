@@ -1,9 +1,9 @@
 import SacredGeometry from "@/components/SacredGeometry";
 import SignalRing from "@/components/SignalRing";
 import { SacredMandala, EightPointStar, CrosshairTarget, LinearAccent } from "@/components/AccentElements";
-import barackImage from "@/assets/barack-el-portrait.jpg";
 
 const FounderSection = () => {
+  const barackImage = "/lovable-uploads/13c76ad3-eb71-4bb2-a9bc-e10b2d3946aa.png";
   return (
     <section id="founder" className="section-divider relative overflow-hidden">
       {/* Background Accent Elements */}
