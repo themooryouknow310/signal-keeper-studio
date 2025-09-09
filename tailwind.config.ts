@@ -47,16 +47,18 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+        signal: {
+          DEFAULT: "hsl(var(--signal-glow))",
+          soft: "hsl(var(--signal-glow-soft))",
         },
+        brass: {
+          DEFAULT: "hsl(var(--sacred-gold))",
+          foreground: "hsl(var(--sacred-gold-foreground))",
+        },
+      },
+      fontFamily: {
+        display: ['Playfair Display', 'serif'],
+        body: ['Source Serif 4', 'serif'],
       },
       borderRadius: {
         lg: "var(--radius)",

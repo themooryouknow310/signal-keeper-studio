@@ -2,41 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Sacred Signal OS Design System
+   Based on brand guidelines: Deep indigo, charcoal, cyan radiance, brass gold
+   All colors in HSL format only
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Sacred Signal OS Color System */
+    --background: 243 47% 9%;           /* Deep Indigo 90 - sacred night sky */
+    --foreground: 44 15% 88%;           /* Alabaster cream - warm human text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 240 12% 15%;                /* Charcoal 70 - structural panels */
+    --card-foreground: 44 15% 88%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 240 12% 15%;
+    --popover-foreground: 44 15% 88%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 243 47% 9%;              /* Deep Indigo - primary brand */
+    --primary-foreground: 44 15% 88%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 240 12% 15%;           /* Charcoal - secondary structure */
+    --secondary-foreground: 44 15% 88%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 240 12% 15%;
+    --muted-foreground: 240 5% 64%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 187 91% 65%;              /* Cyan Radiance - electric signal glow */
+    --accent-foreground: 243 47% 9%;
+
+    --sacred-gold: 43 74% 66%;          /* Brass Gold - sacred geometry */
+    --sacred-gold-foreground: 243 47% 9%;
+
+    --signal-glow: 187 91% 65%;         /* Cyan for signal elements */
+    --signal-glow-soft: 187 45% 35%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 44 15% 88%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 240 12% 25%;
+    --input: 240 12% 15%;
+    --ring: 187 91% 65%;                /* Cyan ring focus */
 
     --radius: 0.5rem;
+
+    /* Sacred Gradients */
+    --gradient-signal: linear-gradient(135deg, hsl(187 91% 65% / 0.8), hsl(243 47% 9%));
+    --gradient-halo: radial-gradient(circle, hsl(187 91% 65% / 0.3), transparent 70%);
+    --gradient-brass: linear-gradient(45deg, hsl(43 74% 66%), hsl(43 74% 56%));
+    
+    /* Sacred Shadows & Glows */
+    --shadow-signal: 0 0 40px hsl(187 91% 65% / 0.4);
+    --shadow-brass: 0 4px 20px hsl(43 74% 66% / 0.3);
+    --shadow-deep: 0 10px 30px hsl(243 47% 9% / 0.8);
+
+    /* Sacred Motion */
+    --transition-resonant: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: all 0.3s ease-out;
 
     --sidebar-background: 0 0% 98%;
 
@@ -55,42 +77,15 @@ All colors MUST be HSL.
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+  /* Sacred Signal OS uses dark mode as primary - light theme for accessibility */
+  .light {
+    --background: 44 15% 96%;
+    --foreground: 243 47% 9%;
+    --card: 0 0% 100%;
+    --card-foreground: 243 47% 9%;
+    --border: 240 12% 85%;
+    --input: 240 12% 85%;
+    --ring: 243 47% 9%;
   }
 }
 
@@ -100,6 +95,74 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body antialiased;
+    background-image: 
+      radial-gradient(circle at 20% 30%, hsl(187 91% 65% / 0.05), transparent 40%),
+      radial-gradient(circle at 80% 70%, hsl(43 74% 66% / 0.03), transparent 40%);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Sacred Typography Classes */
+@layer components {
+  .heading-display {
+    @apply font-display text-foreground font-black tracking-wider uppercase;
+    text-shadow: 0 2px 10px hsl(243 47% 9% / 0.3);
+  }
+  
+  .heading-ritual {
+    @apply font-display text-foreground font-bold tracking-wide uppercase;
+  }
+  
+  .body-sacred {
+    @apply font-body text-foreground leading-relaxed;
+  }
+  
+  .text-signal {
+    @apply text-[hsl(var(--signal-glow))];
+  }
+  
+  .text-brass {
+    @apply text-[hsl(var(--sacred-gold))];
+  }
+
+  /* Sacred Interactive Elements */
+  .signal-glow {
+    box-shadow: var(--shadow-signal);
+    transition: var(--transition-glow);
+  }
+  
+  .signal-glow:hover {
+    box-shadow: 0 0 60px hsl(187 91% 65% / 0.6);
+  }
+  
+  .brass-accent {
+    color: hsl(var(--sacred-gold));
+    text-shadow: 0 0 20px hsl(43 74% 66% / 0.4);
+  }
+
+  /* Sacred Geometry Patterns */
+  .sacred-border {
+    position: relative;
+  }
+  
+  .sacred-border::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    background: linear-gradient(45deg, 
+      hsl(var(--sacred-gold)), 
+      hsl(var(--signal-glow)), 
+      hsl(var(--sacred-gold))
+    );
+    border-radius: inherit;
+    z-index: -1;
+    opacity: 0.6;
   }
 }
