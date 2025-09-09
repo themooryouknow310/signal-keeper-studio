@@ -1,10 +1,22 @@
 import SacredGeometry from "@/components/SacredGeometry";
 import SignalRing from "@/components/SignalRing";
+import { SacredMandala, EightPointStar, CrosshairTarget, LinearAccent } from "@/components/AccentElements";
 import barackImage from "@/assets/barack-el-portrait.jpg";
 
 const FounderSection = () => {
   return (
-    <section id="founder" className="py-20 lg:py-32 relative">
+    <section id="founder" className="py-20 lg:py-32 relative overflow-hidden">
+      {/* Background Accent Elements */}
+      <div className="absolute top-16 left-12 opacity-6">
+        <SacredMandala size={90} />
+      </div>
+      <div className="absolute bottom-16 right-12 opacity-8">
+        <CrosshairTarget size={70} />
+      </div>
+      <div className="absolute top-1/2 left-1/4 opacity-4">
+        <EightPointStar size={50} />
+      </div>
+      
       {/* Background Elements */}
       <div className="absolute bottom-20 right-20 opacity-10">
         <SacredGeometry size={120} animated />
@@ -13,6 +25,9 @@ const FounderSection = () => {
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
+          <div className="flex items-center justify-center mb-8">
+            <LinearAccent width={200} />
+          </div>
           <SignalRing size={60} className="mx-auto mb-8" />
           <h2 className="heading-ritual text-3xl md:text-5xl mb-6">
             MEET YOUR GUIDE

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import SignalRing from "@/components/SignalRing";
+import { SacredMandala, SignalWave, CrosshairTarget, EightPointStar, SacredSpiral } from "@/components/AccentElements";
 import heroImage from "@/assets/sacred-geometry-hero.jpg";
 
 const HeroSection = () => {
@@ -28,6 +29,23 @@ const HeroSection = () => {
       </div>
       <div className="absolute bottom-20 right-20 opacity-10">
         <SignalRing size={200} />
+      </div>
+      
+      {/* Additional Accent Elements */}
+      <div className="absolute top-32 right-32 opacity-15">
+        <SacredMandala size={80} />
+      </div>
+      <div className="absolute bottom-32 left-32 opacity-12">
+        <CrosshairTarget size={60} />
+      </div>
+      <div className="absolute top-1/2 left-10 opacity-8">
+        <EightPointStar size={40} />
+      </div>
+      <div className="absolute top-1/3 right-10 opacity-10">
+        <SacredSpiral size={50} />
+      </div>
+      <div className="absolute bottom-1/3 right-1/4 opacity-6">
+        <SignalWave size={120} />
       </div>
 
       {/* Content */}

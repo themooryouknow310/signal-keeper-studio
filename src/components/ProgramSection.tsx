@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import SacredGeometry from "@/components/SacredGeometry";
+import { CrosshairTarget, SignalWave, SacredSpiral, LinearAccent } from "@/components/AccentElements";
 import SignalRing from "@/components/SignalRing";
 
 const ProgramSection = () => {
@@ -33,7 +34,18 @@ const ProgramSection = () => {
   };
 
   return (
-    <section id="program" className="py-20 lg:py-32 relative">
+    <section className="py-20 lg:py-32 bg-card/30 relative overflow-hidden">
+      {/* Background Accent Elements */}
+      <div className="absolute top-20 left-16 opacity-6">
+        <CrosshairTarget size={120} />
+      </div>
+      <div className="absolute bottom-20 right-16 opacity-8">
+        <SacredSpiral size={100} />
+      </div>
+      <div className="absolute top-1/3 right-10 opacity-5">
+        <SignalWave size={150} />
+      </div>
+      
       {/* Background Elements */}
       <div className="absolute top-20 left-10 opacity-5">
         <SacredGeometry size={200} />
@@ -42,6 +54,9 @@ const ProgramSection = () => {
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
+          <div className="flex items-center justify-center mb-8">
+            <LinearAccent width={250} />
+          </div>
           <SignalRing size={60} className="mx-auto mb-8" />
           <h2 className="heading-ritual text-3xl md:text-5xl mb-6">
             THE 12-WEEK SACRED SIGNAL OS PROGRAM

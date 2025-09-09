@@ -1,6 +1,8 @@
 import SacredGeometry from "@/components/SacredGeometry";
 import SignalRing from "@/components/SignalRing";
 
+import { SacredMandala, EightPointStar, LinearAccent, GoldenRatioGrid } from "@/components/AccentElements";
+
 const AboutSection = () => {
   const problems = [
     {
@@ -45,7 +47,18 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-20 lg:py-32 relative">
+    <section id="about" className="py-20 lg:py-32 relative overflow-hidden">
+      {/* Background Accent Elements */}
+      <div className="absolute top-16 right-10 opacity-8">
+        <SacredMandala size={100} />
+      </div>
+      <div className="absolute bottom-16 left-10 opacity-6">
+        <EightPointStar size={60} />
+      </div>
+      <div className="absolute top-1/2 right-1/4 opacity-4">
+        <GoldenRatioGrid size={80} />
+      </div>
+      
       {/* Background Elements */}
       <div className="absolute top-40 right-10 opacity-10">
         <SacredGeometry size={150} animated />
@@ -55,7 +68,9 @@ const AboutSection = () => {
         {/* Problem Section */}
         <div className="mb-20">
           <div className="text-center mb-16">
-            <SignalRing size={60} className="mx-auto mb-8" />
+            <div className="flex items-center justify-center mb-8">
+              <LinearAccent width={300} />
+            </div>
             <h2 className="heading-ritual text-3xl md:text-5xl mb-6">
               THE SPIRITUAL ENTREPRENEUR'S DILEMMA
             </h2>
@@ -129,6 +144,9 @@ const AboutSection = () => {
               THIS IS THE PROMISE OF SACRED SIGNAL OS
             </p>
             <div className="w-32 h-0.5 bg-brass mx-auto" />
+            <div className="flex justify-center mt-4">
+              <EightPointStar size={30} className="opacity-60" />
+            </div>
           </div>
         </div>
       </div>
