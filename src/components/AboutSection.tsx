@@ -4,6 +4,10 @@ import contentTreadmillImage from "@/assets/cinema/content-treadmill-new.jpg";
 import algorithmWhiplashImage from "@/assets/cinema/algorithm-whiplash-new.jpg";
 import leakyFunnelImage from "@/assets/cinema/leaky-funnel-new.jpg";
 import exhaustionBurnoutImage from "@/assets/cinema/exhaustion-burnout-new.jpg";
+import clearResonantMessageImage from "@/assets/cinema/clear-resonant-message.jpg";
+import compellingOfferImage from "@/assets/cinema/compelling-offer.jpg";
+import sustainableContentImage from "@/assets/cinema/sustainable-content.jpg";
+import authenticSalesImage from "@/assets/cinema/authentic-sales.jpg";
 
 import { SacredMandala, EightPointStar, LinearAccent, GoldenRatioGrid } from "@/components/AccentElements";
 
@@ -33,18 +37,22 @@ const AboutSection = () => {
 
   const outcomes = [
     {
+      image: clearResonantMessageImage,
       title: "Your message is so clear and resonant",
       description: "that your ideal clients instantly know they're in the right place."
     },
     {
+      image: compellingOfferImage,
       title: "Your offer is so compelling",
       description: "that it feels like an answer to their prayers."
     },
     {
+      image: sustainableContentImage,
       title: "Your content system is so sustainable", 
       description: "that you can create a month's worth of high-impact content in a single day."
     },
     {
+      image: authenticSalesImage,
       title: "Your sales process is so authentic",
       description: "that it feels like a natural extension of your spiritual work."
     }
@@ -138,8 +146,12 @@ const AboutSection = () => {
                 className="ssos-card"
               >
                 <div className="flex items-start space-x-6">
-                  <div className="flex-shrink-0 mt-2">
-                    <SignalRing size={40} />
+                  <div className="flex-shrink-0 w-16 h-16 rounded-full overflow-hidden border border-brass/30">
+                    <img 
+                      src={outcome.image} 
+                      alt={outcome.title}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div className="flex-1">
                     <p className="body-premium text-lg leading-relaxed">
