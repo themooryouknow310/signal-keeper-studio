@@ -15,7 +15,7 @@ import valueCommunicationImage from "@/assets/cinema/value-communication.jpg";
 import leadGenerationImage from "@/assets/cinema/lead-generation.jpg";
 import audienceGrowthImage from "@/assets/cinema/audience-growth.jpg";
 import sacredProgramSymbolImage from "@/assets/cinema/sacred-program-symbol.jpg";
-import programPromiseSealImage from "@/assets/cinema/program-promise-seal.jpg";
+import backgroundSacredLightImage from "@/assets/cinema/background-sacred-light.jpg";
 
 const ProgramSection = () => {
   const modules = [
@@ -89,6 +89,15 @@ const ProgramSection = () => {
   return (
     <section id="program" className="section-divider relative overflow-hidden surface-dark">
       {/* Minimal Background Accents */}
+      <div className="absolute top-20 left-16 opacity-15">
+        <div className="w-32 h-32 rounded-full overflow-hidden">
+          <img 
+            src={backgroundSacredLightImage} 
+            alt="Sacred Light Background"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
       <div className="absolute bottom-20 right-16 opacity-15">
         <Icon name="compass" size={100} className="text-brass" />
       </div>
