@@ -119,6 +119,51 @@ const ApplySection = () => {
           </div>
         </div>
 
+        {/* Testimonials Section */}
+        <div className="max-w-5xl mx-auto mb-32">
+          <h3 className="heading-ritual text-3xl md:text-4xl mb-16 text-center glow-text">
+            WHAT PEOPLE ARE SAYING
+          </h3>
+          
+          <div className="ssos-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div className="ssos-card">
+              <div className="mb-6">
+                <SignalRing size={24} className="mb-4" />
+                <p className="body-premium text-foreground/80 leading-relaxed mb-6">
+                  "Barack is the real deal with a business grounded in purpose. Since getting to know Barack and collaborating with him on multiple projects, it's evident how devoted Barack is to the mission of empowering women and nurturing the emergence of the divine feminine in all of us."
+                </p>
+                <div className="text-signal font-semibold">
+                  — Marissa Fontana
+                </div>
+              </div>
+            </div>
+
+            <div className="ssos-card">
+              <div className="mb-6">
+                <SignalRing size={24} className="mb-4" />
+                <p className="body-premium text-foreground/80 leading-relaxed mb-6">
+                  "Barack El is a force to be reckoned with. Not only is Barack a talented entrepreneur who created Femigod, a brilliant company that evokes spiritually and smart business techniques, he is also the real deal, a beautiful, kind and authentic human. It's a pleasure to know him and work with him."
+                </p>
+                <div className="text-signal font-semibold">
+                  — Leora Leon
+                </div>
+              </div>
+            </div>
+
+            <div className="ssos-card">
+              <div className="mb-6">
+                <SignalRing size={24} className="mb-4" />
+                <p className="body-premium text-foreground/80 leading-relaxed mb-6">
+                  "I recently had the pleasure of chatting with Barack about all things spiritual. What a pleasure to be associated with an individual so committed to helping women find and develop their spiritual nature. Of course, it stands to reason that Barack, so focused on helping others thrive, has a vibrant spirit himself!"
+                </p>
+                <div className="text-signal font-semibold">
+                  — Susie Colles, PhD
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* FAQ Section */}
         <div className="max-w-5xl mx-auto">
           <h3 className="heading-ritual text-3xl md:text-4xl mb-16 text-center glow-text">
