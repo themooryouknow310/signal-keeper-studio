@@ -32,7 +32,7 @@ const HeroSection = () => {
           <h1 className="heading-display text-4xl md:text-6xl lg:text-7xl mb-16 leading-[0.95] max-w-5xl mx-auto tracking-tight cinema-text-shadow">
             TIRED OF SHOUTING
             <br />
-            <span className="text-signal glow-text">
+            <span className="glow-text">
               INTO THE VOID?
             </span>
           </h1>
