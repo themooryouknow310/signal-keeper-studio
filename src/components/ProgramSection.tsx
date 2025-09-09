@@ -15,6 +15,7 @@ import valueCommunicationImage from "@/assets/cinema/value-communication.jpg";
 import leadGenerationImage from "@/assets/cinema/lead-generation.jpg";
 import audienceGrowthImage from "@/assets/cinema/audience-growth.jpg";
 import sacredProgramSymbolImage from "@/assets/cinema/sacred-program-symbol.jpg";
+import programPromiseSealImage from "@/assets/cinema/program-promise-seal.jpg";
 
 const ProgramSection = () => {
   const modules = [
@@ -102,7 +103,13 @@ const ProgramSection = () => {
         {/* Header */}
         <div className="text-center mb-20 fade-up">
           <div className="flex items-center justify-center mb-8">
-            <BrassRule width={300} />
+            <div className="w-16 h-16 rounded-full overflow-hidden border border-brass/30">
+              <img 
+                src={programPromiseSealImage} 
+                alt="Sacred Signal OS Seal"
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
           <div className="w-20 h-20 mx-auto mb-8 rounded-full overflow-hidden border-2 border-brass/30">
             <img 
