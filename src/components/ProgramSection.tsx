@@ -79,21 +79,6 @@ const ProgramSection = () => {
     }
   ];
 
-  const weeks = [
-    { title: "Niche & Positioning", focus: "Understanding Your Ideal Customer Profile" },
-    { title: "Offer Design", focus: "Understanding The Problem You Solve" },
-    { title: "Program Architecture", focus: "Design A Program That People Finish" },
-    { title: "Story & Message Craft", focus: "Create An Intentional Personal Brand" },
-    { title: "Visual Identity", focus: "Look Premium, Stay You" },
-    { title: "Lead Magnet & Funnel", focus: "Create An Enticing Lead Magnet" },
-    { title: "Unlimited Traffic Strategy", focus: "Develop Your Dream 100" },
-    { title: "Content Strategy", focus: "Purpose and Strategy Of Content Creation" },
-    { title: "Writing & Newsletters", focus: "High Speed Quality Content Structure" },
-    { title: "Value Communication", focus: "Create Social Proof" },
-    { title: "Lead Generation", focus: "Make Your Offer Known" },
-    { title: "Audience Growth", focus: "Expand Your Footprint & Scale" }
-  ];
-
   const scrollToApply = () => {
     const element = document.getElementById('apply');
     if (element) element.scrollIntoView({ behavior: 'smooth' });
@@ -167,35 +152,6 @@ const ProgramSection = () => {
                 </h3>
                 <p className="body-premium text-foreground/80 leading-relaxed text-lg">
                   {module.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* 12-Week Breakdown */}
-        <div className="mb-16 fade-up">
-          <h3 className="heading-ritual text-2xl md:text-3xl mb-12 text-center glow-text">
-            12-WEEK PROGRAM STRUCTURE
-          </h3>
-          
-          <div className="ssos-grid">
-            {weeks.map((week, index) => (
-              <div 
-                key={index}
-                className="ssos-card scale-hover"
-              >
-                <div className="flex items-center space-x-3 mb-4">
-                  <span className="text-brass font-display font-bold text-sm uppercase tracking-wide">
-                    WEEK {index + 1}
-                  </span>
-                  <Icon name="signal-ring" size={16} className="text-signal" />
-                </div>
-                <h4 className="ssos-card-title text-lg mb-2">
-                  {week.title}
-                </h4>
-                <p className="body-sacred text-sm text-foreground/70">
-                  {week.focus}
                 </p>
               </div>
             ))}
