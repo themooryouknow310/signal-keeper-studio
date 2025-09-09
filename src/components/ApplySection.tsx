@@ -41,7 +41,7 @@ const ApplySection = () => {
         {/* Header */}
         <div className="text-center mb-20">
           <SignalRing size={100} className="mx-auto mb-10" />
-          <h2 className="heading-ritual text-4xl md:text-6xl mb-8">
+          <h2 className="heading-ritual text-4xl md:text-6xl mb-8 glow-text">
             READY TO STOP SHOUTING
             <br />
             <span className="text-signal glow-text">AND START BEING HEARD?</span>
@@ -56,7 +56,7 @@ const ApplySection = () => {
           <Card className="premium-card border-signal/40 p-12 md:p-16 text-center">
             <div className="mb-12">
               <SacredGeometry size={80} className="mx-auto mb-8" />
-              <h3 className="heading-ritual text-3xl md:text-4xl mb-6">
+              <h3 className="heading-ritual text-3xl md:text-4xl mb-6 glow-text">
                 APPLY FOR SACRED SIGNAL OS
               </h3>
               <p className="body-premium text-xl text-foreground/90 mb-8">
@@ -110,7 +110,7 @@ const ApplySection = () => {
 
         {/* FAQ Section */}
         <div className="max-w-5xl mx-auto">
-          <h3 className="heading-ritual text-3xl md:text-4xl mb-16 text-center">
+          <h3 className="heading-ritual text-3xl md:text-4xl mb-16 text-center glow-text">
             FREQUENTLY ASKED QUESTIONS
           </h3>
           
@@ -139,7 +139,7 @@ const ApplySection = () => {
         {/* Final CTA */}
         <div className="text-center mt-24">
           <div className="mb-12">
-            <p className="heading-ritual text-2xl md:text-3xl text-foreground mb-6">
+            <p className="heading-ritual text-2xl md:text-3xl text-foreground mb-6 glow-text">
               Your Voice Deserves To Cut Through Noise And Carry With Power.
             </p>
             <div className="flex items-center justify-center space-x-4">

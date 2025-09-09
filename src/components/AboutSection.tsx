@@ -71,7 +71,7 @@ const AboutSection = () => {
             <div className="flex items-center justify-center mb-8">
               <LinearAccent width={300} />
             </div>
-            <h2 className="heading-ritual text-3xl md:text-5xl mb-6">
+            <h2 className="heading-ritual text-3xl md:text-5xl mb-6 glow-text">
               THE SPIRITUAL ENTREPRENEUR'S DILEMMA
             </h2>
             <p className="body-sacred text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
@@ -108,7 +108,7 @@ const AboutSection = () => {
           <div className="flex items-center justify-center space-x-8">
             <div className="w-24 h-px bg-gradient-to-r from-transparent via-brass to-brass" />
             <div className="relative">
-              <p className="heading-ritual text-2xl md:text-3xl text-signal px-6">
+              <p className="heading-ritual text-2xl md:text-3xl text-signal px-6 glow-text">
                 IT DOESN'T HAVE TO BE THIS WAY
               </p>
               <div className="absolute -top-2 -bottom-2 -left-2 -right-2 border border-signal/20 rounded-lg"></div>
@@ -120,7 +120,7 @@ const AboutSection = () => {
         {/* Vision Section */}
         <div>
           <div className="text-center mb-16">
-            <h2 className="heading-ritual text-3xl md:text-5xl mb-6">
+            <h2 className="heading-ritual text-3xl md:text-5xl mb-6 glow-text">
               IMAGINE A BUSINESS WHERE...
             </h2>
           </div>
@@ -147,7 +147,7 @@ const AboutSection = () => {
           </div>
 
           <div className="text-center mt-16">
-            <p className="heading-ritual text-2xl md:text-3xl text-signal mb-4">
+            <p className="heading-ritual text-2xl md:text-3xl text-signal mb-4 glow-text">
               THIS IS THE PROMISE OF SACRED SIGNAL OS
             </p>
             <div className="w-32 h-0.5 bg-brass mx-auto" />

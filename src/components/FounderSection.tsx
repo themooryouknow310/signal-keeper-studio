@@ -15,7 +15,7 @@ const FounderSection = () => {
         {/* Section Header */}
         <AnimatedSection className="text-center mb-20">
           <BrassRule className="mx-auto mb-8" />
-          <h2 className="heading-display text-4xl md:text-5xl lg:text-6xl mb-6">
+          <h2 className="heading-display text-4xl md:text-5xl lg:text-6xl mb-6 glow-text">
             MEET YOUR GUIDE
           </h2>
           <p className="body-premium text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
@@ -40,7 +40,7 @@ const FounderSection = () => {
             {/* Content */}
             <AnimatedSection delay={400} className="space-y-8">
               <div>
-                <h3 className="heading-display text-3xl md:text-4xl mb-4 cinema-text-shadow">
+                <h3 className="heading-display text-3xl md:text-4xl mb-4 cinema-text-shadow glow-text">
                   THE SIGNAL ARCHITECT
                 </h3>
                 <p className="body-premium text-lg text-foreground/90 leading-relaxed mb-6">

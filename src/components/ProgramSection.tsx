@@ -64,7 +64,7 @@ const ProgramSection = () => {
           <BrassMedallion size={80} className="mx-auto mb-8">
             <Icon name="signal-ring" size={40} className="text-signal" />
           </BrassMedallion>
-          <h2 className="heading-ritual text-4xl md:text-6xl mb-8">
+          <h2 className="heading-ritual text-4xl md:text-6xl mb-8 glow-text">
             THE 12-WEEK SACRED SIGNAL OS PROGRAM
           </h2>
           <p className="body-premium text-xl md:text-2xl text-foreground max-w-4xl mx-auto leading-relaxed">
@@ -74,7 +74,7 @@ const ProgramSection = () => {
 
         {/* Program Promise */}
         <div className="ssos-card p-10 md:p-16 mb-24 text-center border-signal/30 fade-up">
-          <h3 className="heading-ritual text-3xl md:text-4xl mb-8 text-signal">
+          <h3 className="heading-ritual text-3xl md:text-4xl mb-8 text-signal glow-text">
             PROGRAM PROMISE
           </h3>
           <p className="body-premium text-xl md:text-2xl leading-relaxed text-foreground max-w-4xl mx-auto">
@@ -85,7 +85,7 @@ const ProgramSection = () => {
 
         {/* Key Modules Showcase */}
         <div className="mb-24 fade-up">
-          <h3 className="heading-ritual text-3xl md:text-4xl mb-16 text-center">
+          <h3 className="heading-ritual text-3xl md:text-4xl mb-16 text-center glow-text">
             CORE TRANSFORMATION MODULES
           </h3>
           
@@ -114,7 +114,7 @@ const ProgramSection = () => {
 
         {/* 12-Week Breakdown */}
         <div className="mb-16 fade-up">
-          <h3 className="heading-ritual text-2xl md:text-3xl mb-12 text-center">
+          <h3 className="heading-ritual text-2xl md:text-3xl mb-12 text-center glow-text">
             12-WEEK PROGRAM STRUCTURE
           </h3>
           
@@ -143,7 +143,7 @@ const ProgramSection = () => {
 
         {/* Investment Section */}
         <div className="ssos-card text-center max-w-4xl mx-auto fade-up">
-          <h3 className="heading-ritual text-3xl md:text-4xl mb-8">
+          <h3 className="heading-ritual text-3xl md:text-4xl mb-8 glow-text">
             INVESTMENT IN YOUR TRANSFORMATION
           </h3>
           
