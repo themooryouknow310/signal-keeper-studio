@@ -89,9 +89,6 @@ const ProgramSection = () => {
   return (
     <section id="program" className="section-divider relative overflow-hidden surface-dark">
       {/* Minimal Background Accents */}
-      <div className="absolute top-20 left-16 opacity-20">
-        <SignalEclipse size={120} />
-      </div>
       <div className="absolute bottom-20 right-16 opacity-15">
         <Icon name="compass" size={100} className="text-brass" />
       </div>
@@ -103,13 +100,7 @@ const ProgramSection = () => {
         {/* Header */}
         <div className="text-center mb-20 fade-up">
           <div className="flex items-center justify-center mb-8">
-            <div className="w-16 h-16 rounded-full overflow-hidden border border-brass/30">
-              <img 
-                src={programPromiseSealImage} 
-                alt="Sacred Signal OS Seal"
-                className="w-full h-full object-cover"
-              />
-            </div>
+            <BrassRule width={300} />
           </div>
           <div className="w-20 h-20 mx-auto mb-8 rounded-full overflow-hidden border-2 border-brass/30">
             <img 
