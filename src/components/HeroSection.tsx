@@ -73,7 +73,7 @@ const HeroSection = () => {
           </div>
           <div className="text-center mt-8">
             <p className="text-signal font-medium text-lg mb-2">Sacred Signal OS Introduction</p>
-            <p className="text-foreground/60">Discover your path to authentic business growth</p>
+            <p className="text-foreground/60">Discover Your Path To Authentic Business Growth</p>
           </div>
         </div>
 
@@ -81,7 +81,7 @@ const HeroSection = () => {
         <div className="space-y-12 mb-16">
           <div className="relative max-w-5xl mx-auto">
             <p className="body-premium text-2xl md:text-3xl text-foreground max-w-4xl mx-auto leading-relaxed font-light">
-              For the spiritual entrepreneur who is ready to stop chasing clients and start attracting them.
+              For The Spiritual Entrepreneur Who Is Ready To Stop Chasing Clients And Start Attracting Them.
             </p>
             
             {/* Decorative Element */}
@@ -95,9 +95,9 @@ const HeroSection = () => {
           </div>
           
           <p className="body-premium text-xl md:text-2xl text-foreground/90 max-w-4xl mx-auto leading-relaxed font-light">
-            Install a calm, predictable pipeline to attract, convert, and enroll 
-            <span className="text-signal font-medium glow-text"> 3-5 new high-ticket clients per month</span>, 
-            without paid ads or content burnout.
+            Install A Calm, Predictable Pipeline To Attract, Convert, And Enroll 
+            <span className="text-signal font-medium glow-text"> 3-5 New High-Ticket Clients Per Month</span>, 
+            Without Paid Ads Or Content Burnout.
           </p>
         </div>
 

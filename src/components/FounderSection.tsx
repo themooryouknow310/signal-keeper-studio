@@ -32,9 +32,9 @@ const FounderSection = () => {
           <h2 className="heading-ritual text-3xl md:text-5xl mb-6">
             MEET YOUR GUIDE
           </h2>
-          <p className="body-sacred text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
-            From the deepest night to the clearest signal—a journey of remembrance and truth.
-          </p>
+            <p className="body-sacred text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
+              From The Deepest Night To The Clearest Signal—A Journey Of Remembrance And Truth.
+            </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start max-w-7xl mx-auto">
@@ -70,7 +70,7 @@ const FounderSection = () => {
                 "I am God. You are God. We Are One."
               </p>
               <footer className="mt-4 text-foreground/70 font-body">
-                — The recognition that changed everything
+                — The Recognition That Changed Everything
               </footer>
             </blockquote>
 

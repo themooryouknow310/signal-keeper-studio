@@ -47,7 +47,7 @@ const ApplySection = () => {
             <span className="text-signal glow-text">AND START BEING HEARD?</span>
           </h2>
           <p className="body-premium text-xl md:text-2xl text-foreground max-w-4xl mx-auto leading-relaxed">
-            Transform your scattered efforts into a resonant signal that attracts your ideal clients with ease and authenticity.
+            Transform Your Scattered Efforts Into A Resonant Signal That Attracts Your Ideal Clients With Ease And Authenticity.
           </p>
         </div>
 
@@ -60,13 +60,13 @@ const ApplySection = () => {
                 APPLY FOR SACRED SIGNAL OS
               </h3>
               <p className="body-premium text-xl text-foreground/90 mb-8">
-                12 weeks • High-touch coaching • Complete transformation
+                12 Weeks • High-Touch Coaching • Complete Transformation
               </p>
               <div className="text-5xl md:text-6xl font-display font-bold text-signal mb-4 glow-text">
                 $1,497
               </div>
               <p className="body-premium text-foreground/80 text-lg">
-                Payment plans available
+                Payment Plans Available
               </p>
             </div>
 
@@ -78,30 +78,30 @@ const ApplySection = () => {
                 Apply Now - Sacred Signal OS
               </Button>
               <p className="body-premium text-sm text-foreground/70">
-                Applications reviewed within 48 hours
+                Applications Reviewed Within 48 Hours
               </p>
             </div>
 
             <div className="premium-card p-8 text-left bg-background/30">
               <h4 className="heading-section text-xl font-semibold text-foreground mb-6">
-                What happens next:
+                What Happens Next:
               </h4>
               <div className="space-y-4 text-foreground/80">
                 <div className="flex items-center space-x-4">
                   <SacredGeometry size={16} />
-                  <span className="body-premium">Complete application & values alignment assessment</span>
+                  <span className="body-premium">Complete Application & Values Alignment Assessment</span>
                 </div>
                 <div className="flex items-center space-x-4">
                   <SacredGeometry size={16} />
-                  <span className="body-premium">Brief discovery call to ensure mutual fit</span>
+                  <span className="body-premium">Brief Discovery Call To Ensure Mutual Fit</span>
                 </div>
                 <div className="flex items-center space-x-4">
                   <SacredGeometry size={16} />
-                  <span className="body-premium">Receive program materials & community access</span>
+                  <span className="body-premium">Receive Program Materials & Community Access</span>
                 </div>
                 <div className="flex items-center space-x-4">
                   <SacredGeometry size={16} />
-                  <span className="body-premium">Begin your 12-week transformation</span>
+                  <span className="body-premium">Begin Your 12-Week Transformation</span>
                 </div>
               </div>
             </div>
@@ -140,7 +140,7 @@ const ApplySection = () => {
         <div className="text-center mt-24">
           <div className="mb-12">
             <p className="heading-ritual text-2xl md:text-3xl text-foreground mb-6">
-              Your voice deserves to cut through noise and carry with power.
+              Your Voice Deserves To Cut Through Noise And Carry With Power.
             </p>
             <div className="flex items-center justify-center space-x-4">
               <div className="w-20 h-px bg-gradient-to-r from-transparent to-brass"></div>

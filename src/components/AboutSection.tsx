@@ -75,7 +75,7 @@ const AboutSection = () => {
               THE SPIRITUAL ENTREPRENEUR'S DILEMMA
             </h2>
             <p className="body-sacred text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
-              You have a gift to share, a calling to serve. But right now, your days are likely filled with the frustrating reality of trying to grow your business online:
+              You Have A Gift To Share, A Calling To Serve. But Right Now, Your Days Are Likely Filled With The Frustrating Reality Of Trying To Grow Your Business Online:
             </p>
           </div>
 

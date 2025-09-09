@@ -81,8 +81,8 @@ const ProgramSection = () => {
             PROGRAM PROMISE
           </h3>
           <p className="body-premium text-xl md:text-2xl leading-relaxed text-foreground max-w-4xl mx-auto">
-            "In 12 weeks, you leave with a brand people repeat, a program people finish, 
-            proof that buyers trust, and a content loop that fills your calendar—without losing your voice."
+            "In 12 Weeks, You Leave With A Brand People Repeat, A Program People Finish, 
+            Proof That Buyers Trust, And A Content Loop That Fills Your Calendar—Without Losing Your Voice."
           </p>
         </div>
 
@@ -155,7 +155,7 @@ const ProgramSection = () => {
               $1,497
             </div>
             <p className="body-premium text-foreground text-xl">
-              Complete 12-week transformation program
+              Complete 12-Week Transformation Program
             </p>
           </div>
 
