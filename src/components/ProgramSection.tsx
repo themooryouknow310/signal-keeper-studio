@@ -1,22 +1,22 @@
-import { Button } from "@/components/ui/button";
-import SacredGeometry from "@/components/SacredGeometry";
-import { CrosshairTarget, SignalWave, SacredSpiral, LinearAccent } from "@/components/AccentElements";
-import SignalRing from "@/components/SignalRing";
+import Icon from "@/components/icons/Icon";
+import BrassMedallion from "@/components/accents/BrassMedallion";
+import BrassRule from "@/components/accents/BrassRule";
+import SignalEclipse from "@/components/accents/SignalEclipse";
 
 const ProgramSection = () => {
   const modules = [
     {
-      icon: "🎯",
+      icon: "target",
       title: "Niche & Positioning",
       description: "Understand your ideal customer profile and craft a resonant positioning kernel that cuts through noise."
     },
     {
-      icon: "💎", 
+      icon: "diamond", 
       title: "Offer Design",
       description: "Create an irresistible high-ticket program that delivers transformation and commands premium pricing."
     },
     {
-      icon: "🏗️",
+      icon: "structure",
       title: "Program Architecture", 
       description: "Design a program structure that clients actually complete, creating powerful testimonials and referrals."
     }
@@ -43,30 +43,27 @@ const ProgramSection = () => {
   };
 
   return (
-    <section id="program" className="section-divider relative overflow-hidden bg-gradient-to-b from-background via-card/10 to-background">
-      {/* Background Accent Elements */}
-      <div className="absolute top-20 left-16 opacity-6">
-        <CrosshairTarget size={120} />
+    <section id="program" className="section-divider relative overflow-hidden surface-dark">
+      {/* Minimal Background Accents */}
+      <div className="absolute top-20 left-16 opacity-20">
+        <SignalEclipse size={120} />
       </div>
-      <div className="absolute bottom-20 right-16 opacity-8">
-        <SacredSpiral size={100} />
+      <div className="absolute bottom-20 right-16 opacity-15">
+        <Icon name="compass" size={100} className="text-brass" />
       </div>
-      <div className="absolute top-1/3 right-10 opacity-5">
-        <SignalWave size={150} />
-      </div>
-      
-      {/* Background Elements */}
-      <div className="absolute top-20 left-10 opacity-5">
-        <SacredGeometry size={200} />
+      <div className="absolute top-1/3 right-10 opacity-10">
+        <Icon name="signal-wave" size={150} className="text-signal" />
       </div>
 
       <div className="container mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-20 fade-up">
           <div className="flex items-center justify-center mb-8">
-            <LinearAccent width={300} />
+            <BrassRule width={300} />
           </div>
-          <SignalRing size={80} className="mx-auto mb-8" />
+          <BrassMedallion size={80} className="mx-auto mb-8">
+            <Icon name="signal-ring" size={40} className="text-signal" />
+          </BrassMedallion>
           <h2 className="heading-ritual text-4xl md:text-6xl mb-8">
             THE 12-WEEK SACRED SIGNAL OS PROGRAM
           </h2>
@@ -76,7 +73,7 @@ const ProgramSection = () => {
         </div>
 
         {/* Program Promise */}
-        <div className="premium-card p-10 md:p-16 mb-24 text-center border-signal/30">
+        <div className="ssos-card p-10 md:p-16 mb-24 text-center border-signal/30 fade-up">
           <h3 className="heading-ritual text-3xl md:text-4xl mb-8 text-signal">
             PROGRAM PROMISE
           </h3>
@@ -87,7 +84,7 @@ const ProgramSection = () => {
         </div>
 
         {/* Key Modules Showcase */}
-        <div className="mb-24">
+        <div className="mb-24 fade-up">
           <h3 className="heading-ritual text-3xl md:text-4xl mb-16 text-center">
             CORE TRANSFORMATION MODULES
           </h3>
@@ -96,14 +93,14 @@ const ProgramSection = () => {
             {modules.map((module, index) => (
               <div 
                 key={index}
-                className="ssos-card text-center group relative overflow-hidden"
+                className="ssos-card text-center group relative overflow-hidden scale-hover"
               >
                 <div className="absolute top-4 right-4 text-brass/40 font-display font-bold text-lg">
                   {String(index + 1).padStart(2, '0')}
                 </div>
-                <div className="text-6xl mb-8 group-hover:scale-110 transition-transform duration-300">
-                  {module.icon}
-                </div>
+                <BrassMedallion size={80} className="mb-8 mx-auto group-hover:scale-110 transition-transform duration-300">
+                  <Icon name={module.icon} size={32} className="text-signal" />
+                </BrassMedallion>
                 <h3 className="ssos-card-title text-2xl mb-6">
                   {module.title}
                 </h3>
@@ -116,7 +113,7 @@ const ProgramSection = () => {
         </div>
 
         {/* 12-Week Breakdown */}
-        <div className="mb-16">
+        <div className="mb-16 fade-up">
           <h3 className="heading-ritual text-2xl md:text-3xl mb-12 text-center">
             12-WEEK PROGRAM STRUCTURE
           </h3>
@@ -125,13 +122,13 @@ const ProgramSection = () => {
             {weeks.map((week, index) => (
               <div 
                 key={index}
-                className="ssos-card"
+                className="ssos-card scale-hover"
               >
                 <div className="flex items-center space-x-3 mb-4">
                   <span className="text-brass font-display font-bold text-sm uppercase tracking-wide">
                     WEEK {index + 1}
                   </span>
-                  <SignalRing size={16} />
+                  <Icon name="signal-ring" size={16} className="text-signal" />
                 </div>
                 <h4 className="ssos-card-title text-lg mb-2">
                   {week.title}
@@ -145,14 +142,14 @@ const ProgramSection = () => {
         </div>
 
         {/* Investment Section */}
-        <div className="ssos-card text-center max-w-4xl mx-auto">
+        <div className="ssos-card text-center max-w-4xl mx-auto fade-up">
           <h3 className="heading-ritual text-3xl md:text-4xl mb-8">
             INVESTMENT IN YOUR TRANSFORMATION
           </h3>
           
-          <div className="ssos-pricing-medallion mb-8">
-            $1,497
-          </div>
+          <BrassMedallion size={120} className="mx-auto mb-8">
+            <span className="font-display font-bold text-2xl text-signal">$1,497</span>
+          </BrassMedallion>
           
           <p className="body-premium text-foreground text-xl mb-12">
             Complete 12-Week Transformation Program
@@ -184,13 +181,12 @@ const ProgramSection = () => {
             </div>
           </div>
 
-          <Button 
-            size="lg"
-            className="signal-glow bg-signal text-background hover:bg-signal/90 font-body font-semibold px-16 py-6 text-xl transition-all duration-300"
+          <button 
+            className="bg-signal text-background hover:bg-signal/90 font-body font-semibold px-16 py-6 text-xl rounded-xl button-lift"
             onClick={scrollToApply}
           >
             Apply Now for Sacred Signal OS
-          </Button>
+          </button>
         </div>
       </div>
     </section>

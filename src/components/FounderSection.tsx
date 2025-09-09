@@ -1,34 +1,32 @@
-import SacredGeometry from "@/components/SacredGeometry";
-import SignalRing from "@/components/SignalRing";
-import { SacredMandala, EightPointStar, CrosshairTarget, LinearAccent } from "@/components/AccentElements";
+import Icon from "@/components/icons/Icon";
+import BrassMedallion from "@/components/accents/BrassMedallion";
+import BrassRule from "@/components/accents/BrassRule";
+import SignalEclipse from "@/components/accents/SignalEclipse";
 
 const FounderSection = () => {
   const barackImage = "/lovable-uploads/13c76ad3-eb71-4bb2-a9bc-e10b2d3946aa.png";
   return (
-    <section id="founder" className="section-divider relative overflow-hidden">
-      {/* Background Accent Elements */}
-      <div className="absolute top-16 left-12 opacity-6">
-        <SacredMandala size={90} />
+    <section id="founder" className="section-divider relative overflow-hidden surface-dark">
+      {/* Minimal Background Accents */}
+      <div className="absolute top-16 left-12 opacity-15">
+        <Icon name="eclipse" size={90} className="text-brass" />
       </div>
-      <div className="absolute bottom-16 right-12 opacity-8">
-        <CrosshairTarget size={70} />
+      <div className="absolute bottom-16 right-12 opacity-20">
+        <Icon name="compass" size={70} className="text-signal" />
       </div>
-      <div className="absolute top-1/2 left-1/4 opacity-4">
-        <EightPointStar size={50} />
-      </div>
-      
-      {/* Background Elements */}
-      <div className="absolute bottom-20 right-20 opacity-10">
-        <SacredGeometry size={120} animated />
+      <div className="absolute top-1/2 left-1/4 opacity-10">
+        <Icon name="eight-point-star" size={50} className="text-brass" />
       </div>
 
       <div className="container mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 fade-up">
           <div className="flex items-center justify-center mb-8">
-            <LinearAccent width={200} />
+            <BrassRule width={200} />
           </div>
-          <SignalRing size={60} className="mx-auto mb-8" />
+          <BrassMedallion size={60} className="mx-auto mb-8">
+            <Icon name="lighthouse" size={24} className="text-signal" />
+          </BrassMedallion>
           <h2 className="heading-ritual text-3xl md:text-5xl mb-6">
             MEET YOUR GUIDE
           </h2>
@@ -37,19 +35,19 @@ const FounderSection = () => {
             </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start max-w-7xl mx-auto fade-up">
           {/* Portrait */}
           <div className="relative max-w-md mx-auto lg:mx-0">
-            <div className="aspect-[4/5] rounded-lg overflow-hidden bg-card border border-signal/20">
+            <div className="headshot-ring aspect-[4/5] overflow-hidden bg-card border border-signal/20">
               <img 
                 src={barackImage}
                 alt="Barack El - Founder of Sacred Signal OS" 
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-3 -right-3 bg-brass/20 rounded-lg p-3">
-              <SacredGeometry size={32} />
-            </div>
+            <BrassMedallion size={48} className="absolute -bottom-3 -right-3">
+              <Icon name="tuning-fork" size={20} className="text-signal" />
+            </BrassMedallion>
           </div>
 
           {/* Story Content */}
@@ -95,9 +93,9 @@ const FounderSection = () => {
             </div>
 
             {/* Kainosophy */}
-            <div className="bg-card border border-brass/30 rounded-lg p-6">
+            <div className="ssos-card border-brass/30">
               <div className="flex items-center space-x-3 mb-4">
-                <SacredGeometry size={24} />
+                <Icon name="eight-point-star" size={24} className="text-brass" />
                 <h4 className="font-display text-xl font-semibold text-brass">
                   KAINOSOPHY
                 </h4>

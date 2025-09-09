@@ -1,5 +1,6 @@
-import { Button } from "@/components/ui/button";
-import SacredGeometry from "@/components/SacredGeometry";
+import Icon from "@/components/icons/Icon";
+import BrassRule from "@/components/accents/BrassRule";
+import SignalEclipse from "@/components/accents/SignalEclipse";
 
 const Navigation = () => {
   const scrollToSection = (id: string) => {
@@ -14,7 +15,7 @@ const Navigation = () => {
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-3">
-          <SacredGeometry size={32} />
+          <SignalEclipse size={32} />
           <span className="font-display text-xl font-bold tracking-wider text-foreground">
             SACRED SIGNAL OS
           </span>
@@ -40,25 +41,22 @@ const Navigation = () => {
           >
             Founder
           </button>
-          <Button 
-            variant="outline"
-            className="sacred-border bg-transparent border-signal text-signal hover:bg-signal hover:text-background transition-all duration-300"
+          <button 
             onClick={() => scrollToSection('apply')}
+            className="sacred-border bg-transparent border-signal text-signal hover:bg-signal hover:text-background transition-all duration-300 px-6 py-2 rounded-xl button-lift"
           >
             Apply Now
-          </Button>
+          </button>
         </div>
 
         {/* Mobile Menu Button */}
         <div className="md:hidden">
-          <Button 
-            variant="outline"
-            size="sm"
-            className="border-signal text-signal hover:bg-signal hover:text-background"
+          <button 
+            className="border-signal text-signal hover:bg-signal hover:text-background px-4 py-2 rounded-lg border button-lift"
             onClick={() => scrollToSection('apply')}
           >
             Apply
-          </Button>
+          </button>
         </div>
       </div>
     </nav>
