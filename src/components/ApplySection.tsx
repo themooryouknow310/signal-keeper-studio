@@ -2,6 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import SacredGeometry from "@/components/SacredGeometry";
 import SignalRing from "@/components/SignalRing";
+import marissaFontanaImage from "@/assets/testimonials/marissa-fontana.jpg";
+import leoraLeonImage from "@/assets/testimonials/leora-leon.jpg";
+import susieCollesImage from "@/assets/testimonials/susie-colles.jpg";
 // Using uploaded image instead of asset
 
 const ApplySection = () => {
@@ -127,7 +130,14 @@ const ApplySection = () => {
           
           <div className="ssos-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <div className="ssos-card">
-              <div className="mb-6">
+              <div className="flex flex-col items-center text-center mb-6">
+                <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-signal/30 mb-4 shadow-[0_4px_16px_hsl(var(--signal-glow)/0.2)]">
+                  <img 
+                    src={marissaFontanaImage} 
+                    alt="Marissa Fontana" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <SignalRing size={24} className="mb-4" />
                 <p className="body-premium text-foreground/80 leading-relaxed mb-6">
                   "Barack is the real deal with a business grounded in purpose. Since getting to know Barack and collaborating with him on multiple projects, it's evident how devoted Barack is to the mission of empowering women and nurturing the emergence of the divine feminine in all of us."
@@ -139,7 +149,14 @@ const ApplySection = () => {
             </div>
 
             <div className="ssos-card">
-              <div className="mb-6">
+              <div className="flex flex-col items-center text-center mb-6">
+                <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-signal/30 mb-4 shadow-[0_4px_16px_hsl(var(--signal-glow)/0.2)]">
+                  <img 
+                    src={leoraLeonImage} 
+                    alt="Leora Leon" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <SignalRing size={24} className="mb-4" />
                 <p className="body-premium text-foreground/80 leading-relaxed mb-6">
                   "Barack El is a force to be reckoned with. Not only is Barack a talented entrepreneur who created Femigod, a brilliant company that evokes spiritually and smart business techniques, he is also the real deal, a beautiful, kind and authentic human. It's a pleasure to know him and work with him."
@@ -151,7 +168,14 @@ const ApplySection = () => {
             </div>
 
             <div className="ssos-card">
-              <div className="mb-6">
+              <div className="flex flex-col items-center text-center mb-6">
+                <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-signal/30 mb-4 shadow-[0_4px_16px_hsl(var(--signal-glow)/0.2)]">
+                  <img 
+                    src={susieCollesImage} 
+                    alt="Dr. Susie Colles" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <SignalRing size={24} className="mb-4" />
                 <p className="body-premium text-foreground/80 leading-relaxed mb-6">
                   "I recently had the pleasure of chatting with Barack about all things spiritual. What a pleasure to be associated with an individual so committed to helping women find and develop their spiritual nature. Of course, it stands to reason that Barack, so focused on helping others thrive, has a vibrant spirit himself!"
