@@ -4,13 +4,22 @@ import { CrosshairTarget, SignalWave, SacredSpiral, LinearAccent } from "@/compo
 import SignalRing from "@/components/SignalRing";
 
 const ProgramSection = () => {
-  const outcomes = [
-    "A clear and resonant brand message that attracts your ideal clients",
-    "A redesigned high-ticket offer that is irresistible to your ideal clients",
-    "A sustainable LinkedIn content system that generates a consistent flow of qualified leads",
-    "A repeatable, authentic sales process that converts leads into clients",
-    "A library of compelling testimonials and case studies to increase your trust and social proof",
-    "The confidence and clarity to grow your spiritual business with ease and grace"
+  const modules = [
+    {
+      icon: "🎯",
+      title: "Niche & Positioning",
+      description: "Understand your ideal customer profile and craft a resonant positioning kernel that cuts through noise."
+    },
+    {
+      icon: "💎", 
+      title: "Offer Design",
+      description: "Create an irresistible high-ticket program that delivers transformation and commands premium pricing."
+    },
+    {
+      icon: "🏗️",
+      title: "Program Architecture", 
+      description: "Design a program structure that clients actually complete, creating powerful testimonials and referrals."
+    }
   ];
 
   const weeks = [
@@ -34,7 +43,7 @@ const ProgramSection = () => {
   };
 
   return (
-    <section className="py-20 lg:py-32 bg-card/30 relative overflow-hidden">
+    <section id="program" className="section-divider relative overflow-hidden bg-gradient-to-b from-background via-card/10 to-background">
       {/* Background Accent Elements */}
       <div className="absolute top-20 left-16 opacity-6">
         <CrosshairTarget size={120} />
@@ -53,47 +62,53 @@ const ProgramSection = () => {
 
       <div className="container mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-20">
           <div className="flex items-center justify-center mb-8">
-            <LinearAccent width={250} />
+            <LinearAccent width={300} />
           </div>
-          <SignalRing size={60} className="mx-auto mb-8" />
-          <h2 className="heading-ritual text-3xl md:text-5xl mb-6">
+          <SignalRing size={80} className="mx-auto mb-8" />
+          <h2 className="heading-ritual text-4xl md:text-6xl mb-8">
             THE 12-WEEK SACRED SIGNAL OS PROGRAM
           </h2>
-          <p className="body-sacred text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
+          <p className="body-premium text-xl md:text-2xl text-foreground max-w-4xl mx-auto leading-relaxed">
             A comprehensive coaching system that installs a calm, predictable pipeline for spiritual entrepreneurs.
           </p>
         </div>
 
         {/* Program Promise */}
-        <div className="bg-card border border-signal/20 rounded-lg p-8 md:p-12 mb-16 text-center sacred-border">
-          <h3 className="heading-ritual text-2xl md:text-3xl mb-6 text-signal">
+        <div className="premium-card p-10 md:p-16 mb-24 text-center border-signal/30">
+          <h3 className="heading-ritual text-3xl md:text-4xl mb-8 text-signal">
             PROGRAM PROMISE
           </h3>
-          <p className="body-sacred text-lg md:text-xl leading-relaxed text-foreground/90">
+          <p className="body-premium text-xl md:text-2xl leading-relaxed text-foreground max-w-4xl mx-auto">
             "In 12 weeks, you leave with a brand people repeat, a program people finish, 
             proof that buyers trust, and a content loop that fills your calendar—without losing your voice."
           </p>
         </div>
 
-        {/* What You'll Achieve */}
-        <div className="mb-20">
-          <h3 className="heading-ritual text-2xl md:text-3xl mb-8 text-center">
-            BY THE END OF OUR 12 WEEKS TOGETHER, YOU WILL HAVE:
+        {/* Key Modules Showcase */}
+        <div className="mb-24">
+          <h3 className="heading-ritual text-3xl md:text-4xl mb-16 text-center">
+            CORE TRANSFORMATION MODULES
           </h3>
           
-          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-            {outcomes.map((outcome, index) => (
+          <div className="grid md:grid-cols-3 gap-8 mb-20">
+            {modules.map((module, index) => (
               <div 
                 key={index}
-                className="flex items-start space-x-4 group"
+                className="module-card p-10 text-center group relative overflow-hidden"
               >
-                <div className="flex-shrink-0 mt-1">
-                  <SacredGeometry size={24} />
+                <div className="absolute top-4 right-4 text-brass/40 font-display font-bold text-lg">
+                  {String(index + 1).padStart(2, '0')}
                 </div>
-                <p className="body-sacred text-foreground/90 leading-relaxed">
-                  {outcome}
+                <div className="text-6xl mb-8 group-hover:scale-110 transition-transform duration-300">
+                  {module.icon}
+                </div>
+                <h3 className="heading-section text-2xl font-semibold text-foreground mb-6">
+                  {module.title}
+                </h3>
+                <p className="body-premium text-foreground/80 leading-relaxed text-lg">
+                  {module.description}
                 </p>
               </div>
             ))}
@@ -130,38 +145,38 @@ const ProgramSection = () => {
         </div>
 
         {/* Investment Section */}
-        <div className="bg-card border border-signal/30 rounded-lg p-8 md:p-12 text-center">
-          <h3 className="heading-ritual text-2xl md:text-3xl mb-6">
-            INVESTMENT
+        <div className="premium-card p-10 md:p-16 text-center border-signal/40">
+          <h3 className="heading-ritual text-3xl md:text-4xl mb-8">
+            INVESTMENT IN YOUR TRANSFORMATION
           </h3>
           
-          <div className="mb-8">
-            <div className="text-5xl md:text-6xl font-display font-bold text-signal mb-4">
+          <div className="mb-10">
+            <div className="text-6xl md:text-7xl font-display font-bold text-signal mb-6 glow-text">
               $1,497
             </div>
-            <p className="body-sacred text-foreground/80 text-lg">
+            <p className="body-premium text-foreground text-xl">
               Complete 12-week transformation program
             </p>
           </div>
 
-          <div className="space-y-4 mb-8 text-left max-w-md mx-auto">
-            <div className="flex justify-between items-center border-b border-border/30 pb-2">
-              <span className="body-sacred text-foreground/80">Pay in Full:</span>
-              <span className="font-semibold text-foreground">$1,497</span>
+          <div className="space-y-6 mb-12 text-left max-w-lg mx-auto">
+            <div className="flex justify-between items-center border-b border-border/30 pb-4">
+              <span className="body-premium text-foreground/80 text-lg">Pay in Full:</span>
+              <span className="font-semibold text-foreground text-xl">$1,497</span>
             </div>
-            <div className="flex justify-between items-center border-b border-border/30 pb-2">
-              <span className="body-sacred text-foreground/80">2-Pay Option:</span>
-              <span className="font-semibold text-foreground">2 x $799</span>
+            <div className="flex justify-between items-center border-b border-border/30 pb-4">
+              <span className="body-premium text-foreground/80 text-lg">2-Pay Option:</span>
+              <span className="font-semibold text-foreground text-xl">2 × $799</span>
             </div>
-            <div className="flex justify-between items-center border-b border-border/30 pb-2">
-              <span className="body-sacred text-foreground/80">3-Pay Option:</span>
-              <span className="font-semibold text-foreground">3 x $533</span>
+            <div className="flex justify-between items-center border-b border-border/30 pb-4">
+              <span className="body-premium text-foreground/80 text-lg">3-Pay Option:</span>
+              <span className="font-semibold text-foreground text-xl">3 × $533</span>
             </div>
           </div>
 
           <Button 
             size="lg"
-            className="signal-glow bg-signal text-background hover:bg-signal/90 font-body font-semibold px-12 py-4 text-lg transition-all duration-300"
+            className="signal-glow bg-signal text-background hover:bg-signal/90 font-body font-semibold px-16 py-6 text-xl transition-all duration-300"
             onClick={scrollToApply}
           >
             Apply Now for Sacred Signal OS

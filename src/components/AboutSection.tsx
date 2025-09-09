@@ -47,7 +47,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-20 lg:py-32 relative overflow-hidden">
+    <section id="about" className="section-divider relative overflow-hidden">
       {/* Background Accent Elements */}
       <div className="absolute top-16 right-10 opacity-8">
         <SacredMandala size={100} />
@@ -79,19 +79,21 @@ const AboutSection = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {problems.map((problem, index) => (
               <div 
                 key={index}
-                className="bg-card border border-border/50 rounded-lg p-6 hover:border-signal/30 transition-all duration-300"
+                className="premium-card p-8 group"
               >
-                <div className="flex items-start space-x-4">
-                  <span className="text-3xl">{problem.icon}</span>
-                  <div>
-                    <h3 className="font-display text-xl font-semibold text-foreground mb-2">
+                <div className="flex items-start space-x-6">
+                  <div className="text-4xl mb-2 group-hover:scale-110 transition-transform duration-300">
+                    {problem.icon}
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="heading-section text-xl font-semibold text-foreground mb-4">
                       {problem.title}
                     </h3>
-                    <p className="body-sacred text-foreground/70">
+                    <p className="body-premium text-foreground/75 leading-relaxed">
                       {problem.description}
                     </p>
                   </div>
@@ -101,14 +103,17 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="text-center mb-20">
-          <div className="flex items-center justify-center space-x-6">
-            <div className="w-20 h-0.5 bg-brass" />
-            <p className="heading-ritual text-2xl md:text-3xl text-signal">
-              IT DOESN'T HAVE TO BE THIS WAY
-            </p>
-            <div className="w-20 h-0.5 bg-brass" />
+        {/* Sacred Divider */}
+        <div className="text-center mb-20 relative">
+          <div className="flex items-center justify-center space-x-8">
+            <div className="w-24 h-px bg-gradient-to-r from-transparent via-brass to-brass" />
+            <div className="relative">
+              <p className="heading-ritual text-2xl md:text-3xl text-signal px-6">
+                IT DOESN'T HAVE TO BE THIS WAY
+              </p>
+              <div className="absolute -top-2 -bottom-2 -left-2 -right-2 border border-signal/20 rounded-lg"></div>
+            </div>
+            <div className="w-24 h-px bg-gradient-to-l from-transparent via-brass to-brass" />
           </div>
         </div>
 
@@ -120,20 +125,23 @@ const AboutSection = () => {
             </h2>
           </div>
 
-          <div className="space-y-8 max-w-4xl mx-auto">
+          <div className="space-y-12 max-w-5xl mx-auto">
             {outcomes.map((outcome, index) => (
               <div 
                 key={index}
-                className="flex items-start space-x-6 group"
+                className="premium-card p-8 group"
               >
-                <div className="flex-shrink-0 mt-1">
-                  <SignalRing size={40} />
-                </div>
-                <div>
-                  <p className="body-sacred text-lg md:text-xl leading-relaxed">
-                    <span className="font-semibold text-foreground">{outcome.title}</span>{" "}
-                    <span className="text-foreground/80">{outcome.description}</span>
-                  </p>
+                <div className="flex items-start space-x-8">
+                  <div className="flex-shrink-0 mt-2 group-hover:scale-110 transition-transform duration-300">
+                    <SignalRing size={50} />
+                  </div>
+                  <div className="flex-1">
+                    <p className="body-premium text-lg md:text-xl leading-relaxed">
+                      <span className="font-semibold text-foreground text-xl">{outcome.title}</span>
+                      <br />
+                      <span className="text-foreground/80 mt-2 block">{outcome.description}</span>
+                    </p>
+                  </div>
                 </div>
               </div>
             ))}

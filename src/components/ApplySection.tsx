@@ -28,7 +28,7 @@ const ApplySection = () => {
   ];
 
   return (
-    <section id="apply" className="py-20 lg:py-32 relative">
+    <section id="apply" className="section-divider relative overflow-hidden bg-gradient-to-b from-background via-card/20 to-background">
       {/* Background Elements */}
       <div className="absolute top-20 left-20 opacity-10">
         <SignalRing size={150} />
@@ -39,69 +39,69 @@ const ApplySection = () => {
 
       <div className="container mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-16">
-          <SignalRing size={80} className="mx-auto mb-8" />
-          <h2 className="heading-ritual text-3xl md:text-5xl mb-6">
+        <div className="text-center mb-20">
+          <SignalRing size={100} className="mx-auto mb-10" />
+          <h2 className="heading-ritual text-4xl md:text-6xl mb-8">
             READY TO STOP SHOUTING
             <br />
-            <span className="text-signal">AND START BEING HEARD?</span>
+            <span className="text-signal glow-text">AND START BEING HEARD?</span>
           </h2>
-          <p className="body-sacred text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
+          <p className="body-premium text-xl md:text-2xl text-foreground max-w-4xl mx-auto leading-relaxed">
             Transform your scattered efforts into a resonant signal that attracts your ideal clients with ease and authenticity.
           </p>
         </div>
 
         {/* Main CTA Card */}
-        <div className="max-w-4xl mx-auto mb-20">
-          <Card className="bg-card border border-signal/30 p-8 md:p-12 text-center sacred-border">
-            <div className="mb-8">
-              <SacredGeometry size={60} className="mx-auto mb-6" />
-              <h3 className="heading-ritual text-2xl md:text-3xl mb-4">
+        <div className="max-w-5xl mx-auto mb-24">
+          <Card className="premium-card border-signal/40 p-12 md:p-16 text-center">
+            <div className="mb-12">
+              <SacredGeometry size={80} className="mx-auto mb-8" />
+              <h3 className="heading-ritual text-3xl md:text-4xl mb-6">
                 APPLY FOR SACRED SIGNAL OS
               </h3>
-              <p className="body-sacred text-lg text-foreground/80 mb-6">
+              <p className="body-premium text-xl text-foreground/90 mb-8">
                 12 weeks • High-touch coaching • Complete transformation
               </p>
-              <div className="text-4xl md:text-5xl font-display font-bold text-signal mb-2">
+              <div className="text-5xl md:text-6xl font-display font-bold text-signal mb-4 glow-text">
                 $1,497
               </div>
-              <p className="body-sacred text-foreground/70">
+              <p className="body-premium text-foreground/80 text-lg">
                 Payment plans available
               </p>
             </div>
 
-            <div className="space-y-4 mb-8">
+            <div className="space-y-6 mb-12">
               <Button 
                 size="lg"
-                className="signal-glow bg-signal text-background hover:bg-signal/90 font-body font-semibold px-12 py-4 text-lg transition-all duration-300 w-full sm:w-auto"
+                className="signal-glow bg-signal text-background hover:bg-signal/90 font-body font-semibold px-16 py-6 text-xl transition-all duration-300 w-full sm:w-auto"
               >
                 Apply Now - Sacred Signal OS
               </Button>
-              <p className="body-sacred text-sm text-foreground/60">
+              <p className="body-premium text-sm text-foreground/70">
                 Applications reviewed within 48 hours
               </p>
             </div>
 
-            <div className="bg-background/50 rounded-lg p-6 text-left">
-              <h4 className="font-display text-lg font-semibold text-foreground mb-3">
+            <div className="premium-card p-8 text-left bg-background/30">
+              <h4 className="heading-section text-xl font-semibold text-foreground mb-6">
                 What happens next:
               </h4>
-              <div className="space-y-2 text-sm text-foreground/80">
-                <div className="flex items-center space-x-2">
-                  <SacredGeometry size={12} />
-                  <span>Complete application & values alignment assessment</span>
+              <div className="space-y-4 text-foreground/80">
+                <div className="flex items-center space-x-4">
+                  <SacredGeometry size={16} />
+                  <span className="body-premium">Complete application & values alignment assessment</span>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <SacredGeometry size={12} />
-                  <span>Brief discovery call to ensure mutual fit</span>
+                <div className="flex items-center space-x-4">
+                  <SacredGeometry size={16} />
+                  <span className="body-premium">Brief discovery call to ensure mutual fit</span>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <SacredGeometry size={12} />
-                  <span>Receive program materials & community access</span>
+                <div className="flex items-center space-x-4">
+                  <SacredGeometry size={16} />
+                  <span className="body-premium">Receive program materials & community access</span>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <SacredGeometry size={12} />
-                  <span>Begin your 12-week transformation</span>
+                <div className="flex items-center space-x-4">
+                  <SacredGeometry size={16} />
+                  <span className="body-premium">Begin your 12-week transformation</span>
                 </div>
               </div>
             </div>
@@ -109,24 +109,24 @@ const ApplySection = () => {
         </div>
 
         {/* FAQ Section */}
-        <div className="max-w-4xl mx-auto">
-          <h3 className="heading-ritual text-2xl md:text-3xl mb-12 text-center">
+        <div className="max-w-5xl mx-auto">
+          <h3 className="heading-ritual text-3xl md:text-4xl mb-16 text-center">
             FREQUENTLY ASKED QUESTIONS
           </h3>
           
-          <div className="space-y-6">
+          <div className="space-y-8">
             {faqs.map((faq, index) => (
               <Card 
                 key={index}
-                className="bg-card border border-border/50 p-6 hover:border-brass/30 transition-all duration-300"
+                className="premium-card p-8 hover:border-brass/30"
               >
-                <div className="flex items-start space-x-4">
-                  <SignalRing size={20} className="flex-shrink-0 mt-1" />
+                <div className="flex items-start space-x-6">
+                  <SignalRing size={24} className="flex-shrink-0 mt-2" />
                   <div>
-                    <h4 className="font-display text-lg font-semibold text-foreground mb-3">
+                    <h4 className="heading-section text-xl font-semibold text-foreground mb-4">
                       {faq.question}
                     </h4>
-                    <p className="body-sacred text-foreground/80 leading-relaxed">
+                    <p className="body-premium text-foreground/80 leading-relaxed text-lg">
                       {faq.answer}
                     </p>
                   </div>
@@ -137,17 +137,21 @@ const ApplySection = () => {
         </div>
 
         {/* Final CTA */}
-        <div className="text-center mt-16">
-          <div className="mb-8">
-            <p className="heading-ritual text-xl md:text-2xl text-foreground mb-4">
+        <div className="text-center mt-24">
+          <div className="mb-12">
+            <p className="heading-ritual text-2xl md:text-3xl text-foreground mb-6">
               Your voice deserves to cut through noise and carry with power.
             </p>
-            <div className="w-32 h-0.5 bg-brass mx-auto" />
+            <div className="flex items-center justify-center space-x-4">
+              <div className="w-20 h-px bg-gradient-to-r from-transparent to-brass"></div>
+              <div className="w-3 h-3 bg-brass rounded-full"></div>
+              <div className="w-20 h-px bg-gradient-to-l from-transparent to-brass"></div>
+            </div>
           </div>
           
           <Button 
             size="lg"
-            className="signal-glow bg-signal text-background hover:bg-signal/90 font-body font-semibold px-12 py-4 text-lg transition-all duration-300"
+            className="signal-glow bg-signal text-background hover:bg-signal/90 font-body font-semibold px-16 py-6 text-xl transition-all duration-300"
           >
             Begin Your Transformation
           </Button>

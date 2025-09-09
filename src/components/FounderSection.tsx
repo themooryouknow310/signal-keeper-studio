@@ -5,7 +5,7 @@ import barackImage from "@/assets/barack-el-portrait.jpg";
 
 const FounderSection = () => {
   return (
-    <section id="founder" className="py-20 lg:py-32 relative overflow-hidden">
+    <section id="founder" className="section-divider relative overflow-hidden">
       {/* Background Accent Elements */}
       <div className="absolute top-16 left-12 opacity-6">
         <SacredMandala size={90} />

@@ -56,10 +56,10 @@ const HeroSection = () => {
         </div>
 
         {/* Main Headline */}
-        <h1 className="heading-display text-4xl md:text-6xl lg:text-7xl mb-12 leading-tight">
+        <h1 className="heading-display text-5xl md:text-6xl lg:text-8xl mb-16 leading-tight max-w-5xl mx-auto">
           TIRED OF SHOUTING
           <br />
-          <span className="text-signal">INTO THE VOID?</span>
+          <span className="text-signal glow-text">INTO THE VOID?</span>
         </h1>
 
         {/* Video Section */}
@@ -77,14 +77,20 @@ const HeroSection = () => {
         </div>
 
         {/* Subheading */}
-        <div className="space-y-4 mb-8">
-          <p className="body-sacred text-xl md:text-2xl text-foreground/90 max-w-3xl mx-auto leading-relaxed">
-            For the spiritual entrepreneur who is ready to stop chasing clients and start attracting them.
-          </p>
+        <div className="space-y-8 mb-12">
+          <div className="sacred-accent max-w-4xl mx-auto">
+            <p className="body-premium text-xl md:text-2xl text-foreground max-w-3xl mx-auto leading-relaxed font-medium">
+              For the spiritual entrepreneur who is ready to stop chasing clients and start attracting them.
+            </p>
+          </div>
           
-          <div className="w-24 h-0.5 bg-brass mx-auto my-8" />
+          <div className="flex items-center justify-center space-x-4">
+            <div className="w-16 h-px bg-gradient-to-r from-transparent to-brass"></div>
+            <div className="w-2 h-2 bg-brass rounded-full"></div>
+            <div className="w-16 h-px bg-gradient-to-l from-transparent to-brass"></div>
+          </div>
           
-          <p className="body-sacred text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto">
+          <p className="body-sacred text-lg md:text-xl text-foreground/85 max-w-3xl mx-auto leading-relaxed">
             Install a calm, predictable pipeline to attract, convert, and enroll 
             <span className="text-signal font-semibold"> 3-5 new high-ticket clients per month</span>, 
             without paid ads or content burnout.
