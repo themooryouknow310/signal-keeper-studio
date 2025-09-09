@@ -1,17 +1,18 @@
 import Icon from "@/components/icons/Icon";
 import BrassRule from "@/components/accents/BrassRule";
 import CinemaTestimonialFrame from "@/components/cinema/CinemaTestimonialFrame";
+import AnimatedSection from "@/components/AnimatedSection";
 import "../styles/cinema.css";
 import founderImage from "@/assets/barack-el-portrait.jpg";
 
 const FounderSection = () => {
   return (
-    <section id="about" className="py-32 cinema-surface-with-grain relative">
+    <section id="founder" className="py-32 cinema-surface-with-grain relative">
       <div className="cinema-grain absolute inset-0" />
       
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-20 motion-fade">
+        <AnimatedSection className="text-center mb-20">
           <BrassRule className="mx-auto mb-8" />
           <h2 className="heading-display text-4xl md:text-5xl lg:text-6xl mb-6">
             MEET YOUR GUIDE
@@ -19,13 +20,13 @@ const FounderSection = () => {
           <p className="body-premium text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
             Barack El has guided over 1,200 spiritual entrepreneurs to authentic, sustainable growth
           </p>
-        </div>
+        </AnimatedSection>
 
         {/* Founder Profile */}
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             {/* Photo */}
-            <div className="relative motion-fade">
+            <AnimatedSection delay={200} className="relative">
               <CinemaTestimonialFrame size={400} className="mx-auto">
                 <img 
                   src={founderImage} 
@@ -33,10 +34,10 @@ const FounderSection = () => {
                   className="w-full h-full object-cover"
                 />
               </CinemaTestimonialFrame>
-            </div>
+            </AnimatedSection>
 
             {/* Content */}
-            <div className="space-y-8 motion-fade">
+            <AnimatedSection delay={400} className="space-y-8">
               <div>
                 <h3 className="heading-display text-3xl md:text-4xl mb-4 cinema-text-shadow">
                   THE SIGNAL ARCHITECT
@@ -85,19 +86,19 @@ const FounderSection = () => {
                   <p className="text-sm text-foreground/70">Ancient & modern synthesis</p>
                 </div>
               </div>
-            </div>
+            </AnimatedSection>
           </div>
         </div>
 
         {/* Philosophy Quote */}
-        <div className="text-center mt-20 motion-fade">
+        <AnimatedSection delay={600} className="text-center mt-20">
           <BrassRule className="mx-auto mb-8" />
           <blockquote className="text-2xl md:text-3xl font-light text-foreground/90 max-w-4xl mx-auto leading-relaxed cinema-text-shadow">
             "True wealth flows to those who stop chasing and start <em className="text-signal not-italic">resonating</em>. 
             The Sacred Signal OS teaches you to become the frequency your ideal clients are seeking."
           </blockquote>
           <cite className="block mt-6 text-brass font-medium tracking-wide">— Barack El, Founder</cite>
-        </div>
+        </AnimatedSection>
       </div>
     </section>
   );
