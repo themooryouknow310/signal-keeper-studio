@@ -1,27 +1,31 @@
 import SacredGeometry from "@/components/SacredGeometry";
 import SignalRing from "@/components/SignalRing";
+import contentTreadmillImage from "@/assets/cinema/content-treadmill.jpg";
+import algorithmWhiplashImage from "@/assets/cinema/algorithm-whiplash.jpg";
+import leakyFunnelImage from "@/assets/cinema/leaky-funnel.jpg";
+import exhaustionBurnoutImage from "@/assets/cinema/exhaustion-burnout.jpg";
 
 import { SacredMandala, EightPointStar, LinearAccent, GoldenRatioGrid } from "@/components/AccentElements";
 
 const AboutSection = () => {
   const problems = [
     {
-      icon: "📱",
+      image: contentTreadmillImage,
       title: "The endless content treadmill",
       description: "Creating post after post, hoping something will finally stick."
     },
     {
-      icon: "📉", 
+      image: algorithmWhiplashImage, 
       title: "The anxiety of algorithm whiplash",
       description: "Watching your reach and leads disappear overnight."
     },
     {
-      icon: "🕳️",
+      image: leakyFunnelImage,
       title: "The frustration of a leaky funnel", 
       description: "Attracting followers who \"love your vibe\" but never buy."
     },
     {
-      icon: "😵",
+      image: exhaustionBurnoutImage,
       title: "The exhaustion of over-delivering",
       description: "Feeling resentful and burnt out, wondering if you'll ever make a real living."
     }
@@ -86,8 +90,12 @@ const AboutSection = () => {
                 className="ssos-card"
               >
                 <div className="flex items-start space-x-6">
-                  <div className="text-4xl mb-2">
-                    {problem.icon}
+                  <div className="flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border border-brass/30">
+                    <img 
+                      src={problem.image} 
+                      alt={problem.title}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div className="flex-1">
                     <h3 className="ssos-card-title text-xl mb-4">
