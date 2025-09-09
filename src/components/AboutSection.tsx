@@ -79,23 +79,21 @@ const AboutSection = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {problems.map((problem, index) => (
               <div 
                 key={index}
-                className="premium-card p-10 group relative overflow-hidden"
+                className="border border-border/30 rounded-lg p-8 hover:border-signal/30 transition-all duration-300"
               >
-                <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-signal/10 to-transparent rounded-bl-3xl"></div>
-                <div className="flex items-start space-x-8">
-                  <div className="text-5xl mb-2 group-hover:scale-110 transition-transform duration-300 relative">
+                <div className="flex items-start space-x-6">
+                  <div className="text-4xl mb-2">
                     {problem.icon}
-                    <div className="absolute -inset-2 bg-signal/5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="heading-section text-2xl font-semibold text-foreground mb-6">
+                    <h3 className="heading-section text-xl font-semibold text-foreground mb-4">
                       {problem.title}
                     </h3>
-                    <p className="body-premium text-foreground/75 leading-relaxed text-lg">
+                    <p className="body-premium text-foreground/75 leading-relaxed">
                       {problem.description}
                     </p>
                   </div>
@@ -127,25 +125,20 @@ const AboutSection = () => {
             </h2>
           </div>
 
-          <div className="space-y-16 max-w-6xl mx-auto">
+          <div className="space-y-8 max-w-5xl mx-auto">
             {outcomes.map((outcome, index) => (
               <div 
                 key={index}
-                className="premium-card p-10 group border-l-4 border-signal/30 hover:border-signal/60 transition-all duration-500"
+                className="border border-border/30 rounded-lg p-8 hover:border-signal/30 transition-all duration-300"
               >
-                <div className="flex items-start space-x-10">
-                  <div className="flex-shrink-0 mt-3 relative">
-                    <div className="absolute -inset-4 bg-gradient-to-r from-signal/10 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    <SignalRing size={60} className="group-hover:scale-110 transition-transform duration-300 relative z-10" />
+                <div className="flex items-start space-x-6">
+                  <div className="flex-shrink-0 mt-2">
+                    <SignalRing size={40} />
                   </div>
                   <div className="flex-1">
-                    <div className="mb-6">
-                      <span className="heading-section text-2xl md:text-3xl font-semibold text-foreground group-hover:text-signal transition-colors duration-300">
-                        {outcome.title}
-                      </span>
-                    </div>
-                    <p className="body-premium text-foreground/80 text-xl leading-relaxed">
-                      {outcome.description}
+                    <p className="body-premium text-lg leading-relaxed">
+                      <span className="font-semibold text-foreground text-xl">{outcome.title}</span>{" "}
+                      <span className="text-foreground/80">{outcome.description}</span>
                     </p>
                   </div>
                 </div>

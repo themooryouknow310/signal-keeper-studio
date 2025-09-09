@@ -145,13 +145,13 @@ const ProgramSection = () => {
         </div>
 
         {/* Investment Section */}
-        <div className="premium-card p-10 md:p-16 text-center border-signal/40">
+        <div className="border border-signal/30 rounded-lg p-10 md:p-16 text-center">
           <h3 className="heading-ritual text-3xl md:text-4xl mb-8">
             INVESTMENT IN YOUR TRANSFORMATION
           </h3>
           
           <div className="mb-10">
-            <div className="text-6xl md:text-7xl font-display font-bold text-signal mb-6 glow-text">
+            <div className="text-6xl md:text-7xl font-display font-bold text-signal mb-6">
               $1,497
             </div>
             <p className="body-premium text-foreground text-xl">
@@ -159,31 +159,31 @@ const ProgramSection = () => {
             </p>
           </div>
 
-          <div className="space-y-8 mb-12 text-left max-w-lg mx-auto">
-            <div className="premium-card p-6 hover:border-signal/40 transition-all duration-300">
+          <div className="space-y-6 mb-12 text-left max-w-lg mx-auto">
+            <div className="border border-signal/30 rounded-lg p-6 hover:border-signal/50 transition-all duration-300">
               <div className="flex justify-between items-center">
-                <span className="body-premium text-foreground/80 text-lg font-medium">Pay In Full:</span>
+                <span className="body-premium text-foreground text-lg font-medium">Pay In Full:</span>
                 <div className="text-right">
-                  <span className="font-bold text-foreground text-2xl">$1,497</span>
-                  <div className="text-xs text-signal uppercase tracking-wide font-medium">Save $100</div>
+                  <span className="font-bold text-foreground text-xl">$1,497</span>
+                  <div className="text-sm text-signal font-medium">Save $100</div>
                 </div>
               </div>
             </div>
-            <div className="premium-card p-6 hover:border-brass/40 transition-all duration-300">
+            <div className="border border-border/30 rounded-lg p-6 hover:border-brass/50 transition-all duration-300">
               <div className="flex justify-between items-center">
-                <span className="body-premium text-foreground/80 text-lg font-medium">2-Pay Option:</span>
+                <span className="body-premium text-foreground text-lg font-medium">2-Pay Option:</span>
                 <div className="text-right">
-                  <span className="font-bold text-foreground text-2xl">2 × $799</span>
-                  <div className="text-xs text-foreground/60 uppercase tracking-wide">Monthly</div>
+                  <span className="font-bold text-foreground text-xl">2 × $799</span>
+                  <div className="text-sm text-foreground/60">Monthly</div>
                 </div>
               </div>
             </div>
-            <div className="premium-card p-6 hover:border-brass/40 transition-all duration-300">
+            <div className="border border-border/30 rounded-lg p-6 hover:border-brass/50 transition-all duration-300">
               <div className="flex justify-between items-center">
-                <span className="body-premium text-foreground/80 text-lg font-medium">3-Pay Option:</span>
+                <span className="body-premium text-foreground text-lg font-medium">3-Pay Option:</span>
                 <div className="text-right">
-                  <span className="font-bold text-foreground text-2xl">3 × $533</span>
-                  <div className="text-xs text-foreground/60 uppercase tracking-wide">Monthly</div>
+                  <span className="font-bold text-foreground text-xl">3 × $533</span>
+                  <div className="text-sm text-foreground/60">Monthly</div>
                 </div>
               </div>
             </div>
