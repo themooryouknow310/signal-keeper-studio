@@ -131,7 +131,7 @@ const ApplySection = () => {
           <div className="ssos-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <div className="ssos-card">
               <div className="flex flex-col items-center text-center mb-6">
-                <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-signal/30 mb-4 shadow-[0_4px_16px_hsl(var(--signal-glow)/0.2)]">
+                <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-signal/30 mb-4 shadow-[0_4px_16px_hsl(var(--signal-glow)/0.2)]">
                   <img 
                     src="/lovable-uploads/83b74022-00a0-44c6-80b7-80c1741ef70b.png" 
                     alt="Marissa Fontana" 
@@ -150,7 +150,7 @@ const ApplySection = () => {
 
             <div className="ssos-card">
               <div className="flex flex-col items-center text-center mb-6">
-                <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-signal/30 mb-4 shadow-[0_4px_16px_hsl(var(--signal-glow)/0.2)]">
+                <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-signal/30 mb-4 shadow-[0_4px_16px_hsl(var(--signal-glow)/0.2)]">
                   <img 
                     src="/lovable-uploads/fad52807-7bca-494a-9d9a-b71b63f64115.png" 
                     alt="Leora Leon" 
@@ -169,7 +169,7 @@ const ApplySection = () => {
 
             <div className="ssos-card">
               <div className="flex flex-col items-center text-center mb-6">
-                <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-signal/30 mb-4 shadow-[0_4px_16px_hsl(var(--signal-glow)/0.2)]">
+                <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-signal/30 mb-4 shadow-[0_4px_16px_hsl(var(--signal-glow)/0.2)]">
                   <img 
                     src="/lovable-uploads/03c116e4-31a0-45a3-8b78-5bac20b29afd.png" 
                     alt="Dr. Susie Colles" 
