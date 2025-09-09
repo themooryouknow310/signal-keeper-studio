@@ -3,9 +3,10 @@ import BrassRule from "@/components/accents/BrassRule";
 import CinemaTestimonialFrame from "@/components/cinema/CinemaTestimonialFrame";
 import AnimatedSection from "@/components/AnimatedSection";
 import "../styles/cinema.css";
-import founderImage from "@/assets/barack-el-portrait.jpg";
 
 const FounderSection = () => {
+  const barackImage = "/lovable-uploads/13c76ad3-eb71-4bb2-a9bc-e10b2d3946aa.png";
+  
   return (
     <section id="founder" className="py-32 cinema-surface-with-grain relative">
       <div className="cinema-grain absolute inset-0" />
@@ -29,7 +30,7 @@ const FounderSection = () => {
             <AnimatedSection delay={200} className="relative">
               <CinemaTestimonialFrame size={400} className="mx-auto">
                 <img 
-                  src={founderImage} 
+                  src={barackImage} 
                   alt="Barack El - Sacred Signal OS Founder" 
                   className="w-full h-full object-cover"
                 />
