@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import SacredGeometry from "@/components/SacredGeometry";
 import SignalRing from "@/components/SignalRing";
+import { Quote } from "lucide-react";
 import marissaFontanaImage from "@/assets/testimonials/marissa-fontana.jpg";
 import leoraLeonImage from "@/assets/testimonials/leora-leon.jpg";
 import susieCollesImage from "@/assets/testimonials/susie-colles.jpg";
@@ -138,7 +139,9 @@ const ApplySection = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <SignalRing size={24} className="mb-4" />
+                <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-signal/20 to-signal/10 border border-signal/30 rounded-full mb-4 shadow-[0_4px_16px_hsl(var(--signal-glow)/0.2)]">
+                  <Quote size={20} className="text-signal" />
+                </div>
                 <p className="body-premium text-foreground/80 leading-relaxed mb-6">
                   "Barack is the real deal with a business grounded in purpose. Since getting to know Barack and collaborating with him on multiple projects, it's evident how devoted Barack is to the mission of empowering women and nurturing the emergence of the divine feminine in all of us."
                 </p>
@@ -157,7 +160,9 @@ const ApplySection = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <SignalRing size={24} className="mb-4" />
+                <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-signal/20 to-signal/10 border border-signal/30 rounded-full mb-4 shadow-[0_4px_16px_hsl(var(--signal-glow)/0.2)]">
+                  <Quote size={20} className="text-signal" />
+                </div>
                 <p className="body-premium text-foreground/80 leading-relaxed mb-6">
                   "Barack El is a force to be reckoned with. Not only is Barack a talented entrepreneur who created Femigod, a brilliant company that evokes spiritually and smart business techniques, he is also the real deal, a beautiful, kind and authentic human. It's a pleasure to know him and work with him."
                 </p>
@@ -176,7 +181,9 @@ const ApplySection = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <SignalRing size={24} className="mb-4" />
+                <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-signal/20 to-signal/10 border border-signal/30 rounded-full mb-4 shadow-[0_4px_16px_hsl(var(--signal-glow)/0.2)]">
+                  <Quote size={20} className="text-signal" />
+                </div>
                 <p className="body-premium text-foreground/80 leading-relaxed mb-6">
                   "I recently had the pleasure of chatting with Barack about all things spiritual. What a pleasure to be associated with an individual so committed to helping women find and develop their spiritual nature. Of course, it stands to reason that Barack, so focused on helping others thrive, has a vibrant spirit himself!"
                 </p>
