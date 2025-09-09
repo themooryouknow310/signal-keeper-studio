@@ -5,6 +5,15 @@ import SignalEclipse from "@/components/accents/SignalEclipse";
 import nichePositioningImage from "@/assets/cinema/niche-positioning.jpg";
 import offerDesignImage from "@/assets/cinema/offer-design.jpg";
 import programArchitectureImage from "@/assets/cinema/program-architecture.jpg";
+import storyMessageCraftImage from "@/assets/cinema/story-message-craft.jpg";
+import visualIdentityImage from "@/assets/cinema/visual-identity.jpg";
+import leadMagnetImage from "@/assets/cinema/lead-magnet.jpg";
+import trafficStrategyImage from "@/assets/cinema/traffic-strategy.jpg";
+import contentStrategyImage from "@/assets/cinema/content-strategy.jpg";
+import writingNewslettersImage from "@/assets/cinema/writing-newsletters.jpg";
+import valueCommunicationImage from "@/assets/cinema/value-communication.jpg";
+import leadGenerationImage from "@/assets/cinema/lead-generation.jpg";
+import audienceGrowthImage from "@/assets/cinema/audience-growth.jpg";
 
 const ProgramSection = () => {
   const modules = [
@@ -22,6 +31,51 @@ const ProgramSection = () => {
       image: programArchitectureImage,
       title: "Program Architecture", 
       description: "Design a program structure that clients actually complete, creating powerful testimonials and referrals."
+    },
+    {
+      image: storyMessageCraftImage,
+      title: "Story & Message Craft",
+      description: "Create An Intentional Personal Brand"
+    },
+    {
+      image: visualIdentityImage,
+      title: "Visual Identity",
+      description: "Look Premium, Stay You"
+    },
+    {
+      image: leadMagnetImage,
+      title: "Lead Magnet & Funnel",
+      description: "Create An Enticing Lead Magnet"
+    },
+    {
+      image: trafficStrategyImage,
+      title: "Unlimited Traffic Strategy",
+      description: "Develop Your Dream 100"
+    },
+    {
+      image: contentStrategyImage,
+      title: "Content Strategy",
+      description: "Purpose and Strategy Of Content Creation"
+    },
+    {
+      image: writingNewslettersImage,
+      title: "Writing & Newsletters",
+      description: "High Speed Quality Content Structure"
+    },
+    {
+      image: valueCommunicationImage,
+      title: "Value Communication",
+      description: "Create Social Proof"
+    },
+    {
+      image: leadGenerationImage,
+      title: "Lead Generation",
+      description: "Make Your Offer Known"
+    },
+    {
+      image: audienceGrowthImage,
+      title: "Audience Growth",
+      description: "Expand Your Footprint & Scale"
     }
   ];
 
@@ -92,7 +146,7 @@ const ProgramSection = () => {
             CORE TRANSFORMATION MODULES
           </h3>
           
-          <div className="ssos-grid">
+          <div className="ssos-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {modules.map((module, index) => (
               <div 
                 key={index}
