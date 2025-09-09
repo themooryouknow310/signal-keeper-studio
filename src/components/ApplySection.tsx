@@ -216,6 +216,74 @@ const ApplySection = () => {
           </div>
         </div>
 
+        {/* Recognition & Influence Section */}
+        <div className="max-w-5xl mx-auto mb-32">
+          <h3 className="heading-ritual text-3xl md:text-4xl mb-16 text-center glow-text">
+            RECOGNITION & INFLUENCE
+          </h3>
+          
+          <div className="ssos-grid grid-cols-1">
+            <div className="ssos-card">
+              <div className="flex items-start space-x-4">
+                <SignalRing size={20} className="flex-shrink-0 mt-2" />
+                <div className="flex-1">
+                  <h4 className="ssos-card-title text-lg mb-3">
+                    Outstanding Leadership Award — Education 2.0 (USA · Spring 2022)
+                  </h4>
+                  <p className="body-premium text-foreground/80 leading-relaxed">
+                    Selected for Education 2.0's Outstanding Leadership Award, recognizing transformative work at the nexus of learning, entrepreneurship, and measurable impact. This distinction is reserved for voices reshaping how we think about purpose-driven business.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="ssos-card">
+              <div className="flex items-start space-x-4">
+                <SignalRing size={20} className="flex-shrink-0 mt-2" />
+                <div className="flex-1">
+                  <h4 className="ssos-card-title text-lg mb-3">
+                    International Keynote — 21st Century Women's Entrepreneurship & Leadership (Barcelona · 2023)
+                  </h4>
+                  <p className="body-premium text-foreground/80 leading-relaxed">
+                    Delivered "Finding Purpose Through Connection & Contribution" to global leaders at Barcelona's prestigious Reial Cercle Artístic, followed by the international virtual expansion—reaching founders, clinicians, and researchers across continents.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="ssos-card">
+              <div className="flex items-start space-x-4">
+                <SignalRing size={20} className="flex-shrink-0 mt-2" />
+                <div className="flex-1">
+                  <h4 className="ssos-card-title text-lg mb-3">
+                    Featured Voice — WYN Global Virtual Summit (Women Leaders Series)
+                  </h4>
+                  <p className="body-premium text-foreground/80 leading-relaxed">
+                    Invited to address WYN's international audience on leadership innovation and cross-sector collaboration, joining a curated roster of women driving change at scale.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="ssos-card bg-gradient-to-br from-signal/5 via-background/80 to-signal/10">
+              <div className="flex items-start space-x-4">
+                <img src="/lovable-uploads/3577b1e4-f101-4b3d-a7ac-74b52ee58e57.png" alt="Sacred geometry pattern" className="w-8 h-8 flex-shrink-0 mt-2" />
+                <div className="flex-1">
+                  <h4 className="ssos-card-title text-lg mb-3">
+                    Why This Resonates
+                  </h4>
+                  <p className="body-premium text-foreground/80 leading-relaxed">
+                    These aren't vanity platforms. Education 2.0, international leadership summits, and WYN Global convene serious architects of change—educators transforming systems, clinicians advancing practice, founders building sustainable impact. When these communities recognize and invite your voice, it signals what Sacred Signal OS delivers: the rare combination of spiritual depth and strategic precision that creates ripple effects beyond individual success.
+                  </p>
+                  <p className="body-premium text-foreground/80 leading-relaxed mt-4">
+                    The invitation pattern tells the story: your work doesn't just transform individual businesses—it influences how entire industries think about purpose, profit, and sustainable growth.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Final CTA */}
         <div className="text-center mt-24">
           <div className="mb-12">
