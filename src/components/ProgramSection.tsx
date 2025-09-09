@@ -15,7 +15,7 @@ import valueCommunicationImage from "@/assets/cinema/value-communication.jpg";
 import leadGenerationImage from "@/assets/cinema/lead-generation.jpg";
 import audienceGrowthImage from "@/assets/cinema/audience-growth.jpg";
 import sacredProgramSymbolImage from "@/assets/cinema/sacred-program-symbol.jpg";
-import backgroundAccentElementImage from "@/assets/cinema/background-accent-element.jpg";
+import sacredSignalLighthouseImage from "@/assets/cinema/sacred-signal-lighthouse.jpg";
 
 const ProgramSection = () => {
   const modules = [
@@ -102,10 +102,10 @@ const ProgramSection = () => {
           <div className="flex items-center justify-center mb-8">
             <BrassRule width={300} />
           </div>
-          <div className="w-20 h-20 mx-auto mb-8 rounded-full overflow-hidden border-2 border-brass/30">
+          <div className="w-40 h-32 mx-auto mb-8 rounded-2xl overflow-hidden border border-brass/30 shadow-[0_8px_32px_hsl(var(--signal-glow)/0.2)]">
             <img 
-              src={sacredProgramSymbolImage} 
-              alt="Sacred Signal OS Program"
+              src={sacredSignalLighthouseImage} 
+              alt="Sacred Signal OS Lighthouse"
               className="w-full h-full object-cover"
             />
           </div>
