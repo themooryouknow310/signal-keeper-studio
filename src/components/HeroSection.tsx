@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import SignalRing from "@/components/SignalRing";
 import { EightPointStar } from "@/components/AccentElements";
-import heroImage from "@/assets/cinema/hero-eclipse-rim.jpg";
+import heroImage from "@/assets/cinema/hero-dark-gradient.jpg";
 import AnimatedSection from "@/components/AnimatedSection";
 import "../styles/cinema.css";
 
@@ -14,12 +14,19 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden cinema-surface-with-grain py-20">
-      {/* Cinema Bloom Effect */}
-      <div className="cinema-bloom absolute inset-0" />
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden py-20">
+      {/* Cinematic Background */}
+      <div className="absolute inset-0">
+        <img 
+          src={heroImage} 
+          alt="Sacred Signal OS Background" 
+          className="w-full h-full object-cover opacity-70"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/10 to-background/50" />
+      </div>
       
       {/* Content */}
-      <div className="cinema-text-overlay relative z-10 container mx-auto px-6 text-center max-w-6xl">
+      <div className="relative z-10 container mx-auto px-6 text-center max-w-6xl">
         {/* Main Headline with Cinematic Typography */}
         <AnimatedSection delay={200}>
           <h1 className="heading-display text-4xl md:text-6xl lg:text-7xl mb-16 leading-[0.95] max-w-5xl mx-auto tracking-tight cinema-text-shadow">
