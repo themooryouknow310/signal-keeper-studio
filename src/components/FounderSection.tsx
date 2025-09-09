@@ -39,16 +39,16 @@ const FounderSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start max-w-7xl mx-auto">
           {/* Portrait */}
-          <div className="relative">
-            <div className="aspect-[3/4] rounded-lg overflow-hidden bg-card border border-signal/20">
+          <div className="relative max-w-md mx-auto lg:mx-0">
+            <div className="aspect-[4/5] rounded-lg overflow-hidden bg-card border border-signal/20">
               <img 
                 src={barackImage}
                 alt="Barack El - Founder of Sacred Signal OS" 
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-4 -right-4 bg-brass/20 rounded-lg p-4">
-              <SacredGeometry size={48} />
+            <div className="absolute -bottom-3 -right-3 bg-brass/20 rounded-lg p-3">
+              <SacredGeometry size={32} />
             </div>
           </div>
 
