@@ -143,7 +143,7 @@ const ProgramSection = () => {
         {/* Key Modules Showcase */}
         <div className="mb-24 fade-up">
           <h3 className="heading-ritual text-3xl md:text-4xl mb-16 text-center glow-text">
-            CORE TRANSFORMATION MODULES
+            12 CORE TRANSFORMATION MODULES
           </h3>
           
           <div className="ssos-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
