@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import SacredGeometry from "@/components/SacredGeometry";
 import SignalRing from "@/components/SignalRing";
+import breakthroughMomentImage from "@/assets/cinema/breakthrough-moment.jpg";
 
 const ApplySection = () => {
   const faqs = [
@@ -40,7 +41,13 @@ const ApplySection = () => {
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-20">
-          <SignalRing size={100} className="mx-auto mb-10" />
+          <div className="w-[48rem] h-[32rem] mx-auto mb-10 rounded-2xl overflow-hidden border border-brass/30 shadow-[0_8px_32px_hsl(var(--signal-glow)/0.2)]">
+            <img 
+              src={breakthroughMomentImage} 
+              alt="Ready to be heard breakthrough"
+              className="w-full h-full object-cover"
+            />
+          </div>
           <h2 className="heading-ritual text-4xl md:text-6xl mb-8 glow-text">
             READY TO STOP SHOUTING
             <br />
