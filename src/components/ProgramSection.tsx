@@ -35,47 +35,47 @@ const ProgramSection = () => {
     {
       image: storyMessageCraftImage,
       title: "Story & Message Craft",
-      description: "Create An Intentional Personal Brand"
+      description: "Transform your personal story into a powerful brand narrative that positions you as the obvious choice for your ideal clients."
     },
     {
       image: visualIdentityImage,
       title: "Visual Identity",
-      description: "Look Premium, Stay You"
+      description: "Create a premium visual presence that reflects your spiritual essence while commanding respect and premium pricing."
     },
     {
       image: leadMagnetImage,
       title: "Lead Magnet & Funnel",
-      description: "Create An Enticing Lead Magnet"
+      description: "Design an irresistible lead magnet that attracts your ideal clients and builds a high-converting sales funnel."
     },
     {
       image: trafficStrategyImage,
       title: "Unlimited Traffic Strategy",
-      description: "Develop Your Dream 100"
+      description: "Develop your Dream 100 list and create sustainable systems for consistent, quality traffic to your offers."
     },
     {
       image: contentStrategyImage,
       title: "Content Strategy",
-      description: "Purpose and Strategy Of Content Creation"
+      description: "Build a purposeful content system that serves your audience, builds authority, and drives consistent sales."
     },
     {
       image: writingNewslettersImage,
       title: "Writing & Newsletters",
-      description: "High Speed Quality Content Structure"
+      description: "Master high-speed content creation with proven structures that engage readers and convert prospects into clients."
     },
     {
       image: valueCommunicationImage,
       title: "Value Communication",
-      description: "Create Social Proof"
+      description: "Create compelling social proof and testimonials that demonstrate your transformational impact and build trust."
     },
     {
       image: leadGenerationImage,
       title: "Lead Generation",
-      description: "Make Your Offer Known"
+      description: "Implement proven strategies to make your offer known and attract a steady stream of qualified prospects."
     },
     {
       image: audienceGrowthImage,
       title: "Audience Growth",
-      description: "Expand Your Footprint & Scale"
+      description: "Scale your reach and expand your influence through strategic audience building and sustainable growth systems."
     }
   ];
 
