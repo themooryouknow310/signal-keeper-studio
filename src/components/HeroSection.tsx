@@ -15,16 +15,6 @@ const HeroSection = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden cinema-surface-with-grain py-20">
-      {/* Cinematic Background */}
-      <div className="cinema-hero absolute inset-0">
-        <img 
-          src={heroImage} 
-          alt="Sacred Signal OS Eclipse" 
-          className="w-full h-full object-cover"
-        />
-        <div className="cinema-hero-overlay" />
-      </div>
-      
       {/* Cinema Bloom Effect */}
       <div className="cinema-bloom absolute inset-0" />
       
