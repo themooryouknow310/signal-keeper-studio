@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import SacredGeometry from "@/components/SacredGeometry";
 import SignalRing from "@/components/SignalRing";
-import breakthroughMomentImage from "@/assets/cinema/breakthrough-moment.jpg";
+// Using uploaded image instead of asset
 
 const ApplySection = () => {
   const faqs = [
@@ -43,8 +43,8 @@ const ApplySection = () => {
         <div className="text-center mb-20">
           <div className="w-[48rem] h-[32rem] mx-auto mb-10 rounded-2xl overflow-hidden border border-brass/30 shadow-[0_8px_32px_hsl(var(--signal-glow)/0.2)]">
             <img 
-              src={breakthroughMomentImage} 
-              alt="Ready to be heard breakthrough"
+              src="/lovable-uploads/9b735b7f-7d36-48fc-9934-0a95148fc23c.png" 
+              alt="Spiritual meditation and inner wisdom"
               className="w-full h-full object-cover"
             />
           </div>
