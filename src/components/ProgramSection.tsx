@@ -92,11 +92,11 @@ const ProgramSection = () => {
             CORE TRANSFORMATION MODULES
           </h3>
           
-          <div className="grid md:grid-cols-3 gap-8 mb-20">
+          <div className="ssos-grid">
             {modules.map((module, index) => (
               <div 
                 key={index}
-                className="module-card p-10 text-center group relative overflow-hidden"
+                className="ssos-card text-center group relative overflow-hidden"
               >
                 <div className="absolute top-4 right-4 text-brass/40 font-display font-bold text-lg">
                   {String(index + 1).padStart(2, '0')}
@@ -104,7 +104,7 @@ const ProgramSection = () => {
                 <div className="text-6xl mb-8 group-hover:scale-110 transition-transform duration-300">
                   {module.icon}
                 </div>
-                <h3 className="heading-section text-2xl font-semibold text-foreground mb-6">
+                <h3 className="ssos-card-title text-2xl mb-6">
                   {module.title}
                 </h3>
                 <p className="body-premium text-foreground/80 leading-relaxed text-lg">
@@ -121,19 +121,19 @@ const ProgramSection = () => {
             12-WEEK PROGRAM STRUCTURE
           </h3>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="ssos-grid">
             {weeks.map((week, index) => (
               <div 
                 key={index}
-                className="bg-card border border-border/50 rounded-lg p-6 hover:border-brass/30 transition-all duration-300 group"
+                className="ssos-card"
               >
                 <div className="flex items-center space-x-3 mb-4">
-                  <span className="text-brass font-display font-bold text-sm">
+                  <span className="text-brass font-display font-bold text-sm uppercase tracking-wide">
                     WEEK {index + 1}
                   </span>
                   <SignalRing size={16} />
                 </div>
-                <h4 className="font-display text-lg font-semibold text-foreground mb-2 group-hover:text-signal transition-colors">
+                <h4 className="ssos-card-title text-lg mb-2">
                   {week.title}
                 </h4>
                 <p className="body-sacred text-sm text-foreground/70">
@@ -145,47 +145,42 @@ const ProgramSection = () => {
         </div>
 
         {/* Investment Section */}
-        <div className="border border-signal/30 rounded-lg p-10 md:p-16 text-center">
+        <div className="ssos-card text-center max-w-4xl mx-auto">
           <h3 className="heading-ritual text-3xl md:text-4xl mb-8">
             INVESTMENT IN YOUR TRANSFORMATION
           </h3>
           
-          <div className="mb-10">
-            <div className="text-6xl md:text-7xl font-display font-bold text-signal mb-6">
-              $1,497
-            </div>
-            <p className="body-premium text-foreground text-xl">
-              Complete 12-Week Transformation Program
-            </p>
+          <div className="ssos-pricing-medallion mb-8">
+            $1,497
           </div>
+          
+          <p className="body-premium text-foreground text-xl mb-12">
+            Complete 12-Week Transformation Program
+          </p>
 
-          <div className="space-y-6 mb-12 text-left max-w-lg mx-auto">
-            <div className="border border-signal/30 rounded-lg p-6 hover:border-signal/50 transition-all duration-300">
-              <div className="flex justify-between items-center">
-                <span className="body-premium text-foreground text-lg font-medium">Pay In Full:</span>
-                <div className="text-right">
-                  <span className="font-bold text-foreground text-xl">$1,497</span>
-                  <div className="text-sm text-signal font-medium">Save $100</div>
-                </div>
+          <div className="ssos-grid grid-cols-1 md:grid-cols-3 mb-12">
+            <div className="ssos-pricing-card is-featured">
+              <div className="mb-4">
+                <div className="text-2xl font-bold text-signal mb-2">$1,497</div>
+                <div className="text-sm text-signal font-medium">Save $100</div>
               </div>
+              <div className="body-premium text-foreground text-lg font-medium">Pay In Full</div>
             </div>
-            <div className="border border-border/30 rounded-lg p-6 hover:border-brass/50 transition-all duration-300">
-              <div className="flex justify-between items-center">
-                <span className="body-premium text-foreground text-lg font-medium">2-Pay Option:</span>
-                <div className="text-right">
-                  <span className="font-bold text-foreground text-xl">2 × $799</span>
-                  <div className="text-sm text-foreground/60">Monthly</div>
-                </div>
+            
+            <div className="ssos-pricing-card">
+              <div className="mb-4">
+                <div className="text-2xl font-bold text-foreground mb-2">2 × $799</div>
+                <div className="text-sm text-foreground/60">Monthly</div>
               </div>
+              <div className="body-premium text-foreground text-lg font-medium">2-Pay Option</div>
             </div>
-            <div className="border border-border/30 rounded-lg p-6 hover:border-brass/50 transition-all duration-300">
-              <div className="flex justify-between items-center">
-                <span className="body-premium text-foreground text-lg font-medium">3-Pay Option:</span>
-                <div className="text-right">
-                  <span className="font-bold text-foreground text-xl">3 × $533</span>
-                  <div className="text-sm text-foreground/60">Monthly</div>
-                </div>
+            
+            <div className="ssos-pricing-card">
+              <div className="mb-4">
+                <div className="text-2xl font-bold text-foreground mb-2">3 × $533</div>
+                <div className="text-sm text-foreground/60">Monthly</div>
               </div>
+              <div className="body-premium text-foreground text-lg font-medium">3-Pay Option</div>
             </div>
           </div>
 

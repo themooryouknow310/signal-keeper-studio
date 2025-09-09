@@ -60,6 +60,20 @@
     --transition-resonant: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-glow: all 0.3s ease-out;
 
+    /* SSOS Table System Design Tokens */
+    --ssos-indigo: 243 47% 9%;              /* Deep indigo base */
+    --ssos-charcoal: 240 12% 8%;            /* Charcoal darker */
+    --ssos-alabaster: 44 15% 88%;           /* Alabaster text */
+    --ssos-cyan: 187 91% 65%;               /* Cyan signal */
+    --ssos-brass: 43 74% 66%;               /* Brass accents */
+    
+    --ssos-radius-xl: 16px;
+    --ssos-radius-2xl: 24px;
+    --ssos-gap: 20px;
+    --ssos-line: 1px solid hsl(43 74% 66% / 0.35);
+    --ssos-shadow-soft: 0 12px 30px hsl(0 0% 0% / 0.35);
+    --ssos-focus: 0 0 0 2px hsl(187 91% 65%), 0 0 22px 0 hsl(187 91% 65% / 0.45);
+
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
@@ -296,5 +310,215 @@
 
   .module-card:hover::before {
     opacity: 1;
+  }
+
+  /* SSOS Table System */
+  .ssos-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    color: hsl(var(--ssos-alabaster));
+    background: linear-gradient(180deg, hsl(var(--ssos-indigo)), hsl(var(--ssos-charcoal)));
+    box-shadow: var(--ssos-shadow-soft);
+    border-radius: var(--ssos-radius-2xl);
+    overflow: clip;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .ssos-table caption {
+    caption-side: top;
+    padding: 12px 18px;
+    border-bottom: var(--ssos-line);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: hsl(var(--ssos-alabaster));
+  }
+
+  .ssos-table thead th {
+    font-variant: small-caps;
+    letter-spacing: 0.06em;
+    padding: 16px 18px;
+    position: sticky; 
+    top: 0;
+    background: hsl(var(--ssos-charcoal) / 0.85);
+    border-bottom: var(--ssos-line);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    color: hsl(var(--ssos-alabaster) / 0.9);
+  }
+
+  .ssos-table tbody td {
+    padding: 14px 18px;
+    border-bottom: 1px solid hsl(43 74% 66% / 0.18);
+    font-size: 0.9375rem;
+  }
+
+  .ssos-table tbody tr:nth-child(even) {
+    background: hsl(var(--ssos-indigo) / 0.3);
+  }
+
+  .ssos-table tbody tr:hover {
+    outline: 2px solid hsl(var(--ssos-cyan));
+    outline-offset: -2px;
+    box-shadow: 0 0 18px hsl(187 91% 65% / 0.35);
+  }
+
+  .ssos-table .is-numeric { 
+    text-align: right; 
+    font-variant-numeric: tabular-nums;
+  }
+
+  .ssos-table .is-sortable {
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.2s ease;
+  }
+
+  .ssos-table .is-sortable:hover {
+    color: hsl(var(--ssos-cyan));
+  }
+
+  .ssos-table .sort-indicator {
+    display: inline-block;
+    margin-left: 6px;
+    opacity: 0.4;
+    transition: all 0.2s ease;
+  }
+
+  .ssos-table .is-sorted .sort-indicator {
+    opacity: 1;
+    color: hsl(var(--ssos-cyan));
+  }
+
+  /* SSOS Grid System */
+  .ssos-grid { 
+    display: grid; 
+    gap: var(--ssos-gap); 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .ssos-card {
+    padding: 24px;
+    border-radius: var(--ssos-radius-2xl);
+    background: linear-gradient(180deg, hsl(var(--ssos-indigo) / 0.92), hsl(var(--ssos-charcoal)));
+    border-top: var(--ssos-line);
+    box-shadow: var(--ssos-shadow-soft);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+  }
+
+  .ssos-card:hover { 
+    outline: 2px solid transparent; 
+    box-shadow: 0 0 16px hsl(187 91% 65% / 0.2);
+    transform: translateY(-2px);
+  }
+
+  .ssos-card-title {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    color: hsl(var(--ssos-alabaster));
+    margin-bottom: 12px;
+  }
+
+  /* Pricing Cards */
+  .ssos-pricing-card {
+    @apply ssos-card;
+    text-align: center;
+    border: 2px solid hsl(43 74% 66% / 0.2);
+  }
+
+  .ssos-pricing-card.is-featured {
+    border-color: hsl(var(--ssos-cyan) / 0.4);
+    box-shadow: 0 0 30px hsl(187 91% 65% / 0.2);
+  }
+
+  .ssos-pricing-medallion {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, hsl(var(--ssos-cyan)), hsl(var(--ssos-brass)));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-family: var(--font-display);
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: hsl(var(--ssos-indigo));
+  }
+
+  /* KPI Badges */
+  .ssos-badge-kpi {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: hsl(var(--ssos-charcoal) / 0.6);
+    border: 1px solid hsl(43 74% 66% / 0.3);
+    border-radius: 12px;
+    font-variant: small-caps;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+  }
+
+  .ssos-badge-kpi .metric {
+    font-variant-numeric: tabular-nums;
+    font-weight: bold;
+    color: hsl(var(--ssos-cyan));
+  }
+
+  /* Mobile Responsive Tables */
+  @media (max-width: 640px) {
+    .ssos-table thead { 
+      display: none; 
+    }
+    
+    .ssos-table tbody tr { 
+      display: block;
+      border: var(--ssos-line);
+      border-radius: 12px;
+      margin-bottom: 16px;
+      padding: 16px;
+      background: hsl(var(--ssos-indigo) / 0.6);
+    }
+    
+    .ssos-table tbody td { 
+      display: grid; 
+      grid-template-columns: 120px 1fr;
+      gap: 8px;
+      border: none;
+      padding: 8px 0;
+      font-size: 0.875rem;
+    }
+    
+    .ssos-table tbody td::before { 
+      content: attr(data-label);
+      color: hsl(var(--ssos-alabaster) / 0.7);
+      font-variant: small-caps;
+      font-weight: 500;
+    }
+
+    .ssos-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .ssos-card {
+      padding: 20px;
+    }
+  }
+
+  /* Reduced Motion */
+  @media (prefers-reduced-motion: reduce) {
+    .ssos-table tbody tr,
+    .ssos-card,
+    .ssos-table .is-sortable {
+      transition: none;
+    }
   }
 }

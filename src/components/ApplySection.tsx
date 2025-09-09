@@ -82,8 +82,8 @@ const ApplySection = () => {
               </p>
             </div>
 
-            <div className="border border-signal/20 rounded-lg p-8 text-left bg-background/20">
-              <h4 className="heading-section text-lg font-semibold text-foreground mb-6">
+            <div className="ssos-card border-signal/20 text-left bg-background/20">
+              <h4 className="ssos-card-title text-lg mb-6">
                 What Happens Next:
               </h4>
               <div className="space-y-4 text-foreground/80">
@@ -114,16 +114,16 @@ const ApplySection = () => {
             FREQUENTLY ASKED QUESTIONS
           </h3>
           
-          <div className="space-y-8">
+          <div className="ssos-grid grid-cols-1">
             {faqs.map((faq, index) => (
               <div 
                 key={index}
-                className="border border-border/30 rounded-lg p-6 hover:border-signal/30 transition-all duration-300"
+                className="ssos-card"
               >
                 <div className="flex items-start space-x-4">
                   <SignalRing size={20} className="flex-shrink-0 mt-2" />
                   <div className="flex-1">
-                    <h4 className="heading-section text-lg font-semibold text-foreground mb-3">
+                    <h4 className="ssos-card-title text-lg mb-3">
                       {faq.question}
                     </h4>
                     <p className="body-premium text-foreground/80 leading-relaxed">

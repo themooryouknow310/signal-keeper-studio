@@ -79,18 +79,18 @@ const AboutSection = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="ssos-grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto">
             {problems.map((problem, index) => (
               <div 
                 key={index}
-                className="border border-border/30 rounded-lg p-8 hover:border-signal/30 transition-all duration-300"
+                className="ssos-card"
               >
                 <div className="flex items-start space-x-6">
                   <div className="text-4xl mb-2">
                     {problem.icon}
                   </div>
                   <div className="flex-1">
-                    <h3 className="heading-section text-xl font-semibold text-foreground mb-4">
+                    <h3 className="ssos-card-title text-xl mb-4">
                       {problem.title}
                     </h3>
                     <p className="body-premium text-foreground/75 leading-relaxed">
@@ -125,11 +125,11 @@ const AboutSection = () => {
             </h2>
           </div>
 
-          <div className="space-y-8 max-w-5xl mx-auto">
+          <div className="ssos-grid grid-cols-1 max-w-5xl mx-auto">
             {outcomes.map((outcome, index) => (
               <div 
                 key={index}
-                className="border border-border/30 rounded-lg p-8 hover:border-signal/30 transition-all duration-300"
+                className="ssos-card"
               >
                 <div className="flex items-start space-x-6">
                   <div className="flex-shrink-0 mt-2">
