@@ -52,41 +52,6 @@ const FounderSection = () => {
                   prosperity, purpose, and the sacred art of service.
                 </p>
               </div>
-
-              {/* Credentials Grid */}
-              <div className="grid grid-cols-2 gap-6">
-                <div className="cinema-surface p-6 rounded-xl motion-scale-hover">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <Icon name="target" size={20} className="text-signal" />
-                    <span className="font-medium text-signal">PRECISION</span>
-                  </div>
-                  <p className="text-sm text-foreground/70">1,200+ entrepreneurs guided</p>
-                </div>
-
-                <div className="cinema-surface p-6 rounded-xl motion-scale-hover">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <Icon name="diamond" size={20} className="text-brass" />
-                    <span className="font-medium text-brass">MASTERY</span>
-                  </div>
-                  <p className="text-sm text-foreground/70">10+ years methodology development</p>
-                </div>
-
-                <div className="cinema-surface p-6 rounded-xl motion-scale-hover">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <Icon name="lighthouse" size={20} className="text-signal" />
-                    <span className="font-medium text-signal">RESULTS</span>
-                  </div>
-                  <p className="text-sm text-foreground/70">$50M+ client revenue generated</p>
-                </div>
-
-                <div className="cinema-surface p-6 rounded-xl motion-scale-hover">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <Icon name="compass" size={20} className="text-brass" />
-                    <span className="font-medium text-brass">WISDOM</span>
-                  </div>
-                  <p className="text-sm text-foreground/70">Ancient & modern synthesis</p>
-                </div>
-              </div>
             </AnimatedSection>
           </div>
         </div>
