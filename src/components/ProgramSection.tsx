@@ -104,7 +104,7 @@ const ProgramSection = () => {
           </div>
           <div className="w-[48rem] h-[32rem] mx-auto mb-8 rounded-2xl overflow-hidden border border-brass/30 shadow-[0_8px_32px_hsl(var(--signal-glow)/0.2)]">
             <img 
-              src="/lovable-uploads/bc72b68e-82d2-4701-8e0d-4bff2f710d1f.png" 
+              src="/lovable-uploads/ffd03cb6-2004-4121-a7bb-650b4939fb8c.png" 
               alt="Sacred Signal OS Mentorship"
               className="w-full h-full object-cover object-top"
             />
