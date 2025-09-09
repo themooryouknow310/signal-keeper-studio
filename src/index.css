@@ -103,10 +103,13 @@
 /* Sacred Typography Classes */
 @layer components {
   .heading-display {
-    @apply font-display text-foreground font-black tracking-wide uppercase;
-    text-shadow: 0 4px 20px hsl(243 47% 9% / 0.5);
-    letter-spacing: 0.05em;
-    line-height: 1.1;
+    @apply font-display text-foreground font-light tracking-wide uppercase;
+    text-shadow: 
+      0 0 40px hsl(var(--signal-glow) / 0.3),
+      0 8px 32px hsl(243 47% 9% / 0.8);
+    letter-spacing: 0.1em;
+    line-height: 0.9;
+    font-weight: 300;
   }
   
   .heading-ritual {
@@ -141,12 +144,14 @@
     @apply text-[hsl(var(--sacred-gold))];
   }
 
-  /* Glow Text Effect */
+  /* Enhanced Glow Text Effect */
   .glow-text {
     text-shadow: 
-      0 0 10px hsl(var(--signal-glow) / 0.5),
-      0 0 20px hsl(var(--signal-glow) / 0.3),
-      0 0 40px hsl(var(--signal-glow) / 0.2);
+      0 0 20px hsl(var(--signal-glow) / 0.8),
+      0 0 40px hsl(var(--signal-glow) / 0.6),
+      0 0 80px hsl(var(--signal-glow) / 0.4),
+      0 0 120px hsl(var(--signal-glow) / 0.2);
+    filter: brightness(1.2);
   }
 
   /* Sacred Interactive Elements */
