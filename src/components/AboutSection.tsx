@@ -145,7 +145,7 @@ const AboutSection = () => {
                 key={index}
                 className="ssos-card"
               >
-                <div className="flex items-start space-x-6">
+                <div className="flex items-center space-x-6">
                   <div className="flex-shrink-0 w-16 h-16 rounded-full overflow-hidden border border-brass/30">
                     <img 
                       src={outcome.image} 
