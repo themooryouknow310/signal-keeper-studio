@@ -132,7 +132,7 @@ const OriginStoryStudio = () => {
               </p>
               
               {/* Feature Image */}
-              <div className="mb-12 max-w-md mx-auto">
+              <div className="mb-12 max-w-xs mx-auto">
                 <img 
                   src="/lovable-uploads/4bec7975-8238-42f8-8aff-546b031f906f.png" 
                   alt="Origin Story Studio Interface - Craft Your Sacred Narrative"
