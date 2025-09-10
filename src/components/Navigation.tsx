@@ -43,7 +43,7 @@ const Navigation = () => {
           </button>
           <button 
             onClick={() => scrollToSection('apply')}
-            className="bg-[hsl(var(--ssos-cyan))] text-[hsl(var(--ssos-indigo))] hover:bg-[hsl(var(--ssos-cyan)/.9)] font-bold tracking-wide px-8 py-2.5 rounded-lg transition-all duration-200 hover:scale-105 shadow-[0_0_20px_hsl(var(--ssos-cyan)/.4)] hover:shadow-[0_0_30px_hsl(var(--ssos-cyan)/.6)]"
+            className="bg-[hsl(var(--ssos-brass))] text-[hsl(var(--ssos-indigo))] hover:bg-[hsl(var(--ssos-brass)/.9)] font-bold tracking-wide px-8 py-2.5 rounded-lg transition-all duration-200 hover:scale-105 shadow-[0_0_20px_hsl(var(--ssos-brass)/.4)] hover:shadow-[0_0_30px_hsl(var(--ssos-brass)/.6)]"
           >
             Apply Now
           </button>
@@ -52,7 +52,7 @@ const Navigation = () => {
         {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button 
-            className="bg-[hsl(var(--ssos-cyan))] text-[hsl(var(--ssos-indigo))] hover:bg-[hsl(var(--ssos-cyan)/.9)] font-bold tracking-wide px-6 py-2 rounded-lg transition-all duration-200 hover:scale-105 shadow-[0_0_15px_hsl(var(--ssos-cyan)/.4)] hover:shadow-[0_0_25px_hsl(var(--ssos-cyan)/.6)]"
+            className="bg-[hsl(var(--ssos-brass))] text-[hsl(var(--ssos-indigo))] hover:bg-[hsl(var(--ssos-brass)/.9)] font-bold tracking-wide px-6 py-2 rounded-lg transition-all duration-200 hover:scale-105 shadow-[0_0_15px_hsl(var(--ssos-brass)/.4)] hover:shadow-[0_0_25px_hsl(var(--ssos-brass)/.6)]"
             onClick={() => scrollToSection('apply')}
           >
             Apply
