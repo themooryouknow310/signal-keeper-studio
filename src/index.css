@@ -170,10 +170,10 @@
   /* Enhanced Glow Text Effect */
   .glow-text {
     text-shadow: 
-      0 0 20px hsl(var(--signal-glow) / 0.8),
-      0 0 40px hsl(var(--signal-glow) / 0.6),
-      0 0 80px hsl(var(--signal-glow) / 0.4),
-      0 0 120px hsl(var(--signal-glow) / 0.2);
+      0 0 20px hsl(var(--sacred-gold) / 0.8),
+      0 0 40px hsl(var(--sacred-gold) / 0.6),
+      0 0 80px hsl(var(--sacred-gold) / 0.4),
+      0 0 120px hsl(var(--sacred-gold) / 0.2);
   }
 
   /* Sacred Interactive Elements */
