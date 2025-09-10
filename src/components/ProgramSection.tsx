@@ -104,9 +104,6 @@ const ProgramSection = () => {
       <div className="absolute bottom-20 right-16 opacity-15">
         <Icon name="compass" size={100} className="text-brass" />
       </div>
-      <div className="absolute top-1/3 right-10 opacity-10">
-        <Icon name="signal-wave" size={150} className="text-signal" />
-      </div>
 
       <div className="container mx-auto px-6">
         {/* Header */}
