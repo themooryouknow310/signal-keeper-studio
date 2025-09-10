@@ -1,6 +1,6 @@
 import Icon from "@/components/icons/Icon";
 import BrassRule from "@/components/accents/BrassRule";
-import SignalEclipse from "@/components/accents/SignalEclipse";
+import CyanSLogo from "@/components/accents/CyanSLogo";
 
 const Navigation = () => {
   const scrollToSection = (id: string) => {
@@ -15,7 +15,7 @@ const Navigation = () => {
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-3">
-          <SignalEclipse size={32} />
+          <CyanSLogo size={32} />
           <span className="font-display text-xl font-bold tracking-wider text-foreground">
             SACRED SIGNAL OS
           </span>
