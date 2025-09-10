@@ -155,68 +155,53 @@ const OriginStoryStudio = () => {
             <AnimatedSection delay={400}>
               <div className="space-y-10">
                 <h2 className="heading-section text-3xl md:text-4xl font-bold text-foreground mb-8 cinema-text-shadow">
-                  What You'll <span className="text-signal">Create:</span>
+                  What You'll Create:
                 </h2>
                 
-                <div className="space-y-8">
-                  <div className="flex items-start space-x-5 motion-fade">
-                    <div className="flex-shrink-0 w-3 h-3 bg-signal rounded-full mt-2 cinema-glow" />
-                    <div>
-                      <h3 className="font-display font-semibold text-foreground mb-3 text-lg">
-                        <span className="text-brass">Your Sacred Origin Story</span>
-                      </h3>
-                      <p className="text-foreground/80 body-premium">
-                        A complete, compelling narrative ready to share with your audience
-                      </p>
-                    </div>
+                <div className="space-y-10">
+                  <div>
+                    <h3 className="font-display font-bold text-foreground mb-3 text-xl">
+                      <span className="text-brass">Your Sacred Origin Story</span>
+                    </h3>
+                    <p className="text-foreground/80 body-premium">
+                      The narrative that transforms you from another coach into the guide they've been searching for
+                    </p>
                   </div>
 
-                  <div className="flex items-start space-x-5 motion-fade">
-                    <div className="flex-shrink-0 w-3 h-3 bg-signal rounded-full mt-2 cinema-glow" />
-                    <div>
-                      <h3 className="font-display font-semibold text-foreground mb-3 text-lg">
-                        <span className="text-brass">Professional About Section</span>
-                      </h3>
-                      <p className="text-foreground/80 body-premium">
-                        Website-ready copy that positions you as an authority
-                      </p>
-                    </div>
+                  <div>
+                    <h3 className="font-display font-bold text-foreground mb-3 text-xl">
+                      <span className="text-brass">Professional About Section</span>
+                    </h3>
+                    <p className="text-foreground/80 body-premium">
+                      Website copy that instantly builds trust and positions you as the obvious expert
+                    </p>
                   </div>
 
-                  <div className="flex items-start space-x-5 motion-fade">
-                    <div className="flex-shrink-0 w-3 h-3 bg-signal rounded-full mt-2 cinema-glow" />
-                    <div>
-                      <h3 className="font-display font-semibold text-foreground mb-3 text-lg">
-                        <span className="text-brass">Your Core Beliefs</span>
-                      </h3>
-                      <p className="text-foreground/80 body-premium">
-                        Clear articulation of your values and mission
-                      </p>
-                    </div>
+                  <div>
+                    <h3 className="font-display font-bold text-foreground mb-3 text-xl">
+                      <span className="text-brass">Your Core Beliefs</span>
+                    </h3>
+                    <p className="text-foreground/80 body-premium">
+                      Clear values that attract aligned clients and filter out energy drains
+                    </p>
                   </div>
 
-                  <div className="flex items-start space-x-5 motion-fade">
-                    <div className="flex-shrink-0 w-3 h-3 bg-signal rounded-full mt-2 cinema-glow" />
-                    <div>
-                      <h3 className="font-display font-semibold text-foreground mb-3 text-lg">
-                        <span className="text-brass">Micro Story Prompts</span>
-                      </h3>
-                      <p className="text-foreground/80 body-premium">
-                        Bite-sized stories for social media and conversations
-                      </p>
-                    </div>
+                  <div>
+                    <h3 className="font-display font-bold text-foreground mb-3 text-xl">
+                      <span className="text-brass">Frequently Asked Questions</span>
+                    </h3>
+                    <p className="text-foreground/80 body-premium">
+                      Ready-made responses to the questions prospects always ask
+                    </p>
                   </div>
 
-                  <div className="flex items-start space-x-5 motion-fade">
-                    <div className="flex-shrink-0 w-3 h-3 bg-signal rounded-full mt-2 cinema-glow" />
-                    <div>
-                      <h3 className="font-display font-semibold text-foreground mb-3 text-lg">
-                        <span className="text-brass">FAQ Section</span>
-                      </h3>
-                      <p className="text-foreground/80 body-premium">
-                        Common questions answered with your unique perspective
-                      </p>
-                    </div>
+                  <div>
+                    <h3 className="font-display font-bold text-foreground mb-3 text-xl">
+                      <span className="text-brass">Micro Story Prompts</span>
+                    </h3>
+                    <p className="text-foreground/80 body-premium">
+                      3 content ideas that keep your social media authentic and engaging
+                    </p>
                   </div>
                 </div>
               </div>
