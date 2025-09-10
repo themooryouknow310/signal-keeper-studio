@@ -68,8 +68,8 @@ const OriginStoryStudio = () => {
               Check Your Email!
             </h1>
             <p className="text-lg text-muted-foreground mb-8">
-              Your Origin Story Studio guide is on its way. Check your inbox (and spam folder) 
-              for the download link and exclusive content.
+              Your Origin Story Studio access has been created! Check your inbox for your login details 
+              and get ready to craft your compelling origin story.
             </p>
             <Link to="/">
               <Button className="bg-[hsl(43_85%_65%)] text-[hsl(var(--ssos-indigo))] hover:bg-[hsl(43_90%_70%)] font-bold tracking-wide px-8 py-3 text-lg">
@@ -113,7 +113,7 @@ const OriginStoryStudio = () => {
             <BrassRule className="mb-8" />
             
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-12">
-              Transform your personal journey into a magnetic origin story that attracts your perfect clients and positions you as the authority in your field.
+              A free interactive web application that guides you step-by-step to craft your compelling origin story and overcome the "Invisible Brand Center" that keeps clients from connecting with you.
             </p>
           </div>
 
@@ -121,26 +121,30 @@ const OriginStoryStudio = () => {
             {/* Benefits */}
             <div className="space-y-8">
               <h2 className="font-display text-3xl font-bold text-foreground mb-6">
-                What You'll Get:
+                What You'll Create:
               </h2>
               
               <div className="space-y-6">
                 {[
                   {
-                    title: "Origin Story Framework",
-                    description: "Step-by-step template to craft your compelling narrative"
+                    title: "Your Sacred Origin Story",
+                    description: "A complete, compelling narrative ready to share with your audience"
                   },
                   {
-                    title: "Emotional Resonance Guide",
-                    description: "How to connect with your audience's deepest motivations"
+                    title: "Professional About Section",
+                    description: "Website-ready copy that positions you as an authority"
                   },
                   {
-                    title: "Authority Positioning",
-                    description: "Transform your struggles into your greatest strengths"
+                    title: "Your Core Beliefs",
+                    description: "Clear articulation of your values and mission"
                   },
                   {
-                    title: "Story Integration Toolkit",
-                    description: "Where and how to use your origin story across all platforms"
+                    title: "Micro Story Prompts",
+                    description: "Bite-sized stories for social media and conversations"
+                  },
+                  {
+                    title: "FAQ Section",
+                    description: "Common questions answered with your unique perspective"
                   }
                 ].map((benefit, index) => (
                   <div key={index} className="flex items-start space-x-4">
@@ -161,8 +165,11 @@ const OriginStoryStudio = () => {
             {/* Opt-in Form */}
             <div className="bg-card border border-border rounded-lg p-8 shadow-lg">
               <h3 className="font-display text-2xl font-bold text-foreground mb-6 text-center">
-                Get Your Free Guide
+                Access Your Free Origin Story Studio
               </h3>
+              <p className="text-center text-muted-foreground mb-6">
+                Get instant access to the interactive web application that will guide you through creating your complete origin story in 5 simple steps.
+              </p>
               
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -208,7 +215,7 @@ const OriginStoryStudio = () => {
                     disabled={form.formState.isSubmitting}
                     className="w-full bg-[hsl(43_85%_65%)] text-[hsl(var(--ssos-indigo))] hover:bg-[hsl(43_90%_70%)] font-bold tracking-wide py-3 text-lg"
                   >
-                    {form.formState.isSubmitting ? 'Sending...' : 'Get My Free Origin Story Guide'}
+                    {form.formState.isSubmitting ? 'Creating Access...' : 'Start Building My Origin Story'}
                   </Button>
                 </form>
               </Form>
@@ -228,10 +235,10 @@ const OriginStoryStudio = () => {
             Join Thousands of Coaches & Experts
           </h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Who've used their origin story to build magnetic personal brands and attract premium clients.
+            Who've used the Origin Story Studio to overcome their "Invisible Brand Center" and create authentic connections with their ideal clients.
           </p>
           <div className="flex items-center justify-center space-x-8 text-sm text-muted-foreground">
-            <span>✓ 10,000+ Downloads</span>
+            <span>✓ 10,000+ Stories Created</span>
             <span>✓ Featured in Forbes</span>
             <span>✓ Used by 6-Figure Coaches</span>
           </div>
