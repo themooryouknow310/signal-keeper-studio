@@ -200,7 +200,7 @@ const ProgramSection = () => {
           <div className="relative mb-8">
             <div className="bg-gradient-to-br from-signal/20 via-signal/10 to-transparent p-12 rounded-2xl border border-signal/30 backdrop-blur-sm shadow-[0_0_40px_hsl(var(--signal-glow)/0.3)]">
               <div className="text-center">
-                <div className="text-2xl uppercase tracking-wider text-signal font-bold mb-4 glow-text">Investment</div>
+                <div className="text-2xl uppercase tracking-wider text-brass font-bold mb-4 glow-text">Investment</div>
                 <div className="text-5xl md:text-6xl font-display font-bold text-signal mb-2 glow-text">$1,497</div>
                 <div className="w-16 h-px bg-signal/50 mx-auto shadow-[0_0_20px_hsl(var(--signal-glow)/0.5)]"></div>
               </div>
