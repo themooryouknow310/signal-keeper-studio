@@ -43,7 +43,7 @@ const Navigation = () => {
           </button>
           <button 
             onClick={() => scrollToSection('apply')}
-            className="sacred-border bg-transparent border-signal text-signal hover:bg-signal hover:text-background transition-all duration-300 px-6 py-2 rounded-xl button-lift"
+            className="bg-[hsl(var(--ssos-brass))] text-[hsl(var(--ssos-indigo))] hover:bg-[hsl(var(--ssos-brass)/.9)] font-semibold tracking-wide px-8 py-2.5 rounded-lg transition-all duration-200 hover:scale-105 hover:shadow-lg hover:shadow-[hsl(var(--ssos-brass)/.2)]"
           >
             Apply Now
           </button>
@@ -52,7 +52,7 @@ const Navigation = () => {
         {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button 
-            className="border-signal text-signal hover:bg-signal hover:text-background px-4 py-2 rounded-lg border button-lift"
+            className="bg-[hsl(var(--ssos-brass))] text-[hsl(var(--ssos-indigo))] hover:bg-[hsl(var(--ssos-brass)/.9)] font-semibold tracking-wide px-6 py-2 rounded-lg transition-all duration-200 hover:scale-105"
             onClick={() => scrollToSection('apply')}
           >
             Apply
