@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import SignalRing from "@/components/SignalRing";
-import { EightPointStar } from "@/components/AccentElements";
+import SignalLineDivider from "@/components/accents/SignalLineDivider";
 import heroImage from "@/assets/cinema/hero-spiritual-teacher.jpg";
 import AnimatedSection from "@/components/AnimatedSection";
 import "../styles/cinema.css";
@@ -74,13 +74,9 @@ const HeroSection = () => {
               For The Spiritual Entrepreneur Who Is Ready To Stop Chasing Clients And Start Attracting Them.
             </p>
             
-            {/* Brass Decorative Element */}
-            <div className="flex items-center justify-center mt-12 mb-8">
-              <div className="brass-rule w-24"></div>
-              <div className="cinema-brass-medallion w-10 h-10 mx-6">
-                <EightPointStar size={16} className="text-alabaster" />
-              </div>
-              <div className="brass-rule w-24"></div>
+            {/* Signal Line Divider */}
+            <div className="mt-12 mb-8">
+              <SignalLineDivider />
             </div>
           </div>
           
