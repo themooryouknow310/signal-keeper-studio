@@ -82,10 +82,21 @@ export default {
             height: "0",
           },
         },
+        "slowPulse": {
+          "0%, 100%": {
+            boxShadow: "0 0 25px hsl(43 85% 65% / 0.6), 0 0 50px hsl(43 85% 65% / 0.3)",
+            transform: "scale(1)",
+          },
+          "50%": {
+            boxShadow: "0 0 35px hsl(43 85% 65% / 0.8), 0 0 70px hsl(43 85% 65% / 0.4)",
+            transform: "scale(1.02)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "slowPulse": "slowPulse 30s ease-in-out infinite",
       },
     },
   },
