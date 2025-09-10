@@ -137,7 +137,7 @@ const ProgramSection = () => {
         {/* Key Modules Showcase */}
         <div className="mb-24 fade-up">
           <h3 className="heading-ritual text-3xl md:text-4xl mb-4 text-center glow-text">
-            THE SACRED SIGNAL SYSTEM
+            THE SACRED SIGNAL OPERATING SYSTEM
           </h3>
           <p className="body-premium text-xl md:text-2xl text-foreground/80 text-center mb-16 max-w-4xl mx-auto">
             <strong>12 Precision Modules That Transform Scattered Efforts Into Predictable Revenue</strong>
