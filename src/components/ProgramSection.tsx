@@ -166,7 +166,7 @@ const ProgramSection = () => {
                   />
                 </div>
                 <h3 className="ssos-card-title text-xl mb-3">
-                  {String(index + 1).padStart(2, '0')} | {module.title}
+                  {module.title}
                 </h3>
                 <p className="body-premium text-foreground text-base font-semibold mb-4">
                   {module.subtitle}
