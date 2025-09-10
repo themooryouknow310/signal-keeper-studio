@@ -43,7 +43,7 @@ const Navigation = () => {
           </button>
           <button 
             onClick={() => scrollToSection('apply')}
-            className="bg-[hsl(43_85%_65%)] text-[hsl(var(--ssos-indigo))] hover:bg-[hsl(43_90%_70%)] font-bold tracking-wide px-8 py-2.5 rounded-lg transition-all duration-300 hover:scale-110 border-2 border-[hsl(43_90%_75%)] animate-slowPulse"
+            className="bg-[hsl(43_85%_65%)] text-[hsl(var(--ssos-indigo))] hover:bg-[hsl(43_90%_70%)] font-bold tracking-wide px-8 py-2.5 rounded-lg transition-all duration-300 hover:scale-110 border-2 border-[hsl(43_90%_75%)]"
           >
             Apply Now
           </button>
@@ -52,7 +52,7 @@ const Navigation = () => {
         {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button 
-            className="bg-[hsl(43_85%_65%)] text-[hsl(var(--ssos-indigo))] hover:bg-[hsl(43_90%_70%)] font-bold tracking-wide px-6 py-2 rounded-lg transition-all duration-300 hover:scale-110 border-2 border-[hsl(43_90%_75%)] animate-slowPulse"
+            className="bg-[hsl(43_85%_65%)] text-[hsl(var(--ssos-indigo))] hover:bg-[hsl(43_90%_70%)] font-bold tracking-wide px-6 py-2 rounded-lg transition-all duration-300 hover:scale-110 border-2 border-[hsl(43_90%_75%)]"
             onClick={() => scrollToSection('apply')}
           >
             Apply
