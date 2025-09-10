@@ -101,9 +101,6 @@ const ProgramSection = () => {
   return (
     <section id="program" className="section-divider relative overflow-hidden surface-dark">
       {/* Minimal Background Accents */}
-      <div className="absolute bottom-20 right-16 opacity-15">
-        <Icon name="compass" size={100} className="text-brass" />
-      </div>
 
       <div className="container mx-auto px-6">
         {/* Header */}
