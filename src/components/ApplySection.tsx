@@ -5,7 +5,7 @@ import SignalRing from "@/components/SignalRing";
 import marissaFontanaImage from "@/assets/testimonials/marissa-fontana.jpg";
 import leoraLeonImage from "@/assets/testimonials/leora-leon.jpg";
 import susieCollesImage from "@/assets/testimonials/susie-colles.jpg";
-import recognitionInfluenceHero from "@/assets/recognition-influence-hero.jpg";
+
 // Using uploaded image instead of asset
 
 const ApplySection = () => {
@@ -223,7 +223,7 @@ const ApplySection = () => {
           <div className="text-center mb-20">
             <div className="w-[48rem] h-[32rem] mx-auto mb-10 rounded-2xl overflow-hidden border border-brass/30 shadow-[0_8px_32px_hsl(var(--signal-glow)/0.2)]">
               <img 
-                src={recognitionInfluenceHero}
+                src="/lovable-uploads/5e65f76b-c53c-4660-818b-dd55f3548ea0.png"
                 alt="Professional recognition and awards ceremony"
                 className="w-full h-full object-cover"
               />
