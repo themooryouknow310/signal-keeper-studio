@@ -160,9 +160,9 @@ const ProgramSection = () => {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className="heading-ritual text-xl text-signal glow-text mb-2">
-                    {module.title}
-                  </h3>
+                <h3 className="heading-ritual text-xl glow-text mb-2">
+                  {module.title}
+                </h3>
                   <p className="body-premium text-foreground text-sm font-semibold mb-3">
                     {module.subtitle}
                   </p>
