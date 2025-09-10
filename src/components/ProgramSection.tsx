@@ -149,7 +149,7 @@ const ProgramSection = () => {
             <strong>12 Precision Modules That Transform Scattered Efforts Into Predictable Revenue</strong>
           </p>
           
-          <div className="px-8 md:px-16">
+          <div className="px-12 md:px-24">
             <div className="ssos-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
               {modules.map((module, index) => (
                 <div 
