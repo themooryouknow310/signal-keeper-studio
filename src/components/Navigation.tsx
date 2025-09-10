@@ -25,19 +25,19 @@ const Navigation = () => {
         <div className="hidden md:flex items-center space-x-8">
           <button 
             onClick={() => scrollToSection('about')}
-            className="text-foreground/80 hover:text-signal transition-colors font-body"
+            className="text-brass hover:text-signal hover:glow-text hover:scale-105 transition-all duration-300 font-display font-semibold tracking-wider"
           >
             About
           </button>
           <button 
             onClick={() => scrollToSection('program')}
-            className="text-foreground/80 hover:text-signal transition-colors font-body"
+            className="text-brass hover:text-signal hover:glow-text hover:scale-105 transition-all duration-300 font-display font-semibold tracking-wider"
           >
             Program
           </button>
           <button 
             onClick={() => scrollToSection('founder')}
-            className="text-foreground/80 hover:text-signal transition-colors font-body"
+            className="text-brass hover:text-signal hover:glow-text hover:scale-105 transition-all duration-300 font-display font-semibold tracking-wider"
           >
             Founder
           </button>
