@@ -1,5 +1,3 @@
-import SacredGeometry from "@/components/SacredGeometry";
-
 const Footer = () => {
   return (
     <footer className="bg-card border-t border-border py-6">
@@ -8,7 +6,7 @@ const Footer = () => {
           {/* Logo & Brand */}
           <div className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/531f9f88-83a8-4da7-96c9-fd1fc43c629c.png"
+              src="/lovable-uploads/ffd03cb6-2004-4121-a7bb-650b4939fb8c.png"
               alt="Metatron's Cube - Sacred Geometry Symbol"
               className="w-10 h-10 opacity-90"
             />
