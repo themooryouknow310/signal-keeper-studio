@@ -10,7 +10,7 @@ const MetatronsCube = ({ className = "", size = 48 }: MetatronsCubeProps) => {
         width={size} 
         height={size} 
         viewBox="0 0 100 100" 
-        className="text-signal animate-[metatronRotate_25s_linear_infinite]"
+        className="text-brass animate-[metatronRotate_25s_linear_infinite]"
       >
         {/* Outer hexagon circles */}
         <circle cx="50" cy="20" r="6" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.8" />
