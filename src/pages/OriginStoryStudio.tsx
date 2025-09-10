@@ -290,15 +290,15 @@ const OriginStoryStudio = () => {
             <div className="flex flex-wrap items-center justify-center gap-8 text-foreground/70">
               <span className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-brass rounded-full" />
-                <span className="text-brass font-medium">10,000+ Stories Created</span>
+                <span className="text-brass font-medium">Step-by-Step Story Guide</span>
               </span>
               <span className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-brass rounded-full" />
-                <span className="text-brass font-medium">Featured in Forbes</span>
+                <span className="text-brass font-medium">Instant Story Generation</span>
               </span>
               <span className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-brass rounded-full" />
-                <span className="text-brass font-medium">Used by 6-Figure Coaches</span>
+                <span className="text-brass font-medium">Professional Ready Formats</span>
               </span>
             </div>
           </div>
