@@ -43,7 +43,7 @@ const Navigation = () => {
           </button>
           <button 
             onClick={() => scrollToSection('apply')}
-            className="bg-[hsl(43_85%_65%)] text-[hsl(var(--ssos-indigo))] hover:bg-[hsl(43_90%_70%)] font-bold tracking-wide px-8 py-2.5 rounded-lg transition-all duration-300 hover:scale-110 shadow-[0_0_25px_hsl(43_85%_65%/.6),0_0_50px_hsl(43_85%_65%/.3)] hover:shadow-[0_0_35px_hsl(43_85%_65%/.8),0_0_70px_hsl(43_85%_65%/.4)] border-2 border-[hsl(43_90%_75%)] animate-pulse"
+            className="bg-[hsl(43_85%_65%)] text-[hsl(var(--ssos-indigo))] hover:bg-[hsl(43_90%_70%)] font-bold tracking-wide px-8 py-2.5 rounded-lg transition-all duration-300 hover:scale-110 shadow-[0_0_25px_hsl(43_85%_65%/.6),0_0_50px_hsl(43_85%_65%/.3)] hover:shadow-[0_0_35px_hsl(43_85%_65%/.8),0_0_70px_hsl(43_85%_65%/.4)] border-2 border-[hsl(43_90%_75%)] animate-[pulse_3s_ease-in-out_infinite]"
           >
             Apply Now
           </button>
