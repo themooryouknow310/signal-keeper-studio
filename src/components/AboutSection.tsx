@@ -61,9 +61,6 @@ const AboutSection = () => {
   return (
     <section id="about" className="section-divider relative overflow-hidden">
       {/* Background Accent Elements */}
-      <div className="absolute bottom-16 left-10 opacity-6">
-        <EightPointStar size={60} />
-      </div>
       <div className="absolute top-1/2 right-1/4 opacity-4">
         <GoldenRatioGrid size={80} />
       </div>
@@ -166,9 +163,6 @@ const AboutSection = () => {
               THIS IS THE PROMISE OF SACRED SIGNAL OS
             </p>
             <div className="w-32 h-0.5 bg-brass mx-auto" />
-            <div className="flex justify-center mt-4">
-              <EightPointStar size={30} className="opacity-60" />
-            </div>
           </div>
         </div>
       </div>
