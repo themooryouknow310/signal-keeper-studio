@@ -8,13 +8,24 @@ const CyanSLogo = ({
   className = "" 
 }: CyanSLogoProps) => {
   return (
-    <img
-      src="/lovable-uploads/ffd03cb6-2004-4121-a7bb-650b4939fb8c.png"
-      alt="Sacred Signal OS Logo"
-      width={size}
-      height={size}
-      className={`object-contain ${className}`}
-    />
+    <div 
+      className={`relative overflow-hidden ${className}`}
+      style={{ width: size, height: size }}
+    >
+      <img
+        src="/lovable-uploads/9b735b7f-7d36-48fc-9934-0a95148fc23c.png"
+        alt="Sacred Signal S Logo"
+        className="absolute object-cover scale-150"
+        style={{
+          width: size * 2,
+          height: size * 2,
+          left: '50%',
+          top: '50%',
+          transform: 'translate(-50%, -50%)',
+          objectPosition: 'left center'
+        }}
+      />
+    </div>
   );
 };
 
