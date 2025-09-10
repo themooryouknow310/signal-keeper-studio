@@ -87,8 +87,8 @@ const HeroSection = () => {
           </p>
         </AnimatedSection>
 
-        {/* Cinematic CTA Buttons */}
-        <AnimatedSection delay={800} className="flex flex-col sm:flex-row gap-8 justify-center items-center">
+        {/* Cinematic CTA Button */}
+        <AnimatedSection delay={800} className="flex justify-center items-center">
           <Button 
             size="lg"
             className="cinema-glow bg-transparent border-2 border-signal text-signal hover:bg-signal hover:text-background font-body font-medium px-12 py-6 text-xl motion-glow-hover rounded-full relative overflow-hidden group"
@@ -96,18 +96,6 @@ const HeroSection = () => {
           >
             <span className="relative z-10">BEGIN YOUR TRANSFORMATION</span>
             <div className="absolute inset-0 bg-signal opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-          </Button>
-          
-          <Button 
-            variant="ghost"
-            size="lg"
-            className="text-foreground/80 hover:text-foreground font-body font-light px-8 py-6 text-lg motion-scale-hover border border-foreground/20 hover:border-foreground/40 rounded-full"
-            onClick={() => {
-              const element = document.getElementById('about');
-              if (element) element.scrollIntoView({ behavior: 'smooth' });
-            }}
-          >
-            Explore the Journey
           </Button>
         </AnimatedSection>
 
