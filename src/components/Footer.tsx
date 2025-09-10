@@ -2,9 +2,9 @@ import SacredGeometry from "@/components/SacredGeometry";
 
 const Footer = () => {
   return (
-    <footer className="bg-card border-t border-border py-16">
+    <footer className="bg-card border-t border-border py-8">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col items-center space-y-8">
+        <div className="flex flex-col items-center space-y-6">
           {/* Logo & Brand */}
           <div className="flex items-center space-x-3">
             <SacredGeometry size={40} />
@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
 
           {/* Copyright */}
-          <div className="text-center pt-8 border-t border-border/30">
+          <div className="text-center pt-4 border-t border-border/30">
             <p className="body-sacred text-sm text-foreground/60">
               © 2024 Sacred Signal OS. All rights reserved.
             </p>
