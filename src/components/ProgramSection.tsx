@@ -21,63 +21,75 @@ const ProgramSection = () => {
   const modules = [
     {
       image: nichePositioningImage,
-      title: "Niche & Positioning",
-      description: "Understand your ideal customer profile and craft a resonant positioning kernel that cuts through noise."
+      title: "NICHE CLARITY",
+      subtitle: "Stop trying to help everyone and start magnetizing your perfect clients",
+      description: "Cut through the noise of \"I help everyone\" messaging and discover the one problem you solve better than anyone else—creating instant recognition and premium positioning."
     },
     {
       image: offerDesignImage, 
-      title: "Offer Design",
-      description: "Create an irresistible high-ticket program that delivers transformation and commands premium pricing."
+      title: "IRRESISTIBLE OFFER ARCHITECTURE",
+      subtitle: "Design a program so compelling, your ideal clients feel they can't afford NOT to work with you",
+      description: "Move beyond hourly sessions to create a transformational container that commands 5-figure investments and delivers life-changing results."
     },
     {
       image: programArchitectureImage,
-      title: "Program Architecture", 
-      description: "Design a program structure that clients actually complete, creating powerful testimonials and referrals."
+      title: "COMPLETION-DRIVEN PROGRAM DESIGN", 
+      subtitle: "Build programs people actually finish—and rave about",
+      description: "Engineer a client journey that creates inevitable success, turning every graduate into a walking testimonial and referral machine."
     },
     {
       image: storyMessageCraftImage,
-      title: "Story & Message Craft",
-      description: "Transform your personal story into a powerful brand narrative that positions you as the obvious choice for your ideal clients."
+      title: "MAGNETIC STORY ALCHEMY",
+      subtitle: "Transform your personal journey into your most powerful sales tool",
+      description: "Craft an origin story so resonant that prospects instantly see you as the guide they've been searching for—without a single sales pitch."
     },
     {
       image: visualIdentityImage,
-      title: "Visual Identity",
-      description: "Create a premium visual presence that reflects your spiritual essence while commanding respect and premium pricing."
+      title: "PREMIUM VISUAL PRESENCE",
+      subtitle: "Command respect and premium pricing through strategic visual authority",
+      description: "Create a visual identity that whispers \"high-caliber professional\" while honoring your spiritual essence—no corporate soul-selling required."
     },
     {
       image: leadMagnetImage,
-      title: "Lead Magnet & Funnel",
-      description: "Design an irresistible lead magnet that attracts your ideal clients and builds a high-converting sales funnel."
+      title: "THE PERFECT PROSPECT MAGNET",
+      subtitle: "Attract your ideal clients like moths to flame",
+      description: "Design a lead magnet so valuable and targeted that your perfect prospects practically beg to get on your email list—and stay engaged."
     },
     {
       image: trafficStrategyImage,
-      title: "Unlimited Traffic Strategy",
-      description: "Develop your Dream 100 list and create sustainable systems for consistent, quality traffic to your offers."
+      title: "INFINITE TRAFFIC BLUEPRINT",
+      subtitle: "Never worry about where your next client will come from",
+      description: "Build your personal \"Dream 100\" ecosystem that generates consistent, high-quality traffic without algorithm anxiety or paid ad dependency."
     },
     {
       image: contentStrategyImage,
-      title: "Content Strategy",
-      description: "Build a purposeful content system that serves your audience, builds authority, and drives consistent sales."
+      title: "AUTHORITY CONTENT ENGINE",
+      subtitle: "Create content that builds your reputation while you sleep",
+      description: "Develop a sustainable content system that positions you as the go-to expert in your field—no more posting and praying."
     },
     {
       image: writingNewslettersImage,
-      title: "Writing & Newsletters",
-      description: "Master high-speed content creation with proven structures that engage readers and convert prospects into clients."
+      title: "HIGH-CONVERSION COMMUNICATION",
+      subtitle: "Master the art of writing that sells without selling",
+      description: "Learn the proven formulas that turn casual readers into invested prospects—and prospects into premium clients."
     },
     {
       image: valueCommunicationImage,
-      title: "Value Communication",
-      description: "Create compelling social proof and testimonials that demonstrate your transformational impact and build trust."
+      title: "SOCIAL PROOF MASTERY",
+      subtitle: "Let your results do the talking",
+      description: "Build an arsenal of compelling testimonials and case studies that make your expertise undeniable and your investment obvious."
     },
     {
       image: leadGenerationImage,
-      title: "Lead Generation",
-      description: "Implement proven strategies to make your offer known and attract a steady stream of qualified prospects."
+      title: "PROSPECT MAGNETISM",
+      subtitle: "Make qualified leads chase you instead of the other way around",
+      description: "Implement proven attraction strategies that fill your calendar with discovery calls—from people who are already convinced they need your help."
     },
     {
       image: audienceGrowthImage,
-      title: "Audience Growth",
-      description: "Scale your reach and expand your influence through strategic audience building and sustainable growth systems."
+      title: "EXPONENTIAL GROWTH SYSTEMS",
+      subtitle: "Scale your influence without losing your soul",
+      description: "Build sustainable audience growth mechanisms that expand your reach while deepening your impact—creating a platform worthy of your message."
     }
   ];
 
@@ -130,9 +142,12 @@ const ProgramSection = () => {
 
         {/* Key Modules Showcase */}
         <div className="mb-24 fade-up">
-          <h3 className="heading-ritual text-3xl md:text-4xl mb-16 text-center glow-text">
-            12 CORE TRANSFORMATION MODULES
+          <h3 className="heading-ritual text-3xl md:text-4xl mb-4 text-center glow-text">
+            THE SACRED SIGNAL SYSTEM
           </h3>
+          <p className="body-premium text-xl md:text-2xl text-foreground/80 text-center mb-16 max-w-4xl mx-auto">
+            <strong>12 Precision Modules That Transform Scattered Efforts Into Predictable Revenue</strong>
+          </p>
           
           <div className="ssos-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {modules.map((module, index) => (
@@ -150,15 +165,28 @@ const ProgramSection = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="ssos-card-title text-2xl mb-6">
-                  {module.title}
+                <h3 className="ssos-card-title text-xl mb-3">
+                  {String(index + 1).padStart(2, '0')} | {module.title}
                 </h3>
-                <p className="body-premium text-foreground/80 leading-relaxed text-lg">
+                <p className="body-premium text-foreground text-base font-semibold mb-4">
+                  {module.subtitle}
+                </p>
+                <p className="body-premium text-foreground/80 leading-relaxed text-sm">
                   {module.description}
                 </p>
               </div>
             ))}
           </div>
+        </div>
+
+        {/* The Result Section */}
+        <div className="ssos-card text-center max-w-4xl mx-auto mb-24 fade-up bg-gradient-to-br from-signal/5 via-background/80 to-signal/10 border-signal/30">
+          <h3 className="heading-ritual text-2xl md:text-3xl mb-6 text-signal glow-text">
+            The Result:
+          </h3>
+          <p className="body-premium text-xl md:text-2xl leading-relaxed text-foreground max-w-3xl mx-auto">
+            A complete operating system that transforms spiritual entrepreneurs from best-kept secrets into sought-after authorities—with the revenue, respect, and reach to match their calling.
+          </p>
         </div>
 
         {/* Investment Section */}
