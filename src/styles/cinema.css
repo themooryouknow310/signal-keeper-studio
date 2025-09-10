@@ -232,6 +232,11 @@
   }
 }
 
+@keyframes metatronRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 /* Performance Optimization */
 .cinema-hero img,
 .cinema-grain::after,
