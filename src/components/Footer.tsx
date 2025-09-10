@@ -7,7 +7,11 @@ const Footer = () => {
         <div className="flex flex-col items-center space-y-4">
           {/* Logo & Brand */}
           <div className="flex items-center space-x-3">
-            <SacredGeometry size={40} />
+            <img 
+              src="/lovable-uploads/531f9f88-83a8-4da7-96c9-fd1fc43c629c.png"
+              alt="Metatron's Cube - Sacred Geometry Symbol"
+              className="w-10 h-10 opacity-90"
+            />
             <div className="text-center">
               <h3 className="font-display text-2xl font-bold tracking-wider text-foreground">
                 SACRED SIGNAL OS
