@@ -164,7 +164,14 @@ const AboutSection = () => {
             <p className="heading-ritual text-2xl md:text-3xl text-signal mb-4 glow-text">
               THIS IS THE PROMISE OF SACRED SIGNAL OS
             </p>
-            <div className="w-32 h-0.5 bg-brass mx-auto" />
+            <div className="flex items-center justify-center space-x-4">
+              <div className="flex-1 h-px bg-gradient-to-r from-transparent via-brass/30 to-brass/60 max-w-20"></div>
+              <div className="relative">
+                <div className="w-3 h-3 bg-brass transform rotate-45 shadow-[0_0_15px_hsl(var(--brass)/0.6)]"></div>
+                <div className="absolute inset-0 w-3 h-3 bg-gradient-to-br from-white/20 to-transparent transform rotate-45"></div>
+              </div>
+              <div className="flex-1 h-px bg-gradient-to-l from-transparent via-brass/30 to-brass/60 max-w-20"></div>
+            </div>
           </div>
         </div>
       </div>
