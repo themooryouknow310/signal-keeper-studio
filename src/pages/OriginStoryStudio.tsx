@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { ArrowLeft, Download, CheckCircle } from 'lucide-react';
 import CyanSLogo from '@/components/accents/CyanSLogo';
 import BrassRule from '@/components/accents/BrassRule';
+import BrassMedallion from '@/components/accents/BrassMedallion';
 import SignalLineDivider from '@/components/accents/SignalLineDivider';
 import AnimatedSection from '@/components/AnimatedSection';
 import SignalRing from '@/components/SignalRing';
@@ -117,12 +118,42 @@ const OriginStoryStudio = () => {
         <div className="container mx-auto max-w-5xl relative z-10">
           <AnimatedSection delay={200}>
             <div className="text-center mb-20">
-              <div className="flex items-center justify-center mb-12">
-                <SignalRing size={64} className="text-signal mr-6 motion-fade" />
-                <h1 className="heading-display text-4xl md:text-6xl lg:text-7xl cinema-text-shadow">
-                  <span className="hero-shout text-foreground block mb-2">ORIGIN STORY</span>
-                  <span className="hero-void text-signal">STUDIO</span>
-                </h1>
+              {/* Enhanced Header with Background Panel */}
+              <div className="relative max-w-4xl mx-auto mb-12">
+                {/* Background Panel */}
+                <div className="absolute inset-0 bg-gradient-to-br from-background/40 via-background/60 to-background/80 backdrop-blur-md border border-brass/20 rounded-2xl shadow-2xl cinema-glow" />
+                
+                {/* Content Container */}
+                <div className="relative z-10 py-16 px-8">
+                  {/* SignalRing positioned above */}
+                  <div className="flex justify-center mb-8">
+                    <SignalRing size={80} className="text-signal motion-fade drop-shadow-lg" />
+                  </div>
+                  
+                  {/* Decorative Elements */}
+                  <div className="flex items-center justify-center mb-8 space-x-8">
+                    <BrassRule width={120} className="opacity-60" />
+                    <BrassMedallion size={16} className="flex-shrink-0">
+                      <div className="w-full h-full bg-brass/60 rounded-full" />
+                    </BrassMedallion>
+                    <BrassRule width={120} className="opacity-60" />
+                  </div>
+                  
+                  {/* Enhanced Typography */}
+                  <h1 className="heading-display text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-black tracking-tight cinema-text-shadow">
+                    <span className="hero-shout text-foreground block mb-4 leading-none">ORIGIN STORY</span>
+                    <span className="hero-void text-signal leading-none block">STUDIO</span>
+                  </h1>
+                  
+                  {/* Bottom Decorative Elements */}
+                  <div className="flex items-center justify-center mt-8 space-x-8">
+                    <BrassRule width={120} className="opacity-60" />
+                    <BrassMedallion size={16} className="flex-shrink-0">
+                      <div className="w-full h-full bg-signal/60 rounded-full" />
+                    </BrassMedallion>
+                    <BrassRule width={120} className="opacity-60" />
+                  </div>
+                </div>
               </div>
               
               <SignalLineDivider className="mb-12" />
