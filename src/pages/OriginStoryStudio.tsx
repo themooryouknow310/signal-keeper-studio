@@ -13,7 +13,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { useToast } from '@/hooks/use-toast';
-import heroImage from '@/assets/cinema/hero-sacred-signals.jpg';
+import heroImage from '@/assets/cinema/hero-spiritual-teacher.jpg';
 import "../styles/cinema.css";
 
 const formSchema = z.object({
