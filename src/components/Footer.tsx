@@ -8,7 +8,7 @@ const Footer = () => {
             <img 
               src="/lovable-uploads/7d101e86-18f9-4285-bbbe-c9dc6f53ad53.png"
               alt="Metatron's Cube - Sacred Geometry Symbol"
-              className="w-10 h-10 opacity-90"
+              className="w-16 h-16 opacity-90"
             />
             <div className="text-center">
               <h3 className="font-display text-2xl font-bold tracking-wider text-foreground">
