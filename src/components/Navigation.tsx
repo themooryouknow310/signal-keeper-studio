@@ -1,6 +1,7 @@
 import Icon from "@/components/icons/Icon";
 import BrassRule from "@/components/accents/BrassRule";
 import CyanSLogo from "@/components/accents/CyanSLogo";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const scrollToSection = (id: string) => {
@@ -36,6 +37,12 @@ const Navigation = () => {
             >
               Program
             </button>
+            <Link 
+              to="/origin-story-studio"
+              className="text-brass hover:text-signal hover:glow-text hover:scale-105 transition-all duration-300 font-display font-semibold tracking-wider"
+            >
+              Origin Story Studio
+            </Link>
             <button 
               onClick={() => scrollToSection('founder')}
               className="text-brass hover:text-signal hover:glow-text hover:scale-105 transition-all duration-300 font-display font-semibold tracking-wider"
