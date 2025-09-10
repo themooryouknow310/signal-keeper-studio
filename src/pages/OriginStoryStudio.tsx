@@ -200,7 +200,7 @@ const OriginStoryStudio = () => {
                       <span className="text-brass">Micro Story Prompts</span>
                     </h3>
                     <p className="text-foreground/80 body-premium">
-                      3 content ideas that keep your social media authentic and engaging
+                      Content ideas that keep your social media authentic and engaging
                     </p>
                   </div>
                 </div>
