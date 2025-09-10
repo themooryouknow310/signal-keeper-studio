@@ -146,40 +146,65 @@ const OriginStoryStudio = () => {
                 </h2>
                 
                 <div className="space-y-8">
-                  {[
-                    {
-                      title: "Your Sacred Origin Story",
-                      description: "A complete, compelling narrative ready to share with your audience"
-                    },
-                    {
-                      title: "Professional About Section", 
-                      description: "Website-ready copy that positions you as an authority"
-                    },
-                    {
-                      title: "Your Core Beliefs",
-                      description: "Clear articulation of your values and mission"
-                    },
-                    {
-                      title: "Micro Story Prompts",
-                      description: "Bite-sized stories for social media and conversations"
-                    },
-                    {
-                      title: "FAQ Section",
-                      description: "Common questions answered with your unique perspective"
-                    }
-                  ].map((benefit, index) => (
-                    <div key={index} className="flex items-start space-x-5 motion-fade">
-                      <div className="flex-shrink-0 w-3 h-3 bg-signal rounded-full mt-2 cinema-glow" />
-                      <div>
-                        <h3 className="font-display font-semibold text-foreground mb-3 text-lg">
-                          <span className="text-brass">{benefit.title}</span>
-                        </h3>
-                        <p className="text-foreground/80 body-premium">
-                          {benefit.description}
-                        </p>
-                      </div>
+                  <div className="flex items-start space-x-5 motion-fade">
+                    <div className="flex-shrink-0 w-3 h-3 bg-signal rounded-full mt-2 cinema-glow" />
+                    <div>
+                      <h3 className="font-display font-semibold text-foreground mb-3 text-lg">
+                        <span className="text-brass">Your Sacred Origin Story</span>
+                      </h3>
+                      <p className="text-foreground/80 body-premium">
+                        A complete, compelling narrative ready to share with your audience
+                      </p>
                     </div>
-                  ))}
+                  </div>
+
+                  <div className="flex items-start space-x-5 motion-fade">
+                    <div className="flex-shrink-0 w-3 h-3 bg-signal rounded-full mt-2 cinema-glow" />
+                    <div>
+                      <h3 className="font-display font-semibold text-foreground mb-3 text-lg">
+                        <span className="text-brass">Professional About Section</span>
+                      </h3>
+                      <p className="text-foreground/80 body-premium">
+                        Website-ready copy that positions you as an authority
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-5 motion-fade">
+                    <div className="flex-shrink-0 w-3 h-3 bg-signal rounded-full mt-2 cinema-glow" />
+                    <div>
+                      <h3 className="font-display font-semibold text-foreground mb-3 text-lg">
+                        <span className="text-brass">Your Core Beliefs</span>
+                      </h3>
+                      <p className="text-foreground/80 body-premium">
+                        Clear articulation of your values and mission
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-5 motion-fade">
+                    <div className="flex-shrink-0 w-3 h-3 bg-signal rounded-full mt-2 cinema-glow" />
+                    <div>
+                      <h3 className="font-display font-semibold text-foreground mb-3 text-lg">
+                        <span className="text-brass">Micro Story Prompts</span>
+                      </h3>
+                      <p className="text-foreground/80 body-premium">
+                        Bite-sized stories for social media and conversations
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-5 motion-fade">
+                    <div className="flex-shrink-0 w-3 h-3 bg-signal rounded-full mt-2 cinema-glow" />
+                    <div>
+                      <h3 className="font-display font-semibold text-foreground mb-3 text-lg">
+                        <span className="text-brass">FAQ Section</span>
+                      </h3>
+                      <p className="text-foreground/80 body-premium">
+                        Common questions answered with your unique perspective
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </AnimatedSection>
