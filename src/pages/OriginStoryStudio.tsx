@@ -6,10 +6,15 @@ import { Link } from 'react-router-dom';
 import { ArrowLeft, Download, CheckCircle } from 'lucide-react';
 import CyanSLogo from '@/components/accents/CyanSLogo';
 import BrassRule from '@/components/accents/BrassRule';
+import SignalLineDivider from '@/components/accents/SignalLineDivider';
+import AnimatedSection from '@/components/AnimatedSection';
+import SignalRing from '@/components/SignalRing';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { useToast } from '@/hooks/use-toast';
+import heroImage from '@/assets/cinema/hero-sacred-signals.jpg';
+import "../styles/cinema.css";
 
 const formSchema = z.object({
   email: z.string().email('Please enter a valid email address'),
@@ -83,11 +88,21 @@ const OriginStoryStudio = () => {
   }
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative overflow-hidden">
+      {/* Cinematic Background */}
+      <div className="absolute inset-0">
+        <img 
+          src={heroImage} 
+          alt="Origin Story Studio Background" 
+          className="w-full h-full object-cover opacity-30"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/98 via-background/85 to-background/95" />
+      </div>
+
       {/* Header */}
-      <header className="border-b border-border">
+      <header className="border-b border-border/50 backdrop-blur-sm relative z-20">
         <div className="container mx-auto px-6 py-6 flex items-center">
-          <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
+          <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity motion-glow-hover">
             <ArrowLeft className="h-5 w-5 text-brass" />
             <CyanSLogo size={32} />
             <span className="font-display text-xl font-bold tracking-wider text-foreground">
@@ -99,77 +114,85 @@ const OriginStoryStudio = () => {
 
       {/* Hero Section */}
       <section className="relative py-20 px-6 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-accent/5" />
-        
-        <div className="container mx-auto max-w-4xl relative z-10">
-          <div className="text-center mb-16">
-            <div className="flex items-center justify-center mb-8">
-              <Download className="h-12 w-12 text-signal mr-4" />
-              <h1 className="font-display text-5xl md:text-7xl font-bold text-foreground">
-                Origin Story Studio
-              </h1>
-            </div>
-            
-            <BrassRule className="mb-8" />
-            
-            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-12">
-              A free interactive web application that guides you step-by-step to craft your compelling origin story and overcome the "Invisible Brand Center" that keeps clients from connecting with you.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-12 items-start">
-            {/* Benefits */}
-            <div className="space-y-8">
-              <h2 className="font-display text-3xl font-bold text-foreground mb-6">
-                What You'll Create:
-              </h2>
-              
-              <div className="space-y-6">
-                {[
-                  {
-                    title: "Your Sacred Origin Story",
-                    description: "A complete, compelling narrative ready to share with your audience"
-                  },
-                  {
-                    title: "Professional About Section",
-                    description: "Website-ready copy that positions you as an authority"
-                  },
-                  {
-                    title: "Your Core Beliefs",
-                    description: "Clear articulation of your values and mission"
-                  },
-                  {
-                    title: "Micro Story Prompts",
-                    description: "Bite-sized stories for social media and conversations"
-                  },
-                  {
-                    title: "FAQ Section",
-                    description: "Common questions answered with your unique perspective"
-                  }
-                ].map((benefit, index) => (
-                  <div key={index} className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 w-2 h-2 bg-signal rounded-full mt-3" />
-                    <div>
-                      <h3 className="font-display font-semibold text-foreground mb-2">
-                        {benefit.title}
-                      </h3>
-                      <p className="text-muted-foreground">
-                        {benefit.description}
-                      </p>
-                    </div>
-                  </div>
-                ))}
+        <div className="container mx-auto max-w-5xl relative z-10">
+          <AnimatedSection delay={200}>
+            <div className="text-center mb-20">
+              <div className="flex items-center justify-center mb-12">
+                <SignalRing size={64} className="text-signal mr-6 motion-fade" />
+                <h1 className="heading-display text-4xl md:text-6xl lg:text-7xl cinema-text-shadow">
+                  <span className="hero-shout text-foreground block mb-2">ORIGIN STORY</span>
+                  <span className="hero-void text-signal">STUDIO</span>
+                </h1>
               </div>
+              
+              <SignalLineDivider className="mb-12" />
+              
+              <p className="body-premium text-xl md:text-2xl text-foreground/90 leading-relaxed mb-8 max-w-4xl mx-auto cinema-text-shadow">
+                A Free Interactive Web Application That Guides You Step-by-Step To Craft Your Compelling Origin Story
+              </p>
+              
+              <p className="body-premium text-lg md:text-xl text-signal font-medium leading-relaxed max-w-3xl mx-auto cinema-text-shadow">
+                Overcome The "Invisible Brand Center" That Keeps Clients From Connecting With You
+              </p>
             </div>
+          </AnimatedSection>
+
+          <div className="grid md:grid-cols-2 gap-16 items-start">
+            {/* Benefits */}
+            <AnimatedSection delay={400}>
+              <div className="space-y-10">
+                <h2 className="heading-section text-3xl md:text-4xl font-bold text-foreground mb-8 cinema-text-shadow">
+                  What You'll <span className="text-signal">Create:</span>
+                </h2>
+                
+                <div className="space-y-8">
+                  {[
+                    {
+                      title: "Your Sacred Origin Story",
+                      description: "A complete, compelling narrative ready to share with your audience"
+                    },
+                    {
+                      title: "Professional About Section", 
+                      description: "Website-ready copy that positions you as an authority"
+                    },
+                    {
+                      title: "Your Core Beliefs",
+                      description: "Clear articulation of your values and mission"
+                    },
+                    {
+                      title: "Micro Story Prompts",
+                      description: "Bite-sized stories for social media and conversations"
+                    },
+                    {
+                      title: "FAQ Section",
+                      description: "Common questions answered with your unique perspective"
+                    }
+                  ].map((benefit, index) => (
+                    <div key={index} className="flex items-start space-x-5 motion-fade">
+                      <div className="flex-shrink-0 w-3 h-3 bg-signal rounded-full mt-2 cinema-glow" />
+                      <div>
+                        <h3 className="font-display font-semibold text-foreground mb-3 text-lg">
+                          <span className="text-brass">{benefit.title}</span>
+                        </h3>
+                        <p className="text-foreground/80 body-premium">
+                          {benefit.description}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </AnimatedSection>
 
             {/* Opt-in Form */}
-            <div className="bg-card border border-border rounded-lg p-8 shadow-lg">
-              <h3 className="font-display text-2xl font-bold text-foreground mb-6 text-center">
-                Access Your Free Origin Story Studio
-              </h3>
-              <p className="text-center text-muted-foreground mb-6">
-                Get instant access to the interactive web application that will guide you through creating your complete origin story in 5 simple steps.
-              </p>
+            <AnimatedSection delay={600}>
+              <div className="cinema-surface premium-card p-10 cinema-glow">
+                <h3 className="heading-section text-2xl md:text-3xl font-bold text-foreground mb-8 text-center cinema-text-shadow">
+                  Access Your Free <span className="text-signal">Origin Story Studio</span>
+                </h3>
+                <p className="text-center text-foreground/80 body-premium mb-8">
+                  Get instant access to the interactive web application that will guide you through creating your complete origin story in 5 simple steps.
+                </p>
               
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -213,36 +236,50 @@ const OriginStoryStudio = () => {
                   <Button 
                     type="submit" 
                     disabled={form.formState.isSubmitting}
-                    className="w-full bg-[hsl(43_85%_65%)] text-[hsl(var(--ssos-indigo))] hover:bg-[hsl(43_90%_70%)] font-bold tracking-wide py-3 text-lg"
+                    className="w-full cinema-glow bg-transparent border-2 border-signal text-signal hover:bg-signal hover:text-background font-display font-bold tracking-wide py-4 text-lg motion-glow-hover"
                   >
-                    {form.formState.isSubmitting ? 'Creating Access...' : 'Start Building My Origin Story'}
+                    {form.formState.isSubmitting ? 'Creating Your Access...' : 'START BUILDING MY ORIGIN STORY'}
                   </Button>
                 </form>
               </Form>
               
-              <p className="text-sm text-muted-foreground text-center mt-4">
-                No spam. Unsubscribe anytime. Your information is safe with us.
-              </p>
-            </div>
+                <p className="text-sm text-foreground/60 text-center mt-6">
+                  <span className="text-brass">✦</span> No spam. Unsubscribe anytime. Your information is safe with us. <span className="text-brass">✦</span>
+                </p>
+              </div>
+            </AnimatedSection>
           </div>
         </div>
       </section>
 
       {/* Social Proof Section */}
-      <section className="py-16 px-6 bg-accent/5">
-        <div className="container mx-auto max-w-3xl text-center">
-          <h2 className="font-display text-3xl font-bold text-foreground mb-8">
-            Join Thousands of Coaches & Experts
-          </h2>
-          <p className="text-lg text-muted-foreground mb-8">
-            Who've used the Origin Story Studio to overcome their "Invisible Brand Center" and create authentic connections with their ideal clients.
-          </p>
-          <div className="flex items-center justify-center space-x-8 text-sm text-muted-foreground">
-            <span>✓ 10,000+ Stories Created</span>
-            <span>✓ Featured in Forbes</span>
-            <span>✓ Used by 6-Figure Coaches</span>
+      <section className="py-20 px-6 relative z-10">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-accent/5 to-transparent" />
+        <AnimatedSection delay={800}>
+          <div className="container mx-auto max-w-4xl text-center relative">
+            <SignalLineDivider className="mb-12" />
+            <h2 className="heading-section text-3xl md:text-4xl font-bold text-foreground mb-10 cinema-text-shadow">
+              Join Thousands of <span className="text-signal">Coaches & Experts</span>
+            </h2>
+            <p className="body-premium text-lg md:text-xl text-foreground/80 mb-12 max-w-3xl mx-auto">
+              Who've used the Origin Story Studio to overcome their "Invisible Brand Center" and create authentic connections with their ideal clients.
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-8 text-foreground/70">
+              <span className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-brass rounded-full" />
+                <span className="text-brass font-medium">10,000+ Stories Created</span>
+              </span>
+              <span className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-brass rounded-full" />
+                <span className="text-brass font-medium">Featured in Forbes</span>
+              </span>
+              <span className="flex items-center space-x-2">
+                <div className="w-2 h-2 bg-brass rounded-full" />
+                <span className="text-brass font-medium">Used by 6-Figure Coaches</span>
+              </span>
+            </div>
           </div>
-        </div>
+        </AnimatedSection>
       </section>
     </div>
   );
