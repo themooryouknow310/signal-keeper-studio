@@ -114,12 +114,12 @@ const OriginStoryStudio = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="relative py-12 px-6 overflow-hidden">
+      <section className="relative py-8 px-6 overflow-hidden">
         <div className="container mx-auto max-w-5xl relative z-10">
           <AnimatedSection delay={200}>
-            <div className="text-center mb-12">
+            <div className="text-center mb-8">
               {/* Enhanced Header */}
-              <div className="max-w-4xl mx-auto mb-8 py-8">
+              <div className="max-w-4xl mx-auto mb-6 py-4">
                 {/* SignalRing positioned above */}
                 <div className="flex justify-center mb-8">
                   <SignalRing size={80} className="text-signal motion-fade drop-shadow-lg" />
