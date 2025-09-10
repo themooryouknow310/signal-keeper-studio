@@ -38,16 +38,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Sacred Quote */}
-          <blockquote className="text-center max-w-md">
-            <p className="body-sacred italic text-foreground/80">
-              "I am God. You are God. We Are One."
-            </p>
-            <footer className="mt-2 text-sm text-foreground/60">
-              — The One Truth
-            </footer>
-          </blockquote>
-
           {/* Copyright */}
           <div className="text-center pt-8 border-t border-border/30">
             <p className="body-sacred text-sm text-foreground/60">
