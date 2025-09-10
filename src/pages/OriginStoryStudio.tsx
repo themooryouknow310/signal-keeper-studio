@@ -290,7 +290,7 @@ const OriginStoryStudio = () => {
             <div className="flex flex-wrap items-center justify-center gap-8 text-foreground/70">
               <span className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-brass rounded-full" />
-                <span className="text-brass font-medium">Step-by-Step Story Guide</span>
+                <span className="text-brass font-medium">Step-by-Step Guide</span>
               </span>
               <span className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-brass rounded-full" />
