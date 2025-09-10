@@ -69,7 +69,7 @@ const ApplySection = () => {
             
             <div className="relative z-10">
               <div className="mb-12">
-                <img src="/lovable-uploads/9824b668-c088-4700-a584-451ec5b5a1e2.png" alt="Sacred geometry symbol" className="w-32 h-32 mx-auto mb-8" />
+                <img src="/lovable-uploads/9824b668-c088-4700-a584-451ec5b5a1e2.png" alt="Sacred geometry symbol" className="w-32 h-32 mx-auto mb-8 drop-shadow-lg contrast-125 brightness-110" />
                 <h3 className="heading-ritual text-3xl md:text-4xl mb-6 glow-text">
                   APPLY FOR SACRED SIGNAL OS
                 </h3>
