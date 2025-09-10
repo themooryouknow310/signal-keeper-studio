@@ -131,8 +131,12 @@ const OriginStoryStudio = () => {
                 A Free Interactive Web Application That Guides You Step-by-Step To Craft Your Compelling Origin Story
               </p>
               
-              <p className="body-premium text-lg md:text-xl text-signal font-medium leading-relaxed max-w-3xl mx-auto cinema-text-shadow">
-                From Hidden Healer to Recognized Authority - The guided storytelling experience that transforms your personal journey into client-attracting content
+              <p className="body-premium text-xl md:text-3xl text-signal font-bold leading-relaxed max-w-4xl mx-auto cinema-text-shadow mb-4">
+                From Hidden Healer to Recognized Authority
+              </p>
+              
+              <p className="body-premium text-lg md:text-xl text-foreground/80 font-medium italic leading-relaxed max-w-3xl mx-auto cinema-text-shadow">
+                The guided storytelling experience that transforms your personal journey into client-attracting content
               </p>
             </div>
           </AnimatedSection>
