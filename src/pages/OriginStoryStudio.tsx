@@ -284,7 +284,7 @@ const OriginStoryStudio = () => {
                   <Button 
                     type="submit" 
                     disabled={form.formState.isSubmitting}
-                    className="w-full cinema-glow bg-transparent border-2 border-signal text-signal hover:bg-signal hover:text-background font-display font-bold tracking-wide py-4 text-lg motion-glow-hover"
+                    className="w-full cinema-glow bg-transparent border-2 border-signal text-signal hover:bg-signal hover:text-background font-display font-bold tracking-wide py-6 px-4 text-sm md:text-base motion-glow-hover"
                   >
                     {form.formState.isSubmitting ? 'Creating Your Access...' : 'START BUILDING MY ORIGIN STORY'}
                   </Button>
