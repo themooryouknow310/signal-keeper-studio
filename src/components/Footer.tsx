@@ -34,7 +34,7 @@ const Footer = () => {
               Created by <span className="text-brass font-semibold">Barack El</span>
             </p>
             <p className="body-sacred text-sm text-foreground/60 mt-1">
-              Kainosopher • Signal Keeper • Guide to Remembrance
+              Founder • Signal Keeper • Guide to Remembrance
             </p>
           </div>
 
