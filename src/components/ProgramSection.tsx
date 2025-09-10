@@ -207,7 +207,7 @@ const ProgramSection = () => {
             </div>
           </div>
           
-          <p className="body-premium text-foreground text-xl mb-12">
+          <p className="body-premium text-foreground text-xl mb-12 font-bold">
             Complete 12-Week Transformation Program
           </p>
 
