@@ -282,10 +282,10 @@ const OriginStoryStudio = () => {
           <div className="container mx-auto max-w-4xl text-center relative">
             <SignalLineDivider className="mb-12" />
             <h2 className="heading-section text-3xl md:text-4xl font-bold text-foreground mb-10 cinema-text-shadow">
-              Join Thousands of <span className="text-signal">Coaches & Experts</span>
+              Join <span className="text-signal">Spiritual Entrepreneurs Worldwide</span>
             </h2>
             <p className="body-premium text-lg md:text-xl text-foreground/80 mb-12 max-w-3xl mx-auto">
-              Who've used the Origin Story Studio to overcome their "Invisible Brand Center" and create authentic connections with their ideal clients.
+              Who are using proven storytelling strategies to move from best-kept secret to sought-after authority in their field.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-8 text-foreground/70">
               <span className="flex items-center space-x-2">
