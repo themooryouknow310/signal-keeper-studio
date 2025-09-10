@@ -61,9 +61,6 @@ const AboutSection = () => {
   return (
     <section id="about" className="section-divider relative overflow-hidden">
       {/* Background Accent Elements */}
-      <div className="absolute top-16 right-10 opacity-8">
-        <SacredMandala size={100} />
-      </div>
       <div className="absolute bottom-16 left-10 opacity-6">
         <EightPointStar size={60} />
       </div>
