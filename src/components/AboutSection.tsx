@@ -121,7 +121,9 @@ const AboutSection = () => {
               </p>
               <div className="absolute -top-2 -bottom-2 -left-2 -right-2 border border-signal/20 rounded-lg"></div>
             </div>
-            <div className="w-24 h-px bg-gradient-to-l from-transparent via-brass to-brass" />
+            <div className="w-24 h-px bg-gradient-to-l from-transparent via-brass/70 to-brass shadow-[0_0_20px_hsl(var(--brass)/0.4)] relative">
+              <div className="absolute inset-0 bg-gradient-to-l from-transparent via-white/20 to-white/10 blur-sm"></div>
+            </div>
           </div>
         </div>
 
