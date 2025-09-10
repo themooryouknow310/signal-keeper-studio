@@ -19,7 +19,7 @@ const FounderSection = () => {
             MEET YOUR GUIDE
           </h2>
           <p className="body-premium text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
-            Barack El has guided over 1,200 spiritual entrepreneurs to authentic, sustainable growth
+            Barack El combines deep spiritual training with proven business systems to help entrepreneurs build authentic, sustainable enterprises
           </p>
         </AnimatedSection>
 
