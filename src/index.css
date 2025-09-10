@@ -176,6 +176,15 @@
       0 0 120px hsl(var(--signal-glow) / 0.2);
   }
 
+  /* White Glow Effect for Module Titles */
+  .glow-white {
+    text-shadow: 
+      0 0 20px hsl(0 0% 100% / 0.8),
+      0 0 40px hsl(0 0% 100% / 0.6),
+      0 0 80px hsl(0 0% 100% / 0.4),
+      0 0 120px hsl(0 0% 100% / 0.2);
+  }
+
   /* Sacred Interactive Elements */
   .signal-glow {
     box-shadow: var(--shadow-signal);
