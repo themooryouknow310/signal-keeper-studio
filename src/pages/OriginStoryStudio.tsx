@@ -14,7 +14,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { useToast } from '@/hooks/use-toast';
-import heroImage from '@/assets/cinema/hero-dark-gradient.jpg';
+const heroImage = '/lovable-uploads/43b5c4db-0f9c-4433-aebb-19f3478779d6.png';
 import "../styles/cinema.css";
 
 const formSchema = z.object({
