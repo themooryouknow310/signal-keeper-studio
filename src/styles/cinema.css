@@ -172,6 +172,55 @@
   }
 }
 
+/* Hero Headline Effects */
+.hero-shout {
+  text-shadow: 
+    0 0 20px hsl(0 0% 100% / 50%),
+    0 4px 16px hsl(0 0% 0% / 80%),
+    0 0 40px hsl(0 0% 100% / 30%);
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  animation: breathe 3s ease-in-out infinite;
+}
+
+.hero-void {
+  text-shadow: 
+    0 0 30px hsl(var(--ssos-cyan) / 80%),
+    0 4px 16px hsl(0 0% 0% / 80%),
+    0 0 60px hsl(var(--ssos-cyan) / 50%),
+    0 0 100px hsl(var(--ssos-cyan) / 30%);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  animation: intensePulse 2s ease-in-out infinite, glowShift 4s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+@keyframes intensePulse {
+  0%, 100% { 
+    text-shadow: 
+      0 0 30px hsl(var(--ssos-cyan) / 80%),
+      0 4px 16px hsl(0 0% 0% / 80%),
+      0 0 60px hsl(var(--ssos-cyan) / 50%),
+      0 0 100px hsl(var(--ssos-cyan) / 30%);
+  }
+  50% { 
+    text-shadow: 
+      0 0 40px hsl(var(--ssos-cyan) / 100%),
+      0 4px 16px hsl(0 0% 0% / 80%),
+      0 0 80px hsl(var(--ssos-cyan) / 70%),
+      0 0 120px hsl(var(--ssos-cyan) / 50%);
+  }
+}
+
+@keyframes glowShift {
+  0%, 100% { filter: hue-rotate(0deg); }
+  50% { filter: hue-rotate(10deg); }
+}
+
 /* Performance Optimization */
 .cinema-hero img,
 .cinema-grain::after,

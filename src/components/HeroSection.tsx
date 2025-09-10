@@ -29,12 +29,13 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-6 text-center max-w-6xl">
         {/* Main Headline with Cinematic Typography */}
         <AnimatedSection delay={200}>
-          <h1 className="heading-ritual text-3xl md:text-5xl mb-16 glow-text">
-            TIRED OF SHOUTING
-            <br />
-            <span className="text-signal">
+          <h1 className="heading-ritual text-4xl md:text-6xl lg:text-7xl xl:text-8xl mb-16 leading-none">
+            <div className="hero-shout text-white mb-2">
+              TIRED OF SHOUTING
+            </div>
+            <div className="hero-void text-signal">
               INTO THE VOID?
-            </span>
+            </div>
           </h1>
         </AnimatedSection>
 
