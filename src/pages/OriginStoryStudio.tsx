@@ -127,9 +127,18 @@ const OriginStoryStudio = () => {
               
               <SignalLineDivider className="mb-12" />
               
-              <p className="body-premium text-xl md:text-2xl text-foreground/90 leading-relaxed mb-8 max-w-4xl mx-auto cinema-text-shadow">
+              <p className="body-premium text-xl md:text-2xl text-foreground/90 leading-relaxed mb-12 max-w-4xl mx-auto cinema-text-shadow">
                 A Free Interactive Web Application That Guides You Step-by-Step To Craft Your Compelling Origin Story
               </p>
+              
+              {/* Feature Image */}
+              <div className="mb-12 max-w-2xl mx-auto">
+                <img 
+                  src="/lovable-uploads/5e65f76b-c53c-4660-818b-dd55f3548ea0.png" 
+                  alt="Origin Story Studio Interface"
+                  className="w-full h-auto rounded-2xl shadow-2xl cinema-glow"
+                />
+              </div>
               
               <p className="body-premium text-xl md:text-3xl text-signal font-bold leading-relaxed max-w-4xl mx-auto cinema-text-shadow mb-4">
                 From Hidden Healer to Recognized Authority
