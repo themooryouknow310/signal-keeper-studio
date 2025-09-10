@@ -6,7 +6,7 @@ const Footer = () => {
           {/* Logo & Brand */}
           <div className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/ffd03cb6-2004-4121-a7bb-650b4939fb8c.png"
+              src="/lovable-uploads/7d101e86-18f9-4285-bbbe-c9dc6f53ad53.png"
               alt="Metatron's Cube - Sacred Geometry Symbol"
               className="w-10 h-10 opacity-90"
             />
