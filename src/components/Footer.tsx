@@ -2,9 +2,9 @@ import SacredGeometry from "@/components/SacredGeometry";
 
 const Footer = () => {
   return (
-    <footer className="bg-card border-t border-border py-8">
+    <footer className="bg-card border-t border-border py-6">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col items-center space-y-6">
+        <div className="flex flex-col items-center space-y-4">
           {/* Logo & Brand */}
           <div className="flex items-center space-x-3">
             <SacredGeometry size={40} />
