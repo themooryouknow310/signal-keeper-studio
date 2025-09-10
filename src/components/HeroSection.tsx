@@ -91,11 +91,10 @@ const HeroSection = () => {
         <AnimatedSection delay={800} className="flex justify-center items-center">
           <Button 
             size="lg"
-            className="cinema-glow bg-transparent border-2 border-signal text-signal hover:bg-signal hover:text-background font-body font-medium px-12 py-6 text-xl motion-glow-hover rounded-full relative overflow-hidden group"
+            className="cinema-glow bg-transparent border-2 border-signal text-signal hover:bg-signal hover:text-background font-body font-medium px-12 py-6 text-xl motion-glow-hover rounded-full"
             onClick={scrollToApply}
           >
-            <span className="relative z-10">BEGIN YOUR TRANSFORMATION</span>
-            <div className="absolute inset-0 bg-signal opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            BEGIN YOUR TRANSFORMATION
           </Button>
         </AnimatedSection>
 
