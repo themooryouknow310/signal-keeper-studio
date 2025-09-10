@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import SacredGeometry from "@/components/SacredGeometry";
 import SignalRing from "@/components/SignalRing";
+import SignalLineDivider from "@/components/accents/SignalLineDivider";
 import marissaFontanaImage from "@/assets/testimonials/marissa-fontana.jpg";
 import leoraLeonImage from "@/assets/testimonials/leora-leon.jpg";
 import susieCollesImage from "@/assets/testimonials/susie-colles.jpg";
@@ -301,11 +302,7 @@ const ApplySection = () => {
             <p className="heading-ritual text-2xl md:text-3xl text-foreground mb-6 glow-text">
               Your Voice Deserves To Cut Through Noise And Carry With Power.
             </p>
-            <div className="flex items-center justify-center space-x-4">
-              <div className="w-20 h-px bg-gradient-to-r from-transparent to-brass"></div>
-              <div className="w-3 h-3 bg-brass rounded-full"></div>
-              <div className="w-20 h-px bg-gradient-to-l from-transparent to-brass"></div>
-            </div>
+            <SignalLineDivider className="mb-6" />
           </div>
           
           <Button 
