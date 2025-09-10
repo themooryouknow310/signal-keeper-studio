@@ -149,29 +149,29 @@ const ProgramSection = () => {
             <strong>12 Precision Modules That Transform Scattered Efforts Into Predictable Revenue</strong>
           </p>
           
-          <div className="ssos-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="ssos-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
             {modules.map((module, index) => (
               <div 
                 key={index}
-                className="ssos-card text-center group relative overflow-hidden scale-hover"
+                className="ssos-card text-center group relative overflow-hidden scale-hover p-6"
               >
-                <div className="absolute top-4 right-4 text-brass/40 font-display font-bold text-lg">
+                <div className="absolute top-3 right-3 text-brass/40 font-display font-bold text-sm">
                   {String(index + 1).padStart(2, '0')}
                 </div>
-                <div className="mb-8 mx-auto w-20 h-20 rounded-full overflow-hidden group-hover:scale-110 transition-transform duration-300 border-2 border-brass/30">
+                <div className="mb-6 mx-auto w-16 h-16 rounded-full overflow-hidden group-hover:scale-110 transition-transform duration-300 border-2 border-brass/30">
                   <img 
                     src={module.image} 
                     alt={module.title}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="ssos-card-title text-xl mb-3">
+                <h3 className="ssos-card-title text-lg mb-2">
                   {module.title}
                 </h3>
-                <p className="body-premium text-foreground text-base font-semibold mb-4">
+                <p className="body-premium text-foreground text-sm font-semibold mb-3">
                   {module.subtitle}
                 </p>
-                <p className="body-premium text-foreground/80 leading-relaxed text-sm">
+                <p className="body-premium text-foreground/80 leading-relaxed text-xs">
                   {module.description}
                 </p>
               </div>
