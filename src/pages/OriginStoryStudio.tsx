@@ -132,7 +132,7 @@ const OriginStoryStudio = () => {
               </p>
               
               <p className="body-premium text-lg md:text-xl text-signal font-medium leading-relaxed max-w-3xl mx-auto cinema-text-shadow">
-                Overcome The "Invisible Brand Center" That Keeps Clients From Connecting With You
+                From Hidden Healer to Recognized Authority - The guided storytelling experience that transforms your personal journey into client-attracting content
               </p>
             </div>
           </AnimatedSection>
