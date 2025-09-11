@@ -304,7 +304,7 @@ const OfferStackSection = () => {
             
             <div className="mb-6">
               <p className="body-premium text-base text-foreground/80 leading-relaxed max-w-3xl mx-auto">
-                If all Sacred Signal OS did was give you a clear message and a steady, values-aligned pipeline, would it be worth $1,600?
+                If all Sacred Signal OS did was give you a clear message and a steady, values-aligned pipeline, would it be worth $1,597?
               </p>
             </div>
 
