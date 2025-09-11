@@ -136,10 +136,10 @@ const Application = () => {
                         
                         <div className="text-center">
                           <div className="text-signal font-semibold text-lg">
-                            Marissa Fontana
+                            Lady Drasmin
                           </div>
                           <div className="text-foreground/60 text-sm">
-                            Spiritual Entrepreneur
+                            International Best Selling Author
                           </div>
                         </div>
                       </CardContent>
