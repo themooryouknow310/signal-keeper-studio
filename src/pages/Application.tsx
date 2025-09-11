@@ -154,11 +154,11 @@ const Application = () => {
                   <div className="space-y-8">
                     
                     {/* Header */}
-                    <div className="text-center lg:text-left">
+                    <div className="text-center">
                       <h2 className="heading-ritual text-3xl md:text-4xl lg:text-5xl mb-6 glow-text">
                         Very Limited Openings – Apply Here Now
                       </h2>
-                      <p className="body-premium text-xl text-foreground/90 leading-relaxed max-w-3xl">
+                      <p className="body-premium text-xl text-foreground/90 leading-relaxed max-w-3xl mx-auto">
                         Transform your scattered efforts into a resonant signal that attracts your ideal clients with ease and authenticity.
                       </p>
                     </div>
