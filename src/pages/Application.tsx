@@ -131,7 +131,7 @@ const Application = () => {
                         </div>
                         
                         <blockquote className="body-premium text-foreground/80 leading-relaxed mb-6 text-center italic">
-                          "Barack is the real deal with a business grounded in purpose. Since getting to know Barack and collaborating with him on multiple projects, it's evident how devoted Barack is to the mission of empowering women and nurturing the emergence of the divine feminine in all of us."
+                          "Every interaction with Barack has been clear and kind, loving and empowering; I Am truly honoured to be a part of the women leaders and GODdesses on his platform, and more so deeply blessed to grow connection with this radiant being of light."
                         </blockquote>
                         
                         <div className="text-center">
