@@ -147,7 +147,7 @@ const Application = () => {
               </div>
 
               {/* Right Column - Application Form (2/3) */}
-              <div className="lg:col-span-2 flex flex-col justify-start">
+              <div className="lg:col-span-2 flex flex-col justify-end">
                 <AnimatedSection delay={400}>
                   <div className="space-y-6 mt-0">
                     
