@@ -45,66 +45,6 @@ const ApplySection = () => {
 
       <div className="container mx-auto px-6">
 
-        <div className="max-w-5xl mx-auto mb-24">
-          <div className="relative bg-gradient-to-br from-signal/5 via-background/80 to-signal/10 backdrop-blur-xl border border-signal/20 rounded-3xl p-12 md:p-16 text-center shadow-[0_20px_60px_-10px_hsl(var(--signal-glow)/0.2)] overflow-hidden">
-            {/* Elegant border glow */}
-            <div className="absolute inset-0 rounded-3xl border border-signal/30 shadow-[inset_0_1px_0_hsl(var(--signal-glow)/0.1)]"></div>
-            
-            <div className="relative z-10">
-              <div className="mb-12">
-                <img src="/lovable-uploads/9824b668-c088-4700-a584-451ec5b5a1e2.png" alt="Sacred geometry symbol" className="w-32 h-32 mx-auto mb-8 drop-shadow-2xl contrast-150 brightness-125 saturate-150 filter" style={{ filter: 'drop-shadow(0 0 20px hsl(var(--brass) / 0.6))' }} />
-                <h3 className="heading-ritual text-3xl md:text-4xl mb-6 glow-text">
-                  APPLY FOR SACRED SIGNAL OS
-                </h3>
-                <p className="body-premium text-xl text-foreground/90 mb-8">
-                  12 Weeks • High-Touch Coaching • Complete Transformation
-                </p>
-                <div className="text-5xl md:text-6xl font-display font-bold text-signal mb-4 glow-text">
-                  $1,497
-                </div>
-                <p className="body-premium text-foreground/80 text-lg">
-                  Payment Plans Available
-                </p>
-              </div>
-
-              <div className="space-y-6 mb-12">
-                <Button 
-                  size="lg"
-                  className="signal-glow bg-signal text-background hover:bg-signal/90 font-body font-semibold px-16 py-6 text-xl transition-all duration-300 w-full sm:w-auto shadow-[0_8px_32px_hsl(var(--signal-glow)/0.3)]"
-                >
-                  Apply Now - Sacred Signal OS
-                </Button>
-                <p className="body-premium text-sm text-foreground/70">
-                  Applications Reviewed Within 48 Hours
-                </p>
-              </div>
-
-              <div className="bg-gradient-to-br from-background/40 via-background/60 to-signal/5 backdrop-blur-sm border border-signal/15 rounded-2xl p-8 text-left shadow-[0_8px_32px_-8px_hsl(var(--background)/0.5)]">
-                <h4 className="ssos-card-title text-lg mb-6 text-center">
-                  What Happens Next:
-                </h4>
-                <div className="space-y-4 text-foreground/80">
-                  <div className="flex items-start space-x-4">
-                    <span className="w-8 h-8 bg-gradient-to-br from-signal/30 to-signal/10 border border-signal/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1 text-signal text-sm font-bold shadow-[0_2px_8px_hsl(var(--signal-glow)/0.2)]">1</span>
-                    <span className="body-premium">Complete Application & Values Alignment Assessment</span>
-                  </div>
-                  <div className="flex items-start space-x-4">
-                    <span className="w-8 h-8 bg-gradient-to-br from-signal/30 to-signal/10 border border-signal/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1 text-signal text-sm font-bold shadow-[0_2px_8px_hsl(var(--signal-glow)/0.2)]">2</span>
-                    <span className="body-premium">Brief Discovery Call To Ensure Mutual Fit</span>
-                  </div>
-                  <div className="flex items-start space-x-4">
-                    <span className="w-8 h-8 bg-gradient-to-br from-signal/30 to-signal/10 border border-signal/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1 text-signal text-sm font-bold shadow-[0_2px_8px_hsl(var(--signal-glow)/0.2)]">3</span>
-                    <span className="body-premium">Receive Program Materials & Community Access</span>
-                  </div>
-                  <div className="flex items-start space-x-4">
-                    <span className="w-8 h-8 bg-gradient-to-br from-signal/30 to-signal/10 border border-signal/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1 text-signal text-sm font-bold shadow-[0_2px_8px_hsl(var(--signal-glow)/0.2)]">4</span>
-                    <span className="body-premium">Begin Your 12-Week Transformation</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* Testimonials Section */}
         <div className="max-w-5xl mx-auto mb-32">
