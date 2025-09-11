@@ -111,38 +111,40 @@ const Application = () => {
       <section className="py-20 relative overflow-hidden">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start">
               
               {/* Left Column - Testimonial (1/3) */}
               <div className="lg:col-span-1">
                 <AnimatedSection delay={200}>
-                  <Card className="bg-gradient-to-br from-signal/5 via-background/80 to-signal/10 border border-signal/20 shadow-[0_20px_60px_-10px_hsl(var(--signal-glow)/0.2)] overflow-hidden">
-                    <CardContent className="p-8">
-                      <div className="text-center mb-6">
-                        <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-signal/30 mb-6 mx-auto shadow-[0_4px_16px_hsl(var(--signal-glow)/0.2)]">
-                          <img 
-                            src="/lovable-uploads/83b74022-00a0-44c6-80b7-80c1741ef70b.png" 
-                            alt="Marissa Fontana" 
-                            className="w-full h-full object-cover"
-                          />
+                  <div className="sticky top-8">
+                    <Card className="bg-gradient-to-br from-signal/5 via-background/80 to-signal/10 border border-signal/20 shadow-[0_20px_60px_-10px_hsl(var(--signal-glow)/0.2)] overflow-hidden h-fit">
+                      <CardContent className="p-8">
+                        <div className="text-center mb-6">
+                          <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-signal/30 mb-6 mx-auto shadow-[0_4px_16px_hsl(var(--signal-glow)/0.2)]">
+                            <img 
+                              src="/lovable-uploads/83b74022-00a0-44c6-80b7-80c1741ef70b.png" 
+                              alt="Marissa Fontana" 
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                          <img src="/lovable-uploads/3577b1e4-f101-4b3d-a7ac-74b52ee58e57.png" alt="Sacred geometry pattern" className="w-8 h-8 mb-6 mx-auto" />
                         </div>
-                        <img src="/lovable-uploads/3577b1e4-f101-4b3d-a7ac-74b52ee58e57.png" alt="Sacred geometry pattern" className="w-8 h-8 mb-6 mx-auto" />
-                      </div>
-                      
-                      <blockquote className="body-premium text-foreground/80 leading-relaxed mb-6 text-center italic">
-                        "Barack is the real deal with a business grounded in purpose. Since getting to know Barack and collaborating with him on multiple projects, it's evident how devoted Barack is to the mission of empowering women and nurturing the emergence of the divine feminine in all of us."
-                      </blockquote>
-                      
-                      <div className="text-center">
-                        <div className="text-signal font-semibold text-lg">
-                          Marissa Fontana
+                        
+                        <blockquote className="body-premium text-foreground/80 leading-relaxed mb-6 text-center italic">
+                          "Barack is the real deal with a business grounded in purpose. Since getting to know Barack and collaborating with him on multiple projects, it's evident how devoted Barack is to the mission of empowering women and nurturing the emergence of the divine feminine in all of us."
+                        </blockquote>
+                        
+                        <div className="text-center">
+                          <div className="text-signal font-semibold text-lg">
+                            Marissa Fontana
+                          </div>
+                          <div className="text-foreground/60 text-sm">
+                            Spiritual Entrepreneur
+                          </div>
                         </div>
-                        <div className="text-foreground/60 text-sm">
-                          Spiritual Entrepreneur
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
+                      </CardContent>
+                    </Card>
+                  </div>
                 </AnimatedSection>
               </div>
 
