@@ -274,16 +274,32 @@ const OfferStackSection = () => {
               <div className="text-4xl font-display font-bold text-signal mb-2 glow-text">Your Price Today: $1,597</div>
             </div>
             
-            <div className="mb-6 py-6 border-y border-signal/20">
-              <p className="body-premium text-base text-foreground/80 leading-relaxed mb-4">
-                If all Sacred Signal OS did was give you a clear message and a steady, values-aligned pipeline, would it be worth $1,600?
-              </p>
-              <button 
-                className="bg-signal text-background hover:bg-signal/90 font-body font-semibold px-12 py-4 text-lg rounded-xl button-lift"
-                onClick={scrollToApply}
-              >
-                Apply Now for Sacred Signal OS
-              </button>
+            <div className="mb-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                <div className="ssos-card p-6 text-center border-signal/30 bg-gradient-to-br from-signal/10 via-background/80 to-signal/5">
+                  <div className="mb-4">
+                    <div className="text-2xl font-bold text-signal mb-2">$1,497</div>
+                    <div className="text-sm text-signal font-medium">Save $100</div>
+                  </div>
+                  <div className="body-premium text-foreground text-lg font-medium">Pay In Full</div>
+                </div>
+                
+                <div className="ssos-card p-6 text-center border-signal/30">
+                  <div className="mb-4">
+                    <div className="text-2xl font-bold text-foreground mb-2">2 × $799</div>
+                    <div className="text-sm text-foreground/60">Monthly</div>
+                  </div>
+                  <div className="body-premium text-foreground text-lg font-medium">2-Pay Option</div>
+                </div>
+                
+                <div className="ssos-card p-6 text-center border-signal/30">
+                  <div className="mb-4">
+                    <div className="text-2xl font-bold text-foreground mb-2">3 × $533</div>
+                    <div className="text-sm text-foreground/60">Monthly</div>
+                  </div>
+                  <div className="body-premium text-foreground text-lg font-medium">3-Pay Option</div>
+                </div>
+              </div>
             </div>
             
             <div className="mb-6">
