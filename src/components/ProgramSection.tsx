@@ -185,59 +185,6 @@ const ProgramSection = () => {
           </p>
         </div>
 
-        {/* Investment Section */}
-        <div className="ssos-card text-center max-w-4xl mx-auto fade-up">
-          <h3 className="heading-ritual text-3xl md:text-4xl mb-8 glow-text">
-            INVESTMENT IN YOUR TRANSFORMATION
-          </h3>
-          
-          <div className="relative mb-8">
-            <div className="bg-gradient-to-br from-signal/20 via-signal/10 to-transparent p-12 rounded-2xl border border-signal/30 backdrop-blur-sm shadow-[0_0_40px_hsl(var(--signal-glow)/0.3)]">
-              <div className="text-center">
-                <div className="heading-ritual text-2xl md:text-3xl mb-8 glow-text uppercase tracking-wider font-bold">Investment</div>
-                <div className="text-5xl md:text-6xl font-display font-bold text-signal mb-2 glow-text">$1,497</div>
-                <div className="w-16 h-px bg-signal/50 mx-auto shadow-[0_0_20px_hsl(var(--signal-glow)/0.5)]"></div>
-              </div>
-            </div>
-          </div>
-          
-          <p className="body-premium text-foreground text-xl mb-12 font-bold">
-            Complete 12-Week Transformation Program
-          </p>
-
-          <div className="ssos-grid grid-cols-1 md:grid-cols-3 mb-12">
-            <div className="ssos-pricing-card is-featured">
-              <div className="mb-4">
-                <div className="text-2xl font-bold text-signal mb-2">$1,497</div>
-                <div className="text-sm text-signal font-medium">Save $100</div>
-              </div>
-              <div className="body-premium text-foreground text-lg font-medium">Pay In Full</div>
-            </div>
-            
-            <div className="ssos-pricing-card">
-              <div className="mb-4">
-                <div className="text-2xl font-bold text-foreground mb-2">2 × $799</div>
-                <div className="text-sm text-foreground/60">Monthly</div>
-              </div>
-              <div className="body-premium text-foreground text-lg font-medium">2-Pay Option</div>
-            </div>
-            
-            <div className="ssos-pricing-card">
-              <div className="mb-4">
-                <div className="text-2xl font-bold text-foreground mb-2">3 × $533</div>
-                <div className="text-sm text-foreground/60">Monthly</div>
-              </div>
-              <div className="body-premium text-foreground text-lg font-medium">3-Pay Option</div>
-            </div>
-          </div>
-
-          <button 
-            className="bg-signal text-background hover:bg-signal/90 font-body font-semibold px-16 py-6 text-xl rounded-xl button-lift"
-            onClick={scrollToApply}
-          >
-            Apply Now for Sacred Signal OS
-          </button>
-        </div>
       </div>
     </section>
   );
