@@ -44,24 +44,6 @@ const ApplySection = () => {
       </div>
 
       <div className="container mx-auto px-6">
-        {/* Header */}
-        <div className="text-center mb-20">
-          <div className="w-[48rem] h-[32rem] mx-auto mb-10 rounded-2xl overflow-hidden border border-brass/30 shadow-[0_8px_32px_hsl(var(--signal-glow)/0.2)]">
-            <img 
-              src="/lovable-uploads/9b735b7f-7d36-48fc-9934-0a95148fc23c.png" 
-              alt="Spiritual meditation and inner wisdom"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <h2 className="heading-ritual text-4xl md:text-6xl mb-8 glow-text">
-            READY TO STOP SHOUTING
-            <br />
-            <span className="text-signal glow-text">AND START BEING HEARD?</span>
-          </h2>
-          <p className="body-premium text-xl md:text-2xl text-foreground max-w-4xl mx-auto leading-relaxed">
-            Transform Your Scattered Efforts Into A Resonant Signal That Attracts Your Ideal Clients With Ease And Authenticity.
-          </p>
-        </div>
 
         <div className="max-w-5xl mx-auto mb-24">
           <div className="relative bg-gradient-to-br from-signal/5 via-background/80 to-signal/10 backdrop-blur-xl border border-signal/20 rounded-3xl p-12 md:p-16 text-center shadow-[0_20px_60px_-10px_hsl(var(--signal-glow)/0.2)] overflow-hidden">
