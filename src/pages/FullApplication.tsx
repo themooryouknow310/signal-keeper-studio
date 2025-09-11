@@ -66,10 +66,10 @@ const FullApplication = () => {
         <div className="container mx-auto px-6">
           <AnimatedSection>
             <div className="text-center max-w-4xl mx-auto">
-              <h1 className="heading-ritual text-4xl md:text-5xl lg:text-6xl mb-6 glow-text">
+              <h1 className="heading-ritual text-5xl md:text-6xl lg:text-7xl mb-6 glow-text">
                 You Are Just 1 Step Away!
               </h1>
-              <p className="body-premium text-xl md:text-2xl text-foreground/90 leading-relaxed">
+              <p className="body-premium text-2xl md:text-3xl text-foreground/90 leading-relaxed">
                 Please Fill Out This Short Application Now…
               </p>
             </div>
