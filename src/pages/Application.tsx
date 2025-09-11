@@ -147,20 +147,23 @@ const Application = () => {
               </div>
 
               {/* Right Column - Application Form (2/3) */}
-              <div className="lg:col-span-2 flex flex-col justify-end h-full">
-                <AnimatedSection delay={400}>
-                  <div className="space-y-6 mt-0">
-                    
-                    {/* Header */}
-                    <div className="text-center">
-                      <h2 className="heading-ritual text-3xl md:text-4xl lg:text-5xl mb-4 glow-text">
-                        Very Limited Openings – Apply Here Now
-                      </h2>
-                      <p className="body-premium text-xl text-foreground/90 leading-relaxed max-w-3xl mx-auto mb-8">
-                        Transform your scattered efforts into a resonant signal that attracts your ideal clients with ease and authenticity.
-                      </p>
-                    </div>
+              <div className="lg:col-span-2 flex flex-col h-full">
+                
+                {/* Header - Positioned Higher */}
+                <AnimatedSection delay={300}>
+                  <div className="text-center pt-8 pb-4">
+                    <h2 className="heading-ritual text-3xl md:text-4xl lg:text-5xl mb-4 glow-text">
+                      Very Limited Openings – Apply Here Now
+                    </h2>
+                    <p className="body-premium text-xl text-foreground/90 leading-relaxed max-w-3xl mx-auto mb-8">
+                      Transform your scattered efforts into a resonant signal that attracts your ideal clients with ease and authenticity.
+                    </p>
+                  </div>
+                </AnimatedSection>
 
+                {/* Form Container - Bottom Aligned */}
+                <div className="flex-1 flex flex-col justify-end">
+                  <AnimatedSection delay={400}>
                     {/* Application Form */}
                     <Card className="bg-gradient-to-br from-signal/5 via-background/90 to-signal/10 border border-signal/20 shadow-[0_20px_60px_-10px_hsl(var(--signal-glow)/0.2)]">
                       <CardContent className="p-8">
@@ -227,9 +230,8 @@ const Application = () => {
                         </Form>
                       </CardContent>
                     </Card>
-
-                  </div>
-                </AnimatedSection>
+                  </AnimatedSection>
+                </div>
               </div>
 
             </div>
