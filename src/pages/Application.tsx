@@ -122,7 +122,7 @@ const Application = () => {
                         <div className="text-center mb-6">
                           <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-signal/30 mb-6 mx-auto shadow-[0_4px_16px_hsl(var(--signal-glow)/0.2)]">
                             <img 
-                              src="/lovable-uploads/83b74022-00a0-44c6-80b7-80c1741ef70b.png" 
+                              src="/lovable-uploads/bd2cb781-a6cc-413a-80c6-1011862ff09a.png" 
                               alt="Marissa Fontana" 
                               className="w-full h-full object-cover"
                             />
