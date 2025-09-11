@@ -230,33 +230,6 @@ const Application = () => {
                       </CardContent>
                     </Card>
 
-                    {/* What Happens Next */}
-                    <Card className="bg-gradient-to-br from-background/40 via-background/60 to-signal/5 border border-signal/15 shadow-[0_8px_32px_-8px_hsl(var(--background)/0.5)]">
-                      <CardContent className="p-8">
-                        <h3 className="ssos-card-title text-xl mb-6 text-center lg:text-left">
-                          What Happens Next:
-                        </h3>
-                        <div className="space-y-4 text-foreground/80">
-                          <div className="flex items-start space-x-4">
-                            <span className="w-8 h-8 bg-gradient-to-br from-signal/30 to-signal/10 border border-signal/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1 text-signal text-sm font-bold shadow-[0_2px_8px_hsl(var(--signal-glow)/0.2)]">1</span>
-                            <span className="body-premium">Complete Application & Values Alignment Assessment</span>
-                          </div>
-                          <div className="flex items-start space-x-4">
-                            <span className="w-8 h-8 bg-gradient-to-br from-signal/30 to-signal/10 border border-signal/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1 text-signal text-sm font-bold shadow-[0_2px_8px_hsl(var(--signal-glow)/0.2)]">2</span>
-                            <span className="body-premium">Brief Discovery Call To Ensure Mutual Fit</span>
-                          </div>
-                          <div className="flex items-start space-x-4">
-                            <span className="w-8 h-8 bg-gradient-to-br from-signal/30 to-signal/10 border border-signal/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1 text-signal text-sm font-bold shadow-[0_2px_8px_hsl(var(--signal-glow)/0.2)]">3</span>
-                            <span className="body-premium">Receive Program Materials & Community Access</span>
-                          </div>
-                          <div className="flex items-start space-x-4">
-                            <span className="w-8 h-8 bg-gradient-to-br from-signal/30 to-signal/10 border border-signal/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1 text-signal text-sm font-bold shadow-[0_2px_8px_hsl(var(--signal-glow)/0.2)]">4</span>
-                            <span className="body-premium">Begin Your 12-Week Transformation</span>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-
                   </div>
                 </AnimatedSection>
               </div>
