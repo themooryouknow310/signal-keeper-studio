@@ -134,10 +134,10 @@ const FullApplication = () => {
                           
                           <div className="border-t border-signal/20 pt-4">
                             <div className="text-foreground font-semibold">
-                              Sarah Mitchell
+                              Vaibhav Gupta
                             </div>
                             <div className="text-foreground/60 text-sm">
-                              Transformational Coach & Program Graduate
+                              Founder at Techrechard
                             </div>
                           </div>
                         </div>
