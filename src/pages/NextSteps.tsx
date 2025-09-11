@@ -60,7 +60,7 @@ const NextSteps = () => {
                 {/* Step 1 */}
                 <Card className="bg-background/60 backdrop-blur border-signal/20 shadow-xl">
                   <CardContent className="p-8">
-                    <div className="flex items-start gap-6">
+                    <div className="flex items-center gap-6">
                       <div className="flex-shrink-0 flex justify-center items-center">
                         <img 
                           src="/lovable-uploads/197eeb61-edcc-4347-b214-8c726272e5cb.png" 
@@ -81,7 +81,7 @@ const NextSteps = () => {
                 {/* Step 2 */}
                 <Card className="bg-background/60 backdrop-blur border-signal/20 shadow-xl">
                   <CardContent className="p-8">
-                    <div className="flex items-start gap-6">
+                    <div className="flex items-center gap-6">
                       <div className="flex-shrink-0 flex justify-center items-center">
                         <img 
                           src="/lovable-uploads/197eeb61-edcc-4347-b214-8c726272e5cb.png" 
@@ -102,7 +102,7 @@ const NextSteps = () => {
                 {/* Step 3 */}
                 <Card className="bg-background/60 backdrop-blur border-signal/20 shadow-xl">
                   <CardContent className="p-8">
-                    <div className="flex items-start gap-6">
+                    <div className="flex items-center gap-6">
                       <div className="flex-shrink-0 flex justify-center items-center">
                         <img 
                           src="/lovable-uploads/197eeb61-edcc-4347-b214-8c726272e5cb.png" 
