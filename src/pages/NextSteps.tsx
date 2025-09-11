@@ -62,9 +62,11 @@ const NextSteps = () => {
                   <CardContent className="p-8">
                     <div className="flex items-start gap-6">
                       <div className="flex-shrink-0">
-                        <div className="w-12 h-12 bg-signal/20 rounded-full flex items-center justify-center">
-                          <span className="text-signal font-bold text-xl">1</span>
-                        </div>
+                        <img 
+                          src="/lovable-uploads/197eeb61-edcc-4347-b214-8c726272e5cb.png" 
+                          alt="Sacred geometry symbol"
+                          className="w-12 h-12"
+                        />
                       </div>
                       <div>
                         <h3 className="heading-ritual text-xl mb-4 text-signal">First</h3>
@@ -81,9 +83,11 @@ const NextSteps = () => {
                   <CardContent className="p-8">
                     <div className="flex items-start gap-6">
                       <div className="flex-shrink-0">
-                        <div className="w-12 h-12 bg-signal/20 rounded-full flex items-center justify-center">
-                          <span className="text-signal font-bold text-xl">2</span>
-                        </div>
+                        <img 
+                          src="/lovable-uploads/197eeb61-edcc-4347-b214-8c726272e5cb.png" 
+                          alt="Sacred geometry symbol"
+                          className="w-12 h-12"
+                        />
                       </div>
                       <div>
                         <h3 className="heading-ritual text-xl mb-4 text-signal">Second</h3>
@@ -100,9 +104,11 @@ const NextSteps = () => {
                   <CardContent className="p-8">
                     <div className="flex items-start gap-6">
                       <div className="flex-shrink-0">
-                        <div className="w-12 h-12 bg-signal/20 rounded-full flex items-center justify-center">
-                          <span className="text-signal font-bold text-xl">3</span>
-                        </div>
+                        <img 
+                          src="/lovable-uploads/197eeb61-edcc-4347-b214-8c726272e5cb.png" 
+                          alt="Sacred geometry symbol"
+                          className="w-12 h-12"
+                        />
                       </div>
                       <div>
                         <h3 className="heading-ritual text-xl mb-4 text-signal">Third</h3>
