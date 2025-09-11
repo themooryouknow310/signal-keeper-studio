@@ -274,6 +274,18 @@ const OfferStackSection = () => {
               <div className="text-4xl font-display font-bold text-signal mb-2 glow-text">Your Price Today: $1,597</div>
             </div>
             
+            <div className="mb-6 py-6 border-y border-signal/20">
+              <p className="body-premium text-base text-foreground/80 leading-relaxed mb-4">
+                If all Sacred Signal OS did was give you a clear message and a steady, values-aligned pipeline, would it be worth $1,600?
+              </p>
+              <button 
+                className="bg-signal text-background hover:bg-signal/90 font-body font-semibold px-12 py-4 text-lg rounded-xl button-lift"
+                onClick={scrollToApply}
+              >
+                Apply Now for Sacred Signal OS
+              </button>
+            </div>
+            
             <div className="mb-6">
               <p className="body-premium text-base text-foreground/80 leading-relaxed max-w-3xl mx-auto">
                 If all Sacred Signal OS did was give you a clear message and a steady, values-aligned pipeline, would it be worth $1,600?
