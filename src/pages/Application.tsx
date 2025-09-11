@@ -149,7 +149,7 @@ const Application = () => {
               {/* Right Column - Application Form (2/3) */}
               <div className="lg:col-span-2">
                 <AnimatedSection delay={400}>
-                  <div className="space-y-8">
+                  <div className="space-y-6">
                     
                     {/* Header */}
                     <div className="text-center">
