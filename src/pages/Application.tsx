@@ -149,14 +149,14 @@ const Application = () => {
               {/* Right Column - Application Form (2/3) */}
               <div className="lg:col-span-2 flex flex-col justify-start">
                 <AnimatedSection delay={400}>
-                  <div className="space-y-6 mt-0 lg:-mt-12">
+                  <div className="space-y-6 mt-0 lg:-mt-16">
                     
                     {/* Header */}
                     <div className="text-center">
                       <h2 className="heading-ritual text-3xl md:text-4xl lg:text-5xl mb-4 glow-text">
                         Very Limited Openings – Apply Here Now
                       </h2>
-                      <p className="body-premium text-xl text-foreground/90 leading-relaxed max-w-3xl mx-auto">
+                      <p className="body-premium text-xl text-foreground/90 leading-relaxed max-w-3xl mx-auto mb-8">
                         Transform your scattered efforts into a resonant signal that attracts your ideal clients with ease and authenticity.
                       </p>
                     </div>
