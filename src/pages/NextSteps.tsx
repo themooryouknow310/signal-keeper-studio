@@ -11,9 +11,6 @@ const NextSteps = () => {
         <div className="container mx-auto px-6">
           <AnimatedSection>
             <div className="text-center max-w-4xl mx-auto">
-              <div className="mb-8">
-                <CheckCircle className="w-16 h-16 text-signal mx-auto mb-6" />
-              </div>
               <h1 className="heading-ritual text-5xl md:text-6xl lg:text-7xl mb-6 glow-text">
                 Congratulations!
               </h1>
