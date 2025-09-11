@@ -286,6 +286,54 @@ const OfferStackSection = () => {
             >
               Apply Now for Sacred Signal OS
             </button>
+            
+            <div className="mt-12 pt-8 border-t border-signal/20">
+              <p className="body-premium text-base text-foreground/80 mb-8 font-semibold">
+                Applications Reviewed Within 48 Hours
+              </p>
+              
+              <h4 className="heading-ritual text-xl text-signal glow-text mb-8 uppercase tracking-wider">
+                WHAT HAPPENS NEXT:
+              </h4>
+              
+              <div className="space-y-6 max-w-2xl mx-auto">
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-signal text-background rounded-full flex items-center justify-center font-display font-bold text-sm flex-shrink-0">
+                    1
+                  </div>
+                  <p className="body-premium text-sm text-foreground/80 leading-relaxed pt-1">
+                    Complete Application & Values Alignment Assessment
+                  </p>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-signal text-background rounded-full flex items-center justify-center font-display font-bold text-sm flex-shrink-0">
+                    2
+                  </div>
+                  <p className="body-premium text-sm text-foreground/80 leading-relaxed pt-1">
+                    Brief Discovery Call To Ensure Mutual Fit
+                  </p>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-signal text-background rounded-full flex items-center justify-center font-display font-bold text-sm flex-shrink-0">
+                    3
+                  </div>
+                  <p className="body-premium text-sm text-foreground/80 leading-relaxed pt-1">
+                    Receive Program Materials & Community Access
+                  </p>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="w-8 h-8 bg-signal text-background rounded-full flex items-center justify-center font-display font-bold text-sm flex-shrink-0">
+                    4
+                  </div>
+                  <p className="body-premium text-sm text-foreground/80 leading-relaxed pt-1">
+                    Begin Your 12-Week Transformation
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         </div>
