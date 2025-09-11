@@ -119,8 +119,8 @@ const FullApplication = () => {
                         <div className="flex-shrink-0">
                           <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-signal/30 shadow-[0_4px_16px_hsl(var(--signal-glow)/0.2)]">
                             <img 
-                              src="/lovable-uploads/5ca86352-ff88-44a2-a9ba-b1da2125ae17.png" 
-                              alt="Success story"
+                              src="/lovable-uploads/23d11c9b-c773-4598-b607-aa6556eafe46.png" 
+                              alt="Vaibhav Gupta testimonial"
                               className="w-full h-full object-cover"
                             />
                           </div>
