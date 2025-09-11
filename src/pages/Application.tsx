@@ -48,17 +48,22 @@ const Application = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background via-card/10 to-background">
+    <div className="min-h-screen" style={{
+      backgroundImage: `url('/lovable-uploads/64ec7f8a-dc71-4fd5-9bf6-b5ccf8ab1608.png')`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
+    }}>
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden py-20">
         {/* Cinematic Background */}
         <div className="absolute inset-0">
           <img 
-            src={heroImage} 
-            alt="Sacred Signal OS Application Background" 
-            className="w-full h-full object-cover opacity-60"
+            src="/lovable-uploads/64ec7f8a-dc71-4fd5-9bf6-b5ccf8ab1608.png" 
+            alt="Sacred Geometry Background" 
+            className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/30 to-background/50" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/20 to-background/40" />
         </div>
         
         {/* Content */}
