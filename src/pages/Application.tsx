@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
@@ -19,6 +20,7 @@ const formSchema = z.object({
 
 const Application = () => {
   const { toast } = useToast();
+  const navigate = useNavigate();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -36,11 +38,12 @@ const Application = () => {
     setTimeout(() => {
       console.log(values);
       toast({
-        title: "Application Submitted!",
-        description: "We'll review your application and be in touch within 48 hours.",
+        title: "Taking You to the Full Application...",
+        description: "Please complete the detailed application form.",
       });
       setIsSubmitting(false);
-      form.reset();
+      // Navigate to the full application page
+      navigate('/full-application');
     }, 1000);
   };
 

@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import OriginStoryStudio from "./pages/OriginStoryStudio";
 import Application from "./pages/Application";
+import FullApplication from "./pages/FullApplication";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,6 +21,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/origin-story-studio" element={<OriginStoryStudio />} />
           <Route path="/application" element={<Application />} />
+          <Route path="/full-application" element={<FullApplication />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
