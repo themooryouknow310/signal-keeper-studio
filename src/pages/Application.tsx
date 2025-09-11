@@ -49,7 +49,7 @@ const Application = () => {
 
   return (
     <div className="min-h-screen" style={{
-      backgroundImage: `url('/lovable-uploads/64ec7f8a-dc71-4fd5-9bf6-b5ccf8ab1608.png')`,
+      backgroundImage: `url('/lovable-uploads/4d952e22-1bf9-4446-b13a-7e118cf846e1.png')`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat'
@@ -59,11 +59,11 @@ const Application = () => {
         {/* Cinematic Background */}
         <div className="absolute inset-0">
           <img 
-            src="/lovable-uploads/64ec7f8a-dc71-4fd5-9bf6-b5ccf8ab1608.png" 
-            alt="Sacred Geometry Background" 
+            src="/lovable-uploads/4d952e22-1bf9-4446-b13a-7e118cf846e1.png" 
+            alt="Sacred Gradient Background" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/20 to-background/40" />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/10 to-background/30" />
         </div>
         
         {/* Content */}
