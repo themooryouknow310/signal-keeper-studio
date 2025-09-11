@@ -261,6 +261,13 @@ const OfferStackSection = () => {
         {/* Final Pricing */}
         <div className="fade-up">
           <div className="ssos-card text-center p-8 border-signal/30 bg-gradient-to-br from-signal/10 via-background/80 to-signal/5">
+            <h3 className="heading-ritual text-3xl md:text-4xl mb-4 glow-text">
+              APPLY FOR SACRED SIGNAL OS
+            </h3>
+            <p className="body-premium text-lg text-foreground/80 mb-8">
+              12 Weeks • High-Touch Coaching • Complete Transformation
+            </p>
+            
             <div className="mb-6">
               <div className="text-lg text-signal font-display font-bold mb-1">Total Value: $18,800</div>
               <div className="text-base text-foreground/60 mb-2 line-through">Only: $2,997</div>
