@@ -269,8 +269,8 @@ const OfferStackSection = () => {
             </p>
             
             <div className="mb-6">
-              <div className="text-lg text-signal font-display font-bold mb-1">Total Value: $18,800</div>
-              <div className="text-base text-foreground/60 mb-2 line-through">Only: $2,997</div>
+              <div className="text-2xl md:text-3xl text-signal font-display font-bold mb-1">Total Value: $18,800</div>
+              <div className="text-xl md:text-2xl text-foreground/60 mb-2 line-through">Only: $2,997</div>
               <div className="text-4xl font-display font-bold text-signal mb-2 glow-text">Your Price Today: $1,597</div>
             </div>
             
