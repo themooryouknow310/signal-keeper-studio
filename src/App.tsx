@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import OriginStoryStudio from "./pages/OriginStoryStudio";
+import DreamClientSprint from "./pages/DreamClientSprint";
 import Application from "./pages/Application";
 import FullApplication from "./pages/FullApplication";
 import NextSteps from "./pages/NextSteps";
@@ -21,6 +22,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/origin-story-studio" element={<OriginStoryStudio />} />
+          <Route path="/dream-client-sprint" element={<DreamClientSprint />} />
           <Route path="/application" element={<Application />} />
           <Route path="/full-application" element={<FullApplication />} />
           <Route path="/next-steps" element={<NextSteps />} />
