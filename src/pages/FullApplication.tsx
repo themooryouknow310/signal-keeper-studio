@@ -84,7 +84,8 @@ const FullApplication = () => {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
               
               {/* Left Column - Video (2/3) */}
-              <div className="lg:col-span-2">
+              <div className="lg:col-span-2 space-y-8">
+                {/* Video */}
                 <AnimatedSection delay={200}>
                   <Card className="bg-gradient-to-br from-signal/5 via-background/80 to-signal/10 border border-signal/20 shadow-[0_20px_60px_-10px_hsl(var(--signal-glow)/0.2)] overflow-hidden">
                     <CardContent className="p-0">
@@ -107,11 +108,48 @@ const FullApplication = () => {
                     </CardContent>
                   </Card>
                 </AnimatedSection>
+
+                {/* Testimonial */}
+                <AnimatedSection delay={400}>
+                  <Card className="bg-gradient-to-br from-signal/5 via-background/80 to-signal/10 border border-signal/20 shadow-[0_20px_60px_-10px_hsl(var(--signal-glow)/0.2)] overflow-hidden">
+                    <CardContent className="p-8">
+                      <div className="flex flex-col md:flex-row items-center gap-6">
+                        
+                        {/* Testimonial Image */}
+                        <div className="flex-shrink-0">
+                          <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden border-2 border-signal/30 shadow-[0_4px_16px_hsl(var(--signal-glow)/0.2)]">
+                            <img 
+                              src="/lovable-uploads/5ca86352-ff88-44a2-a9ba-b1da2125ae17.png" 
+                              alt="Success story"
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                        </div>
+
+                        {/* Testimonial Content */}
+                        <div className="flex-1 text-center md:text-left">
+                          <blockquote className="body-premium text-base md:text-lg text-foreground/90 leading-relaxed mb-4 italic">
+                            "Sacred Signal OS completely transformed how I connect with my audience. Within 90 days, I went from scattered content to a clear, resonant message that attracts my ideal clients effortlessly."
+                          </blockquote>
+                          
+                          <div className="border-t border-signal/20 pt-4">
+                            <div className="text-foreground font-semibold">
+                              Sarah Mitchell
+                            </div>
+                            <div className="text-foreground/60 text-sm">
+                              Transformational Coach & Program Graduate
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </AnimatedSection>
               </div>
 
               {/* Right Column - Application Form (1/3) */}
               <div className="lg:col-span-1">
-                <AnimatedSection delay={400}>
+                <AnimatedSection delay={600}>
                   <Card className="bg-gradient-to-br from-signal/5 via-background/90 to-signal/10 border border-signal/20 shadow-[0_20px_60px_-10px_hsl(var(--signal-glow)/0.2)] sticky top-8">
                     <CardContent className="p-8">
                       <Form {...form}>
@@ -315,49 +353,6 @@ const FullApplication = () => {
                 </AnimatedSection>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonial Section */}
-      <section className="py-16 relative">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <AnimatedSection delay={600}>
-              <Card className="bg-gradient-to-br from-signal/5 via-background/80 to-signal/10 border border-signal/20 shadow-[0_20px_60px_-10px_hsl(var(--signal-glow)/0.2)] overflow-hidden">
-                <CardContent className="p-12">
-                  <div className="flex flex-col md:flex-row items-center gap-8">
-                    
-                    {/* Testimonial Image */}
-                    <div className="flex-shrink-0">
-                      <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-2 border-signal/30 shadow-[0_4px_16px_hsl(var(--signal-glow)/0.2)]">
-                        <img 
-                          src="/lovable-uploads/5ca86352-ff88-44a2-a9ba-b1da2125ae17.png" 
-                          alt="Success story"
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    </div>
-
-                    {/* Testimonial Content */}
-                    <div className="flex-1 text-center md:text-left">
-                      <blockquote className="body-premium text-lg md:text-xl text-foreground/90 leading-relaxed mb-6 italic">
-                        "Sacred Signal OS completely transformed how I connect with my audience. Within 90 days, I went from scattered content to a clear, resonant message that attracts my ideal clients effortlessly. The community support and frameworks are incredible."
-                      </blockquote>
-                      
-                      <div className="border-t border-signal/20 pt-6">
-                        <div className="text-foreground font-semibold text-lg">
-                          Sarah Mitchell
-                        </div>
-                        <div className="text-foreground/60 text-sm">
-                          Transformational Coach & Sacred Signal OS Graduate
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </AnimatedSection>
           </div>
         </div>
       </section>
