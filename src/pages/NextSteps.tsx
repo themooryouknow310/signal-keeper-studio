@@ -61,11 +61,11 @@ const NextSteps = () => {
                 <Card className="bg-background/60 backdrop-blur border-signal/20 shadow-xl">
                   <CardContent className="p-8">
                     <div className="flex items-start gap-6">
-                      <div className="flex-shrink-0">
+                      <div className="flex-shrink-0 flex justify-center items-center">
                         <img 
                           src="/lovable-uploads/197eeb61-edcc-4347-b214-8c726272e5cb.png" 
                           alt="Sacred geometry symbol"
-                          className="w-12 h-12"
+                          className="w-20 h-20"
                         />
                       </div>
                       <div>
@@ -82,11 +82,11 @@ const NextSteps = () => {
                 <Card className="bg-background/60 backdrop-blur border-signal/20 shadow-xl">
                   <CardContent className="p-8">
                     <div className="flex items-start gap-6">
-                      <div className="flex-shrink-0">
+                      <div className="flex-shrink-0 flex justify-center items-center">
                         <img 
                           src="/lovable-uploads/197eeb61-edcc-4347-b214-8c726272e5cb.png" 
                           alt="Sacred geometry symbol"
-                          className="w-12 h-12"
+                          className="w-20 h-20"
                         />
                       </div>
                       <div>
@@ -103,11 +103,11 @@ const NextSteps = () => {
                 <Card className="bg-background/60 backdrop-blur border-signal/20 shadow-xl">
                   <CardContent className="p-8">
                     <div className="flex items-start gap-6">
-                      <div className="flex-shrink-0">
+                      <div className="flex-shrink-0 flex justify-center items-center">
                         <img 
                           src="/lovable-uploads/197eeb61-edcc-4347-b214-8c726272e5cb.png" 
                           alt="Sacred geometry symbol"
-                          className="w-12 h-12"
+                          className="w-20 h-20"
                         />
                       </div>
                       <div>
