@@ -6,11 +6,8 @@ import AnimatedSection from "@/components/AnimatedSection";
 import "../styles/cinema.css";
 
 const HeroSection = () => {
-  const scrollToApply = () => {
-    const element = document.getElementById('apply');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  const navigateToApplication = () => {
+    window.location.href = '/application';
   };
 
   return (
@@ -92,7 +89,7 @@ const HeroSection = () => {
           <Button 
             size="lg"
             className="cinema-glow bg-transparent border-2 border-signal text-signal hover:bg-signal hover:text-background font-body font-medium px-12 py-6 text-xl motion-glow-hover rounded-full"
-            onClick={scrollToApply}
+            onClick={navigateToApplication}
           >
             BEGIN YOUR TRANSFORMATION
           </Button>
