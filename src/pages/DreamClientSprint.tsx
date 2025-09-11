@@ -178,7 +178,7 @@ const DreamClientSprint = () => {
                       Book My Dream Client Signal Sprint
                     </Button>
                     <p className="text-xs text-foreground/60 text-center mt-3">
-                      Free • 30-60 minutes • No pitch, just value
+                      Free • 30-60 minutes • I will be pitching
                     </p>
                   </div>
                 </form>
