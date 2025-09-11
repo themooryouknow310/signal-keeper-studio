@@ -177,7 +177,7 @@ const ProgramSection = () => {
 
         {/* The Result Section */}
         <div className="ssos-card text-center max-w-4xl mx-auto mb-24 fade-up bg-gradient-to-br from-signal/5 via-background/80 to-signal/10 border-signal/30">
-          <h3 className="heading-ritual text-2xl md:text-3xl mb-6 text-signal glow-text">
+          <h3 className="heading-ritual text-3xl md:text-4xl mb-6 text-signal glow-text">
             The Result:
           </h3>
           <p className="body-premium text-xl md:text-2xl leading-relaxed text-foreground max-w-3xl mx-auto">
