@@ -111,13 +111,13 @@ const Application = () => {
       <section className="py-20 relative overflow-hidden">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-stretch">
               
               {/* Left Column - Testimonial (1/3) */}
               <div className="lg:col-span-1">
                 <AnimatedSection delay={200}>
                   <Card className="bg-gradient-to-br from-signal/5 via-background/80 to-signal/10 border border-signal/20 shadow-[0_20px_60px_-10px_hsl(var(--signal-glow)/0.2)] overflow-hidden h-full">
-                    <CardContent className="p-8 h-full flex flex-col justify-start">
+                    <CardContent className="p-8 h-full flex flex-col justify-between">
                         <div className="text-center mb-6">
                           <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-signal/30 mb-6 mx-auto shadow-[0_4px_16px_hsl(var(--signal-glow)/0.2)]">
                             <img 
@@ -147,7 +147,7 @@ const Application = () => {
               </div>
 
               {/* Right Column - Application Form (2/3) */}
-              <div className="lg:col-span-2 flex flex-col justify-end">
+              <div className="lg:col-span-2 flex flex-col justify-end h-full">
                 <AnimatedSection delay={400}>
                   <div className="space-y-6 mt-0">
                     
