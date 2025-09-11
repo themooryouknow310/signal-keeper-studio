@@ -174,7 +174,7 @@ const DreamClientSprint = () => {
                   </div>
 
                   <div className="pt-4">
-                    <Button type="submit" size="lg" className="w-full text-lg">
+                    <Button type="submit" size="lg" variant="cyan" className="w-full text-lg">
                       Book My Dream Client Signal Sprint
                     </Button>
                     <p className="text-xs text-foreground/60 text-center mt-3">
