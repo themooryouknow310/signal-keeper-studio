@@ -128,7 +128,7 @@ const DreamClientSprint = () => {
                     <div className="space-y-4">
                       <div>
                         <Label htmlFor="pastClients" className="text-sm font-medium text-foreground mb-2 block">
-                          1. List 3 favorite past clients (bullets) *
+                          1. Describe 3 favorite past clients (bullets) *
                         </Label>
                         <Textarea
                           id="pastClients"
