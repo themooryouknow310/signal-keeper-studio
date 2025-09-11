@@ -129,7 +129,7 @@ const FullApplication = () => {
                         {/* Testimonial Content */}
                         <div className="flex-1 text-center md:text-left">
                           <blockquote className="body-premium text-base md:text-lg text-foreground/90 leading-relaxed mb-4 italic">
-                            "Sacred Signal OS completely transformed how I connect with my audience. Within 90 days, I went from scattered content to a clear, resonant message that attracts my ideal clients effortlessly."
+                            "Barack is truly inspirational! His vision for Femigod has allowed him to create something that's one of a kind. Working with him has been an incredibly insightful experience that's allowed me to push myself and create in a way I didn't think was possible."
                           </blockquote>
                           
                           <div className="border-t border-signal/20 pt-4">
