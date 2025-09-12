@@ -30,31 +30,28 @@
     $hide_navigation = get_post_meta(get_the_ID(), '_hide_navigation', true);
     if (!$hide_navigation) : 
     ?>
-    <header id="masthead" class="site-header fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <!-- Logo -->
-                <div class="flex items-center space-x-3">
+    <header id="masthead" class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <!-- Logo / Brand -->
+                <div class="brand">
                     <?php if (has_custom_logo()) : ?>
                         <?php the_custom_logo(); ?>
                     <?php else : ?>
                         <img 
                             src="<?php echo get_template_directory_uri(); ?>/assets/images/sacred-geometry-icon.png" 
-                            alt="<?php bloginfo('name'); ?>" 
-                            class="w-10 h-10"
+                            alt="<?php bloginfo('name'); ?>"
                         />
                     <?php endif; ?>
-                    <span class="text-xl font-semibold text-foreground">
-                        <?php bloginfo('name'); ?>
-                    </span>
+                    <span class="text-xl font-semibold text-foreground"><?php bloginfo('name'); ?></span>
                 </div>
 
                 <!-- Navigation -->
-                <nav class="hidden md:flex items-center space-x-8">
+                <nav class="primary-nav">
                     <?php
                     wp_nav_menu(array(
                         'theme_location' => 'primary',
-                        'menu_class' => 'nav-menu flex items-center space-x-8',
+                        'menu_class' => 'nav-menu',
                         'container' => false,
                         'fallback_cb' => false,
                     ));
@@ -62,10 +59,10 @@
                 </nav>
 
                 <!-- CTA Button -->
-                <div class="hidden md:block">
+                <div class="cta">
                     <a 
                         href="<?php echo esc_url(home_url('/application/')); ?>" 
-                        class="btn-primary inline-flex items-center px-6 py-3 rounded-full text-sm font-medium transition-all duration-300"
+                        class="btn-primary inline-block px-6 py-3 rounded-full text-sm font-medium"
                     >
                         <?php _e('Apply Now', 'sacred-signal-os'); ?>
                     </a>
@@ -73,22 +70,22 @@
 
                 <!-- Mobile Menu Button -->
                 <button 
-                    class="md:hidden text-foreground hover:text-primary transition-colors"
+                    class="mobile-toggle"
                     id="mobile-menu-button"
                     aria-label="<?php _e('Toggle mobile menu', 'sacred-signal-os'); ?>"
                 >
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                     </svg>
                 </button>
             </div>
 
             <!-- Mobile Menu -->
-            <div class="md:hidden mt-4 pb-4 border-t border-border pt-4 hidden" id="mobile-menu">
+            <div class="mobile-menu" id="mobile-menu">
                 <?php
                 wp_nav_menu(array(
                     'theme_location' => 'primary',
-                    'menu_class' => 'mobile-nav-menu space-y-4',
+                    'menu_class' => 'mobile-nav-menu',
                     'container' => false,
                     'fallback_cb' => false,
                 ));

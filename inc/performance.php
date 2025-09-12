@@ -55,7 +55,7 @@ function sacred_signal_preload_resources() {
     
     // Preload critical images
     if (is_front_page()) {
-        $hero_image = get_template_directory_uri() . '/assets/cinema/hero-sacred-signals.jpg';
+        $hero_image = get_template_directory_uri() . '/assets/images/cinema/hero-sacred-signals.jpg';
         echo '<link rel="preload" href="' . esc_url($hero_image) . '" as="image">';
     }
 }

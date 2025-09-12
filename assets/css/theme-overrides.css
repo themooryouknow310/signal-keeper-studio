@@ -1,0 +1,109 @@
+/* Sacred Signal OS - Theme Overrides and Utility Bridge */
+
+/* Fixed header styling with translucent background and blur */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background-color: hsl(var(--background) / 0.9);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid hsl(var(--border));
+}
+
+/* Header layout */
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand img {
+  width: 40px;
+  height: 40px;
+}
+
+.primary-nav { display: none; }
+.primary-nav .menu { display: flex; gap: 2rem; align-items: center; margin: 0; padding: 0; list-style: none; }
+
+.cta { display: none; }
+
+.mobile-toggle { 
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center; 
+  width: 40px; 
+  height: 40px; 
+  background: transparent; 
+  border: 0; 
+  color: hsl(var(--foreground));
+}
+
+.mobile-menu { 
+  display: none; 
+  margin-top: 1rem; 
+  padding-bottom: 1rem; 
+  border-top: 1px solid hsl(var(--border));
+}
+.mobile-menu.is-open { display: block; }
+
+@media (min-width: 768px) {
+  .primary-nav { display: block; }
+  .cta { display: block; }
+  .mobile-toggle { display: none; }
+  .mobile-menu { display: none !important; }
+}
+
+/* Offset content for fixed header */
+.site-content { padding-top: 80px; }
+
+/* Minimal utility bridge for commonly used classes */
+.text-center { text-align: center; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.inline-block { display: inline-block; }
+.hidden { display: none !important; }
+
+/* Max width helpers (Tailwind-compatible sizes) */
+.max-w-2xl { max-width: 42rem; }
+.max-w-3xl { max-width: 48rem; }
+.max-w-4xl { max-width: 56rem; }
+.max-w-5xl { max-width: 64rem; }
+.max-w-6xl { max-width: 72rem; }
+
+/* Spacing helpers */
+.mb-8 { margin-bottom: 2rem; }
+.mb-16 { margin-bottom: 4rem; }
+.mt-16 { margin-top: 4rem; }
+.py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+
+/* Typography scale */
+.text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+.text-2xl { font-size: 1.5rem; line-height: 2rem; }
+.text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+.text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+.text-5xl { font-size: 3rem; line-height: 1; }
+.text-6xl { font-size: 3.75rem; line-height: 1; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+.italic { font-style: italic; }
+
+/* Grid utilities */
+.grid { display: grid; }
+.gap-12 { gap: 3rem; }
+.items-center { align-items: center; }
+@media (min-width: 768px) { .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1024px) { .lg\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* Founder image sizing to match design */
+#founder .cinema-testimonial-frame { width: 256px; height: 256px; }
+@media (min-width: 1024px) { #founder .cinema-testimonial-frame { width: 320px; height: 320px; } }

@@ -190,7 +190,7 @@ get_header(); ?>
             </div>
 
             <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="order-2 lg:order-1 animate-on-scroll">
+            <div class="animate-on-scroll founder-text">
                     <h3 class="text-2xl font-semibold mb-4 text-foreground">
                         <?php echo get_theme_mod('founder_name', 'Barack El'); ?>
                     </h3>
@@ -208,8 +208,8 @@ get_header(); ?>
                     </blockquote>
                 </div>
 
-                <div class="order-1 lg:order-2 animate-on-scroll">
-                    <div class="cinema-testimonial-frame w-64 h-64 mx-auto lg:w-80 lg:h-80">
+            <div class="animate-on-scroll founder-media">
+                    <div class="cinema-testimonial-frame mx-auto">
                         <img 
                             src="<?php echo get_template_directory_uri(); ?>/assets/images/barack-el-portrait.jpg" 
                             alt="<?php echo esc_attr(get_theme_mod('founder_name', 'Barack El')); ?>" 

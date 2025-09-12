@@ -96,6 +96,14 @@ function sacred_signal_os_scripts() {
         array('sacred-signal-os-cinema'),
         wp_get_theme()->get('Version')
     );
+
+    // Enqueue theme overrides and utility bridge
+    wp_enqueue_style(
+        'sacred-signal-os-overrides',
+        get_template_directory_uri() . '/assets/css/theme-overrides.css',
+        array('sacred-signal-os-components'),
+        wp_get_theme()->get('Version')
+    );
     
     // Enqueue JavaScript
     wp_enqueue_script(
