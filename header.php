@@ -17,6 +17,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
+    <!-- Preload hero image for faster loading -->
+    <link rel="preload" as="image" href="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/hero-sacred-signals.jpg">
+    
     <?php wp_head(); ?>
 </head>
 

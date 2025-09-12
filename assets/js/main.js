@@ -7,13 +7,16 @@
 
     // Initialize when DOM is ready
     $(document).ready(function() {
+        console.log('Sacred Signal OS: Initializing...');
         initNavigation();
         initSmoothScrolling();
+        initScrollSpy();
         initFormHandling();
         initAnimations();
         initVideoPlayers();
         initTestimonialSlider();
         initBlogFilters();
+        console.log('Sacred Signal OS: All systems initialized');
     });
 
     /**
@@ -62,40 +65,105 @@
      * Smooth Scrolling
      */
     function initSmoothScrolling() {
-        // Handle anchor links (both relative and absolute URLs with fragments)
+        console.log('Sacred Signal OS: Setting up smooth scrolling...');
+        
+        // Handle anchor links with robust URL checking
         $('a[href*="#"]').on('click', function(e) {
-            const href = $(this).attr('href');
-            let target;
+            const $this = $(this);
+            const href = $this.attr('href');
+            console.log('Click detected on link:', href);
             
-            // Check if it's a same-page anchor link
+            if (!href || href === '#') return;
+            
+            let targetId;
+            let isSamePage = false;
+            
+            // Determine if this is a same-page anchor
             if (href.startsWith('#')) {
-                target = $(href);
+                // Direct hash link
+                targetId = href.substring(1);
+                isSamePage = true;
             } else if (href.includes('#')) {
+                // Full URL with hash
                 const [url, fragment] = href.split('#');
-                const currentUrl = window.location.origin + window.location.pathname;
+                const currentPath = window.location.pathname;
+                const currentOrigin = window.location.origin;
                 
-                // Only smooth scroll if it's the same page
-                if (url === currentUrl || url === window.location.href.replace('#' + fragment, '')) {
-                    target = $('#' + fragment);
-                } else {
-                    return; // Let the browser handle external navigation
+                // Normalize URLs for comparison
+                const linkPath = url.replace(currentOrigin, '').replace(/\/$/, '') || '/';
+                const normalizedCurrentPath = currentPath.replace(/\/$/, '') || '/';
+                
+                console.log('Comparing paths:', linkPath, 'vs', normalizedCurrentPath);
+                
+                if (linkPath === normalizedCurrentPath) {
+                    targetId = fragment;
+                    isSamePage = true;
                 }
-            } else {
-                return;
             }
             
-            if (target && target.length) {
-                e.preventDefault();
+            if (isSamePage && targetId) {
+                const target = $('#' + targetId);
+                console.log('Looking for target:', targetId, 'Found:', target.length > 0);
                 
-                // Close mobile menu if open
-                $('#mobile-menu').removeClass('is-open');
-                $('#mobile-menu-button').removeClass('active');
-                
-                $('html, body').animate({
-                    scrollTop: target.offset().top - 80
-                }, 800, 'easeInOutCubic');
+                if (target.length) {
+                    e.preventDefault();
+                    
+                    // Close mobile menu if open
+                    $('#mobile-menu').removeClass('is-open');
+                    $('#mobile-menu-button').removeClass('active');
+                    
+                    // Smooth scroll with proper offset
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - 80
+                    }, 800, 'easeInOutCubic');
+                    
+                    console.log('Scrolling to:', targetId);
+                }
             }
         });
+    }
+
+    /**
+     * ScrollSpy for Navigation
+     */
+    function initScrollSpy() {
+        console.log('Sacred Signal OS: Setting up scrollspy...');
+        
+        const sections = $('section[id]');
+        const navLinks = $('.nav-menu a[href*="#"], .mobile-nav-menu a[href*="#"]');
+        
+        if (sections.length === 0) return;
+        
+        function updateActiveLink() {
+            let currentSection = null;
+            const scrollTop = $(window).scrollTop() + 100; // Offset for header
+            
+            sections.each(function() {
+                const section = $(this);
+                const sectionTop = section.offset().top;
+                const sectionBottom = sectionTop + section.outerHeight();
+                
+                if (scrollTop >= sectionTop && scrollTop < sectionBottom) {
+                    currentSection = section.attr('id');
+                }
+            });
+            
+            // Update nav link active states
+            navLinks.removeClass('is-active');
+            if (currentSection) {
+                navLinks.filter(`[href*="#${currentSection}"]`).addClass('is-active');
+            }
+        }
+        
+        // Throttled scroll handler
+        let scrollTimer;
+        $(window).on('scroll', function() {
+            if (scrollTimer) clearTimeout(scrollTimer);
+            scrollTimer = setTimeout(updateActiveLink, 10);
+        });
+        
+        // Initial check
+        updateActiveLink();
     }
 
     /**
