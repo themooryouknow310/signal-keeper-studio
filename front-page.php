@@ -8,62 +8,110 @@
 get_header(); ?>
 
 <!-- Hero Section -->
-<section class="hero-section cinema-surface-with-grain cinema-grain" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/cinema/hero-sacred-signals.jpg');">
-    <div class="cinema-hero-overlay"></div>
-    <div class="container">
-        <div class="hero-content animate-on-scroll">
-            <?php 
-            $hero_title = get_post_meta(get_the_ID(), '_hero_title', true);
-            $hero_subtitle = get_post_meta(get_the_ID(), '_hero_subtitle', true);
-            
-            if (empty($hero_title)) {
-                $hero_title = 'TRANSFORM YOUR <span class="hero-shout">MESSAGE</span><br>INTO A <span class="text-signal hero-void">SACRED SIGNAL</span>';
-            }
-            
-            if (empty($hero_subtitle)) {
-                $hero_subtitle = 'Stop competing for attention. Start commanding it with the authentic power of your story, refined into a message that cuts through the noise and calls your people home.';
-            }
-            ?>
-            
-            <h1 class="hero-title heading-ritual glow-text cinema-text-shadow">
-                TIRED OF <span class="hero-shout">SHOUTING</span><br>INTO THE <span class="hero-void">VOID?</span>
+<section class="min-h-screen flex items-center justify-center relative overflow-hidden py-20">
+    <!-- Cinematic Background -->
+    <div class="absolute inset-0">
+        <img 
+            src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/hero-spiritual-teacher.jpg" 
+            alt="Sacred Signal OS Background" 
+            class="w-full h-full object-cover opacity-70"
+        />
+        <div class="absolute inset-0 bg-gradient-to-b from-background/95 via-background/30 to-background/50"></div>
+    </div>
+    
+    <!-- Content -->
+    <div class="relative z-10 container mx-auto px-6 text-center max-w-6xl">
+        <!-- Main Headline with Cinematic Typography -->
+        <div class="animate-on-scroll" style="animation-delay: 200ms;">
+            <h1 class="heading-ritual text-4xl md:text-6xl lg:text-7xl xl:text-8xl mb-16 leading-none">
+                <div class="hero-shout text-white mb-2">
+                    TIRED OF SHOUTING
+                </div>
+                <div class="hero-void text-signal">
+                    INTO THE VOID?
+                </div>
             </h1>
-            
-            <!-- Video Container -->
-            <div class="cinema-video-container max-w-2xl mx-auto mb-8">
-                <?php 
-                $hero_video = get_post_meta(get_the_ID(), '_hero_video', true);
-                if ($hero_video) : ?>
-                    <video class="w-full h-auto" poster="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/hero-video-poster.jpg">
-                        <source src="<?php echo esc_url($hero_video); ?>" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="cinema-video-overlay">
-                        <button class="cinema-play-button" aria-label="Play video">
-                            <svg fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M8 5v14l11-7z"/>
+        </div>
+
+        <!-- Video Section with Cinematic Styling -->
+        <div class="animate-on-scroll mb-20 max-w-4xl mx-auto" style="animation-delay: 400ms;">
+            <div class="cinema-hero relative aspect-video rounded-2xl cinema-surface overflow-hidden group">
+                <!-- Video Element -->
+                <video 
+                    class="w-full h-full object-cover"
+                    poster="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/hero-spiritual-teacher.jpg"
+                    controls
+                    preload="metadata"
+                >
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.webm" type="video/webm" />
+                    Your browser does not support the video tag.
+                </video>
+                
+                <!-- Video Overlay with Play Button (shows when paused) -->
+                <div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                    <div class="w-16 h-16 bg-signal/20 border border-signal rounded-full flex items-center justify-center backdrop-blur-sm">
+                        <div class="w-0 h-0 border-l-[12px] border-l-signal border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent ml-1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <p class="text-signal font-medium text-lg mb-2">Sacred Signal OS Introduction</p>
+                <p class="text-foreground/60">Discover Your Path To Authentic Business Growth</p>
+            </div>
+        </div>
+
+        <!-- Cinematic Subheading Section -->
+        <div class="animate-on-scroll space-y-12 mb-16" style="animation-delay: 600ms;">
+            <div class="relative max-w-5xl mx-auto">
+                <p class="body-premium text-2xl md:text-3xl text-foreground max-w-4xl mx-auto leading-relaxed font-light cinema-text-shadow">
+                    For The Spiritual Entrepreneur Who Is Ready To Stop Chasing Clients And Start Attracting Them.
+                </p>
+                
+                <!-- Signal Line Divider -->
+                <div class="mt-12 mb-8">
+                    <div class="flex items-center justify-center">
+                        <!-- Left line -->
+                        <div class="flex-1 h-px bg-gradient-to-r from-transparent via-brass/30 to-brass/60"></div>
+                        
+                        <!-- Center Metatron's Cube -->
+                        <div class="mx-8 relative">
+                            <svg width="48" height="48" viewBox="0 0 48 48" class="drop-shadow-lg text-brass" fill="currentColor">
+                                <circle cx="24" cy="24" r="2" />
+                                <circle cx="24" cy="12" r="2" />
+                                <circle cx="24" cy="36" r="2" />
+                                <circle cx="12" cy="18" r="2" />
+                                <circle cx="36" cy="18" r="2" />
+                                <circle cx="12" cy="30" r="2" />
+                                <circle cx="36" cy="30" r="2" />
+                                <path d="M24 12L36 18L36 30L24 36L12 30L12 18Z" fill="none" stroke="currentColor" stroke-width="1" />
+                                <path d="M24 12L24 36" stroke="currentColor" stroke-width="1" />
+                                <path d="M12 18L36 30" stroke="currentColor" stroke-width="1" />
+                                <path d="M36 18L12 30" stroke="currentColor" stroke-width="1" />
                             </svg>
-                        </button>
-                    </div>
-                <?php else : ?>
-                    <div class="bg-black/50 rounded-lg aspect-video flex items-center justify-center">
-                        <div class="text-center text-white">
-                            <p class="text-xl mb-4">Video Coming Soon</p>
-                            <p class="text-sm opacity-80">The power of your sacred signal revealed</p>
                         </div>
+                        
+                        <!-- Right line -->
+                        <div class="flex-1 h-px bg-gradient-to-l from-transparent via-brass/30 to-brass/60"></div>
                     </div>
-                <?php endif; ?>
+                </div>
             </div>
             
-            <p class="hero-subtitle body-premium cinema-text-shadow mb-8">
-                <?php echo wp_kses_post($hero_subtitle); ?>
+            <p class="body-premium text-xl md:text-2xl text-foreground/90 max-w-4xl mx-auto leading-relaxed font-light cinema-text-shadow">
+                Install A Calm, Predictable Pipeline To Attract, Convert, And Enroll 
+                <span class="text-signal font-medium"> 3-5 New High-Ticket Clients Per Month</span>, 
+                Without Paid Ads Or Content Burnout.
             </p>
-            
-            <div class="hero-cta">
-                <a href="<?php echo esc_url(home_url('/application/')); ?>" class="cinema-button">
-                    <?php _e('BEGIN YOUR TRANSFORMATION', 'sacred-signal-os'); ?>
-                </a>
-            </div>
+        </div>
+
+        <!-- Cinematic CTA Button -->
+        <div class="animate-on-scroll flex justify-center items-center" style="animation-delay: 800ms;">
+            <a 
+                href="<?php echo esc_url(home_url('/application/')); ?>"
+                class="cinema-glow bg-transparent border-2 border-signal text-signal hover:bg-signal hover:text-background font-body font-medium px-12 py-6 text-xl motion-glow-hover rounded-full inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+            >
+                BEGIN YOUR TRANSFORMATION
+            </a>
         </div>
     </div>
 </section>
