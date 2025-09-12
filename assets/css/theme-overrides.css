@@ -225,3 +225,21 @@
 .text-signal-foreground\/70 { color: hsl(var(--signal-foreground) / 0.7); }
 .border-white\/20 { border-color: hsl(var(--signal-foreground) / 0.2); }
 
+/* Missing border utilities */
+.border-l-4 { border-left-width: 4px; border-left-style: solid; }
+.border-signal { border-color: hsl(var(--signal)); }
+
+/* Missing padding utilities */
+.pl-4 { padding-left: 1rem; }
+.pl-6 { padding-left: 1.5rem; }
+
+/* Missing display utilities */
+.block { display: block; }
+
+/* Missing responsive typography */
+@media (min-width: 768px) {
+  .md\:text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+  .md\:text-5xl { font-size: 3rem; line-height: 1; }
+  .md\:text-6xl { font-size: 3.75rem; line-height: 1; }
+}
+
