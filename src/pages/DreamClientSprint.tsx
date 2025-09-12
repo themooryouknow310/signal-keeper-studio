@@ -57,7 +57,7 @@ const DreamClientSprint = () => {
               </h3>
               <div className="bg-card border border-border rounded-lg p-8 shadow-lg">
                 <p className="text-xl font-display font-semibold text-signal">
-                  A one-page Dream Customer Locate-&-Engage Map + your first 3 moves.
+                  A Dream Customer Avatar, Locate-&-Engage Map + Your First 3 Moves.
                 </p>
               </div>
             </div>
