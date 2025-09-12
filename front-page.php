@@ -498,47 +498,62 @@ get_header(); ?>
 </section>
 
 <!-- Founder Section -->
-<section id="founder" class="py-20 bg-background cinema-surface-with-grain cinema-grain">
-    <div class="container">
+<section id="founder" class="py-32 cinema-surface-with-grain relative">
+    <div class="cinema-grain absolute inset-0"></div>
+    
+    <div class="container mx-auto px-6 relative z-10">
+        <!-- Section Header -->
+        <div class="text-center mb-20 animate-on-scroll">
+            <div class="brass-rule mx-auto mb-8" style="width: 200px; border-top: var(--ssos-line);"></div>
+            <h2 class="heading-display text-4xl md:text-5xl lg:text-6xl mb-6 glow-text font-bold">
+                MEET YOUR GUIDE
+            </h2>
+            <p class="body-premium text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
+                Barack El combines deep spiritual training with proven business systems to help entrepreneurs build authentic, sustainable enterprises
+            </p>
+        </div>
+
+        <!-- Founder Profile -->
         <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16 animate-on-scroll">
-                <h2 class="heading-ritual text-3xl md:text-5xl mb-8 text-foreground">
-                    <?php echo get_theme_mod('founder_section_title', 'MEET YOUR GUIDE'); ?>
-                </h2>
-                <p class="body-premium text-xl text-muted-foreground max-w-3xl mx-auto">
-                    <?php echo get_theme_mod('founder_section_description', 'The architect behind the Sacred Signal Operating System, dedicated to helping visionary leaders transform their message into magnetic authority.'); ?>
-                </p>
-            </div>
-
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-            <div class="animate-on-scroll founder-text">
-                    <h3 class="text-2xl font-semibold mb-4 text-foreground">
-                        <?php echo get_theme_mod('founder_name', 'Barack El'); ?>
-                    </h3>
-                    <p class="text-lg text-signal mb-6 font-medium">
-                        <?php echo get_theme_mod('founder_title', 'Founder & Strategic Architect of Sacred Signal OS'); ?>
-                    </p>
-                    <div class="body-premium text-muted-foreground space-y-4 mb-8">
-                        <?php 
-                        $founder_bio = get_theme_mod('founder_bio', 'With over a decade of experience helping transformational leaders build authentic authority, Barack has developed the Sacred Signal Operating System—a revolutionary approach to message clarity and magnetic marketing.');
-                        echo wp_kses_post(wpautop($founder_bio));
-                        ?>
-                    </div>
-                    <blockquote class="border-l-4 border-signal pl-6 italic text-lg text-foreground">
-                        <?php echo get_theme_mod('founder_quote', '"True wealth comes not from chasing money, but from tuning into your sacred frequency and allowing abundance to flow naturally through your aligned action."'); ?>
-                    </blockquote>
-                </div>
-
-            <div class="animate-on-scroll founder-media">
-                    <div class="cinema-testimonial-frame mx-auto">
+            <div class="founder-profile-grid gap-16 items-center">
+                <!-- Photo -->
+                <div class="relative animate-on-scroll">
+                    <div class="cinema-testimonial-frame mx-auto" style="width: 400px; height: 400px;">
                         <img 
                             src="<?php echo get_template_directory_uri(); ?>/assets/images/barack-el-portrait.jpg" 
-                            alt="<?php echo esc_attr(get_theme_mod('founder_name', 'Barack El')); ?>" 
+                            alt="Barack El - Sacred Signal OS Founder" 
                             class="w-full h-full object-cover"
                         />
                     </div>
                 </div>
+
+                <!-- Content -->
+                <div class="space-y-8 animate-on-scroll">
+                    <div>
+                        <h3 class="heading-display text-3xl md:text-4xl mb-4 cinema-text-shadow glow-text font-bold">
+                            THE SIGNAL ARCHITECT
+                        </h3>
+                        <p class="body-premium text-lg text-foreground/90 leading-relaxed mb-6">
+                            As an award-winning leader and spiritual practitioner, Barack has developed the Sacred Signal methodology—a synthesis of 
+                            ancient wisdom traditions and modern conversion psychology that creates authentic magnetic attraction.
+                        </p>
+                        <p class="body-premium text-lg text-foreground/90 leading-relaxed">
+                            His clients don't just grow their businesses; they transform their entire relationship with 
+                            prosperity, purpose, and the sacred art of service.
+                        </p>
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <!-- Philosophy Quote -->
+        <div class="text-center mt-20 animate-on-scroll">
+            <div class="brass-rule mx-auto mb-8" style="width: 200px; border-top: var(--ssos-line);"></div>
+            <blockquote class="philosophy-quote text-2xl md:text-3xl font-light text-foreground/90 max-w-4xl mx-auto leading-relaxed cinema-text-shadow">
+                "True wealth flows to those who stop chasing and start <em class="text-signal not-italic">resonating</em>. 
+                The Sacred Signal OS teaches you to become the frequency your ideal clients are seeking."
+            </blockquote>
+            <cite class="block mt-6 text-brass font-medium tracking-wide">— Barack El, Founder</cite>
         </div>
     </div>
 </section>

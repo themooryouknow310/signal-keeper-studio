@@ -342,6 +342,18 @@
   margin: 4rem 0;
 }
 
+/* Founder Section Styles */
+.founder-profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.philosophy-quote {
+  font-style: italic;
+}
+
 /* Responsive adjustments for SSOS components */
 @media (max-width: 768px) {
   .ssos-grid {
@@ -365,6 +377,11 @@
   .sacred-divider .px-8 {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .founder-profile-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
 
