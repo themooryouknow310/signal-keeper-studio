@@ -380,3 +380,60 @@
   align-items: center;
   justify-content: center;
 }
+
+/* Program Section Styles */
+.program-grid {
+  gap: 1.5rem;
+}
+
+.program-card {
+  position: relative;
+  transition: all 0.3s ease;
+  border: 1px solid hsl(var(--brass) / 0.2);
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+  border-color: hsl(var(--brass) / 0.4);
+  box-shadow: 0 10px 30px hsl(var(--brass) / 0.2);
+}
+
+.program-number {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: hsl(var(--brass) / 0.1);
+  border: 1px solid hsl(var(--brass) / 0.3);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: hsl(var(--brass));
+}
+
+.program-promise {
+  background: linear-gradient(135deg, hsl(var(--card)), hsl(var(--muted)));
+  border: 2px solid hsl(var(--brass) / 0.3);
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.program-promise::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, transparent, hsl(var(--brass) / 0.1), transparent);
+  pointer-events: none;
+}
+
+.program-result {
+  background: hsl(var(--card) / 0.5);
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid hsl(var(--brass) / 0.2);
+}
