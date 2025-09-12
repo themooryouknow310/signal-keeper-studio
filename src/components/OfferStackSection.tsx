@@ -348,7 +348,7 @@ const OfferStackSection = () => {
                     3
                   </div>
                   <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed pt-1">
-                    Receive Program Materials & Community Access
+                    Receive Program Intake Materials
                   </p>
                 </div>
                 
