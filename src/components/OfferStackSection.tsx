@@ -251,7 +251,7 @@ const OfferStackSection = () => {
               <div className="flex items-start space-x-3">
                 <div className="w-1.5 h-1.5 bg-brass rounded-full mt-2 flex-shrink-0"></div>
                 <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
-                  <strong>Lock in current pricing:</strong> our current rate and will increase soon. Reserve your start now to secure today's price and begin at the next available opening.
+                  <strong>Lock in current pricing:</strong> Our current rate and will increase soon. Reserve your start now to secure today's price and begin at the next available opening.
                 </p>
               </div>
             </div>
