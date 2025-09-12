@@ -302,3 +302,68 @@
     animation: none;
   }
 }
+
+/* Sacred Signal OS Grid and Cards */
+.ssos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.ssos-card {
+  background: hsl(var(--background) / 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid hsl(var(--border) / 0.3);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all var(--transition-base);
+}
+
+.ssos-card:hover {
+  transform: translateY(-4px);
+  border-color: hsl(var(--brass) / 0.4);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.ssos-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: hsl(var(--foreground));
+  margin-bottom: 1rem;
+}
+
+/* Sacred Divider */
+.sacred-divider {
+  position: relative;
+  margin: 4rem 0;
+}
+
+/* Responsive adjustments for SSOS components */
+@media (max-width: 768px) {
+  .ssos-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .ssos-card {
+    padding: 1.25rem;
+  }
+  
+  .sacred-divider {
+    margin: 3rem 0;
+  }
+  
+  .sacred-divider .mx-8 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .sacred-divider .px-8 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
