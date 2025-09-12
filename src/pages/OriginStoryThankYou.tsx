@@ -82,18 +82,13 @@ const OriginStoryThankYou = () => {
               <p className="text-muted-foreground mb-6">
                 Ready to dive deeper into building your sacred signal?
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link to="/dream-client-sprint">
-                  <Button size="lg" className="w-full sm:w-auto">
-                    Book Dream Client Sprint
-                  </Button>
-                </Link>
-                <Link to="/">
-                  <Button variant="outline" size="lg" className="w-full sm:w-auto">
-                    Explore Sacred Signal OS
-                  </Button>
-                </Link>
-              </div>
+            <div className="flex justify-center">
+              <Link to="/">
+                <Button variant="outline" size="lg" className="w-full sm:w-auto">
+                  Explore Sacred Signal OS
+                </Button>
+              </Link>
+            </div>
             </div>
           </div>
         </div>
