@@ -9,7 +9,7 @@ const NextSteps = () => {
     <div className="min-h-screen bg-gradient-to-br from-background via-background/95 to-signal/5">
       <Navigation />
       {/* Hero Section */}
-      <section className="py-20 lg:py-32">
+      <section className="pt-32 pb-20 lg:pt-40 lg:pb-32">
         <div className="container mx-auto px-6">
           <AnimatedSection>
             <div className="text-center max-w-4xl mx-auto">
