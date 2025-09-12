@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Mail, Clock, Sparkles } from "lucide-react";
+import CyanSLogo from "@/components/accents/CyanSLogo";
 
 const OriginStoryThankYou = () => {
   return (
@@ -9,8 +10,11 @@ const OriginStoryThankYou = () => {
       <header className="border-b border-border/50 backdrop-blur-sm">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <Link to="/" className="text-2xl font-bold text-foreground">
-              Sacred Signal
+            <Link to="/" className="flex items-center space-x-3">
+              <CyanSLogo size={32} />
+              <span className="font-display text-xl font-semibold tracking-wider text-brass hover:text-signal hover:glow-text transition-all duration-300">
+                SACRED SIGNAL OS
+              </span>
             </Link>
             <Link to="/">
               <Button variant="ghost" size="sm">
