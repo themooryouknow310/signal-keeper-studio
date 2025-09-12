@@ -70,7 +70,7 @@ const ThankYou = () => {
                       </li>
                       <li className="flex items-start space-x-2">
                         <Users className="w-4 h-4 text-brass mt-0.5 flex-shrink-0" />
-                        <span>Private community access and introductions</span>
+                        <span>Schedule link</span>
                       </li>
                     </ul>
                   </div>
