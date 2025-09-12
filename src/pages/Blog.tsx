@@ -164,6 +164,7 @@ const Blog = () => {
             {blogPosts.map((post, index) => (
               <AnimatedSection key={post.id} delay={200 + index * 100}>
                 <Card className="h-full hover:shadow-lg transition-shadow duration-300 group cursor-pointer">
+                  <Link to={`/blog/${post.slug}`} className="block h-full">
                   <div className="aspect-video overflow-hidden rounded-t-lg">
                     <img
                       src={post.image}
@@ -210,6 +211,7 @@ const Blog = () => {
                       </Button>
                     </div>
                   </CardContent>
+                  </Link>
                 </Card>
               </AnimatedSection>
             ))}
