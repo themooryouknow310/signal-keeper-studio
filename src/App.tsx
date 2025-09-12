@@ -8,7 +8,6 @@ import OriginStoryStudio from "./pages/OriginStoryStudio";
 import OriginStoryThankYou from "./pages/OriginStoryThankYou";
 import DreamClientSprint from "./pages/DreamClientSprint";
 import Blog from "./pages/Blog";
-
 import Application from "./pages/Application";
 import FullApplication from "./pages/FullApplication";
 import NextSteps from "./pages/NextSteps";
@@ -30,7 +29,6 @@ const App = () => (
           <Route path="/origin-story-thank-you" element={<OriginStoryThankYou />} />
           <Route path="/dream-client-sprint" element={<DreamClientSprint />} />
           <Route path="/blog" element={<Blog />} />
-          
           <Route path="/application" element={<Application />} />
           <Route path="/full-application" element={<FullApplication />} />
           <Route path="/next-steps" element={<NextSteps />} />

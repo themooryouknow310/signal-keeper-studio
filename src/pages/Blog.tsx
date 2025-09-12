@@ -163,7 +163,7 @@ const Blog = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post, index) => (
               <AnimatedSection key={post.id} delay={200 + index * 100}>
-                <Card className="h-full hover:shadow-lg transition-shadow duration-300 group">
+                <Card className="h-full hover:shadow-lg transition-shadow duration-300 group cursor-pointer">
                   <div className="aspect-video overflow-hidden rounded-t-lg">
                     <img
                       src={post.image}
