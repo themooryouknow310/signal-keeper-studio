@@ -1,4 +1,5 @@
 import BrassRule from "@/components/accents/BrassRule";
+import sacredGeometryIcon from "@/assets/sacred-geometry-icon.png";
 
 const OfferStackSection = () => {
   const scrollToApply = () => {
@@ -30,39 +31,54 @@ const OfferStackSection = () => {
           
           <div className="space-y-4">
             <div className="ssos-card p-4 border-signal/30">
-              <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
-                <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
-                  Sacred Signal OS: 12-Week System (Core Training)
-                </h4>
-                <div className="text-signal font-display font-bold text-base">Value: $6,000</div>
+              <div className="flex items-start gap-4">
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-6 h-6 mt-1 opacity-70" />
+                <div className="flex-1">
+                  <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+                    <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
+                      Sacred Signal OS: 12-Week System (Core Training)
+                    </h4>
+                    <div className="text-signal font-display font-bold text-base">Value: $6,000</div>
+                  </div>
+                  <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
+                    End-to-end operating system to tune your message, architect your offer, and install a steady, repeatable pipeline.
+                  </p>
+                </div>
               </div>
-              <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
-                End-to-end operating system to tune your message, architect your offer, and install a steady, repeatable pipeline.
-              </p>
             </div>
 
             <div className="ssos-card p-4 border-signal/30">
-              <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
-                <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
-                  Weekly Live Build & Coaching (12 sessions)
-                </h4>
-                <div className="text-signal font-display font-bold text-base">Value: $2,000</div>
+              <div className="flex items-start gap-4">
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-6 h-6 mt-1 opacity-70" />
+                <div className="flex-1">
+                  <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+                    <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
+                      Weekly Live Build & Coaching (12 sessions)
+                    </h4>
+                    <div className="text-signal font-display font-bold text-base">Value: $2,000</div>
+                  </div>
+                  <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
+                    Real-time co-creation, hot seats, and implementation reviews so progress stays tangible each week.
+                  </p>
+                </div>
               </div>
-              <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
-                Real-time co-creation, hot seats, and implementation reviews so progress stays tangible each week.
-              </p>
             </div>
 
             <div className="ssos-card p-4 border-signal/30">
-              <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
-                <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
-                  Office Hours (2×/week for 12 weeks)
-                </h4>
-                <div className="text-signal font-display font-bold text-base">Value: $1,200</div>
+              <div className="flex items-start gap-4">
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-6 h-6 mt-1 opacity-70" />
+                <div className="flex-1">
+                  <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+                    <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
+                      Office Hours (2×/week for 12 weeks)
+                    </h4>
+                    <div className="text-signal font-display font-bold text-base">Value: $1,200</div>
+                  </div>
+                  <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
+                    Quick unblockers and focused feedback to keep momentum calm and consistent.
+                  </p>
+                </div>
               </div>
-              <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
-                Quick unblockers and focused feedback to keep momentum calm and consistent.
-              </p>
             </div>
           </div>
         </div>
@@ -75,39 +91,54 @@ const OfferStackSection = () => {
           
           <div className="space-y-4">
             <div className="ssos-card p-4 border-signal/30">
-              <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
-                <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
-                  Brand Vibe Report
-                </h4>
-                <div className="text-signal font-display font-bold text-base">Value: $900</div>
+              <div className="flex items-start gap-4">
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-6 h-6 mt-1 opacity-70" />
+                <div className="flex-1">
+                  <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+                    <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
+                      Brand Vibe Report
+                    </h4>
+                    <div className="text-signal font-display font-bold text-base">Value: $900</div>
+                  </div>
+                  <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
+                    A founder-aligned brief that locks voice, promise, tone, and language do's/don'ts—so every asset hits the same frequency.
+                  </p>
+                </div>
               </div>
-              <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
-                A founder-aligned brief that locks voice, promise, tone, and language do's/don'ts—so every asset hits the same frequency.
-              </p>
             </div>
 
             <div className="ssos-card p-4 border-signal/30">
-              <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
-                <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
-                  Mood Board Image
-                </h4>
-                <div className="text-signal font-display font-bold text-base">Value: $700</div>
+              <div className="flex items-start gap-4">
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-6 h-6 mt-1 opacity-70" />
+                <div className="flex-1">
+                  <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+                    <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
+                      Mood Board Image
+                    </h4>
+                    <div className="text-signal font-display font-bold text-base">Value: $700</div>
+                  </div>
+                  <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
+                    A professional, cinematic visual with premium styling for hero sections, social media, and decks.
+                  </p>
+                </div>
               </div>
-              <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
-                A professional, cinematic visual with premium styling for hero sections, social media, and decks.
-              </p>
             </div>
 
             <div className="ssos-card p-4 border-signal/30">
-              <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
-                <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
-                  Visual Brand Guidelines
-                </h4>
-                <div className="text-signal font-display font-bold text-base">Value: $900</div>
+              <div className="flex items-start gap-4">
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-6 h-6 mt-1 opacity-70" />
+                <div className="flex-1">
+                  <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+                    <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
+                      Visual Brand Guidelines
+                    </h4>
+                    <div className="text-signal font-display font-bold text-base">Value: $900</div>
+                  </div>
+                  <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
+                    A practical guide: color specs, type hierarchy, CTA/button styles, iconography, motion pacing, and accessibility notes.
+                  </p>
+                </div>
               </div>
-              <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
-                A practical guide: color specs, type hierarchy, CTA/button styles, iconography, motion pacing, and accessibility notes.
-              </p>
             </div>
           </div>
         </div>
@@ -120,51 +151,71 @@ const OfferStackSection = () => {
           
           <div className="space-y-4">
             <div className="ssos-card p-4 border-signal/30">
-              <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
-                <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
-                  Origin Story Studio Pro + 7-Email Nurture + Loom Review
-                </h4>
-                <div className="text-signal font-display font-bold text-base">Value: $1,500</div>
+              <div className="flex items-start gap-4">
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-6 h-6 mt-1 opacity-70" />
+                <div className="flex-1">
+                  <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+                    <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
+                      Origin Story Studio Pro + 7-Email Nurture + Loom Review
+                    </h4>
+                    <div className="text-signal font-display font-bold text-base">Value: $1,500</div>
+                  </div>
+                  <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
+                    Your origin story, bio, and nurture bridge—crafted and reviewed—so your message carries.
+                  </p>
+                </div>
               </div>
-              <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
-                Your origin story, bio, and nurture bridge—crafted and reviewed—so your message carries.
-              </p>
             </div>
 
             <div className="ssos-card p-4 border-signal/30">
-              <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
-                <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
-                  Ethics & Claims Pack
-                </h4>
-                <div className="text-signal font-display font-bold text-base">Value: $1,000</div>
+              <div className="flex items-start gap-4">
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-6 h-6 mt-1 opacity-70" />
+                <div className="flex-1">
+                  <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+                    <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
+                      Ethics & Claims Pack
+                    </h4>
+                    <div className="text-signal font-display font-bold text-base">Value: $1,000</div>
+                  </div>
+                  <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
+                    Safe-claims checklist, consent language, and policy templates—built for integrity and protection.
+                  </p>
+                </div>
               </div>
-              <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
-                Safe-claims checklist, consent language, and policy templates—built for integrity and protection.
-              </p>
             </div>
 
             <div className="ssos-card p-4 border-signal/30">
-              <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
-                <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
-                  KPI Dashboard & Scorecard (Notion/Sheets)
-                </h4>
-                <div className="text-signal font-display font-bold text-base">Value: $700</div>
+              <div className="flex items-start gap-4">
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-6 h-6 mt-1 opacity-70" />
+                <div className="flex-1">
+                  <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+                    <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
+                      KPI Dashboard & Scorecard (Notion/Sheets)
+                    </h4>
+                    <div className="text-signal font-display font-bold text-base">Value: $700</div>
+                  </div>
+                  <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
+                    Track opt-ins, lead→call, call→close, completion, and margin—know what's working at a glance.
+                  </p>
+                </div>
               </div>
-              <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
-                Track opt-ins, lead→call, call→close, completion, and margin—know what's working at a glance.
-              </p>
             </div>
 
             <div className="ssos-card p-4 border-signal/30">
-              <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
-                <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
-                  Dream 100 Outreach Starter Pack
-                </h4>
-                <div className="text-signal font-display font-bold text-base">Value: $900</div>
+              <div className="flex items-start gap-4">
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-6 h-6 mt-1 opacity-70" />
+                <div className="flex-1">
+                  <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+                    <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
+                      Dream 100 Outreach Starter Pack
+                    </h4>
+                    <div className="text-signal font-display font-bold text-base">Value: $900</div>
+                  </div>
+                  <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
+                    Research prompts, LinkedIn & email scripts, and a tracker to open partner doors with clarity.
+                  </p>
+                </div>
               </div>
-              <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
-                Research prompts, LinkedIn & email scripts, and a tracker to open partner doors with clarity.
-              </p>
             </div>
           </div>
         </div>
@@ -177,39 +228,54 @@ const OfferStackSection = () => {
           
           <div className="space-y-4">
             <div className="ssos-card p-4 border-brass/40 bg-gradient-to-br from-brass/5 via-background/80 to-brass/10">
-              <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
-                <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
-                  BONUS: LinkedIn Content Engine
-                </h4>
-                <div className="text-signal font-display font-bold text-base">Value: $1,200</div>
+              <div className="flex items-start gap-4">
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-6 h-6 mt-1 opacity-70" />
+                <div className="flex-1">
+                  <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+                    <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
+                      BONUS: LinkedIn Content Engine
+                    </h4>
+                    <div className="text-signal font-display font-bold text-base">Value: $1,200</div>
+                  </div>
+                  <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
+                    30-day content calendar, 12 ready scripts, and a repurpose SOP to publish with clarity—not burnout.
+                  </p>
+                </div>
               </div>
-              <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
-                30-day content calendar, 12 ready scripts, and a repurpose SOP to publish with clarity—not burnout.
-              </p>
             </div>
 
             <div className="ssos-card p-4 border-brass/40 bg-gradient-to-br from-brass/5 via-background/80 to-brass/10">
-              <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
-                <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
-                  BONUS: Proof Architecture Pack
-                </h4>
-                <div className="text-signal font-display font-bold text-base">Value: $1,200</div>
+              <div className="flex items-start gap-4">
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-6 h-6 mt-1 opacity-70" />
+                <div className="flex-1">
+                  <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+                    <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
+                      BONUS: Proof Architecture Pack
+                    </h4>
+                    <div className="text-signal font-display font-bold text-base">Value: $1,200</div>
+                  </div>
+                  <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
+                    Intake/mid/outtake measures, testimonial prompts, and a case-page kit to make trust visible.
+                  </p>
+                </div>
               </div>
-              <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
-                Intake/mid/outtake measures, testimonial prompts, and a case-page kit to make trust visible.
-              </p>
             </div>
 
             <div className="ssos-card p-4 border-brass/40 bg-gradient-to-br from-brass/5 via-background/80 to-brass/10">
-              <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
-                <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
-                  BONUS: Aftercare 1:1 (60-min in Month 4)
-                </h4>
-                <div className="text-signal font-display font-bold text-base">Value: $600</div>
+              <div className="flex items-start gap-4">
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-6 h-6 mt-1 opacity-70" />
+                <div className="flex-1">
+                  <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+                    <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
+                      BONUS: Aftercare 1:1 (60-min in Month 4)
+                    </h4>
+                    <div className="text-signal font-display font-bold text-base">Value: $600</div>
+                  </div>
+                  <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
+                    A personal course-correction and next-steps plan once the system is live.
+                  </p>
+                </div>
               </div>
-              <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
-                A personal course-correction and next-steps plan once the system is live.
-              </p>
             </div>
           </div>
         </div>
