@@ -17,7 +17,7 @@ const OfferStackSection = () => {
           <h2 className="heading-ritual text-4xl md:text-6xl mb-8 glow-text">
             EVERYTHING YOU GET INSIDE SACRED SIGNAL OS
           </h2>
-          <p className="body-premium text-xl md:text-2xl text-foreground/80 max-w-4xl mx-auto leading-relaxed">
+          <p className="body-premium text-xl md:text-2xl text-[hsl(var(--ssos-alabaster))] max-w-4xl mx-auto leading-relaxed">
             We don't shout; we stack real support. Here's exactly what's included and why it matters.
           </p>
         </div>
@@ -36,7 +36,7 @@ const OfferStackSection = () => {
                 </h4>
                 <div className="text-signal font-display font-bold text-base">Value: $6,000</div>
               </div>
-              <p className="body-premium text-sm text-foreground/80 leading-relaxed">
+              <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
                 End-to-end operating system to tune your message, architect your offer, and install a steady, repeatable pipeline.
               </p>
             </div>
@@ -48,7 +48,7 @@ const OfferStackSection = () => {
                 </h4>
                 <div className="text-signal font-display font-bold text-base">Value: $2,000</div>
               </div>
-              <p className="body-premium text-sm text-foreground/80 leading-relaxed">
+              <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
                 Real-time co-creation, hot seats, and implementation reviews so progress stays tangible each week.
               </p>
             </div>
@@ -60,7 +60,7 @@ const OfferStackSection = () => {
                 </h4>
                 <div className="text-signal font-display font-bold text-base">Value: $1,200</div>
               </div>
-              <p className="body-premium text-sm text-foreground/80 leading-relaxed">
+              <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
                 Quick unblockers and focused feedback to keep momentum calm and consistent.
               </p>
             </div>
@@ -81,7 +81,7 @@ const OfferStackSection = () => {
                 </h4>
                 <div className="text-signal font-display font-bold text-base">Value: $900</div>
               </div>
-              <p className="body-premium text-sm text-foreground/80 leading-relaxed">
+              <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
                 A founder-aligned brief that locks voice, promise, tone, and language do's/don'ts—so every asset hits the same frequency.
               </p>
             </div>
@@ -93,7 +93,7 @@ const OfferStackSection = () => {
                 </h4>
                 <div className="text-signal font-display font-bold text-base">Value: $700</div>
               </div>
-              <p className="body-premium text-sm text-foreground/80 leading-relaxed">
+              <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
                 A cinematic, on-brand visual (indigo/charcoal base, cyan halo accents, brass geometry) for hero sections, social, and decks (square + 16:9).
               </p>
             </div>
@@ -105,7 +105,7 @@ const OfferStackSection = () => {
                 </h4>
                 <div className="text-signal font-display font-bold text-base">Value: $900</div>
               </div>
-              <p className="body-premium text-sm text-foreground/80 leading-relaxed">
+              <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
                 A practical 6–10-page guide: color specs, type hierarchy, CTA/button styles, iconography, motion pacing, and accessibility notes.
               </p>
             </div>
@@ -126,7 +126,7 @@ const OfferStackSection = () => {
                 </h4>
                 <div className="text-signal font-display font-bold text-base">Value: $1,500</div>
               </div>
-              <p className="body-premium text-sm text-foreground/80 leading-relaxed">
+              <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
                 Your origin story, bio, and nurture bridge—crafted and reviewed—so your message carries.
               </p>
             </div>
@@ -138,7 +138,7 @@ const OfferStackSection = () => {
                 </h4>
                 <div className="text-signal font-display font-bold text-base">Value: $1,000</div>
               </div>
-              <p className="body-premium text-sm text-foreground/80 leading-relaxed">
+              <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
                 Safe-claims checklist, consent language, and policy templates—built for integrity and protection.
               </p>
             </div>
@@ -150,7 +150,7 @@ const OfferStackSection = () => {
                 </h4>
                 <div className="text-signal font-display font-bold text-base">Value: $700</div>
               </div>
-              <p className="body-premium text-sm text-foreground/80 leading-relaxed">
+              <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
                 Track opt-ins, lead→call, call→close, completion, and margin—know what's working at a glance.
               </p>
             </div>
@@ -162,7 +162,7 @@ const OfferStackSection = () => {
                 </h4>
                 <div className="text-signal font-display font-bold text-base">Value: $900</div>
               </div>
-              <p className="body-premium text-sm text-foreground/80 leading-relaxed">
+              <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
                 Research prompts, LinkedIn & email scripts, and a tracker to open partner doors with clarity.
               </p>
             </div>
@@ -183,7 +183,7 @@ const OfferStackSection = () => {
                 </h4>
                 <div className="text-signal font-display font-bold text-base">Value: $1,200</div>
               </div>
-              <p className="body-premium text-sm text-foreground/80 leading-relaxed">
+              <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
                 30-day content calendar, 12 ready scripts, and a repurpose SOP to publish with clarity—not burnout.
               </p>
             </div>
@@ -195,7 +195,7 @@ const OfferStackSection = () => {
                 </h4>
                 <div className="text-signal font-display font-bold text-base">Value: $1,200</div>
               </div>
-              <p className="body-premium text-sm text-foreground/80 leading-relaxed">
+              <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
                 Intake/mid/outtake measures, testimonial prompts, and a case-page kit to make trust visible.
               </p>
             </div>
@@ -207,7 +207,7 @@ const OfferStackSection = () => {
                 </h4>
                 <div className="text-signal font-display font-bold text-base">Value: $600</div>
               </div>
-              <p className="body-premium text-sm text-foreground/80 leading-relaxed">
+              <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
                 A personal course-correction and next-steps plan once the system is live.
               </p>
             </div>
@@ -223,7 +223,7 @@ const OfferStackSection = () => {
             <h4 className="heading-ritual text-lg mb-3 text-brass glow-golden">
               30-Day Money-Back Guarantee.
             </h4>
-            <p className="body-premium text-sm text-foreground/80 leading-relaxed max-w-3xl mx-auto">
+            <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed max-w-3xl mx-auto">
               Join Sacred Signal OS and do the work for 30 days. If you don't feel clearer, more confident, and moving toward a steady pipeline, email us within 30 days for a full refund. No hassle.
             </p>
           </div>
@@ -238,19 +238,19 @@ const OfferStackSection = () => {
             <div className="space-y-3 max-w-4xl mx-auto">
               <div className="flex items-start space-x-3">
                 <div className="w-1.5 h-1.5 bg-brass rounded-full mt-2 flex-shrink-0"></div>
-                <p className="body-premium text-sm text-foreground/80 leading-relaxed">
+                <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
                   <strong>Rolling start, limited capacity:</strong> We onboard a small number of new clients at a time to protect delivery quality. When capacity is reached, new starts pause until a seat opens.
                 </p>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-1.5 h-1.5 bg-brass rounded-full mt-2 flex-shrink-0"></div>
-                <p className="body-premium text-sm text-foreground/80 leading-relaxed">
+                <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
                   <strong>Bonus window:</strong> The three bonuses above are available during the current enrollment window and may be removed when capacity is met.
                 </p>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-1.5 h-1.5 bg-brass rounded-full mt-2 flex-shrink-0"></div>
-                <p className="body-premium text-sm text-foreground/80 leading-relaxed">
+                <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
                   <strong>Lock in current pricing:</strong> $1,600 is our current rate and will increase soon. Reserve your start now to secure today's price and begin at the next available opening.
                 </p>
               </div>
@@ -264,7 +264,7 @@ const OfferStackSection = () => {
             <h3 className="heading-ritual text-3xl md:text-4xl mb-4 glow-text">
               APPLY FOR SACRED SIGNAL OS
             </h3>
-            <p className="body-premium text-lg text-foreground/80 mb-8">
+            <p className="body-premium text-lg text-[hsl(var(--ssos-alabaster))] mb-8">
               12 Weeks • High-Touch Coaching • Complete Transformation
             </p>
             
@@ -303,7 +303,7 @@ const OfferStackSection = () => {
             </div>
             
             <div className="mb-6">
-              <p className="body-premium text-base text-foreground/80 leading-relaxed max-w-3xl mx-auto">
+              <p className="body-premium text-base text-[hsl(var(--ssos-alabaster))] leading-relaxed max-w-3xl mx-auto">
                 If all Sacred Signal OS did was give you a clear message and a steady, values-aligned pipeline, would it be worth $1,597?
               </p>
             </div>
@@ -316,7 +316,7 @@ const OfferStackSection = () => {
             </button>
             
             <div className="mt-12 pt-8 border-t border-signal/20">
-              <p className="body-premium text-base text-foreground/80 mb-8 font-semibold">
+              <p className="body-premium text-base text-[hsl(var(--ssos-alabaster))] mb-8 font-semibold">
                 Applications Reviewed Within 48 Hours
               </p>
               
@@ -329,7 +329,7 @@ const OfferStackSection = () => {
                   <div className="w-8 h-8 bg-signal text-background rounded-full flex items-center justify-center font-display font-bold text-sm flex-shrink-0">
                     1
                   </div>
-                  <p className="body-premium text-sm text-foreground/80 leading-relaxed pt-1">
+                  <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed pt-1">
                     Complete Application & Values Alignment Assessment
                   </p>
                 </div>
@@ -338,7 +338,7 @@ const OfferStackSection = () => {
                   <div className="w-8 h-8 bg-signal text-background rounded-full flex items-center justify-center font-display font-bold text-sm flex-shrink-0">
                     2
                   </div>
-                  <p className="body-premium text-sm text-foreground/80 leading-relaxed pt-1">
+                  <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed pt-1">
                     Brief Discovery Call To Ensure Mutual Fit
                   </p>
                 </div>
@@ -347,7 +347,7 @@ const OfferStackSection = () => {
                   <div className="w-8 h-8 bg-signal text-background rounded-full flex items-center justify-center font-display font-bold text-sm flex-shrink-0">
                     3
                   </div>
-                  <p className="body-premium text-sm text-foreground/80 leading-relaxed pt-1">
+                  <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed pt-1">
                     Receive Program Materials & Community Access
                   </p>
                 </div>
@@ -356,7 +356,7 @@ const OfferStackSection = () => {
                   <div className="w-8 h-8 bg-signal text-background rounded-full flex items-center justify-center font-display font-bold text-sm flex-shrink-0">
                     4
                   </div>
-                  <p className="body-premium text-sm text-foreground/80 leading-relaxed pt-1">
+                  <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed pt-1">
                     Begin Your 12-Week Transformation
                   </p>
                 </div>
