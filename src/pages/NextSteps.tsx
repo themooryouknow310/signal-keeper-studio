@@ -70,7 +70,7 @@ const NextSteps = () => {
                       </div>
                       <div>
                         <h3 className="heading-ritual text-xl mb-4 text-signal glow-text">First</h3>
-                        <p className="heading-ritual leading-relaxed">
+                        <p className="body-premium text-foreground/90 leading-relaxed">
                           We have received your application, and in the next 24-48 hours I will be reviewing and pre-approving your application.
                         </p>
                       </div>
@@ -91,7 +91,7 @@ const NextSteps = () => {
                       </div>
                       <div>
                         <h3 className="heading-ritual text-xl mb-4 text-signal glow-text">Second</h3>
-                        <p className="heading-ritual leading-relaxed">
+                        <p className="body-premium text-foreground/90 leading-relaxed">
                           If I personally pre-approve your application, then we will setup a call and look at your goals, your plan to get there, and see if Sacred Signal OS will be a good fit for you.
                         </p>
                       </div>
@@ -112,7 +112,7 @@ const NextSteps = () => {
                       </div>
                       <div>
                         <h3 className="heading-ritual text-xl mb-4 text-signal glow-text">Third</h3>
-                        <p className="heading-ritual leading-relaxed">
+                        <p className="body-premium text-foreground/90 leading-relaxed">
                           You should have an email right now with some of the initial training from week #1 of the Sacred Signal OS Program! Dive into it now and start learning so you'll be ready when they call!
                         </p>
                       </div>
