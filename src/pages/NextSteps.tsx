@@ -1,4 +1,5 @@
 import AnimatedSection from '@/components/AnimatedSection';
+import Navigation from '@/components/Navigation';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { CheckCircle, Clock, Mail, Video } from 'lucide-react';
@@ -6,6 +7,7 @@ import { CheckCircle, Clock, Mail, Video } from 'lucide-react';
 const NextSteps = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background/95 to-signal/5">
+      <Navigation />
       {/* Hero Section */}
       <section className="py-20 lg:py-32">
         <div className="container mx-auto px-6">
