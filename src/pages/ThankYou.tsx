@@ -173,12 +173,6 @@ const ThankYou = () => {
                 <div className="flex items-start space-x-3">
                   <div className="w-1.5 h-1.5 bg-brass rounded-full mt-2 flex-shrink-0"></div>
                   <p className="body-premium text-sm text-foreground/80 leading-relaxed">
-                    <strong>Join the community</strong> to connect with fellow entrepreneurs on the same journey.
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-1.5 h-1.5 bg-brass rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="body-premium text-sm text-foreground/80 leading-relaxed">
                     <strong>Questions?</strong> Reply to any program email or reach out to support@sacredsignalos.com
                   </p>
                 </div>
