@@ -94,7 +94,7 @@ const OfferStackSection = () => {
                 <div className="text-signal font-display font-bold text-base">Value: $700</div>
               </div>
               <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
-                A cinematic, on-brand visual (indigo/charcoal base, cyan halo accents, brass geometry) for hero sections, social, and decks (square + 16:9).
+                A professional, cinematic visual with premium styling for hero sections, social media, and decks.
               </p>
             </div>
 
