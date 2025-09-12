@@ -213,14 +213,19 @@ const Blog = () => {
             <p className="text-lg text-muted-foreground mb-8">
               Access Origin Story Studio free and get your professional origin story, about section, and content prompts in minutes.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            <div className="flex flex-col gap-4 max-w-md mx-auto">
+              <input
+                type="text"
+                placeholder="Enter your first name"
+                className="px-4 py-3 rounded-md border border-border bg-background text-foreground"
+              />
               <input
                 type="email"
                 placeholder="Enter your email address"
-                className="flex-1 px-4 py-3 rounded-md border border-border bg-background text-foreground"
+                className="px-4 py-3 rounded-md border border-border bg-background text-foreground"
               />
               <Button className="px-6">
-                Subscribe
+                Get Origin Story Studio
               </Button>
             </div>
             <p className="text-sm text-muted-foreground mt-4">
