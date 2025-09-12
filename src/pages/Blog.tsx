@@ -6,6 +6,7 @@ import { Calendar, Clock, User, ArrowRight } from "lucide-react";
 import CyanSLogo from '@/components/accents/CyanSLogo';
 import BrassRule from '@/components/accents/BrassRule';
 import AnimatedSection from '@/components/AnimatedSection';
+import Navigation from '@/components/Navigation';
 import sacredGeometrySymbol from '@/assets/sacred-geometry-symbol.png';
 
 // Sample blog posts data - replace with your actual CMS or data source
@@ -83,33 +84,10 @@ const categories = ["All", "Spiritual Marketing", "Personal Branding", "Client A
 const Blog = () => {
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="border-b border-border/50 backdrop-blur-sm">
-        <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <Link to="/" className="flex items-center space-x-3">
-              <CyanSLogo size={32} />
-              <span className="font-display text-xl font-bold tracking-wider text-foreground">
-                SACRED SIGNAL OS
-              </span>
-            </Link>
-            <nav className="hidden md:flex items-center space-x-6">
-              <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors">
-                Home
-              </Link>
-              <Link to="/dream-client-sprint" className="text-muted-foreground hover:text-foreground transition-colors">
-                Dream Client Sprint
-              </Link>
-              <Link to="/origin-story-studio" className="text-muted-foreground hover:text-foreground transition-colors">
-                Origin Story Studio
-              </Link>
-            </nav>
-          </div>
-        </div>
-      </header>
+      <Navigation />
 
       {/* Hero Section */}
-      <section className="py-20 px-6 text-center">
+      <section className="py-20 px-6 text-center pt-32">
         <div className="container mx-auto max-w-4xl">
           <AnimatedSection delay={200}>
             <div className="flex justify-center mb-8">
