@@ -56,9 +56,9 @@ const OriginStoryThankYou = () => {
                   <Clock className="w-4 h-4 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground mb-2">Set Aside 15-20 Minutes</h3>
+                  <h3 className="font-semibold text-foreground mb-2">Set Aside 10-15 Minutes</h3>
                   <p className="text-muted-foreground">
-                    The Origin Story Studio is designed to help you craft your compelling origin story in under 20 minutes.
+                    The Origin Story Studio is designed to help you craft your compelling origin story in under 15 minutes.
                   </p>
                 </div>
               </div>
