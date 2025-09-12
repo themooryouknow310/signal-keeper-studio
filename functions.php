@@ -1,0 +1,409 @@
+<?php
+/**
+ * Sacred Signal OS Theme Functions
+ * 
+ * @package Sacred_Signal_OS
+ * @version 1.0.0
+ */
+
+// Prevent direct access
+if (!defined('ABSPATH')) {
+    exit;
+}
+
+/**
+ * Theme Setup
+ */
+function sacred_signal_os_setup() {
+    // Add theme support
+    add_theme_support('post-thumbnails');
+    add_theme_support('title-tag');
+    add_theme_support('custom-logo');
+    add_theme_support('html5', array(
+        'search-form',
+        'comment-form',
+        'comment-list',
+        'gallery',
+        'caption',
+        'script',
+        'style'
+    ));
+    
+    // Add custom image sizes
+    add_image_size('hero-image', 1920, 1080, true);
+    add_image_size('testimonial-image', 400, 400, true);
+    add_image_size('program-image', 600, 400, true);
+    
+    // Register navigation menus
+    register_nav_menus(array(
+        'primary' => __('Primary Menu', 'sacred-signal-os'),
+        'footer' => __('Footer Menu', 'sacred-signal-os'),
+    ));
+    
+    // Add editor color palette
+    add_theme_support('editor-color-palette', array(
+        array(
+            'name' => __('Primary', 'sacred-signal-os'),
+            'slug' => 'primary',
+            'color' => 'hsl(var(--primary))',
+        ),
+        array(
+            'name' => __('Secondary', 'sacred-signal-os'),
+            'slug' => 'secondary',
+            'color' => 'hsl(var(--secondary))',
+        ),
+        array(
+            'name' => __('Signal', 'sacred-signal-os'),
+            'slug' => 'signal',
+            'color' => 'hsl(var(--signal))',
+        ),
+    ));
+}
+add_action('after_setup_theme', 'sacred_signal_os_setup');
+
+/**
+ * Enqueue Scripts and Styles
+ */
+function sacred_signal_os_scripts() {
+    // Enqueue styles
+    wp_enqueue_style(
+        'sacred-signal-os-style',
+        get_stylesheet_uri(),
+        array(),
+        wp_get_theme()->get('Version')
+    );
+    
+    // Enqueue design system CSS
+    wp_enqueue_style(
+        'sacred-signal-os-design-system',
+        get_template_directory_uri() . '/assets/css/design-system.css',
+        array('sacred-signal-os-style'),
+        wp_get_theme()->get('Version')
+    );
+    
+    // Enqueue cinema styles
+    wp_enqueue_style(
+        'sacred-signal-os-cinema',
+        get_template_directory_uri() . '/assets/css/cinema.css',
+        array('sacred-signal-os-design-system'),
+        wp_get_theme()->get('Version')
+    );
+    
+    // Enqueue component styles
+    wp_enqueue_style(
+        'sacred-signal-os-components',
+        get_template_directory_uri() . '/assets/css/components.css',
+        array('sacred-signal-os-cinema'),
+        wp_get_theme()->get('Version')
+    );
+    
+    // Enqueue JavaScript
+    wp_enqueue_script(
+        'sacred-signal-os-main',
+        get_template_directory_uri() . '/assets/js/main.js',
+        array('jquery'),
+        wp_get_theme()->get('Version'),
+        true
+    );
+    
+    // Localize script for AJAX
+    wp_localize_script('sacred-signal-os-main', 'sacred_signal_ajax', array(
+        'ajax_url' => admin_url('admin-ajax.php'),
+        'nonce' => wp_create_nonce('sacred_signal_nonce'),
+    ));
+}
+add_action('wp_enqueue_scripts', 'sacred_signal_os_scripts');
+
+/**
+ * Register Custom Post Types
+ */
+function sacred_signal_os_custom_post_types() {
+    // Testimonials
+    register_post_type('testimonial', array(
+        'labels' => array(
+            'name' => __('Testimonials', 'sacred-signal-os'),
+            'singular_name' => __('Testimonial', 'sacred-signal-os'),
+            'add_new_item' => __('Add New Testimonial', 'sacred-signal-os'),
+            'edit_item' => __('Edit Testimonial', 'sacred-signal-os'),
+        ),
+        'public' => false,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'supports' => array('title', 'editor', 'thumbnail'),
+        'menu_icon' => 'dashicons-format-quote',
+    ));
+    
+    // Program Modules
+    register_post_type('program_module', array(
+        'labels' => array(
+            'name' => __('Program Modules', 'sacred-signal-os'),
+            'singular_name' => __('Program Module', 'sacred-signal-os'),
+            'add_new_item' => __('Add New Module', 'sacred-signal-os'),
+            'edit_item' => __('Edit Module', 'sacred-signal-os'),
+        ),
+        'public' => false,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'supports' => array('title', 'editor', 'thumbnail', 'page-attributes'),
+        'menu_icon' => 'dashicons-book-alt',
+    ));
+    
+    // Offer Stack Items
+    register_post_type('offer_item', array(
+        'labels' => array(
+            'name' => __('Offer Stack Items', 'sacred-signal-os'),
+            'singular_name' => __('Offer Item', 'sacred-signal-os'),
+            'add_new_item' => __('Add New Offer Item', 'sacred-signal-os'),
+            'edit_item' => __('Edit Offer Item', 'sacred-signal-os'),
+        ),
+        'public' => false,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'supports' => array('title', 'editor', 'thumbnail', 'page-attributes'),
+        'menu_icon' => 'dashicons-products',
+    ));
+}
+add_action('init', 'sacred_signal_os_custom_post_types');
+
+/**
+ * Register Widget Areas
+ */
+function sacred_signal_os_widgets_init() {
+    register_sidebar(array(
+        'name' => __('Footer Widget Area', 'sacred-signal-os'),
+        'id' => 'footer-widgets',
+        'description' => __('Widgets in this area will be shown in the footer.', 'sacred-signal-os'),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ));
+}
+add_action('widgets_init', 'sacred_signal_os_widgets_init');
+
+/**
+ * Custom Fields Support
+ */
+function sacred_signal_os_add_meta_boxes() {
+    // Hero Section Meta Box
+    add_meta_box(
+        'hero_section_meta',
+        __('Hero Section Settings', 'sacred-signal-os'),
+        'sacred_signal_os_hero_meta_callback',
+        'page',
+        'normal',
+        'high'
+    );
+    
+    // Page Settings Meta Box
+    add_meta_box(
+        'page_settings_meta',
+        __('Page Settings', 'sacred-signal-os'),
+        'sacred_signal_os_page_settings_callback',
+        'page',
+        'side',
+        'default'
+    );
+}
+add_action('add_meta_boxes', 'sacred_signal_os_add_meta_boxes');
+
+/**
+ * Hero Section Meta Box Callback
+ */
+function sacred_signal_os_hero_meta_callback($post) {
+    wp_nonce_field('sacred_signal_os_save_meta', 'sacred_signal_os_meta_nonce');
+    
+    $hero_title = get_post_meta($post->ID, '_hero_title', true);
+    $hero_subtitle = get_post_meta($post->ID, '_hero_subtitle', true);
+    $hero_image = get_post_meta($post->ID, '_hero_image', true);
+    $hero_video = get_post_meta($post->ID, '_hero_video', true);
+    
+    echo '<table class="form-table">';
+    echo '<tr><th><label for="hero_title">' . __('Hero Title', 'sacred-signal-os') . '</label></th>';
+    echo '<td><input type="text" id="hero_title" name="hero_title" value="' . esc_attr($hero_title) . '" class="regular-text" /></td></tr>';
+    
+    echo '<tr><th><label for="hero_subtitle">' . __('Hero Subtitle', 'sacred-signal-os') . '</label></th>';
+    echo '<td><textarea id="hero_subtitle" name="hero_subtitle" rows="3" class="large-text">' . esc_textarea($hero_subtitle) . '</textarea></td></tr>';
+    
+    echo '<tr><th><label for="hero_image">' . __('Hero Image URL', 'sacred-signal-os') . '</label></th>';
+    echo '<td><input type="url" id="hero_image" name="hero_image" value="' . esc_url($hero_image) . '" class="regular-text" /></td></tr>';
+    
+    echo '<tr><th><label for="hero_video">' . __('Hero Video URL', 'sacred-signal-os') . '</label></th>';
+    echo '<td><input type="url" id="hero_video" name="hero_video" value="' . esc_url($hero_video) . '" class="regular-text" /></td></tr>';
+    echo '</table>';
+}
+
+/**
+ * Page Settings Meta Box Callback
+ */
+function sacred_signal_os_page_settings_callback($post) {
+    $hide_navigation = get_post_meta($post->ID, '_hide_navigation', true);
+    $page_template_type = get_post_meta($post->ID, '_page_template_type', true);
+    
+    echo '<p><label>';
+    echo '<input type="checkbox" name="hide_navigation" value="1" ' . checked(1, $hide_navigation, false) . ' />';
+    echo ' ' . __('Hide Navigation', 'sacred-signal-os');
+    echo '</label></p>';
+    
+    echo '<p><label for="page_template_type">' . __('Template Type', 'sacred-signal-os') . '</label><br>';
+    echo '<select id="page_template_type" name="page_template_type">';
+    echo '<option value="default" ' . selected('default', $page_template_type, false) . '>' . __('Default', 'sacred-signal-os') . '</option>';
+    echo '<option value="landing" ' . selected('landing', $page_template_type, false) . '>' . __('Landing Page', 'sacred-signal-os') . '</option>';
+    echo '<option value="application" ' . selected('application', $page_template_type, false) . '>' . __('Application Form', 'sacred-signal-os') . '</option>';
+    echo '<option value="thank-you" ' . selected('thank-you', $page_template_type, false) . '>' . __('Thank You Page', 'sacred-signal-os') . '</option>';
+    echo '</select></p>';
+}
+
+/**
+ * Save Meta Box Data
+ */
+function sacred_signal_os_save_meta($post_id) {
+    if (!isset($_POST['sacred_signal_os_meta_nonce']) || !wp_verify_nonce($_POST['sacred_signal_os_meta_nonce'], 'sacred_signal_os_save_meta')) {
+        return;
+    }
+    
+    if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
+        return;
+    }
+    
+    if (!current_user_can('edit_post', $post_id)) {
+        return;
+    }
+    
+    // Save hero section data
+    if (isset($_POST['hero_title'])) {
+        update_post_meta($post_id, '_hero_title', sanitize_text_field($_POST['hero_title']));
+    }
+    
+    if (isset($_POST['hero_subtitle'])) {
+        update_post_meta($post_id, '_hero_subtitle', sanitize_textarea_field($_POST['hero_subtitle']));
+    }
+    
+    if (isset($_POST['hero_image'])) {
+        update_post_meta($post_id, '_hero_image', esc_url_raw($_POST['hero_image']));
+    }
+    
+    if (isset($_POST['hero_video'])) {
+        update_post_meta($post_id, '_hero_video', esc_url_raw($_POST['hero_video']));
+    }
+    
+    // Save page settings
+    update_post_meta($post_id, '_hide_navigation', isset($_POST['hide_navigation']) ? 1 : 0);
+    
+    if (isset($_POST['page_template_type'])) {
+        update_post_meta($post_id, '_page_template_type', sanitize_text_field($_POST['page_template_type']));
+    }
+}
+add_action('save_post', 'sacred_signal_os_save_meta');
+
+/**
+ * Form Handlers
+ */
+function sacred_signal_os_handle_application_form() {
+    if (!wp_verify_nonce($_POST['nonce'], 'sacred_signal_nonce')) {
+        wp_die(__('Security check failed', 'sacred-signal-os'));
+    }
+    
+    $name = sanitize_text_field($_POST['name']);
+    $email = sanitize_email($_POST['email']);
+    
+    // Process application form
+    $application_data = array(
+        'name' => $name,
+        'email' => $email,
+        'date' => current_time('mysql'),
+        'ip' => $_SERVER['REMOTE_ADDR']
+    );
+    
+    // Save to database or send email
+    // Implementation depends on requirements
+    
+    wp_send_json_success(array(
+        'message' => __('Application submitted successfully!', 'sacred-signal-os'),
+        'redirect' => home_url('/next-steps/')
+    ));
+}
+add_action('wp_ajax_submit_application', 'sacred_signal_os_handle_application_form');
+add_action('wp_ajax_nopriv_submit_application', 'sacred_signal_os_handle_application_form');
+
+/**
+ * Helper Functions
+ */
+function sacred_signal_os_get_testimonials($limit = -1) {
+    return get_posts(array(
+        'post_type' => 'testimonial',
+        'posts_per_page' => $limit,
+        'post_status' => 'publish',
+        'orderby' => 'menu_order',
+        'order' => 'ASC'
+    ));
+}
+
+function sacred_signal_os_get_program_modules($limit = -1) {
+    return get_posts(array(
+        'post_type' => 'program_module',
+        'posts_per_page' => $limit,
+        'post_status' => 'publish',
+        'orderby' => 'menu_order',
+        'order' => 'ASC'
+    ));
+}
+
+function sacred_signal_os_get_offer_items($limit = -1) {
+    return get_posts(array(
+        'post_type' => 'offer_item',
+        'posts_per_page' => $limit,
+        'post_status' => 'publish',
+        'orderby' => 'menu_order',
+        'order' => 'ASC'
+    ));
+}
+
+/**
+ * Customizer Settings
+ */
+function sacred_signal_os_customize_register($wp_customize) {
+    // Brand Colors Section
+    $wp_customize->add_section('sacred_signal_colors', array(
+        'title' => __('Sacred Signal Colors', 'sacred-signal-os'),
+        'priority' => 30,
+    ));
+    
+    $wp_customize->add_setting('primary_color', array(
+        'default' => '#000000',
+        'sanitize_callback' => 'sanitize_hex_color',
+    ));
+    
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'primary_color', array(
+        'label' => __('Primary Color', 'sacred-signal-os'),
+        'section' => 'sacred_signal_colors',
+    )));
+    
+    $wp_customize->add_setting('signal_color', array(
+        'default' => '#00ffff',
+        'sanitize_callback' => 'sanitize_hex_color',
+    ));
+    
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'signal_color', array(
+        'label' => __('Signal Color', 'sacred-signal-os'),
+        'section' => 'sacred_signal_colors',
+    )));
+}
+add_action('customize_register', 'sacred_signal_os_customize_register');
+
+/**
+ * Output Custom CSS
+ */
+function sacred_signal_os_customizer_css() {
+    $primary_color = get_theme_mod('primary_color', '#000000');
+    $signal_color = get_theme_mod('signal_color', '#00ffff');
+    
+    echo '<style type="text/css">';
+    echo ':root {';
+    echo '--primary: ' . $primary_color . ';';
+    echo '--signal: ' . $signal_color . ';';
+    echo '}';
+    echo '</style>';
+}
+add_action('wp_head', 'sacred_signal_os_customizer_css');
+?>
