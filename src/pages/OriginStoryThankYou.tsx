@@ -29,10 +29,10 @@ const OriginStoryThankYou = () => {
             <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
               <CheckCircle className="w-10 h-10 text-primary" />
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <h1 className="heading-ritual text-4xl md:text-6xl lg:text-7xl mb-8 leading-none glow-text">
               You're In!
             </h1>
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className="body-premium text-2xl md:text-3xl text-foreground leading-relaxed font-light cinema-text-shadow mb-8">
               Welcome to the Origin Story Studio. Your journey to crafting a compelling origin story starts now.
             </p>
           </div>
