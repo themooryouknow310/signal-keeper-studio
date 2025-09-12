@@ -25,7 +25,7 @@ const ApplySection = () => {
     },
     {
       question: "What is the time commitment?",
-      answer: "Expect 5-8 hours per week including: weekly 90-120 minute live sessions, implementation work, and participation in office hours. This is a high-touch, implementation-focused program requiring active participation."
+      answer: "Expect 4-7 hours per week including: weekly 90-120 minute live sessions, implementation work, and participation in office hours. This is a high-touch, implementation-focused program requiring active participation."
     },
     {
       question: "Do you offer refunds?",
