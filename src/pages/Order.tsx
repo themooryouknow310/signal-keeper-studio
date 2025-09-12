@@ -94,8 +94,48 @@ const Order = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Payment Options */}
+          {/* What You Get & Payment Plan - Top Section */}
+          <div className="grid lg:grid-cols-2 gap-12 mb-12">
+            {/* What You Get - Left Column */}
+            <div>
+              <h3 className="heading-ritual text-xl mb-6 text-signal">What You Get:</h3>
+              <div className="p-6 bg-gradient-to-br from-signal/5 to-brass/5 rounded-lg border border-signal/20">
+                <ul className="space-y-2 text-sm text-foreground/80">
+                  <li className="flex items-start space-x-2">
+                    <div className="w-1.5 h-1.5 bg-brass rounded-full mt-2 flex-shrink-0"></div>
+                    <span>12-Week Sacred Signal OS Core System ($6,000 value)</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <div className="w-1.5 h-1.5 bg-brass rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Weekly Live Build & Coaching Sessions ($2,000 value)</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <div className="w-1.5 h-1.5 bg-brass rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Office Hours 2×/week for 12 weeks ($1,200 value)</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <div className="w-1.5 h-1.5 bg-brass rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Brand Assets & Guidelines ($2,500 value)</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <div className="w-1.5 h-1.5 bg-brass rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Done-with-you Assets ($4,100 value)</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <div className="w-1.5 h-1.5 bg-brass rounded-full mt-2 flex-shrink-0"></div>
+                    <span>Limited-Time Bonuses ($3,000 value)</span>
+                  </li>
+                </ul>
+                <div className="mt-4 pt-4 border-t border-signal/20">
+                  <div className="flex justify-between items-center">
+                    <span className="text-base font-medium">Total Value:</span>
+                    <span className="text-xl font-bold text-signal">$18,800</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Payment Options - Right Column */}
             <div>
               <h3 className="heading-ritual text-xl mb-6 text-signal">Choose Your Payment Plan</h3>
               
@@ -145,121 +185,84 @@ const Order = () => {
                   </div>
                 ))}
               </RadioGroup>
+            </div>
+          </div>
 
-              {/* Value Summary */}
-              <div className="mt-8 p-6 bg-gradient-to-br from-signal/5 to-brass/5 rounded-lg border border-signal/20">
-                <h4 className="heading-ritual text-lg mb-4 text-signal">What You Get:</h4>
-                <ul className="space-y-2 text-sm text-foreground/80">
-                  <li className="flex items-start space-x-2">
-                    <div className="w-1.5 h-1.5 bg-brass rounded-full mt-2 flex-shrink-0"></div>
-                    <span>12-Week Sacred Signal OS Core System ($6,000 value)</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <div className="w-1.5 h-1.5 bg-brass rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Weekly Live Build & Coaching Sessions ($2,000 value)</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <div className="w-1.5 h-1.5 bg-brass rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Office Hours 2×/week for 12 weeks ($1,200 value)</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <div className="w-1.5 h-1.5 bg-brass rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Brand Assets & Guidelines ($2,500 value)</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <div className="w-1.5 h-1.5 bg-brass rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Done-with-you Assets ($4,100 value)</span>
-                  </li>
-                  <li className="flex items-start space-x-2">
-                    <div className="w-1.5 h-1.5 bg-brass rounded-full mt-2 flex-shrink-0"></div>
-                    <span>Limited-Time Bonuses ($3,000 value)</span>
-                  </li>
-                </ul>
-                <div className="mt-4 pt-4 border-t border-signal/20">
-                  <div className="flex justify-between items-center">
-                    <span className="text-base font-medium">Total Value:</span>
-                    <span className="text-xl font-bold text-signal">$18,800</span>
-                  </div>
+          {/* Your Information - Full Width Bottom Section */}
+          <div className="max-w-2xl mx-auto">
+            <h3 className="heading-ritual text-xl mb-6 text-signal text-center">Your Information</h3>
+            
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <Label htmlFor="firstName">First Name *</Label>
+                  <Input
+                    id="firstName"
+                    name="firstName"
+                    type="text"
+                    required
+                    value={formData.firstName}
+                    onChange={handleInputChange}
+                    className="mt-1"
+                  />
+                </div>
+                <div>
+                  <Label htmlFor="lastName">Last Name *</Label>
+                  <Input
+                    id="lastName"
+                    name="lastName"
+                    type="text"
+                    required
+                    value={formData.lastName}
+                    onChange={handleInputChange}
+                    className="mt-1"
+                  />
                 </div>
               </div>
-            </div>
 
-            {/* Order Form */}
-            <div>
-              <h3 className="heading-ritual text-xl mb-6 text-signal">Your Information</h3>
-              
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <Label htmlFor="firstName">First Name *</Label>
-                    <Input
-                      id="firstName"
-                      name="firstName"
-                      type="text"
-                      required
-                      value={formData.firstName}
-                      onChange={handleInputChange}
-                      className="mt-1"
-                    />
-                  </div>
-                  <div>
-                    <Label htmlFor="lastName">Last Name *</Label>
-                    <Input
-                      id="lastName"
-                      name="lastName"
-                      type="text"
-                      required
-                      value={formData.lastName}
-                      onChange={handleInputChange}
-                      className="mt-1"
-                    />
-                  </div>
-                </div>
+              <div>
+                <Label htmlFor="email">Email Address *</Label>
+                <Input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  className="mt-1"
+                />
+              </div>
 
-                <div>
-                  <Label htmlFor="email">Email Address *</Label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    required
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    className="mt-1"
-                  />
-                </div>
+              <div>
+                <Label htmlFor="phone">Phone Number</Label>
+                <Input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  value={formData.phone}
+                  onChange={handleInputChange}
+                  className="mt-1"
+                />
+              </div>
 
-                <div>
-                  <Label htmlFor="phone">Phone Number</Label>
-                  <Input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    value={formData.phone}
-                    onChange={handleInputChange}
-                    className="mt-1"
-                  />
-                </div>
-
-                {/* Guarantee */}
-                <div className="p-4 bg-gradient-to-br from-signal/5 to-background border border-signal/20 rounded-lg">
-                  <h4 className="heading-ritual text-base mb-2 text-signal">30-Day Money-Back Guarantee</h4>
-                  <p className="body-premium text-sm text-foreground/80 leading-relaxed">
-                    Join Sacred Signal OS and do the work for 30 days. If you don't feel clearer, 
-                    more confident, and moving toward a steady pipeline, email us for a full refund.
-                  </p>
-                </div>
-
-                <Button type="submit" className="w-full bg-signal text-background hover:bg-signal/90 font-semibold py-4 text-lg">
-                  Complete Order - Secure Checkout
-                </Button>
-
-                <p className="text-xs text-foreground/60 text-center">
-                  You will be redirected to secure payment processing. 
-                  Your order will be processed within 24 hours.
+              {/* Guarantee */}
+              <div className="p-4 bg-gradient-to-br from-signal/5 to-background border border-signal/20 rounded-lg">
+                <h4 className="heading-ritual text-base mb-2 text-signal">30-Day Money-Back Guarantee</h4>
+                <p className="body-premium text-sm text-foreground/80 leading-relaxed">
+                  Join Sacred Signal OS and do the work for 30 days. If you don't feel clearer, 
+                  more confident, and moving toward a steady pipeline, email us for a full refund.
                 </p>
-              </form>
-            </div>
+              </div>
+
+              <Button type="submit" className="w-full bg-signal text-background hover:bg-signal/90 font-semibold py-4 text-lg">
+                Complete Order - Secure Checkout
+              </Button>
+
+              <p className="text-xs text-foreground/60 text-center">
+                You will be redirected to secure payment processing. 
+                Your order will be processed within 24 hours.
+              </p>
+            </form>
           </div>
         </div>
       </main>
