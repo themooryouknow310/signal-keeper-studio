@@ -10,10 +10,10 @@ const OriginStoryThankYou = () => {
       <Navigation />
 
       {/* Main Content */}
-      <main className="flex flex-col min-h-screen pt-24">
-        {/* Centered Hero Content */}
-        <div className="flex-1 flex items-center justify-center">
-          <div className="max-w-2xl mx-auto text-center px-6">
+      <main className="pt-24 pb-16">
+        {/* Hero Content - Closer to Menu */}
+        <div className="container mx-auto px-6 pt-12">
+          <div className="max-w-2xl mx-auto text-center">
             {/* Success Icon */}
             <div className="mb-8">
               <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -29,8 +29,8 @@ const OriginStoryThankYou = () => {
           </div>
         </div>
 
-        {/* Bottom Section Container */}
-        <div className="container mx-auto px-6 pb-16">
+        {/* Bottom Section Container - More Space Above */}
+        <div className="container mx-auto px-6 pt-24">
           <div className="max-w-2xl mx-auto">
 
             {/* Next Steps */}
