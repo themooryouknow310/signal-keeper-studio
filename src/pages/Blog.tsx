@@ -208,10 +208,10 @@ const Blog = () => {
           <AnimatedSection>
             <img src={sacredGeometrySymbol} alt="Sacred Geometry Symbol" className="w-24 h-24 mx-auto mb-8" />
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Never Miss an Insight
+              Create Your Magnetic Brand Story
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Get the latest strategies, frameworks, and insights delivered to your inbox weekly.
+              Access Origin Story Studio free and get your professional origin story, about section, and content prompts in minutes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <input
