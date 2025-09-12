@@ -13,7 +13,7 @@ const NextSteps = () => {
         <div className="container mx-auto px-6">
           <AnimatedSection>
             <div className="text-center max-w-4xl mx-auto">
-              <h1 className="heading-ritual text-5xl md:text-6xl lg:text-7xl mb-6 glow-text">
+              <h1 className="heading-ritual text-6xl md:text-7xl lg:text-8xl mb-6 glow-text">
                 Congratulations!
               </h1>
               <p className="body-premium text-2xl md:text-3xl text-foreground/90 leading-relaxed">
