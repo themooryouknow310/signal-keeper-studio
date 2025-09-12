@@ -75,19 +75,68 @@ get_header(); ?>
                         <div class="flex-1 h-px bg-gradient-to-r from-transparent via-brass/30 to-brass/60"></div>
                         
                         <!-- Center Metatron's Cube -->
-                        <div class="mx-8 relative">
-                            <svg width="48" height="48" viewBox="0 0 48 48" class="drop-shadow-lg text-brass" fill="currentColor">
-                                <circle cx="24" cy="24" r="2" />
-                                <circle cx="24" cy="12" r="2" />
-                                <circle cx="24" cy="36" r="2" />
-                                <circle cx="12" cy="18" r="2" />
-                                <circle cx="36" cy="18" r="2" />
-                                <circle cx="12" cy="30" r="2" />
-                                <circle cx="36" cy="30" r="2" />
-                                <path d="M24 12L36 18L36 30L24 36L12 30L12 18Z" fill="none" stroke="currentColor" stroke-width="1" />
-                                <path d="M24 12L24 36" stroke="currentColor" stroke-width="1" />
-                                <path d="M12 18L36 30" stroke="currentColor" stroke-width="1" />
-                                <path d="M36 18L12 30" stroke="currentColor" stroke-width="1" />
+                        <div class="mx-8 relative inline-flex items-center justify-center">
+                            <svg 
+                                width="48" 
+                                height="48" 
+                                viewBox="0 0 100 100" 
+                                class="text-brass animate-[metatronRotate_25s_linear_infinite]"
+                            >
+                                <!-- Outer hexagon circles -->
+                                <circle cx="50" cy="20" r="6" fill="none" stroke="currentColor" stroke-width="1" opacity="0.8" />
+                                <circle cx="75" cy="35" r="6" fill="none" stroke="currentColor" stroke-width="1" opacity="0.8" />
+                                <circle cx="75" cy="65" r="6" fill="none" stroke="currentColor" stroke-width="1" opacity="0.8" />
+                                <circle cx="50" cy="80" r="6" fill="none" stroke="currentColor" stroke-width="1" opacity="0.8" />
+                                <circle cx="25" cy="65" r="6" fill="none" stroke="currentColor" stroke-width="1" opacity="0.8" />
+                                <circle cx="25" cy="35" r="6" fill="none" stroke="currentColor" stroke-width="1" opacity="0.8" />
+                                
+                                <!-- Inner hexagon circles -->
+                                <circle cx="50" cy="32" r="4" fill="none" stroke="currentColor" stroke-width="1" opacity="0.9" />
+                                <circle cx="65" cy="42" r="4" fill="none" stroke="currentColor" stroke-width="1" opacity="0.9" />
+                                <circle cx="65" cy="58" r="4" fill="none" stroke="currentColor" stroke-width="1" opacity="0.9" />
+                                <circle cx="50" cy="68" r="4" fill="none" stroke="currentColor" stroke-width="1" opacity="0.9" />
+                                <circle cx="35" cy="58" r="4" fill="none" stroke="currentColor" stroke-width="1" opacity="0.9" />
+                                <circle cx="35" cy="42" r="4" fill="none" stroke="currentColor" stroke-width="1" opacity="0.9" />
+                                
+                                <!-- Center circle -->
+                                <circle cx="50" cy="50" r="3" fill="currentColor" opacity="1" class="animate-pulse" />
+                                
+                                <!-- Connecting lines - outer to inner hexagon -->
+                                <line x1="50" y1="20" x2="50" y2="32" stroke="currentColor" stroke-width="0.5" opacity="0.6" />
+                                <line x1="75" y1="35" x2="65" y2="42" stroke="currentColor" stroke-width="0.5" opacity="0.6" />
+                                <line x1="75" y1="65" x2="65" y2="58" stroke="currentColor" stroke-width="0.5" opacity="0.6" />
+                                <line x1="50" y1="80" x2="50" y2="68" stroke="currentColor" stroke-width="0.5" opacity="0.6" />
+                                <line x1="25" y1="65" x2="35" y2="58" stroke="currentColor" stroke-width="0.5" opacity="0.6" />
+                                <line x1="25" y1="35" x2="35" y2="42" stroke="currentColor" stroke-width="0.5" opacity="0.6" />
+                                
+                                <!-- Inner hexagon to center -->
+                                <line x1="50" y1="32" x2="50" y2="50" stroke="currentColor" stroke-width="0.5" opacity="0.7" />
+                                <line x1="65" y1="42" x2="50" y2="50" stroke="currentColor" stroke-width="0.5" opacity="0.7" />
+                                <line x1="65" y1="58" x2="50" y2="50" stroke="currentColor" stroke-width="0.5" opacity="0.7" />
+                                <line x1="50" y1="68" x2="50" y2="50" stroke="currentColor" stroke-width="0.5" opacity="0.7" />
+                                <line x1="35" y1="58" x2="50" y2="50" stroke="currentColor" stroke-width="0.5" opacity="0.7" />
+                                <line x1="35" y1="42" x2="50" y2="50" stroke="currentColor" stroke-width="0.5" opacity="0.7" />
+                                
+                                <!-- Outer hexagon interconnections -->
+                                <line x1="50" y1="20" x2="75" y2="35" stroke="currentColor" stroke-width="0.3" opacity="0.4" />
+                                <line x1="75" y1="35" x2="75" y2="65" stroke="currentColor" stroke-width="0.3" opacity="0.4" />
+                                <line x1="75" y1="65" x2="50" y2="80" stroke="currentColor" stroke-width="0.3" opacity="0.4" />
+                                <line x1="50" y1="80" x2="25" y2="65" stroke="currentColor" stroke-width="0.3" opacity="0.4" />
+                                <line x1="25" y1="65" x2="25" y2="35" stroke="currentColor" stroke-width="0.3" opacity="0.4" />
+                                <line x1="25" y1="35" x2="50" y2="20" stroke="currentColor" stroke-width="0.3" opacity="0.4" />
+                                
+                                <!-- Inner hexagon interconnections -->
+                                <line x1="50" y1="32" x2="65" y2="42" stroke="currentColor" stroke-width="0.4" opacity="0.5" />
+                                <line x1="65" y1="42" x2="65" y2="58" stroke="currentColor" stroke-width="0.4" opacity="0.5" />
+                                <line x1="65" y1="58" x2="50" y2="68" stroke="currentColor" stroke-width="0.4" opacity="0.5" />
+                                <line x1="50" y1="68" x2="35" y2="58" stroke="currentColor" stroke-width="0.4" opacity="0.5" />
+                                <line x1="35" y1="58" x2="35" y2="42" stroke="currentColor" stroke-width="0.4" opacity="0.5" />
+                                <line x1="35" y1="42" x2="50" y2="32" stroke="currentColor" stroke-width="0.4" opacity="0.5" />
+                                
+                                <!-- Diagonal connections for full Metatron's Cube -->
+                                <line x1="50" y1="20" x2="25" y2="65" stroke="currentColor" stroke-width="0.2" opacity="0.3" />
+                                <line x1="75" y1="35" x2="50" y2="80" stroke="currentColor" stroke-width="0.2" opacity="0.3" />
+                                <line x1="75" y1="65" x2="25" y2="35" stroke="currentColor" stroke-width="0.2" opacity="0.3" />
                             </svg>
                         </div>
                         
@@ -108,7 +157,7 @@ get_header(); ?>
         <div class="animate-on-scroll flex justify-center items-center" style="animation-delay: 800ms;">
             <a 
                 href="<?php echo esc_url(home_url('/application/')); ?>"
-                class="cinema-glow bg-transparent border-2 border-signal text-signal hover:bg-signal hover:text-background font-body font-medium px-12 py-6 text-xl motion-glow-hover rounded-full inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+                class="cinema-glow bg-transparent border-2 border-signal text-signal hover:bg-signal hover:text-background font-body font-medium px-12 py-6 text-xl motion-glow-hover rounded-full"
             >
                 BEGIN YOUR TRANSFORMATION
             </a>
