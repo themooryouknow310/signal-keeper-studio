@@ -166,6 +166,7 @@ body {
 .text-muted-foreground { color: hsl(var(--muted-foreground)); }
 .text-accent-foreground { color: hsl(var(--accent-foreground)); }
 .text-destructive { color: hsl(var(--destructive)); }
+.text-signal-foreground { color: hsl(var(--signal-foreground)); }
 
 .border-border { border-color: hsl(var(--border)); }
 .border-input { border-color: hsl(var(--input)); }

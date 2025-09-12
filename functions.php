@@ -65,68 +65,79 @@ add_action('after_setup_theme', 'sacred_signal_os_setup');
  * Enqueue Scripts and Styles
  */
 function sacred_signal_os_scripts() {
-    // Enqueue styles
+    $theme     = wp_get_theme();
+    $theme_dir = get_template_directory();
+    $theme_uri = get_template_directory_uri();
+
+    // Base style.css (versioned with filemtime for cache busting)
+    $style_path = $theme_dir . '/style.css';
     wp_enqueue_style(
         'sacred-signal-os-style',
         get_stylesheet_uri(),
         array(),
-        wp_get_theme()->get('Version')
-    );
-    
-    // Enqueue design system CSS
-    wp_enqueue_style(
-        'sacred-signal-os-design-system',
-        get_template_directory_uri() . '/assets/css/design-system.css',
-        array('sacred-signal-os-style'),
-        wp_get_theme()->get('Version')
-    );
-    
-    // Enqueue cinema styles
-    wp_enqueue_style(
-        'sacred-signal-os-cinema',
-        get_template_directory_uri() . '/assets/css/cinematic-effects.css',
-        array('sacred-signal-os-design-system'),
-        wp_get_theme()->get('Version')
-    );
-    
-    // Enqueue component styles
-    wp_enqueue_style(
-        'sacred-signal-os-components',
-        get_template_directory_uri() . '/assets/css/components.css',
-        array('sacred-signal-os-cinema'),
-        wp_get_theme()->get('Version')
+        file_exists($style_path) ? filemtime($style_path) : $theme->get('Version')
     );
 
-    // Enqueue theme overrides and utility bridge
+    // Design system CSS
+    $design_path = $theme_dir . '/assets/css/design-system.css';
+    wp_enqueue_style(
+        'sacred-signal-os-design-system',
+        $theme_uri . '/assets/css/design-system.css',
+        array('sacred-signal-os-style'),
+        file_exists($design_path) ? filemtime($design_path) : $theme->get('Version')
+    );
+
+    // Cinematic effects CSS
+    $cinema_css_path = $theme_dir . '/assets/css/cinematic-effects.css';
+    wp_enqueue_style(
+        'sacred-signal-os-cinema',
+        $theme_uri . '/assets/css/cinematic-effects.css',
+        array('sacred-signal-os-design-system'),
+        file_exists($cinema_css_path) ? filemtime($cinema_css_path) : $theme->get('Version')
+    );
+
+    // Component styles
+    $components_path = $theme_dir . '/assets/css/components.css';
+    wp_enqueue_style(
+        'sacred-signal-os-components',
+        $theme_uri . '/assets/css/components.css',
+        array('sacred-signal-os-cinema'),
+        file_exists($components_path) ? filemtime($components_path) : $theme->get('Version')
+    );
+
+    // Theme overrides and utility bridge
+    $overrides_path = $theme_dir . '/assets/css/theme-overrides.css';
     wp_enqueue_style(
         'sacred-signal-os-overrides',
-        get_template_directory_uri() . '/assets/css/theme-overrides.css',
+        $theme_uri . '/assets/css/theme-overrides.css',
         array('sacred-signal-os-components'),
-        wp_get_theme()->get('Version')
+        file_exists($overrides_path) ? filemtime($overrides_path) : $theme->get('Version')
     );
-    
-    // Enqueue JavaScript
+
+    // Main JS
+    $main_js_path = $theme_dir . '/assets/js/main.js';
     wp_enqueue_script(
         'sacred-signal-os-main',
-        get_template_directory_uri() . '/assets/js/main.js',
+        $theme_uri . '/assets/js/main.js',
         array('jquery'),
-        wp_get_theme()->get('Version'),
+        file_exists($main_js_path) ? filemtime($main_js_path) : $theme->get('Version'),
         true
     );
-    
-    // Enqueue cinematic effects
+
+    // Cinematic effects JS
+    $cinema_js_path = $theme_dir . '/assets/js/cinematic-effects.js';
     wp_enqueue_script(
         'sacred-signal-os-cinematic',
-        get_template_directory_uri() . '/assets/js/cinematic-effects.js',
+        $theme_uri . '/assets/js/cinematic-effects.js',
         array('sacred-signal-os-main'),
-        wp_get_theme()->get('Version'),
+        file_exists($cinema_js_path) ? filemtime($cinema_js_path) : $theme->get('Version'),
         true
     );
-    
+
     // Localize script for AJAX
     wp_localize_script('sacred-signal-os-main', 'sacred_signal_ajax', array(
         'ajax_url' => admin_url('admin-ajax.php'),
-        'nonce' => wp_create_nonce('sacred_signal_nonce'),
+        'nonce'    => wp_create_nonce('sacred_signal_nonce'),
     ));
 }
 add_action('wp_enqueue_scripts', 'sacred_signal_os_scripts');
@@ -411,14 +422,65 @@ add_action('customize_register', 'sacred_signal_os_customize_register');
 /**
  * Output Custom CSS
  */
+function sacred_signal_hex_to_hsl_components($hex) {
+    $hex = ltrim(trim($hex), '#');
+    if (strlen($hex) === 3) {
+        $r = hexdec(str_repeat(substr($hex, 0, 1), 2));
+        $g = hexdec(str_repeat(substr($hex, 1, 1), 2));
+        $b = hexdec(str_repeat(substr($hex, 2, 1), 2));
+    } elseif (strlen($hex) === 6) {
+        $r = hexdec(substr($hex, 0, 2));
+        $g = hexdec(substr($hex, 2, 2));
+        $b = hexdec(substr($hex, 4, 2));
+    } else {
+        return null;
+    }
+
+    $r /= 255; $g /= 255; $b /= 255;
+    $max = max($r, $g, $b);
+    $min = min($r, $g, $b);
+    $h = $s = $l = ($max + $min) / 2;
+
+    if ($max === $min) {
+        $h = $s = 0; // achromatic
+    } else {
+        $d = $max - $min;
+        $s = $l > 0.5 ? $d / (2 - $max - $min) : $d / ($max + $min);
+        switch ($max) {
+            case $r:
+                $h = ($g - $b) / $d + ($g < $b ? 6 : 0);
+                break;
+            case $g:
+                $h = ($b - $r) / $d + 2;
+                break;
+            case $b:
+                $h = ($r - $g) / $d + 4;
+                break;
+        }
+        $h /= 6;
+    }
+
+    $h_deg = round($h * 360);
+    $s_pct = round($s * 100);
+    $l_pct = round($l * 100);
+    return $h_deg . ' ' . $s_pct . '% ' . $l_pct . '%';
+}
+
 function sacred_signal_os_customizer_css() {
-    $primary_color = get_theme_mod('primary_color', '#000000');
-    $signal_color = get_theme_mod('signal_color', '#00ffff');
-    
+    $primary_hex = get_theme_mod('primary_color', '#0a0a0a');
+    $signal_hex  = get_theme_mod('signal_color', '#00ffff');
+
+    $primary_hsl = sacred_signal_hex_to_hsl_components($primary_hex);
+    $signal_hsl  = sacred_signal_hex_to_hsl_components($signal_hex);
+
     echo '<style type="text/css">';
     echo ':root {';
-    echo '--primary: ' . $primary_color . ';';
-    echo '--signal: ' . $signal_color . ';';
+    if ($primary_hsl) {
+        echo '--primary: ' . $primary_hsl . ';';
+    }
+    if ($signal_hsl) {
+        echo '--signal: ' . $signal_hsl . ';';
+    }
     echo '}';
     echo '</style>';
 }
