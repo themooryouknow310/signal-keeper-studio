@@ -10,27 +10,35 @@ const OriginStoryThankYou = () => {
       <Navigation />
 
       {/* Main Content */}
-      <main className="container mx-auto px-6 py-16 pt-24">{/* Added pt-24 to account for fixed navigation */}
-        <div className="max-w-2xl mx-auto text-center">
-          {/* Success Icon */}
-          <div className="mb-8">
-            <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-              <CheckCircle className="w-10 h-10 text-primary" />
+      <main className="flex flex-col min-h-screen pt-24">
+        {/* Centered Hero Content */}
+        <div className="flex-1 flex items-center justify-center">
+          <div className="max-w-2xl mx-auto text-center px-6">
+            {/* Success Icon */}
+            <div className="mb-8">
+              <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <CheckCircle className="w-10 h-10 text-primary" />
+              </div>
+              <h1 className="heading-ritual text-4xl md:text-6xl lg:text-7xl mb-8 leading-none glow-text">
+                You're In!
+              </h1>
+              <p className="body-premium text-2xl md:text-3xl text-foreground leading-relaxed font-light cinema-text-shadow mb-8">
+                Welcome to the Origin Story Studio. Your journey to crafting a compelling origin story starts now.
+              </p>
             </div>
-            <h1 className="heading-ritual text-4xl md:text-6xl lg:text-7xl mb-8 leading-none glow-text">
-              You're In!
-            </h1>
-            <p className="body-premium text-2xl md:text-3xl text-foreground leading-relaxed font-light cinema-text-shadow mb-8">
-              Welcome to the Origin Story Studio. Your journey to crafting a compelling origin story starts now.
-            </p>
           </div>
+        </div>
 
-          {/* Next Steps */}
-          <div className="bg-card border border-border rounded-2xl p-8 mb-8">
-            <h2 className="text-2xl font-semibold text-foreground mb-6">
-              What Happens Next?
-            </h2>
-            <div className="space-y-6 text-left">
+        {/* Bottom Section Container */}
+        <div className="container mx-auto px-6 pb-16">
+          <div className="max-w-2xl mx-auto">
+
+            {/* Next Steps */}
+            <div className="bg-card border border-border rounded-2xl p-8 mb-8 text-center">
+              <h2 className="text-2xl font-semibold text-foreground mb-6">
+                What Happens Next?
+              </h2>
+              <div className="space-y-6 text-left">
               <div className="flex items-start gap-4">
                 <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <Mail className="w-4 h-4 text-primary" />
@@ -66,25 +74,26 @@ const OriginStoryThankYou = () => {
                   </p>
                 </div>
               </div>
+              </div>
             </div>
-          </div>
 
-          {/* Call to Action */}
-          <div className="text-center">
-            <p className="text-muted-foreground mb-6">
-              Ready to dive deeper into building your sacred signal?
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/dream-client-sprint">
-                <Button size="lg" className="w-full sm:w-auto">
-                  Book Dream Client Sprint
-                </Button>
-              </Link>
-              <Link to="/">
-                <Button variant="outline" size="lg" className="w-full sm:w-auto">
-                  Explore Sacred Signal OS
-                </Button>
-              </Link>
+            {/* Call to Action */}
+            <div className="text-center">
+              <p className="text-muted-foreground mb-6">
+                Ready to dive deeper into building your sacred signal?
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link to="/dream-client-sprint">
+                  <Button size="lg" className="w-full sm:w-auto">
+                    Book Dream Client Sprint
+                  </Button>
+                </Link>
+                <Link to="/">
+                  <Button variant="outline" size="lg" className="w-full sm:w-auto">
+                    Explore Sacred Signal OS
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
