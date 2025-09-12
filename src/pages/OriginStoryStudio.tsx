@@ -197,7 +197,7 @@ const OriginStoryStudio = () => {
                   Access Your Free <span className="text-signal">Origin Story Studio</span>
                 </h3>
                 <p className="text-center text-foreground/80 body-premium mb-8">
-                  Get instant access to the interactive web application that will guide you through creating your complete origin story in 5 simple steps.
+                  Get instant access to the interactive web application that will guide you through creating your complete origin story in 7 simple steps.
                 </p>
               
               <Form {...form}>
