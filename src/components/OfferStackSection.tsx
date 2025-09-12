@@ -32,7 +32,7 @@ const OfferStackSection = () => {
           <div className="space-y-4">
             <div className="ssos-card p-4 border-signal/30">
               <div className="flex items-start gap-4">
-                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-6 h-6 mt-1 opacity-70" />
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-8 h-8 mt-1" />
                 <div className="flex-1">
                   <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
                     <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
@@ -49,7 +49,7 @@ const OfferStackSection = () => {
 
             <div className="ssos-card p-4 border-signal/30">
               <div className="flex items-start gap-4">
-                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-6 h-6 mt-1 opacity-70" />
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-8 h-8 mt-1" />
                 <div className="flex-1">
                   <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
                     <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
@@ -66,7 +66,7 @@ const OfferStackSection = () => {
 
             <div className="ssos-card p-4 border-signal/30">
               <div className="flex items-start gap-4">
-                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-6 h-6 mt-1 opacity-70" />
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-8 h-8 mt-1" />
                 <div className="flex-1">
                   <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
                     <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
@@ -92,7 +92,7 @@ const OfferStackSection = () => {
           <div className="space-y-4">
             <div className="ssos-card p-4 border-signal/30">
               <div className="flex items-start gap-4">
-                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-6 h-6 mt-1 opacity-70" />
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-8 h-8 mt-1" />
                 <div className="flex-1">
                   <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
                     <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
@@ -109,7 +109,7 @@ const OfferStackSection = () => {
 
             <div className="ssos-card p-4 border-signal/30">
               <div className="flex items-start gap-4">
-                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-6 h-6 mt-1 opacity-70" />
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-8 h-8 mt-1" />
                 <div className="flex-1">
                   <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
                     <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
@@ -126,7 +126,7 @@ const OfferStackSection = () => {
 
             <div className="ssos-card p-4 border-signal/30">
               <div className="flex items-start gap-4">
-                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-6 h-6 mt-1 opacity-70" />
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-8 h-8 mt-1" />
                 <div className="flex-1">
                   <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
                     <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
@@ -152,7 +152,7 @@ const OfferStackSection = () => {
           <div className="space-y-4">
             <div className="ssos-card p-4 border-signal/30">
               <div className="flex items-start gap-4">
-                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-6 h-6 mt-1 opacity-70" />
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-8 h-8 mt-1" />
                 <div className="flex-1">
                   <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
                     <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
@@ -169,7 +169,7 @@ const OfferStackSection = () => {
 
             <div className="ssos-card p-4 border-signal/30">
               <div className="flex items-start gap-4">
-                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-6 h-6 mt-1 opacity-70" />
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-8 h-8 mt-1" />
                 <div className="flex-1">
                   <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
                     <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
@@ -186,7 +186,7 @@ const OfferStackSection = () => {
 
             <div className="ssos-card p-4 border-signal/30">
               <div className="flex items-start gap-4">
-                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-6 h-6 mt-1 opacity-70" />
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-8 h-8 mt-1" />
                 <div className="flex-1">
                   <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
                     <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
@@ -203,7 +203,7 @@ const OfferStackSection = () => {
 
             <div className="ssos-card p-4 border-signal/30">
               <div className="flex items-start gap-4">
-                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-6 h-6 mt-1 opacity-70" />
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-8 h-8 mt-1" />
                 <div className="flex-1">
                   <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
                     <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
@@ -229,7 +229,7 @@ const OfferStackSection = () => {
           <div className="space-y-4">
             <div className="ssos-card p-4 border-brass/40 bg-gradient-to-br from-brass/5 via-background/80 to-brass/10">
               <div className="flex items-start gap-4">
-                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-6 h-6 mt-1 opacity-70" />
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-8 h-8 mt-1" />
                 <div className="flex-1">
                   <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
                     <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
@@ -246,7 +246,7 @@ const OfferStackSection = () => {
 
             <div className="ssos-card p-4 border-brass/40 bg-gradient-to-br from-brass/5 via-background/80 to-brass/10">
               <div className="flex items-start gap-4">
-                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-6 h-6 mt-1 opacity-70" />
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-8 h-8 mt-1" />
                 <div className="flex-1">
                   <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
                     <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
@@ -263,7 +263,7 @@ const OfferStackSection = () => {
 
             <div className="ssos-card p-4 border-brass/40 bg-gradient-to-br from-brass/5 via-background/80 to-brass/10">
               <div className="flex items-start gap-4">
-                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-6 h-6 mt-1 opacity-70" />
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-8 h-8 mt-1" />
                 <div className="flex-1">
                   <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
                     <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
