@@ -106,7 +106,7 @@ const OfferStackSection = () => {
                 <div className="text-signal font-display font-bold text-base">Value: $900</div>
               </div>
               <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
-                A practical 6–10-page guide: color specs, type hierarchy, CTA/button styles, iconography, motion pacing, and accessibility notes.
+                A practical guide: color specs, type hierarchy, CTA/button styles, iconography, motion pacing, and accessibility notes.
               </p>
             </div>
           </div>
