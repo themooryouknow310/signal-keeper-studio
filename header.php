@@ -76,6 +76,8 @@
                     class="mobile-toggle"
                     id="mobile-menu-button"
                     aria-label="<?php _e('Toggle mobile menu', 'sacred-signal-os'); ?>"
+                    aria-controls="mobile-menu"
+                    aria-expanded="false"
                 >
                     <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>

@@ -10,9 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize video controls
     initVideoControls();
     
-    // Initialize mobile menu
-    initMobileMenu();
-    
+    // Mobile menu is handled in main.js to avoid duplicate toggles
     // Initialize stagger animations
     initStaggerAnimations();
     
@@ -30,7 +28,7 @@ function initScrollAnimations() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('in-view');
+                entry.target.classList.add('in-view','is-in');
             }
         });
     }, observerOptions);

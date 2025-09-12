@@ -98,7 +98,8 @@
 
 /* Offset content for fixed header */
 .site-content { padding-top: 80px; }
-
+/* Ensure anchor targets are not hidden under the fixed header */
+section[id] { scroll-margin-top: 96px; }
 /* Minimal utility bridge for commonly used classes */
 .text-center { text-align: center; }
 .mx-auto { margin-left: auto; margin-right: auto; }
