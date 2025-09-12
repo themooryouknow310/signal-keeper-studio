@@ -725,7 +725,7 @@ get_header(); ?>
             <div class="flex-1 h-px bg-gradient-to-r from-transparent via-brass/30 to-brass/60"></div>
             <!-- Center icon -->
             <div class="mx-8 relative">
-                <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-12 h-12 drop-shadow-lg" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-12 h-12 drop-shadow-lg" />
             </div>
             <!-- Right line -->
             <div class="flex-1 h-px bg-gradient-to-l from-transparent via-brass/30 to-brass/60"></div>
@@ -749,7 +749,7 @@ get_header(); ?>
             <div class="space-y-4">
                 <div class="ssos-card p-4 border-signal/30">
                     <div class="flex items-start gap-4">
-                        <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
                         <div class="flex-1">
                             <div class="md:flex md:items-center md:justify-between">
                                 <h4 class="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">SACRED SIGNAL OS: 12-WEEK SYSTEM (CORE TRAINING)</h4>
@@ -762,7 +762,7 @@ get_header(); ?>
 
                 <div class="ssos-card p-4 border-signal/30">
                     <div class="flex items-start gap-4">
-                        <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
                         <div class="flex-1">
                             <div class="md:flex md:items-center md:justify-between">
                                 <h4 class="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">WEEKLY LIVE BUILD & COACHING (12 SESSIONS)</h4>
@@ -775,7 +775,7 @@ get_header(); ?>
 
                 <div class="ssos-card p-4 border-signal/30">
                     <div class="flex items-start gap-4">
-                        <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
                         <div class="flex-1">
                             <div class="md:flex md:items-center md:justify-between">
                                 <h4 class="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">OFFICE HOURS (2×/WEEK FOR 12 WEEKS)</h4>
@@ -796,7 +796,7 @@ get_header(); ?>
             <div class="space-y-4">
                 <div class="ssos-card p-4 border-signal/30">
                     <div class="flex items-start gap-4">
-                        <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
                         <div class="flex-1">
                             <div class="md:flex md:items-center md:justify-between">
                                 <h4 class="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">BRAND VIBE REPORT</h4>
@@ -809,7 +809,7 @@ get_header(); ?>
 
                 <div class="ssos-card p-4 border-signal/30">
                     <div class="flex items-start gap-4">
-                        <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
                         <div class="flex-1">
                             <div class="md:flex md:items-center md:justify-between">
                                 <h4 class="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">MOOD BOARD IMAGE</h4>
@@ -822,7 +822,7 @@ get_header(); ?>
 
                 <div class="ssos-card p-4 border-signal/30">
                     <div class="flex items-start gap-4">
-                        <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
                         <div class="flex-1">
                             <div class="md:flex md:items-center md:justify-between">
                                 <h4 class="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">VISUAL BRAND GUIDELINES</h4>
@@ -843,7 +843,7 @@ get_header(); ?>
             <div class="space-y-4">
                 <div class="ssos-card p-4 border-signal/30">
                     <div class="flex items-start gap-4">
-                        <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
                         <div class="flex-1">
                             <div class="md:flex md:items-center md:justify-between">
                                 <h4 class="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">ORIGIN STORY STUDIO PRO + 7-EMAIL NURTURE + LOOM REVIEW</h4>
@@ -856,7 +856,7 @@ get_header(); ?>
 
                 <div class="ssos-card p-4 border-signal/30">
                     <div class="flex items-start gap-4">
-                        <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
                         <div class="flex-1">
                             <div class="md:flex md:items-center md:justify-between">
                                 <h4 class="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">ETHICS & CLAIMS PACK</h4>
@@ -869,7 +869,7 @@ get_header(); ?>
 
                 <div class="ssos-card p-4 border-signal/30">
                     <div class="flex items-start gap-4">
-                        <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
                         <div class="flex-1">
                             <div class="md:flex md:items-center md:justify-between">
                                 <h4 class="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">KPI DASHBOARD & SCORECARD (NOTION/SHEETS)</h4>
@@ -882,7 +882,7 @@ get_header(); ?>
 
                 <div class="ssos-card p-4 border-signal/30">
                     <div class="flex items-start gap-4">
-                        <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
                         <div class="flex-1">
                             <div class="md:flex md:items-center md:justify-between">
                                 <h4 class="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">DREAM 100 OUTREACH STARTER PACK</h4>
@@ -903,7 +903,7 @@ get_header(); ?>
             <div class="space-y-4">
                 <div class="ssos-card p-4 bg-gradient-to-br from-brass/5 via-background/80 to-brass/10 border-brass/40">
                     <div class="flex items-start gap-4">
-                        <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
                         <div class="flex-1">
                             <div class="md:flex md:items-center md:justify-between">
                                 <h4 class="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">BONUS: LINKEDIN CONTENT ENGINE</h4>
@@ -916,7 +916,7 @@ get_header(); ?>
 
                 <div class="ssos-card p-4 bg-gradient-to-br from-brass/5 via-background/80 to-brass/10 border-brass/40">
                     <div class="flex items-start gap-4">
-                        <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
                         <div class="flex-1">
                             <div class="md:flex md:items-center md:justify-between">
                                 <h4 class="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">BONUS: PROOF ARCHITECTURE PACK</h4>
@@ -929,7 +929,7 @@ get_header(); ?>
 
                 <div class="ssos-card p-4 bg-gradient-to-br from-brass/5 via-background/80 to-brass/10 border-brass/40">
                     <div class="flex items-start gap-4">
-                        <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
                         <div class="flex-1">
                             <div class="md:flex md:items-center md:justify-between">
                                 <h4 class="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">BONUS: AFTERCARE 1:1 (60-MIN IN MONTH 4)</h4>
@@ -1096,8 +1096,8 @@ get_header(); ?>
                     <div class="testimonial-image-container mb-6">
                         <div class="testimonial-frame">
                             <img 
-                                src="<?php echo get_template_directory_uri(); ?>/src/assets/testimonials/marissa-fontana.jpg" 
-                                alt="Marissa Fontana" 
+                                src="<?php echo get_template_directory_uri(); ?>/assets/images/testimonials/marissa-fontana.jpg" 
+                                alt="Marissa Fontana"
                                 class="testimonial-image"
                             />
                         </div>
@@ -1119,8 +1119,8 @@ get_header(); ?>
                     <div class="testimonial-image-container mb-6">
                         <div class="testimonial-frame">
                             <img 
-                                src="<?php echo get_template_directory_uri(); ?>/src/assets/testimonials/leora-leon.jpg" 
-                                alt="Leora Leon" 
+                                src="<?php echo get_template_directory_uri(); ?>/assets/images/testimonials/leora-leon.jpg" 
+                                alt="Leora Leon"
                                 class="testimonial-image"
                             />
                         </div>
@@ -1142,8 +1142,8 @@ get_header(); ?>
                     <div class="testimonial-image-container mb-6">
                         <div class="testimonial-frame">
                             <img 
-                                src="<?php echo get_template_directory_uri(); ?>/src/assets/testimonials/susie-colles.jpg" 
-                                alt="Dr. Susie Colles" 
+                                src="<?php echo get_template_directory_uri(); ?>/assets/images/testimonials/susie-colles.jpg" 
+                                alt="Dr. Susie Colles"
                                 class="testimonial-image"
                             />
                         </div>
@@ -1274,7 +1274,7 @@ get_header(); ?>
             <div class="mb-16 animate-on-scroll">
                 <div class="relative h-96 md:h-[512px] rounded-3xl overflow-hidden">
                     <img 
-                        src="<?php echo get_template_directory_uri(); ?>/src/assets/recognition-influence-hero.jpg" 
+                        src="<?php echo get_template_directory_uri(); ?>/assets/images/recognition-influence-hero.jpg" 
                         alt="Recognition and Influence"
                         class="w-full h-full object-cover"
                     />
