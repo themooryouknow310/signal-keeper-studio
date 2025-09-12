@@ -258,7 +258,42 @@
 /* Missing display utilities */
 .block { display: block; }
 
-/* Missing responsive typography */
+/* Mobile navigation styling */
+.mobile-nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-nav-menu li {
+  border-bottom: 1px solid hsl(var(--border) / 0.3);
+}
+
+.mobile-nav-menu li:last-child {
+  border-bottom: none;
+}
+
+.mobile-nav-menu a {
+  display: block;
+  padding: 1rem 0;
+  color: hsl(var(--foreground));
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.125rem;
+  transition: color 200ms ease;
+}
+
+.mobile-nav-menu a:hover,
+.mobile-nav-menu a.current-menu-item {
+  color: hsl(var(--signal));
+}
+
+/* Desktop navigation active states */
+.nav-menu a.current-menu-item,
+.nav-menu a:hover {
+  color: hsl(var(--signal));
+}
+
 /* Enhanced typography utilities */
 .leading-none { line-height: 1; }
 .leading-tight { line-height: 1.25; }
@@ -273,6 +308,14 @@
 .text-foreground\/60 { color: hsl(var(--foreground) / 0.6); }
 .text-muted-foreground\/80 { color: hsl(var(--muted-foreground) / 0.8); }
 .text-muted-foreground\/60 { color: hsl(var(--muted-foreground) / 0.6); }
+
+/* Corrected slash utility colors */
+.text-brass { color: hsl(var(--brass)); }
+.text-brass\/80 { color: hsl(var(--brass) / 0.8); }
+.text-brass\/60 { color: hsl(var(--brass) / 0.6); }
+.text-signal { color: hsl(var(--signal)); }
+.text-signal\/80 { color: hsl(var(--signal) / 0.8); }
+.text-signal\/60 { color: hsl(var(--signal) / 0.6); }
 
 /* Responsive display utilities */
 @media (min-width: 768px) {

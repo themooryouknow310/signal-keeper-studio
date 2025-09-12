@@ -62,11 +62,35 @@
      * Smooth Scrolling
      */
     function initSmoothScrolling() {
-        $('a[href^="#"]').on('click', function(e) {
-            e.preventDefault();
+        // Handle anchor links (both relative and absolute URLs with fragments)
+        $('a[href*="#"]').on('click', function(e) {
+            const href = $(this).attr('href');
+            let target;
             
-            const target = $(this.getAttribute('href'));
-            if (target.length) {
+            // Check if it's a same-page anchor link
+            if (href.startsWith('#')) {
+                target = $(href);
+            } else if (href.includes('#')) {
+                const [url, fragment] = href.split('#');
+                const currentUrl = window.location.origin + window.location.pathname;
+                
+                // Only smooth scroll if it's the same page
+                if (url === currentUrl || url === window.location.href.replace('#' + fragment, '')) {
+                    target = $('#' + fragment);
+                } else {
+                    return; // Let the browser handle external navigation
+                }
+            } else {
+                return;
+            }
+            
+            if (target && target.length) {
+                e.preventDefault();
+                
+                // Close mobile menu if open
+                $('#mobile-menu').removeClass('is-open');
+                $('#mobile-menu-button').removeClass('active');
+                
                 $('html, body').animate({
                     scrollTop: target.offset().top - 80
                 }, 800, 'easeInOutCubic');
@@ -156,17 +180,17 @@
             const observer = new IntersectionObserver(function(entries) {
                 entries.forEach(function(entry) {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add('animate-fade-in');
+                        entry.target.classList.add('is-in');
                         observer.unobserve(entry.target);
                     }
                 });
             }, {
-                threshold: 0.1,
+                threshold: 0.15,
                 rootMargin: '0px 0px -50px 0px'
             });
 
             // Observe elements with animation classes
-            $('.animate-on-scroll').each(function() {
+            $('.animate-on-scroll, .motion-fade').each(function() {
                 observer.observe(this);
             });
         }

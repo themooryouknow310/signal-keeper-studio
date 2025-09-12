@@ -247,18 +247,23 @@
 }
 
 /* Animation Classes */
-.animate-on-scroll {
+.animate-on-scroll,
+.motion-fade {
   opacity: 0;
   transform: translateY(20px);
-  transition: all 800ms ease;
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.animate-on-scroll.in-view {
+.animate-on-scroll.is-in,
+.motion-fade.is-in {
   opacity: 1;
   transform: translateY(0);
 }
 
 .stagger-children > * {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   animation-delay: calc(var(--stagger-delay, 0) * 150ms);
 }
 
