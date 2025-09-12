@@ -5,8 +5,8 @@ import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock, User, ArrowRight } from "lucide-react";
 import CyanSLogo from '@/components/accents/CyanSLogo';
 import BrassRule from '@/components/accents/BrassRule';
-import SignalRing from '@/components/SignalRing';
 import AnimatedSection from '@/components/AnimatedSection';
+import sacredGeometrySymbol from '@/assets/sacred-geometry-symbol.png';
 
 // Sample blog posts data - replace with your actual CMS or data source
 const blogPosts = [
@@ -113,7 +113,7 @@ const Blog = () => {
         <div className="container mx-auto max-w-4xl">
           <AnimatedSection delay={200}>
             <div className="flex justify-center mb-8">
-              <SignalRing size={80} className="text-signal" />
+              <img src={sacredGeometrySymbol} alt="Sacred Geometry Symbol" className="w-20 h-20" />
             </div>
             
             <div className="flex items-center justify-center mb-8 space-x-8">
@@ -228,7 +228,7 @@ const Blog = () => {
       <section className="py-20 px-6 bg-card/30">
         <div className="container mx-auto max-w-2xl text-center">
           <AnimatedSection>
-            <SignalRing size={60} className="text-signal mx-auto mb-8" />
+            <img src={sacredGeometrySymbol} alt="Sacred Geometry Symbol" className="w-15 h-15 mx-auto mb-8" />
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
               Never Miss an Insight
             </h2>
