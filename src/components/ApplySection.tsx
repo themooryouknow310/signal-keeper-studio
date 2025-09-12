@@ -29,7 +29,7 @@ const ApplySection = () => {
     },
     {
       question: "Do you offer refunds?",
-      answer: "Due to the high-touch nature and immediate access to valuable intellectual property, there are no refunds. We're committed to your success and provide extensive support throughout the 12 weeks."
+      answer: "We're so confident in the Sacred Signal OS system that we offer a 30-day refund guarantee for engaged participants. Show up, do the work, and if you're not satisfied with your progress, we'll refund your investment. Refunds are not available after 30 days."
     }
   ];
 
