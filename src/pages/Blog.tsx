@@ -224,7 +224,7 @@ const Blog = () => {
                 placeholder="Enter your email address"
                 className="px-4 py-3 rounded-md border border-border bg-background text-foreground"
               />
-              <Button className="px-6 bg-signal hover:bg-signal/90 text-background font-bold">
+              <Button className="px-6 bg-signal hover:bg-signal/90 text-foreground font-bold">
                 Get Origin Story Studio
               </Button>
             </div>
