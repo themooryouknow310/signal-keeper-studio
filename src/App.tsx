@@ -9,6 +9,7 @@ import DreamClientSprint from "./pages/DreamClientSprint";
 import Application from "./pages/Application";
 import FullApplication from "./pages/FullApplication";
 import NextSteps from "./pages/NextSteps";
+import Order from "./pages/Order";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/application" element={<Application />} />
           <Route path="/full-application" element={<FullApplication />} />
           <Route path="/next-steps" element={<NextSteps />} />
+          <Route path="/order" element={<Order />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
