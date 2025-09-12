@@ -420,6 +420,22 @@ function sacred_signal_os_customize_register($wp_customize) {
 add_action('customize_register', 'sacred_signal_os_customize_register');
 
 /**
+ * Navigation Fallback Function
+ */
+function sacred_signal_os_menu_fallback($args) {
+    if (!isset($args['menu_class'])) {
+        $args['menu_class'] = 'nav-menu';
+    }
+    
+    echo '<ul class="' . esc_attr($args['menu_class']) . '">';
+    echo '<li><a href="' . esc_url(home_url('/#about')) . '">' . __('About', 'sacred-signal-os') . '</a></li>';
+    echo '<li><a href="' . esc_url(home_url('/#program')) . '">' . __('Program', 'sacred-signal-os') . '</a></li>';
+    echo '<li><a href="' . esc_url(home_url('/origin-story-studio/')) . '">' . __('Origin Story Studio', 'sacred-signal-os') . '</a></li>';
+    echo '<li><a href="' . esc_url(home_url('/#founder')) . '">' . __('Founder', 'sacred-signal-os') . '</a></li>';
+    echo '</ul>';
+}
+
+/**
  * Output Custom CSS
  */
 function sacred_signal_hex_to_hsl_components($hex) {

@@ -53,7 +53,7 @@
                         'theme_location' => 'primary',
                         'menu_class' => 'nav-menu',
                         'container' => false,
-                        'fallback_cb' => false,
+                        'fallback_cb' => 'sacred_signal_os_menu_fallback',
                     ));
                     ?>
                 </nav>
@@ -87,7 +87,7 @@
                     'theme_location' => 'primary',
                     'menu_class' => 'mobile-nav-menu',
                     'container' => false,
-                    'fallback_cb' => false,
+                    'fallback_cb' => 'sacred_signal_os_menu_fallback',
                 ));
                 ?>
                 <div class="pt-4">
