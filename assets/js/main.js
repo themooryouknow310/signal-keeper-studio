@@ -22,14 +22,14 @@
     function initNavigation() {
         // Mobile menu toggle
         $('#mobile-menu-button').on('click', function() {
-            $('#mobile-menu').toggleClass('hidden');
+            $('#mobile-menu').toggleClass('is-open');
             $(this).toggleClass('active');
         });
 
         // Close mobile menu when clicking outside
         $(document).on('click', function(e) {
             if (!$(e.target).closest('#masthead').length) {
-                $('#mobile-menu').addClass('hidden');
+                $('#mobile-menu').removeClass('is-open');
                 $('#mobile-menu-button').removeClass('active');
             }
         });

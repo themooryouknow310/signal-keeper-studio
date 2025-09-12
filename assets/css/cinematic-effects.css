@@ -226,9 +226,9 @@
   background: linear-gradient(
     135deg,
     hsl(var(--background) / 0.95) 0%,
-    hsl(var(--background) / 0.7) 30%,
-    hsl(var(--background) / 0.4) 70%,
-    hsl(var(--background) / 0.8) 100%
+    hsl(var(--background) / 0.8) 30%,
+    hsl(var(--background) / 0.6) 70%,
+    hsl(var(--background) / 0.9) 100%
   );
   z-index: 1;
 }

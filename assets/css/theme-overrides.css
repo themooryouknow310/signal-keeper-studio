@@ -33,7 +33,10 @@
 }
 
 .primary-nav { display: none; }
-.primary-nav .menu { display: flex; gap: 2rem; align-items: center; margin: 0; padding: 0; list-style: none; }
+.primary-nav .nav-menu { display: flex; gap: 2rem; align-items: center; margin: 0; padding: 0; list-style: none; }
+.primary-nav .nav-menu li { list-style: none; }
+.primary-nav .nav-menu a { color: hsl(var(--foreground)); text-decoration: none; font-weight: 500; transition: color var(--transition-base); }
+.primary-nav .nav-menu a:hover { color: hsl(var(--signal)); }
 
 .cta { display: none; }
 
