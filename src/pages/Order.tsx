@@ -245,6 +245,72 @@ const Order = () => {
                 />
               </div>
 
+              {/* Credit Card Information */}
+              <div className="space-y-4 p-4 border border-signal/20 rounded-lg bg-signal/5">
+                <h4 className="heading-ritual text-base text-signal">Payment Information</h4>
+                
+                <div>
+                  <Label htmlFor="cardNumber">Card Number *</Label>
+                  <Input
+                    id="cardNumber"
+                    name="cardNumber"
+                    type="text"
+                    placeholder="1234 5678 9012 3456"
+                    required
+                    className="mt-1"
+                  />
+                </div>
+
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <Label htmlFor="expiryDate">Expiry Date *</Label>
+                    <Input
+                      id="expiryDate"
+                      name="expiryDate"
+                      type="text"
+                      placeholder="MM/YY"
+                      required
+                      className="mt-1"
+                    />
+                  </div>
+                  <div>
+                    <Label htmlFor="cvv">CVV *</Label>
+                    <Input
+                      id="cvv"
+                      name="cvv"
+                      type="text"
+                      placeholder="123"
+                      required
+                      className="mt-1"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <Label htmlFor="cardName">Name on Card *</Label>
+                  <Input
+                    id="cardName"
+                    name="cardName"
+                    type="text"
+                    placeholder="John Doe"
+                    required
+                    className="mt-1"
+                  />
+                </div>
+
+                <div>
+                  <Label htmlFor="billingAddress">Billing Address *</Label>
+                  <Input
+                    id="billingAddress"
+                    name="billingAddress"
+                    type="text"
+                    placeholder="123 Main St, City, State 12345"
+                    required
+                    className="mt-1"
+                  />
+                </div>
+              </div>
+
               {/* Guarantee */}
               <div className="p-4 bg-gradient-to-br from-signal/5 to-background border border-signal/20 rounded-lg">
                 <h4 className="heading-ritual text-base mb-2 text-signal">30-Day Money-Back Guarantee</h4>
