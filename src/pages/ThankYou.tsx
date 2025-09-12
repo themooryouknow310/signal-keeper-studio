@@ -28,7 +28,7 @@ const ThankYou = () => {
                 <img 
                   src={sacredCompletionSymbol} 
                   alt="Sacred Completion Symbol" 
-                  className="w-24 h-24 object-contain"
+                  className="w-[77px] h-[77px] object-contain"
                 />
               </div>
             </div>
