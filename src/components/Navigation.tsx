@@ -17,7 +17,7 @@ const Navigation = () => {
         {/* Logo */}
         <div className="flex items-center space-x-3">
           <CyanSLogo size={32} />
-          <span className="font-display text-xl font-bold tracking-wider text-foreground">
+          <span className="font-display text-xl font-semibold tracking-wider text-brass hover:text-signal hover:glow-text transition-all duration-300">
             SACRED SIGNAL OS
           </span>
         </div>
