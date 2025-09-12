@@ -1,32 +1,16 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Mail, Clock, Sparkles } from "lucide-react";
-import CyanSLogo from "@/components/accents/CyanSLogo";
+import Navigation from "@/components/Navigation";
 
 const OriginStoryThankYou = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-background via-background/95 to-background">
-      {/* Header */}
-      <header className="border-b border-border/50 backdrop-blur-sm">
-        <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <Link to="/" className="flex items-center space-x-3">
-              <CyanSLogo size={32} />
-              <span className="font-display text-xl font-semibold tracking-wider text-brass hover:text-signal hover:glow-text transition-all duration-300">
-                SACRED SIGNAL OS
-              </span>
-            </Link>
-            <Link to="/">
-              <Button variant="ghost" size="sm">
-                Back to Home
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </header>
+      {/* Navigation */}
+      <Navigation />
 
       {/* Main Content */}
-      <main className="container mx-auto px-6 py-16">
+      <main className="container mx-auto px-6 py-16 pt-24">{/* Added pt-24 to account for fixed navigation */}
         <div className="max-w-2xl mx-auto text-center">
           {/* Success Icon */}
           <div className="mb-8">
