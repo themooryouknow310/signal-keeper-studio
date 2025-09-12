@@ -68,10 +68,6 @@ const ThankYou = () => {
                         <FileText className="w-4 h-4 text-brass mt-0.5 flex-shrink-0" />
                         <span>Pre-work assessment to maximize your results</span>
                       </li>
-                      <li className="flex items-start space-x-2">
-                        <Users className="w-4 h-4 text-brass mt-0.5 flex-shrink-0" />
-                        <span>Schedule link</span>
-                      </li>
                     </ul>
                   </div>
                 </div>
@@ -89,10 +85,6 @@ const ThankYou = () => {
                       <li className="flex items-start space-x-2">
                         <Calendar className="w-4 h-4 text-signal mt-0.5 flex-shrink-0" />
                         <span>Personal onboarding call scheduled</span>
-                      </li>
-                      <li className="flex items-start space-x-2">
-                        <CheckCircle className="w-4 h-4 text-signal mt-0.5 flex-shrink-0" />
-                        <span>Brand Vibe Report questionnaire sent</span>
                       </li>
                       <li className="flex items-start space-x-2">
                         <FileText className="w-4 h-4 text-signal mt-0.5 flex-shrink-0" />
