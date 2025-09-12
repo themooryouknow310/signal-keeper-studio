@@ -84,7 +84,7 @@ function sacred_signal_os_scripts() {
     // Enqueue cinema styles
     wp_enqueue_style(
         'sacred-signal-os-cinema',
-        get_template_directory_uri() . '/assets/css/cinema.css',
+        get_template_directory_uri() . '/assets/css/cinematic-effects.css',
         array('sacred-signal-os-design-system'),
         wp_get_theme()->get('Version')
     );
@@ -110,6 +110,15 @@ function sacred_signal_os_scripts() {
         'sacred-signal-os-main',
         get_template_directory_uri() . '/assets/js/main.js',
         array('jquery'),
+        wp_get_theme()->get('Version'),
+        true
+    );
+    
+    // Enqueue cinematic effects
+    wp_enqueue_script(
+        'sacred-signal-os-cinematic',
+        get_template_directory_uri() . '/assets/js/cinematic-effects.js',
+        array('sacred-signal-os-main'),
         wp_get_theme()->get('Version'),
         true
     );

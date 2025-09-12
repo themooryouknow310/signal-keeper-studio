@@ -126,5 +126,6 @@ a img.aligncenter {
 
 /* Import the design system */
 @import url('./assets/css/design-system.css');
-@import url('./assets/css/cinema.css');
+@import url('./assets/css/cinematic-effects.css');
 @import url('./assets/css/components.css');
+@import url('./assets/css/theme-overrides.css');

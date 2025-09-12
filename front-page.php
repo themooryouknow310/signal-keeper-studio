@@ -26,7 +26,7 @@ get_header(); ?>
             ?>
             
             <h1 class="hero-title heading-ritual glow-text cinema-text-shadow">
-                <?php echo wp_kses_post($hero_title); ?>
+                TIRED OF <span class="hero-shout">SHOUTING</span><br>INTO THE <span class="hero-void">VOID?</span>
             </h1>
             
             <!-- Video Container -->
