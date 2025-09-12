@@ -117,156 +117,217 @@ get_header(); ?>
 </section>
 
 <!-- About Section -->
-<section id="about" class="py-20 bg-background">
-    <div class="container">
-        <!-- Problems Section -->
-        <div class="max-w-6xl mx-auto mb-24 animate-on-scroll">
-            <h2 class="heading-ritual text-4xl md:text-6xl mb-4 text-center glow-text">
-                THE SPIRITUAL ENTREPRENEUR'S DILEMMA
-            </h2>
-            <p class="text-xl text-muted-foreground text-center mb-16 max-w-4xl mx-auto">
-                You Have A Gift To Share, A Calling To Serve. But Right Now, Your Days Are Likely Filled With The Frustrating Reality Of Trying To Grow Your Business Online:
-            </p>
-            
-            <div class="ssos-grid">
-                <!-- Problem Cards -->
-                <div class="ssos-card animate-on-scroll">
-                    <div class="cinema-hero mb-6">
-                        <img 
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/grain-texture-01.jpg" 
-                            alt="The endless content treadmill" 
-                            class="w-full h-48 object-cover"
-                        />
-                        <div class="cinema-hero-overlay"></div>
-                    </div>
-                    <h3 class="ssos-card-title">THE ENDLESS CONTENT TREADMILL</h3>
-                    <p class="text-muted-foreground">Creating post after post, hoping something will finally stick.</p>
+<section id="about" class="section-divider relative overflow-hidden">
+    <!-- Background Accent Elements -->
+    <div class="absolute top-1/2 right-1/4 opacity-4">
+        <div class="w-20 h-20 border border-brass/10 transform rotate-45"></div>
+    </div>
+    
+    <!-- Background Elements -->
+    <div class="absolute top-40 right-10 opacity-10">
+        <div class="w-[150px] h-[150px] border border-brass/20 rounded-full animate-pulse"></div>
+    </div>
+
+    <div class="container mx-auto px-6">
+        <!-- Problem Section -->
+        <div class="mb-20">
+            <div class="text-center mb-16">
+                <div class="flex items-center justify-center mb-8">
+                    <div class="w-[300px] h-px bg-gradient-to-r from-transparent via-brass/30 to-brass"></div>
                 </div>
-                
-                <div class="ssos-card animate-on-scroll">
-                    <div class="cinema-hero mb-6">
-                        <img 
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/hero-dark-gradient.jpg" 
-                            alt="The anxiety of algorithm whiplash" 
-                            class="w-full h-48 object-cover"
-                        />
-                        <div class="cinema-hero-overlay"></div>
+                <h2 class="heading-ritual text-3xl md:text-5xl mb-6 glow-text">
+                    THE SPIRITUAL ENTREPRENEUR'S DILEMMA
+                </h2>
+                <p class="body-sacred text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
+                    You Have A Gift To Share, A Calling To Serve. But Right Now, Your Days Are Likely Filled With The Frustrating Reality Of Trying To Grow Your Business Online:
+                </p>
+            </div>
+
+            <div class="ssos-grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto">
+                <div class="ssos-card">
+                    <div class="text-center">
+                        <div class="w-64 h-40 mx-auto mb-6 rounded-lg overflow-hidden border border-brass/30">
+                            <img 
+                                src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/content-treadmill-new.jpg" 
+                                alt="The endless content treadmill"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <h3 class="ssos-card-title text-xl mb-4">
+                            The endless content treadmill
+                        </h3>
+                        <p class="body-premium text-foreground/75 leading-relaxed">
+                            Creating post after post, hoping something will finally stick.
+                        </p>
                     </div>
-                    <h3 class="ssos-card-title">THE ANXIETY OF ALGORITHM WHIPLASH</h3>
-                    <p class="text-muted-foreground">Watching your reach and leads disappear overnight.</p>
                 </div>
-                
-                <div class="ssos-card animate-on-scroll">
-                    <div class="cinema-hero mb-6">
-                        <img 
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/hero-glass-rings.jpg" 
-                            alt="The frustration of a leaky funnel" 
-                            class="w-full h-48 object-cover"
-                        />
-                        <div class="cinema-hero-overlay"></div>
+
+                <div class="ssos-card">
+                    <div class="text-center">
+                        <div class="w-64 h-40 mx-auto mb-6 rounded-lg overflow-hidden border border-brass/30">
+                            <img 
+                                src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/algorithm-whiplash-new.jpg" 
+                                alt="The anxiety of algorithm whiplash"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <h3 class="ssos-card-title text-xl mb-4">
+                            The anxiety of algorithm whiplash
+                        </h3>
+                        <p class="body-premium text-foreground/75 leading-relaxed">
+                            Watching your reach and leads disappear overnight.
+                        </p>
                     </div>
-                    <h3 class="ssos-card-title">THE FRUSTRATION OF A LEAKY FUNNEL</h3>
-                    <p class="text-muted-foreground">Attracting followers who "love your vibe" but never buy.</p>
                 </div>
-                
-                <div class="ssos-card animate-on-scroll">
-                    <div class="cinema-hero mb-6">
-                        <img 
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/sacred-geometry-hero.jpg" 
-                            alt="The exhaustion of over-delivering" 
-                            class="w-full h-48 object-cover"
-                        />
-                        <div class="cinema-hero-overlay"></div>
+
+                <div class="ssos-card">
+                    <div class="text-center">
+                        <div class="w-64 h-40 mx-auto mb-6 rounded-lg overflow-hidden border border-brass/30">
+                            <img 
+                                src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/leaky-funnel-new.jpg" 
+                                alt="The frustration of a leaky funnel"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <h3 class="ssos-card-title text-xl mb-4">
+                            The frustration of a leaky funnel
+                        </h3>
+                        <p class="body-premium text-foreground/75 leading-relaxed">
+                            Attracting followers who "love your vibe" but never buy.
+                        </p>
                     </div>
-                    <h3 class="ssos-card-title">THE EXHAUSTION OF OVER-DELIVERING</h3>
-                    <p class="text-muted-foreground">Feeling resentful and burnt out, wondering if you'll ever make a real living.</p>
+                </div>
+
+                <div class="ssos-card">
+                    <div class="text-center">
+                        <div class="w-64 h-40 mx-auto mb-6 rounded-lg overflow-hidden border border-brass/30">
+                            <img 
+                                src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/exhaustion-burnout-new.jpg" 
+                                alt="The exhaustion of over-delivering"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <h3 class="ssos-card-title text-xl mb-4">
+                            The exhaustion of over-delivering
+                        </h3>
+                        <p class="body-premium text-foreground/75 leading-relaxed">
+                            Feeling resentful and burnt out, wondering if you'll ever make a real living.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        
+
         <!-- Sacred Divider -->
-        <div class="sacred-divider animate-on-scroll mb-24">
-            <div class="flex items-center justify-center">
-                <div class="flex-1 h-px bg-gradient-to-r from-transparent via-brass/30 to-brass/60"></div>
-                <div class="mx-8 px-8 py-4 bg-background/80 backdrop-blur-sm border border-brass/20 rounded-lg">
-                    <p class="text-2xl font-bold text-brass text-center">IT DOESN'T HAVE TO BE THIS WAY</p>
+        <div class="text-center mb-20 relative">
+            <div class="flex items-center justify-center space-x-8">
+                <div class="w-24 h-px bg-gradient-to-r from-transparent via-brass to-brass" />
+                <div class="relative">
+                    <p class="heading-ritual text-2xl md:text-3xl text-signal px-6 glow-text">
+                        IT DOESN'T HAVE TO BE THIS WAY
+                    </p>
+                    <div class="absolute -top-2 -bottom-2 -left-2 -right-2 border border-signal/20 rounded-lg"></div>
                 </div>
-                <div class="flex-1 h-px bg-gradient-to-l from-transparent via-brass/30 to-brass/60"></div>
-            </div>
-        </div>
-        
-        <!-- Solutions Section -->
-        <div class="max-w-6xl mx-auto mb-16 animate-on-scroll">
-            <h2 class="heading-ritual text-4xl md:text-6xl mb-16 text-center glow-text">
-                IMAGINE A BUSINESS WHERE...
-            </h2>
-            
-            <div class="space-y-8">
-                <!-- Outcome Items -->
-                <div class="flex items-start gap-6 animate-on-scroll">
-                    <div class="outcome-icon flex-shrink-0">
-                        <img 
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/sacred-geometry-icon.png" 
-                            alt="Clear resonant message" 
-                            class="w-full h-full object-cover"
-                        />
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-foreground mb-2">Your message is so clear and resonant</h3>
-                        <p class="text-lg text-foreground/80">that your ideal clients instantly know they're in the right place.</p>
-                    </div>
-                </div>
-                
-                <div class="flex items-start gap-6 animate-on-scroll">
-                    <div class="outcome-icon flex-shrink-0">
-                        <img 
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/sacred-geometry-icon.png" 
-                            alt="Compelling offer" 
-                            class="w-full h-full object-cover"
-                        />
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-foreground mb-2">Your offer is so compelling</h3>
-                        <p class="text-lg text-foreground/80">that it feels like an answer to their prayers.</p>
-                    </div>
-                </div>
-                
-                <div class="flex items-start gap-6 animate-on-scroll">
-                    <div class="outcome-icon flex-shrink-0">
-                        <img 
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/sacred-geometry-icon.png" 
-                            alt="Sustainable content system" 
-                            class="w-full h-full object-cover"
-                        />
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-foreground mb-2">Your content system is so sustainable</h3>
-                        <p class="text-lg text-foreground/80">that you can create a month's worth of high-impact content in a single day.</p>
-                    </div>
-                </div>
-                
-                <div class="flex items-start gap-6 animate-on-scroll">
-                    <div class="outcome-icon flex-shrink-0">
-                        <img 
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/sacred-geometry-icon.png" 
-                            alt="Authentic sales process" 
-                            class="w-full h-full object-cover"
-                        />
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-foreground mb-2">Your sales process is so authentic</h3>
-                        <p class="text-lg text-foreground/80">that it feels like a natural extension of your spiritual work.</p>
-                    </div>
+                <div class="w-24 h-px bg-gradient-to-l from-transparent via-brass/70 to-brass shadow-[0_0_20px_hsl(var(--brass)/0.4)] relative">
+                    <div class="absolute inset-0 bg-gradient-to-l from-transparent via-white/20 to-white/10 blur-sm"></div>
                 </div>
             </div>
         </div>
-        
-        <!-- Closing Promise -->
-        <div class="text-center animate-on-scroll">
-            <div class="inline-flex items-center gap-4 px-8 py-4 bg-gradient-to-r from-brass/10 to-transparent rounded-full">
-                <div class="cinema-brass-medallion flex-shrink-0"></div>
-                <p class="text-2xl font-bold text-brass">THIS IS THE PROMISE OF SACRED SIGNAL OS</p>
-                <div class="cinema-brass-medallion flex-shrink-0"></div>
+
+        <!-- Vision Section -->
+        <div>
+            <div class="text-center mb-16">
+                <h2 class="heading-ritual text-3xl md:text-5xl mb-6 glow-text">
+                    IMAGINE A BUSINESS WHERE...
+                </h2>
+            </div>
+
+            <div class="ssos-grid grid-cols-1 max-w-5xl mx-auto">
+                <div class="ssos-card">
+                    <div class="flex items-center space-x-6">
+                        <div class="flex-shrink-0 w-16 h-16 rounded-full overflow-hidden border border-brass/30">
+                            <img 
+                                src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/clear-resonant-message.jpg" 
+                                alt="Your message is so clear and resonant"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div class="flex-1">
+                            <p class="body-premium text-lg leading-relaxed">
+                                <span class="font-semibold text-foreground text-xl">Your message is so clear and resonant</span>{" "}
+                                <span class="text-foreground/80">that your ideal clients instantly know they're in the right place.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ssos-card">
+                    <div class="flex items-center space-x-6">
+                        <div class="flex-shrink-0 w-16 h-16 rounded-full overflow-hidden border border-brass/30">
+                            <img 
+                                src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/compelling-offer.jpg" 
+                                alt="Your offer is so compelling"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div class="flex-1">
+                            <p class="body-premium text-lg leading-relaxed">
+                                <span class="font-semibold text-foreground text-xl">Your offer is so compelling</span>{" "}
+                                <span class="text-foreground/80">that it feels like an answer to their prayers.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ssos-card">
+                    <div class="flex items-center space-x-6">
+                        <div class="flex-shrink-0 w-16 h-16 rounded-full overflow-hidden border border-brass/30">
+                            <img 
+                                src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/sustainable-content.jpg" 
+                                alt="Your content system is so sustainable"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div class="flex-1">
+                            <p class="body-premium text-lg leading-relaxed">
+                                <span class="font-semibold text-foreground text-xl">Your content system is so sustainable</span>{" "}
+                                <span class="text-foreground/80">that you can create a month's worth of high-impact content in a single day.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ssos-card">
+                    <div class="flex items-center space-x-6">
+                        <div class="flex-shrink-0 w-16 h-16 rounded-full overflow-hidden border border-brass/30">
+                            <img 
+                                src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/authentic-sales.jpg" 
+                                alt="Your sales process is so authentic"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div class="flex-1">
+                            <p class="body-premium text-lg leading-relaxed">
+                                <span class="font-semibold text-foreground text-xl">Your sales process is so authentic</span>{" "}
+                                <span class="text-foreground/80">that it feels like a natural extension of your spiritual work.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-16">
+                <p class="heading-ritual text-2xl md:text-3xl text-signal mb-4 glow-text">
+                    THIS IS THE PROMISE OF SACRED SIGNAL OS
+                </p>
+                <div class="flex items-center justify-center space-x-4">
+                    <div class="flex-1 h-px bg-gradient-to-r from-transparent via-brass/30 to-brass/60 max-w-20"></div>
+                    <div class="relative">
+                        <div class="w-3 h-3 bg-brass transform rotate-45 shadow-[0_0_15px_hsl(var(--brass)/0.6)]"></div>
+                        <div class="absolute inset-0 w-3 h-3 bg-gradient-to-br from-white/20 to-transparent transform rotate-45"></div>
+                    </div>
+                    <div class="flex-1 h-px bg-gradient-to-l from-transparent via-brass/30 to-brass/60 max-w-20"></div>
+                </div>
             </div>
         </div>
     </div>
