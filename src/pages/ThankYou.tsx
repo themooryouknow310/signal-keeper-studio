@@ -24,7 +24,7 @@ const ThankYou = () => {
           {/* Success Message */}
           <div className="text-center mb-12">
             <div className="flex items-center justify-center mb-6">
-              <div className="w-20 h-20 flex items-center justify-center mb-4">
+              <div className="flex items-center justify-center mb-4">
                 <img 
                   src={sacredCompletionSymbol} 
                   alt="Sacred Completion Symbol" 
