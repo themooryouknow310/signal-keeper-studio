@@ -44,7 +44,7 @@ const FounderSection = () => {
                   THE SIGNAL ARCHITECT
                 </h3>
                 <p className="body-premium text-lg text-foreground/90 leading-relaxed mb-6">
-                  For over a decade, Barack has been developing the Sacred Signal methodology—a synthesis of 
+                  As an award-winning leader and spiritual practitioner, Barack has developed the Sacred Signal methodology—a synthesis of 
                   ancient wisdom traditions and modern conversion psychology that creates authentic magnetic attraction.
                 </p>
                 <p className="body-premium text-lg text-foreground/90 leading-relaxed">
