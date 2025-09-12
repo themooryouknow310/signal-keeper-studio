@@ -113,7 +113,7 @@ const Blog = () => {
         <div className="container mx-auto max-w-4xl">
           <AnimatedSection delay={200}>
             <div className="flex justify-center mb-8">
-              <img src={sacredGeometrySymbol} alt="Sacred Geometry Symbol" className="w-20 h-20" />
+              <img src={sacredGeometrySymbol} alt="Sacred Geometry Symbol" className="w-32 h-32" />
             </div>
             
             <div className="flex items-center justify-center mb-8 space-x-8">
@@ -228,7 +228,7 @@ const Blog = () => {
       <section className="py-20 px-6 bg-card/30">
         <div className="container mx-auto max-w-2xl text-center">
           <AnimatedSection>
-            <img src={sacredGeometrySymbol} alt="Sacred Geometry Symbol" className="w-15 h-15 mx-auto mb-8" />
+            <img src={sacredGeometrySymbol} alt="Sacred Geometry Symbol" className="w-24 h-24 mx-auto mb-8" />
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
               Never Miss an Insight
             </h2>
