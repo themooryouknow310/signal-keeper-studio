@@ -12,13 +12,15 @@ const NextSteps = () => {
       <section className="pt-32 pb-20 lg:pt-40 lg:pb-32">
         <div className="container mx-auto px-6">
           <AnimatedSection>
-            <div className="text-center max-w-4xl mx-auto">
-              <h1 className="heading-ritual text-6xl md:text-7xl lg:text-8xl mb-6 glow-text text-center">
-                Congratulations!
-              </h1>
-              <p className="body-premium text-2xl md:text-3xl text-foreground/90 leading-relaxed">
-                We Have Your Application. Here's What To Expect Next…
-              </p>
+            <div className="w-full flex justify-center">
+              <div className="text-center max-w-4xl">
+                <h1 className="heading-ritual text-6xl md:text-7xl lg:text-8xl mb-6 glow-text block mx-auto text-center">
+                  Congratulations!
+                </h1>
+                <p className="body-premium text-2xl md:text-3xl text-foreground/90 leading-relaxed">
+                  We Have Your Application. Here's What To Expect Next…
+                </p>
+              </div>
             </div>
           </AnimatedSection>
         </div>
