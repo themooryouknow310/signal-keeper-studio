@@ -367,3 +367,16 @@
     padding-right: 1rem;
   }
 }
+
+/* Outcome Icon */
+.outcome-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: hsl(var(--brass) / 0.1);
+  border: 2px solid hsl(var(--brass) / 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

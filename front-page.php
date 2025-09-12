@@ -156,7 +156,7 @@ get_header(); ?>
             <div class="space-y-8">
                 <!-- Outcome Items -->
                 <div class="flex items-start gap-6 animate-on-scroll">
-                    <div class="cinema-testimonial-frame flex-shrink-0">
+                    <div class="outcome-icon flex-shrink-0">
                         <img 
                             src="<?php echo get_template_directory_uri(); ?>/assets/images/sacred-geometry-icon.png" 
                             alt="Clear resonant message" 
@@ -164,12 +164,13 @@ get_header(); ?>
                         />
                     </div>
                     <div>
-                        <p class="text-lg text-foreground">Your message is so clear and resonant that your ideal clients instantly know they're in the right place.</p>
+                        <h3 class="text-xl font-bold text-foreground mb-2">Your message is so clear and resonant</h3>
+                        <p class="text-lg text-foreground/80">that your ideal clients instantly know they're in the right place.</p>
                     </div>
                 </div>
                 
                 <div class="flex items-start gap-6 animate-on-scroll">
-                    <div class="cinema-testimonial-frame flex-shrink-0">
+                    <div class="outcome-icon flex-shrink-0">
                         <img 
                             src="<?php echo get_template_directory_uri(); ?>/assets/images/sacred-geometry-icon.png" 
                             alt="Compelling offer" 
@@ -177,12 +178,13 @@ get_header(); ?>
                         />
                     </div>
                     <div>
-                        <p class="text-lg text-foreground">Your offer is so compelling that it feels like an answer to their prayers.</p>
+                        <h3 class="text-xl font-bold text-foreground mb-2">Your offer is so compelling</h3>
+                        <p class="text-lg text-foreground/80">that it feels like an answer to their prayers.</p>
                     </div>
                 </div>
                 
                 <div class="flex items-start gap-6 animate-on-scroll">
-                    <div class="cinema-testimonial-frame flex-shrink-0">
+                    <div class="outcome-icon flex-shrink-0">
                         <img 
                             src="<?php echo get_template_directory_uri(); ?>/assets/images/sacred-geometry-icon.png" 
                             alt="Sustainable content system" 
@@ -190,12 +192,13 @@ get_header(); ?>
                         />
                     </div>
                     <div>
-                        <p class="text-lg text-foreground">Your content system is so sustainable that you can create a month's worth of high-impact content in a single day.</p>
+                        <h3 class="text-xl font-bold text-foreground mb-2">Your content system is so sustainable</h3>
+                        <p class="text-lg text-foreground/80">that you can create a month's worth of high-impact content in a single day.</p>
                     </div>
                 </div>
                 
                 <div class="flex items-start gap-6 animate-on-scroll">
-                    <div class="cinema-testimonial-frame flex-shrink-0">
+                    <div class="outcome-icon flex-shrink-0">
                         <img 
                             src="<?php echo get_template_directory_uri(); ?>/assets/images/sacred-geometry-icon.png" 
                             alt="Authentic sales process" 
@@ -203,7 +206,8 @@ get_header(); ?>
                         />
                     </div>
                     <div>
-                        <p class="text-lg text-foreground">Your sales process is so authentic that it feels like a natural extension of your spiritual work.</p>
+                        <h3 class="text-xl font-bold text-foreground mb-2">Your sales process is so authentic</h3>
+                        <p class="text-lg text-foreground/80">that it feels like a natural extension of your spiritual work.</p>
                     </div>
                 </div>
             </div>
