@@ -668,311 +668,240 @@ get_header(); ?>
 </section>
 
 <!-- Offer Stack Section -->
-<section id="offer-stack" class="py-20 cinema-surface">
-    <div class="container">
+<section id="offer-stack" class="section-divider surface-dark relative overflow-hidden">
+    <div class="container max-w-4xl mx-auto">
         <!-- Brass Rule Divider -->
-        <div class="flex items-center justify-center mb-16">
-            <div class="brass-rule" style="width: 200px; border-top: var(--ssos-line);"></div>
+        <div class="flex items-center justify-center mb-16 fade-up">
+            <!-- Left line -->
+            <div class="flex-1 h-px bg-gradient-to-r from-transparent via-brass/30 to-brass/60"></div>
+            <!-- Center icon -->
+            <div class="mx-8 relative">
+                <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-12 h-12 drop-shadow-lg" />
+            </div>
+            <!-- Right line -->
+            <div class="flex-1 h-px bg-gradient-to-l from-transparent via-brass/30 to-brass/60"></div>
         </div>
 
         <!-- Header -->
-        <div class="text-center mb-20 animate-on-scroll">
-            <h2 class="heading-display text-4xl md:text-6xl mb-8 text-foreground glow-text">
+        <div class="text-center mb-20 fade-up">
+            <h2 class="heading-ritual text-4xl md:text-6xl mb-8 glow-text">
                 EVERYTHING YOU GET INSIDE SACRED SIGNAL OS
             </h2>
-            <p class="body-premium text-xl text-muted-foreground max-w-4xl mx-auto">
+            <p class="body-premium text-xl text-[hsl(var(--ssos-alabaster))] max-w-4xl mx-auto">
                 We don't shout; we stack real support. Here's exactly what's included and why it matters.
             </p>
         </div>
 
         <!-- Core System -->
-        <div class="mb-20">
-            <h3 class="heading-ritual text-2xl md:text-3xl mb-8 text-center text-foreground">
+        <div class="mb-20 fade-up">
+            <h3 class="heading-ritual text-xl md:text-2xl mb-6 text-center glow-text text-signal">
                 CORE SYSTEM
             </h3>
-            <div class="ssos-grid">
-                <div class="ssos-card">
-                    <div class="flex items-center mb-4">
-                        <div class="w-8 h-8 mr-3">
-                            <svg width="32" height="32" viewBox="0 0 100 100" class="text-brass drop-shadow-lg">
-                                <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.6"/>
-                                <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.8"/>
-                                <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="1.5"/>
-                                <path d="M50 20 L55 40 L70 35 L60 50 L75 55 L55 60 L60 75 L50 65 L45 80 L40 60 L25 65 L35 50 L20 45 L40 40 L35 25 L50 35 Z" fill="currentColor" opacity="0.7"/>
-                                <circle cx="50" cy="50" r="3" fill="currentColor"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-foreground">SACRED SIGNAL OS: 12-WEEK SYSTEM (CORE TRAINING)</h4>
-                            <div class="text-brass font-medium">Value: $6,000</div>
+            <div class="space-y-4">
+                <div class="ssos-card p-4 border-signal/30">
+                    <div class="flex items-start gap-4">
+                        <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
+                        <div class="flex-1">
+                            <div class="md:flex md:items-center md:justify-between">
+                                <h4 class="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">SACRED SIGNAL OS: 12-WEEK SYSTEM (CORE TRAINING)</h4>
+                                <div class="text-signal font-display font-bold text-base">Value: $6,000</div>
+                            </div>
+                            <p class="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">End-to-end operating system to tune your message, architect your offer, and install a steady, repeatable pipeline.</p>
                         </div>
                     </div>
-                    <p class="text-muted-foreground">End-to-end operating system to tune your message, architect your offer, and install a steady, repeatable pipeline.</p>
                 </div>
 
-                <div class="ssos-card">
-                    <div class="flex items-center mb-4">
-                        <div class="w-8 h-8 mr-3">
-                            <svg width="32" height="32" viewBox="0 0 100 100" class="text-brass drop-shadow-lg">
-                                <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.6"/>
-                                <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.8"/>
-                                <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="1.5"/>
-                                <path d="M50 20 L55 40 L70 35 L60 50 L75 55 L55 60 L60 75 L50 65 L45 80 L40 60 L25 65 L35 50 L20 45 L40 40 L35 25 L50 35 Z" fill="currentColor" opacity="0.7"/>
-                                <circle cx="50" cy="50" r="3" fill="currentColor"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-foreground">WEEKLY LIVE BUILD & COACHING (12 SESSIONS)</h4>
-                            <div class="text-brass font-medium">Value: $2,000</div>
+                <div class="ssos-card p-4 border-signal/30">
+                    <div class="flex items-start gap-4">
+                        <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
+                        <div class="flex-1">
+                            <div class="md:flex md:items-center md:justify-between">
+                                <h4 class="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">WEEKLY LIVE BUILD & COACHING (12 SESSIONS)</h4>
+                                <div class="text-signal font-display font-bold text-base">Value: $2,000</div>
+                            </div>
+                            <p class="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">Real-time co-creation, hot seats, and implementation reviews so progress stays tangible each week.</p>
                         </div>
                     </div>
-                    <p class="text-muted-foreground">Real-time co-creation, hot seats, and implementation reviews so progress stays tangible each week.</p>
                 </div>
 
-                <div class="ssos-card">
-                    <div class="flex items-center mb-4">
-                        <div class="w-8 h-8 mr-3">
-                            <svg width="32" height="32" viewBox="0 0 100 100" class="text-brass drop-shadow-lg">
-                                <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.6"/>
-                                <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.8"/>
-                                <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="1.5"/>
-                                <path d="M50 20 L55 40 L70 35 L60 50 L75 55 L55 60 L60 75 L50 65 L45 80 L40 60 L25 65 L35 50 L20 45 L40 40 L35 25 L50 35 Z" fill="currentColor" opacity="0.7"/>
-                                <circle cx="50" cy="50" r="3" fill="currentColor"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-foreground">OFFICE HOURS (2×/WEEK FOR 12 WEEKS)</h4>
-                            <div class="text-brass font-medium">Value: $1,200</div>
+                <div class="ssos-card p-4 border-signal/30">
+                    <div class="flex items-start gap-4">
+                        <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
+                        <div class="flex-1">
+                            <div class="md:flex md:items-center md:justify-between">
+                                <h4 class="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">OFFICE HOURS (2×/WEEK FOR 12 WEEKS)</h4>
+                                <div class="text-signal font-display font-bold text-base">Value: $1,200</div>
+                            </div>
+                            <p class="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">Quick unblockers and focused feedback to keep momentum calm and consistent.</p>
                         </div>
                     </div>
-                    <p class="text-muted-foreground">Quick unblockers and focused feedback to keep momentum calm and consistent.</p>
                 </div>
             </div>
         </div>
 
         <!-- Tools for Speed & Certainty -->
-        <div class="mb-20">
-            <h3 class="heading-ritual text-2xl md:text-3xl mb-8 text-center text-foreground">
+        <div class="mb-20 fade-up">
+            <h3 class="heading-ritual text-xl md:text-2xl mb-6 text-center glow-text text-signal">
                 TOOLS FOR SPEED & CERTAINTY
             </h3>
-            <div class="ssos-grid">
-                <div class="ssos-card">
-                    <div class="flex items-center mb-4">
-                        <div class="w-8 h-8 mr-3">
-                            <svg width="32" height="32" viewBox="0 0 100 100" class="text-brass drop-shadow-lg">
-                                <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.6"/>
-                                <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.8"/>
-                                <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="1.5"/>
-                                <path d="M50 20 L55 40 L70 35 L60 50 L75 55 L55 60 L60 75 L50 65 L45 80 L40 60 L25 65 L35 50 L20 45 L40 40 L35 25 L50 35 Z" fill="currentColor" opacity="0.7"/>
-                                <circle cx="50" cy="50" r="3" fill="currentColor"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-foreground">BRAND VIBE REPORT</h4>
-                            <div class="text-brass font-medium">Value: $900</div>
+            <div class="space-y-4">
+                <div class="ssos-card p-4 border-signal/30">
+                    <div class="flex items-start gap-4">
+                        <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
+                        <div class="flex-1">
+                            <div class="md:flex md:items-center md:justify-between">
+                                <h4 class="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">BRAND VIBE REPORT</h4>
+                                <div class="text-signal font-display font-bold text-base">Value: $900</div>
+                            </div>
+                            <p class="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">A founder-aligned brief that locks voice, promise, tone, and language do's/don'ts—so every asset hits the same frequency.</p>
                         </div>
                     </div>
-                    <p class="text-muted-foreground">A founder-aligned brief that locks voice, promise, tone, and language do's/don'ts—so every asset hits the same frequency.</p>
                 </div>
 
-                <div class="ssos-card">
-                    <div class="flex items-center mb-4">
-                        <div class="w-8 h-8 mr-3">
-                            <svg width="32" height="32" viewBox="0 0 100 100" class="text-brass drop-shadow-lg">
-                                <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.6"/>
-                                <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.8"/>
-                                <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="1.5"/>
-                                <path d="M50 20 L55 40 L70 35 L60 50 L75 55 L55 60 L60 75 L50 65 L45 80 L40 60 L25 65 L35 50 L20 45 L40 40 L35 25 L50 35 Z" fill="currentColor" opacity="0.7"/>
-                                <circle cx="50" cy="50" r="3" fill="currentColor"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-foreground">MOOD BOARD IMAGE</h4>
-                            <div class="text-brass font-medium">Value: $700</div>
+                <div class="ssos-card p-4 border-signal/30">
+                    <div class="flex items-start gap-4">
+                        <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
+                        <div class="flex-1">
+                            <div class="md:flex md:items-center md:justify-between">
+                                <h4 class="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">MOOD BOARD IMAGE</h4>
+                                <div class="text-signal font-display font-bold text-base">Value: $700</div>
+                            </div>
+                            <p class="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">A professional, cinematic visual with premium styling for hero sections, social media, and decks.</p>
                         </div>
                     </div>
-                    <p class="text-muted-foreground">A professional, cinematic visual with premium styling for hero sections, social media, and decks.</p>
                 </div>
 
-                <div class="ssos-card">
-                    <div class="flex items-center mb-4">
-                        <div class="w-8 h-8 mr-3">
-                            <svg width="32" height="32" viewBox="0 0 100 100" class="text-brass drop-shadow-lg">
-                                <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.6"/>
-                                <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.8"/>
-                                <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="1.5"/>
-                                <path d="M50 20 L55 40 L70 35 L60 50 L75 55 L55 60 L60 75 L50 65 L45 80 L40 60 L25 65 L35 50 L20 45 L40 40 L35 25 L50 35 Z" fill="currentColor" opacity="0.7"/>
-                                <circle cx="50" cy="50" r="3" fill="currentColor"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-foreground">VISUAL BRAND GUIDELINES</h4>
-                            <div class="text-brass font-medium">Value: $900</div>
+                <div class="ssos-card p-4 border-signal/30">
+                    <div class="flex items-start gap-4">
+                        <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
+                        <div class="flex-1">
+                            <div class="md:flex md:items-center md:justify-between">
+                                <h4 class="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">VISUAL BRAND GUIDELINES</h4>
+                                <div class="text-signal font-display font-bold text-base">Value: $900</div>
+                            </div>
+                            <p class="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">A practical guide: color specs, type hierarchy, CTA/button styles, iconography, motion pacing, and accessibility notes.</p>
                         </div>
                     </div>
-                    <p class="text-muted-foreground">A practical guide: color specs, type hierarchy, CTA/button styles, iconography, motion pacing, and accessibility notes.</p>
                 </div>
             </div>
         </div>
 
         <!-- Tangible By-Products -->
-        <div class="mb-20">
-            <h3 class="heading-ritual text-2xl md:text-3xl mb-8 text-center text-foreground">
+        <div class="mb-20 fade-up">
+            <h3 class="heading-ritual text-xl md:text-2xl mb-6 text-center glow-text text-signal">
                 TANGIBLE BY-PRODUCTS (DONE-WITH-YOU ASSETS)
             </h3>
-            <div class="ssos-grid">
-                <div class="ssos-card">
-                    <div class="flex items-center mb-4">
-                        <div class="w-8 h-8 mr-3">
-                            <svg width="32" height="32" viewBox="0 0 100 100" class="text-brass drop-shadow-lg">
-                                <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.6"/>
-                                <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.8"/>
-                                <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="1.5"/>
-                                <path d="M50 20 L55 40 L70 35 L60 50 L75 55 L55 60 L60 75 L50 65 L45 80 L40 60 L25 65 L35 50 L20 45 L40 40 L35 25 L50 35 Z" fill="currentColor" opacity="0.7"/>
-                                <circle cx="50" cy="50" r="3" fill="currentColor"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-foreground">ORIGIN STORY STUDIO PRO + 7-EMAIL NURTURE + LOOM REVIEW</h4>
-                            <div class="text-brass font-medium">Value: $1,500</div>
+            <div class="space-y-4">
+                <div class="ssos-card p-4 border-signal/30">
+                    <div class="flex items-start gap-4">
+                        <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
+                        <div class="flex-1">
+                            <div class="md:flex md:items-center md:justify-between">
+                                <h4 class="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">ORIGIN STORY STUDIO PRO + 7-EMAIL NURTURE + LOOM REVIEW</h4>
+                                <div class="text-signal font-display font-bold text-base">Value: $1,500</div>
+                            </div>
+                            <p class="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">Your origin story, bio, and nurture bridge—crafted and reviewed—so your message carries.</p>
                         </div>
                     </div>
-                    <p class="text-muted-foreground">Your origin story, bio, and nurture bridge—crafted and reviewed—so your message carries.</p>
                 </div>
 
-                <div class="ssos-card">
-                    <div class="flex items-center mb-4">
-                        <div class="w-8 h-8 mr-3">
-                            <svg width="32" height="32" viewBox="0 0 100 100" class="text-brass drop-shadow-lg">
-                                <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.6"/>
-                                <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.8"/>
-                                <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="1.5"/>
-                                <path d="M50 20 L55 40 L70 35 L60 50 L75 55 L55 60 L60 75 L50 65 L45 80 L40 60 L25 65 L35 50 L20 45 L40 40 L35 25 L50 35 Z" fill="currentColor" opacity="0.7"/>
-                                <circle cx="50" cy="50" r="3" fill="currentColor"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-foreground">ETHICS & CLAIMS PACK</h4>
-                            <div class="text-brass font-medium">Value: $1,000</div>
+                <div class="ssos-card p-4 border-signal/30">
+                    <div class="flex items-start gap-4">
+                        <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
+                        <div class="flex-1">
+                            <div class="md:flex md:items-center md:justify-between">
+                                <h4 class="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">ETHICS & CLAIMS PACK</h4>
+                                <div class="text-signal font-display font-bold text-base">Value: $1,000</div>
+                            </div>
+                            <p class="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">Safe-claims checklist, consent language, and policy templates—built for integrity and protection.</p>
                         </div>
                     </div>
-                    <p class="text-muted-foreground">Safe-claims checklist, consent language, and policy templates—built for integrity and protection.</p>
                 </div>
 
-                <div class="ssos-card">
-                    <div class="flex items-center mb-4">
-                        <div class="w-8 h-8 mr-3">
-                            <svg width="32" height="32" viewBox="0 0 100 100" class="text-brass drop-shadow-lg">
-                                <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.6"/>
-                                <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.8"/>
-                                <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="1.5"/>
-                                <path d="M50 20 L55 40 L70 35 L60 50 L75 55 L55 60 L60 75 L50 65 L45 80 L40 60 L25 65 L35 50 L20 45 L40 40 L35 25 L50 35 Z" fill="currentColor" opacity="0.7"/>
-                                <circle cx="50" cy="50" r="3" fill="currentColor"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-foreground">KPI DASHBOARD & SCORECARD (NOTION/SHEETS)</h4>
-                            <div class="text-brass font-medium">Value: $700</div>
+                <div class="ssos-card p-4 border-signal/30">
+                    <div class="flex items-start gap-4">
+                        <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
+                        <div class="flex-1">
+                            <div class="md:flex md:items-center md:justify-between">
+                                <h4 class="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">KPI DASHBOARD & SCORECARD (NOTION/SHEETS)</h4>
+                                <div class="text-signal font-display font-bold text-base">Value: $700</div>
+                            </div>
+                            <p class="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">Track opt-ins, lead→call, call→close, completion, and margin—know what's working at a glance.</p>
                         </div>
                     </div>
-                    <p class="text-muted-foreground">Track opt-ins, lead→call, call→close, completion, and margin—know what's working at a glance.</p>
                 </div>
 
-                <div class="ssos-card">
-                    <div class="flex items-center mb-4">
-                        <div class="w-8 h-8 mr-3">
-                            <svg width="32" height="32" viewBox="0 0 100 100" class="text-brass drop-shadow-lg">
-                                <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.6"/>
-                                <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.8"/>
-                                <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="1.5"/>
-                                <path d="M50 20 L55 40 L70 35 L60 50 L75 55 L55 60 L60 75 L50 65 L45 80 L40 60 L25 65 L35 50 L20 45 L40 40 L35 25 L50 35 Z" fill="currentColor" opacity="0.7"/>
-                                <circle cx="50" cy="50" r="3" fill="currentColor"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-foreground">DREAM 100 OUTREACH STARTER PACK</h4>
-                            <div class="text-brass font-medium">Value: $900</div>
+                <div class="ssos-card p-4 border-signal/30">
+                    <div class="flex items-start gap-4">
+                        <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
+                        <div class="flex-1">
+                            <div class="md:flex md:items-center md:justify-between">
+                                <h4 class="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">DREAM 100 OUTREACH STARTER PACK</h4>
+                                <div class="text-signal font-display font-bold text-base">Value: $900</div>
+                            </div>
+                            <p class="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">Research prompts, LinkedIn & email scripts, and a tracker to open partner doors with clarity.</p>
                         </div>
                     </div>
-                    <p class="text-muted-foreground">Research prompts, LinkedIn & email scripts, and a tracker to open partner doors with clarity.</p>
                 </div>
             </div>
         </div>
 
         <!-- Limited-Time Bonuses -->
-        <div class="mb-20">
-            <h3 class="heading-ritual text-2xl md:text-3xl mb-8 text-center text-foreground">
+        <div class="mb-20 fade-up">
+            <h3 class="heading-ritual text-xl md:text-2xl mb-6 text-center glow-text text-signal">
                 LIMITED-TIME BONUSES (INCLUDED WHEN YOU ENROLL NOW)
             </h3>
-            <div class="ssos-grid">
-                <div class="ssos-card bg-gradient-to-br from-brass/10 to-signal/10 border-brass/30">
-                    <div class="flex items-center mb-4">
-                        <div class="w-8 h-8 mr-3">
-                            <svg width="32" height="32" viewBox="0 0 100 100" class="text-brass drop-shadow-lg">
-                                <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.6"/>
-                                <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.8"/>
-                                <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="1.5"/>
-                                <path d="M50 20 L55 40 L70 35 L60 50 L75 55 L55 60 L60 75 L50 65 L45 80 L40 60 L25 65 L35 50 L20 45 L40 40 L35 25 L50 35 Z" fill="currentColor" opacity="0.7"/>
-                                <circle cx="50" cy="50" r="3" fill="currentColor"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-foreground">BONUS: LINKEDIN CONTENT ENGINE</h4>
-                            <div class="text-brass font-medium">Value: $1,200</div>
+            <div class="space-y-4">
+                <div class="ssos-card p-4 bg-gradient-to-br from-brass/5 via-background/80 to-brass/10 border-brass/40">
+                    <div class="flex items-start gap-4">
+                        <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
+                        <div class="flex-1">
+                            <div class="md:flex md:items-center md:justify-between">
+                                <h4 class="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">BONUS: LINKEDIN CONTENT ENGINE</h4>
+                                <div class="text-signal font-display font-bold text-base">Value: $1,200</div>
+                            </div>
+                            <p class="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">30-day content calendar, 12 ready scripts, and a repurpose SOP to publish with clarity—not burnout.</p>
                         </div>
                     </div>
-                    <p class="text-muted-foreground">30-day content calendar, 12 ready scripts, and a repurpose SOP to publish with clarity—not burnout.</p>
                 </div>
 
-                <div class="ssos-card bg-gradient-to-br from-brass/10 to-signal/10 border-brass/30">
-                    <div class="flex items-center mb-4">
-                        <div class="w-8 h-8 mr-3">
-                            <svg width="32" height="32" viewBox="0 0 100 100" class="text-brass drop-shadow-lg">
-                                <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.6"/>
-                                <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.8"/>
-                                <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="1.5"/>
-                                <path d="M50 20 L55 40 L70 35 L60 50 L75 55 L55 60 L60 75 L50 65 L45 80 L40 60 L25 65 L35 50 L20 45 L40 40 L35 25 L50 35 Z" fill="currentColor" opacity="0.7"/>
-                                <circle cx="50" cy="50" r="3" fill="currentColor"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-foreground">BONUS: PROOF ARCHITECTURE PACK</h4>
-                            <div class="text-brass font-medium">Value: $1,200</div>
+                <div class="ssos-card p-4 bg-gradient-to-br from-brass/5 via-background/80 to-brass/10 border-brass/40">
+                    <div class="flex items-start gap-4">
+                        <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
+                        <div class="flex-1">
+                            <div class="md:flex md:items-center md:justify-between">
+                                <h4 class="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">BONUS: PROOF ARCHITECTURE PACK</h4>
+                                <div class="text-signal font-display font-bold text-base">Value: $1,200</div>
+                            </div>
+                            <p class="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">Intake/mid/outtake measures, testimonial prompts, and a case-page kit to make trust visible.</p>
                         </div>
                     </div>
-                    <p class="text-muted-foreground">Intake/mid/outtake measures, testimonial prompts, and a case-page kit to make trust visible.</p>
                 </div>
 
-                <div class="ssos-card bg-gradient-to-br from-brass/10 to-signal/10 border-brass/30">
-                    <div class="flex items-center mb-4">
-                        <div class="w-8 h-8 mr-3">
-                            <svg width="32" height="32" viewBox="0 0 100 100" class="text-brass drop-shadow-lg">
-                                <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.6"/>
-                                <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.8"/>
-                                <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" strokeWidth="1.5"/>
-                                <path d="M50 20 L55 40 L70 35 L60 50 L75 55 L55 60 L60 75 L50 65 L45 80 L40 60 L25 65 L35 50 L20 45 L40 40 L35 25 L50 35 Z" fill="currentColor" opacity="0.7"/>
-                                <circle cx="50" cy="50" r="3" fill="currentColor"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-foreground">BONUS: AFTERCARE 1:1 (60-MIN IN MONTH 4)</h4>
-                            <div class="text-brass font-medium">Value: $600</div>
+                <div class="ssos-card p-4 bg-gradient-to-br from-brass/5 via-background/80 to-brass/10 border-brass/40">
+                    <div class="flex items-start gap-4">
+                        <img src="/src/assets/sacred-geometry-icon.png" alt="Sacred Geometry" class="w-8 h-8 mt-1" />
+                        <div class="flex-1">
+                            <div class="md:flex md:items-center md:justify-between">
+                                <h4 class="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">BONUS: AFTERCARE 1:1 (60-MIN IN MONTH 4)</h4>
+                                <div class="text-signal font-display font-bold text-base">Value: $600</div>
+                            </div>
+                            <p class="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">A personal course-correction and next-steps plan once the system is live.</p>
                         </div>
                     </div>
-                    <p class="text-muted-foreground">A personal course-correction and next-steps plan once the system is live.</p>
                 </div>
             </div>
         </div>
 
         <!-- Guarantee -->
-        <div class="mb-20">
-            <h3 class="heading-ritual text-2xl md:text-3xl mb-8 text-center text-foreground">
+        <div class="mb-20 fade-up">
+            <h3 class="heading-ritual text-xl md:text-2xl mb-6 text-center glow-text text-signal">
                 GUARANTEE
             </h3>
             <div class="max-w-4xl mx-auto">
-                <div class="ssos-card bg-gradient-to-br from-signal/10 to-brass/10 border-signal/30 text-center">
-                    <h4 class="text-xl font-semibold text-foreground mb-4">30-DAY MONEY-BACK GUARANTEE.</h4>
-                    <p class="text-muted-foreground">
+                <div class="ssos-card p-6 bg-gradient-to-br from-signal/5 via-background/80 to-signal/10 border-signal/30 text-center">
+                    <h4 class="heading-ritual text-xl text-brass glow-golden mb-4">30-DAY MONEY-BACK GUARANTEE.</h4>
+                    <p class="body-premium text-[hsl(var(--ssos-alabaster))] leading-relaxed">
                         Join Sacred Signal OS and do the work for 30 days. If you don't feel clearer, more confident, and moving toward a steady pipeline, email us within 30 days for a full refund. No hassle.
                     </p>
                 </div>
@@ -980,103 +909,103 @@ get_header(); ?>
         </div>
 
         <!-- Why Decide Now -->
-        <div class="mb-20">
-            <h3 class="heading-ritual text-2xl md:text-3xl mb-8 text-center text-foreground">
+        <div class="mb-20 fade-up">
+            <h3 class="heading-ritual text-xl md:text-2xl mb-6 text-center glow-text text-signal">
                 WHY DECIDE NOW
             </h3>
-            <div class="max-w-4xl mx-auto space-y-6">
-                <div class="flex items-start">
-                    <div class="w-3 h-3 rounded-full bg-brass mt-2 mr-4 flex-shrink-0"></div>
-                    <p class="text-muted-foreground">
-                        <strong class="text-foreground">Rolling start, limited capacity:</strong> We onboard a small number of new clients at a time to protect delivery quality. When capacity is reached, new starts pause until a seat opens.
+            <div class="max-w-4xl mx-auto space-y-4">
+                <div class="flex items-start gap-4">
+                    <div class="w-2 h-2 rounded-full bg-brass mt-3 flex-shrink-0"></div>
+                    <p class="body-premium text-[hsl(var(--ssos-alabaster))] leading-relaxed">
+                        <strong class="text-brass">Rolling start, limited capacity:</strong> We onboard a small number of new clients at a time to protect delivery quality. When capacity is reached, new starts pause until a seat opens.
                     </p>
                 </div>
-                <div class="flex items-start">
-                    <div class="w-3 h-3 rounded-full bg-brass mt-2 mr-4 flex-shrink-0"></div>
-                    <p class="text-muted-foreground">
-                        <strong class="text-foreground">Bonus window:</strong> The three bonuses above are available during the current enrollment window and may be removed when capacity is met.
+                <div class="flex items-start gap-4">
+                    <div class="w-2 h-2 rounded-full bg-brass mt-3 flex-shrink-0"></div>
+                    <p class="body-premium text-[hsl(var(--ssos-alabaster))] leading-relaxed">
+                        <strong class="text-brass">Bonus window:</strong> The three bonuses above are available during the current enrollment window and may be removed when capacity is met.
                     </p>
                 </div>
-                <div class="flex items-start">
-                    <div class="w-3 h-3 rounded-full bg-brass mt-2 mr-4 flex-shrink-0"></div>
-                    <p class="text-muted-foreground">
-                        <strong class="text-foreground">Lock in current pricing:</strong> Our current rate and will increase soon. Reserve your start now to secure today's price and begin at the next available opening.
+                <div class="flex items-start gap-4">
+                    <div class="w-2 h-2 rounded-full bg-brass mt-3 flex-shrink-0"></div>
+                    <p class="body-premium text-[hsl(var(--ssos-alabaster))] leading-relaxed">
+                        <strong class="text-brass">Lock in current pricing:</strong> Our current rate and will increase soon. Reserve your start now to secure today's price and begin at the next available opening.
                     </p>
                 </div>
             </div>
         </div>
 
         <!-- Final Pricing -->
-        <div class="text-center mb-20">
-            <h3 class="heading-display text-3xl md:text-4xl mb-8 text-foreground glow-text">
+        <div class="text-center mb-20 fade-up">
+            <h3 class="heading-ritual text-3xl md:text-4xl mb-4 glow-text">
                 APPLY FOR SACRED SIGNAL OS
             </h3>
-            <p class="text-xl text-muted-foreground mb-8">
+            <p class="body-premium text-lg text-[hsl(var(--ssos-alabaster))] mb-8">
                 12 Weeks • High-Touch Coaching • Complete Transformation
             </p>
 
             <div class="mb-12">
-                <div class="text-lg text-muted-foreground mb-2">Total Value: <span class="line-through">$18,800</span></div>
-                <div class="text-lg text-muted-foreground mb-2">Only: <span class="line-through text-xl">$2,997</span></div>
-                <div class="text-4xl md:text-5xl font-bold text-signal mb-4">
+                <div class="text-base text-[hsl(var(--ssos-alabaster))] mb-2">Total Value: <span class="line-through">$18,800</span></div>
+                <div class="text-base text-[hsl(var(--ssos-alabaster))] mb-2">Only: <span class="line-through text-lg">$2,997</span></div>
+                <div class="text-3xl md:text-4xl font-bold text-signal mb-4 glow-text">
                     Your Price Today: $1,597
                 </div>
             </div>
 
             <!-- Payment Options -->
-            <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
-                <div class="ssos-card text-center bg-gradient-to-br from-signal/5 to-brass/5">
-                    <div class="text-2xl font-bold text-signal mb-2">$1,497</div>
-                    <div class="text-sm text-brass mb-2">Save $100</div>
-                    <div class="text-foreground font-medium">Pay In Full</div>
+            <div class="grid md:grid-cols-3 gap-4 max-w-3xl mx-auto mb-12">
+                <div class="ssos-card p-4 text-center bg-gradient-to-br from-signal/10 via-background/80 to-signal/5 border-signal/30">
+                    <div class="text-xl font-bold text-signal mb-1">$1,497</div>
+                    <div class="text-xs text-brass mb-1">Save $100</div>
+                    <div class="text-[hsl(var(--ssos-alabaster))] font-medium text-sm">Pay In Full</div>
                 </div>
-                <div class="ssos-card text-center">
-                    <div class="text-2xl font-bold text-foreground mb-2">2 × $799</div>
-                    <div class="text-sm text-muted-foreground mb-2">Monthly</div>
-                    <div class="text-foreground font-medium">2-Pay Option</div>
+                <div class="ssos-card p-4 text-center border-signal/30">
+                    <div class="text-xl font-bold text-[hsl(var(--ssos-alabaster))] mb-1">2 × $799</div>
+                    <div class="text-xs text-[hsl(var(--ssos-alabaster))] opacity-70 mb-1">Monthly</div>
+                    <div class="text-[hsl(var(--ssos-alabaster))] font-medium text-sm">2-Pay Option</div>
                 </div>
-                <div class="ssos-card text-center">
-                    <div class="text-2xl font-bold text-foreground mb-2">3 × $533</div>
-                    <div class="text-sm text-muted-foreground mb-2">Monthly</div>
-                    <div class="text-foreground font-medium">3-Pay Option</div>
+                <div class="ssos-card p-4 text-center border-signal/30">
+                    <div class="text-xl font-bold text-[hsl(var(--ssos-alabaster))] mb-1">3 × $533</div>
+                    <div class="text-xs text-[hsl(var(--ssos-alabaster))] opacity-70 mb-1">Monthly</div>
+                    <div class="text-[hsl(var(--ssos-alabaster))] font-medium text-sm">3-Pay Option</div>
                 </div>
             </div>
 
-            <p class="text-lg text-muted-foreground mb-8 italic">
+            <p class="body-premium text-base text-[hsl(var(--ssos-alabaster))] mb-8 italic">
                 If all Sacred Signal OS did was give you a clear message and a steady, values-aligned pipeline, would it be worth $1,597?
             </p>
 
             <div class="mb-12">
                 <button 
                     onclick="document.getElementById('apply').scrollIntoView({ behavior: 'smooth' })"
-                    class="cinema-button text-lg px-8 py-4"
+                    class="bg-signal text-background hover:bg-signal/90 font-body font-semibold px-12 py-4 text-lg rounded-xl button-lift transition-all duration-300"
                 >
                     Apply Now for Sacred Signal OS
                 </button>
-                <p class="text-sm text-muted-foreground mt-4">
+                <p class="text-sm text-[hsl(var(--ssos-alabaster))] opacity-70 mt-4">
                     Applications Reviewed Within 48 Hours
                 </p>
             </div>
 
             <!-- What Happens Next -->
             <div class="max-w-3xl mx-auto">
-                <h4 class="text-xl font-semibold text-foreground mb-8">WHAT HAPPENS NEXT:</h4>
-                <div class="grid md:grid-cols-4 gap-6">
-                    <div class="text-center">
-                        <div class="w-12 h-12 rounded-full bg-signal/20 border-2 border-signal text-signal font-bold text-xl mx-auto mb-4 flex items-center justify-center">1</div>
-                        <p class="text-sm text-muted-foreground">Complete Application & Values Alignment Assessment</p>
+                <h4 class="heading-ritual text-lg text-brass glow-golden mb-8">WHAT HAPPENS NEXT:</h4>
+                <div class="space-y-4">
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 bg-signal text-background rounded-full font-bold text-sm flex items-center justify-center flex-shrink-0 mt-1">1</div>
+                        <p class="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed text-left">Complete Application & Values Alignment Assessment</p>
                     </div>
-                    <div class="text-center">
-                        <div class="w-12 h-12 rounded-full bg-signal/20 border-2 border-signal text-signal font-bold text-xl mx-auto mb-4 flex items-center justify-center">2</div>
-                        <p class="text-sm text-muted-foreground">Brief Discovery Call To Ensure Mutual Fit</p>
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 bg-signal text-background rounded-full font-bold text-sm flex items-center justify-center flex-shrink-0 mt-1">2</div>
+                        <p class="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed text-left">Brief Discovery Call To Ensure Mutual Fit</p>
                     </div>
-                    <div class="text-center">
-                        <div class="w-12 h-12 rounded-full bg-signal/20 border-2 border-signal text-signal font-bold text-xl mx-auto mb-4 flex items-center justify-center">3</div>
-                        <p class="text-sm text-muted-foreground">Receive Program Intake Materials</p>
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 bg-signal text-background rounded-full font-bold text-sm flex items-center justify-center flex-shrink-0 mt-1">3</div>
+                        <p class="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed text-left">Receive Program Intake Materials</p>
                     </div>
-                    <div class="text-center">
-                        <div class="w-12 h-12 rounded-full bg-signal/20 border-2 border-signal text-signal font-bold text-xl mx-auto mb-4 flex items-center justify-center">4</div>
-                        <p class="text-sm text-muted-foreground">Begin Your 12-Week Transformation</p>
+                    <div class="flex items-start gap-4">
+                        <div class="w-8 h-8 bg-signal text-background rounded-full font-bold text-sm flex items-center justify-center flex-shrink-0 mt-1">4</div>
+                        <p class="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed text-left">Begin Your 12-Week Transformation</p>
                     </div>
                 </div>
             </div>
