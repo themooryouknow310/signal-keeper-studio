@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import BrassRule from "@/components/accents/BrassRule";
 import { useToast } from "@/hooks/use-toast";
+import { useNavigate } from "react-router-dom";
 
 const Order = () => {
   const [selectedPlan, setSelectedPlan] = useState("full");
@@ -16,6 +17,7 @@ const Order = () => {
     phone: "",
   });
   const { toast } = useToast();
+  const navigate = useNavigate();
 
   const paymentOptions = [
     {
@@ -54,8 +56,13 @@ const Order = () => {
     // TODO: Integrate with Stripe payment processing
     toast({
       title: "Order Processing",
-      description: "We'll redirect you to secure payment processing shortly.",
+      description: "Processing your order...",
     });
+    
+    // Simulate order processing and redirect to thank you page
+    setTimeout(() => {
+      navigate("/thank-you");
+    }, 2000);
   };
 
   return (
