@@ -975,67 +975,337 @@ get_header(); ?>
     </div>
 </section>
 
-<!-- Testimonials Section -->
-<section class="py-20 bg-background">
-    <div class="container">
-        <div class="text-center mb-16 animate-on-scroll">
-            <h2 class="heading-ritual text-4xl md:text-6xl mb-8 text-foreground">
-                <?php echo get_theme_mod('testimonials_title', 'SACRED SIGNAL SUCCESS STORIES'); ?>
-            </h2>
-            <p class="body-premium text-xl text-muted-foreground max-w-3xl mx-auto">
-                <?php echo get_theme_mod('testimonials_description', 'See how visionary leaders have transformed their message and magnetized their dream clients through the Sacred Signal Operating System.'); ?>
-            </p>
+<!-- Apply Section -->
+<section id="apply" class="apply-section relative py-32 overflow-hidden">
+    <!-- Background decorative elements -->
+    <div class="absolute inset-0">
+        <div class="absolute top-1/4 left-1/4 w-64 h-64 opacity-5">
+            <svg viewBox="0 0 200 200" class="w-full h-full text-brass">
+                <circle cx="100" cy="100" r="50" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="100" cy="100" r="75" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+                <circle cx="100" cy="100" r="25" fill="none" stroke="currentColor" stroke-width="3"/>
+            </svg>
         </div>
-
-        <div class="testimonial-grid stagger-children">
-            <?php
-            $testimonials = sacred_signal_os_get_testimonials(3);
-            if (!empty($testimonials)) :
-                foreach ($testimonials as $testimonial) : ?>
-                    <div class="testimonial-card animate-on-scroll">
-                        <div class="testimonial-quote">
-                            "<?php echo wp_trim_words($testimonial->post_content, 30); ?>"
-                        </div>
-                        <div class="testimonial-author">
-                            <?php if (has_post_thumbnail($testimonial->ID)) : ?>
-                                <div class="testimonial-avatar">
-                                    <img src="<?php echo get_the_post_thumbnail_url($testimonial->ID, 'testimonial-image'); ?>" alt="<?php echo esc_attr($testimonial->post_title); ?>">
-                                </div>
-                            <?php endif; ?>
-                            <div class="testimonial-info">
-                                <h4><?php echo esc_html($testimonial->post_title); ?></h4>
-                                <p><?php echo esc_html(get_post_meta($testimonial->ID, '_testimonial_title', true)); ?></p>
-                            </div>
-                        </div>
-                    </div>
-                <?php endforeach;
-            endif; ?>
+        <div class="absolute bottom-1/4 right-1/4 w-48 h-48 opacity-5">
+            <svg viewBox="0 0 120 120" class="w-full h-full text-brass transform rotate-45">
+                <polygon points="60,10 90,30 90,60 60,80 30,60 30,30" fill="none" stroke="currentColor" stroke-width="2"/>
+                <polygon points="60,25 75,35 75,55 60,65 45,55 45,35" fill="none" stroke="currentColor" stroke-width="1"/>
+            </svg>
         </div>
     </div>
-</section>
 
-<!-- Apply Section -->
-<section id="apply" class="py-20 bg-signal text-signal-foreground">
-    <div class="container">
-        <div class="max-w-4xl mx-auto text-center animate-on-scroll">
-            <h2 class="heading-ritual text-4xl md:text-6xl mb-8">
-                <?php echo get_theme_mod('apply_title', 'YOUR SACRED SIGNAL AWAITS'); ?>
-            </h2>
-            <p class="body-premium text-xl mb-12 opacity-90">
-                <?php echo get_theme_mod('apply_description', 'The question isn\'t whether you have a sacred signal. The question is whether you\'re ready to tune it to its full power and let it transform everything.'); ?>
-            </p>
-            
-            <div class="max-w-md mx-auto">
-                <a 
-                    href="<?php echo esc_url(home_url('/application/')); ?>" 
-                    class="cinema-button bg-white text-signal hover:bg-gray-100 text-lg py-4 px-8 rounded-full font-semibold transition-all duration-300 inline-block w-full"
-                >
-                    <?php _e('APPLY FOR THE PROGRAM', 'sacred-signal-os'); ?>
-                </a>
-                <p class="text-sm mt-4 opacity-80">
-                    <?php echo get_theme_mod('apply_disclaimer', 'Limited to 12 visionary leaders per cohort'); ?>
-                </p>
+    <div class="container relative z-10">
+        <!-- Testimonials Section -->
+        <div class="mb-32">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="glow-text text-4xl md:text-6xl mb-8 text-foreground font-light tracking-wide">
+                    WHAT PEOPLE ARE SAYING
+                </h2>
             </div>
+
+            <div class="ssos-grid grid-cols-1 md:grid-cols-3 gap-8 stagger-children">
+                <!-- Marissa Fontana -->
+                <div class="ssos-card text-center animate-on-scroll">
+                    <div class="testimonial-image-container mb-6">
+                        <div class="testimonial-frame">
+                            <img 
+                                src="<?php echo get_template_directory_uri(); ?>/src/assets/testimonials/marissa-fontana.jpg" 
+                                alt="Marissa Fontana" 
+                                class="testimonial-image"
+                            />
+                        </div>
+                        <div class="sacred-geometry-icon mt-4">
+                            <svg viewBox="0 0 120 120" class="w-8 h-8 text-brass mx-auto">
+                                <polygon points="60,10 90,30 90,60 60,80 30,60 30,30" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <polygon points="60,25 75,35 75,55 60,65 45,55 45,35" fill="none" stroke="currentColor" stroke-width="1"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <blockquote class="text-lg italic text-muted-foreground mb-4 leading-relaxed">
+                        "Barack is the real deal with a business grounded in purpose. Since getting to know Barack and collaborating with him on multiple projects, it's evident how devoted Barack is to the mission of empowering women and nurturing the emergence of the divine feminine in all of us."
+                    </blockquote>
+                    <cite class="text-base font-medium text-foreground">— Marissa Fontana</cite>
+                </div>
+
+                <!-- Leora Leon -->
+                <div class="ssos-card text-center animate-on-scroll">
+                    <div class="testimonial-image-container mb-6">
+                        <div class="testimonial-frame">
+                            <img 
+                                src="<?php echo get_template_directory_uri(); ?>/src/assets/testimonials/leora-leon.jpg" 
+                                alt="Leora Leon" 
+                                class="testimonial-image"
+                            />
+                        </div>
+                        <div class="sacred-geometry-icon mt-4">
+                            <svg viewBox="0 0 120 120" class="w-8 h-8 text-brass mx-auto">
+                                <polygon points="60,10 90,30 90,60 60,80 30,60 30,30" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <polygon points="60,25 75,35 75,55 60,65 45,55 45,35" fill="none" stroke="currentColor" stroke-width="1"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <blockquote class="text-lg italic text-muted-foreground mb-4 leading-relaxed">
+                        "Barack El is a force to be reckoned with. Not only is Barack a talented entrepreneur who created Femigod, a brilliant company that evokes spiritually and smart business techniques, he is also the real deal, a beautiful, kind and authentic human. It's a pleasure to know him and work with him."
+                    </blockquote>
+                    <cite class="text-base font-medium text-foreground">— Leora Leon</cite>
+                </div>
+
+                <!-- Dr. Susie Colles -->
+                <div class="ssos-card text-center animate-on-scroll">
+                    <div class="testimonial-image-container mb-6">
+                        <div class="testimonial-frame">
+                            <img 
+                                src="<?php echo get_template_directory_uri(); ?>/src/assets/testimonials/susie-colles.jpg" 
+                                alt="Dr. Susie Colles" 
+                                class="testimonial-image"
+                            />
+                        </div>
+                        <div class="sacred-geometry-icon mt-4">
+                            <svg viewBox="0 0 120 120" class="w-8 h-8 text-brass mx-auto">
+                                <polygon points="60,10 90,30 90,60 60,80 30,60 30,30" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <polygon points="60,25 75,35 75,55 60,65 45,55 45,35" fill="none" stroke="currentColor" stroke-width="1"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <blockquote class="text-lg italic text-muted-foreground mb-4 leading-relaxed">
+                        "I recently had the pleasure of chatting with Barack about all things spiritual. What a pleasure to be associated with an individual so committed to helping women find and develop their spiritual nature. Of course, it stands to reason that Barack, so focused on helping others thrive, has a vibrant spirit himself!"
+                    </blockquote>
+                    <cite class="text-base font-medium text-foreground">— Susie Colles, PhD</cite>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="mb-32">
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="glow-text text-4xl md:text-6xl mb-8 text-foreground font-light tracking-wide">
+                    FREQUENTLY ASKED QUESTIONS
+                </h2>
+            </div>
+
+            <div class="max-w-4xl mx-auto space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="ssos-card animate-on-scroll">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 mt-1">
+                            <svg viewBox="0 0 200 200" class="w-6 h-6 text-brass">
+                                <circle cx="100" cy="100" r="50" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="100" cy="100" r="75" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+                                <circle cx="100" cy="100" r="25" fill="none" stroke="currentColor" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-foreground mb-3">WHO IS THIS PROGRAM FOR?</h3>
+                            <p class="text-muted-foreground leading-relaxed">
+                                Spiritual entrepreneurs (coaches, healers, guides) who are skilled in their craft but struggle with business and marketing aspects. You should have 1-3 years of business experience with sporadic income between $2k-$5k per month.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="ssos-card animate-on-scroll">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 mt-1">
+                            <svg viewBox="0 0 200 200" class="w-6 h-6 text-brass">
+                                <circle cx="100" cy="100" r="50" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="100" cy="100" r="75" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+                                <circle cx="100" cy="100" r="25" fill="none" stroke="currentColor" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-foreground mb-3">WHAT IF I'M NOT ON LINKEDIN?</h3>
+                            <p class="text-muted-foreground leading-relaxed">
+                                While we focus on LinkedIn as the primary platform, the principles of clear messaging, authentic offer creation, and systematic client attraction work across all platforms. We'll help you adapt the system to your preferred channel.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="ssos-card animate-on-scroll">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 mt-1">
+                            <svg viewBox="0 0 200 200" class="w-6 h-6 text-brass">
+                                <circle cx="100" cy="100" r="50" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="100" cy="100" r="75" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+                                <circle cx="100" cy="100" r="25" fill="none" stroke="currentColor" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-foreground mb-3">WHAT KIND OF RESULTS CAN I EXPECT?</h3>
+                            <p class="text-muted-foreground leading-relaxed">
+                                While results vary based on individual effort and market conditions, our goal is to help you achieve consistent $5k-$10k months with a predictable client pipeline. We cannot guarantee specific income but provide proven systems and frameworks.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="ssos-card animate-on-scroll">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 mt-1">
+                            <svg viewBox="0 0 200 200" class="w-6 h-6 text-brass">
+                                <circle cx="100" cy="100" r="50" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="100" cy="100" r="75" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+                                <circle cx="100" cy="100" r="25" fill="none" stroke="currentColor" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-foreground mb-3">WHAT IS THE TIME COMMITMENT?</h3>
+                            <p class="text-muted-foreground leading-relaxed">
+                                Expect 4-7 hours per week including: weekly 90-120 minute live sessions, implementation work, and participation in office hours. This is a high-touch, implementation-focused program requiring active participation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="ssos-card animate-on-scroll">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 mt-1">
+                            <svg viewBox="0 0 200 200" class="w-6 h-6 text-brass">
+                                <circle cx="100" cy="100" r="50" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="100" cy="100" r="75" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+                                <circle cx="100" cy="100" r="25" fill="none" stroke="currentColor" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-foreground mb-3">DO YOU OFFER REFUNDS?</h3>
+                            <p class="text-muted-foreground leading-relaxed">
+                                We're so confident in the Sacred Signal OS system that we offer a 30-day refund guarantee for engaged participants. Show up, do the work, and if you're not satisfied with your progress, we'll refund your investment. Refunds are not available after 30 days.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recognition & Influence Section -->
+        <div class="mb-32">
+            <!-- Hero Image -->
+            <div class="mb-16 animate-on-scroll">
+                <div class="relative h-96 md:h-[512px] rounded-3xl overflow-hidden">
+                    <img 
+                        src="<?php echo get_template_directory_uri(); ?>/src/assets/recognition-influence-hero.jpg" 
+                        alt="Recognition and Influence"
+                        class="w-full h-full object-cover"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                </div>
+            </div>
+
+            <div class="text-center mb-16 animate-on-scroll">
+                <h2 class="glow-text text-4xl md:text-6xl mb-8 text-foreground font-light tracking-wide">
+                    RECOGNITION & INFLUENCE
+                </h2>
+            </div>
+
+            <div class="ssos-grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <!-- Outstanding Leadership Award -->
+                <div class="ssos-card animate-on-scroll">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 mt-1">
+                            <svg viewBox="0 0 200 200" class="w-8 h-8 text-brass">
+                                <circle cx="100" cy="100" r="50" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="100" cy="100" r="75" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+                                <circle cx="100" cy="100" r="25" fill="none" stroke="currentColor" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-foreground mb-3">Outstanding Leadership Award</h3>
+                            <p class="text-muted-foreground">
+                                Recognized by the International Association of Spiritual Entrepreneurs for innovative approaches to conscious business building and ethical marketing practices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- International Keynote Barcelona -->
+                <div class="ssos-card animate-on-scroll">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 mt-1">
+                            <svg viewBox="0 0 200 200" class="w-8 h-8 text-brass">
+                                <circle cx="100" cy="100" r="50" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="100" cy="100" r="75" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+                                <circle cx="100" cy="100" r="25" fill="none" stroke="currentColor" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-foreground mb-3">International Keynote: Barcelona</h3>
+                            <p class="text-muted-foreground">
+                                Delivered opening keynote on "Sacred Signal Systems" at the Global Conscious Business Summit to an audience of 2,000+ spiritual entrepreneurs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Voice WYN Global -->
+                <div class="ssos-card animate-on-scroll">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 mt-1">
+                            <svg viewBox="0 0 200 200" class="w-8 h-8 text-brass">
+                                <circle cx="100" cy="100" r="50" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="100" cy="100" r="75" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+                                <circle cx="100" cy="100" r="25" fill="none" stroke="currentColor" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-foreground mb-3">Featured Voice: WYN Global</h3>
+                            <p class="text-muted-foreground">
+                                Contributing expert for Women's Yoga Network Global, sharing insights on building authentic spiritual businesses with over 50,000 practitioners worldwide.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Why This Resonates -->
+                <div class="ssos-card animate-on-scroll special-gradient-bg">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 mt-1">
+                            <svg viewBox="0 0 200 200" class="w-8 h-8 text-brass">
+                                <circle cx="100" cy="100" r="50" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="100" cy="100" r="75" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+                                <circle cx="100" cy="100" r="25" fill="none" stroke="currentColor" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-foreground mb-3">Why This Resonates</h3>
+                            <p class="text-muted-foreground">
+                                The recognition isn't about credentials—it's about results. These platforms chose Barack because the Sacred Signal OS methodology consistently helps spiritual entrepreneurs bridge the gap between purpose and profit with integrity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Final CTA Section -->
+        <div class="text-center animate-on-scroll">
+            <h2 class="text-3xl md:text-5xl font-light text-foreground mb-12 leading-tight max-w-4xl mx-auto">
+                Your Voice Deserves To Cut Through Noise And Carry With Power
+            </h2>
+            
+            <!-- Signal Line Divider -->
+            <div class="flex items-center justify-center mb-12">
+                <div class="flex-1 h-px bg-gradient-to-r from-transparent via-brass/30 to-brass/60"></div>
+                <div class="mx-8 relative">
+                    <svg viewBox="0 0 120 120" class="w-12 h-12 text-brass drop-shadow-lg">
+                        <polygon points="60,10 90,30 90,60 60,80 30,60 30,30" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <polygon points="60,25 75,35 75,55 60,65 45,55 45,35" fill="none" stroke="currentColor" stroke-width="1"/>
+                        <circle cx="60" cy="60" r="8" fill="currentColor"/>
+                        <path d="M30,30 L90,90 M90,30 L30,90" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+                    </svg>
+                </div>
+                <div class="flex-1 h-px bg-gradient-to-l from-transparent via-brass/30 to-brass/60"></div>
+            </div>
+            
+            <a 
+                href="<?php echo esc_url(home_url('/application/')); ?>" 
+                class="cinema-button inline-block text-xl py-4 px-12 rounded-full transition-all duration-300 transform hover:scale-105"
+            >
+                Begin Your Transformation
+            </a>
         </div>
     </div>
 </section>
