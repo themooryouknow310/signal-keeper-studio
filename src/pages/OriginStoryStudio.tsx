@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Download, CheckCircle } from 'lucide-react';
 import CyanSLogo from '@/components/accents/CyanSLogo';
 import BrassRule from '@/components/accents/BrassRule';
@@ -25,7 +25,7 @@ const formSchema = z.object({
 type FormData = z.infer<typeof formSchema>;
 
 const OriginStoryStudio = () => {
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const navigate = useNavigate();
   const { toast } = useToast();
   
   const form = useForm<FormData>({
@@ -43,50 +43,8 @@ const OriginStoryStudio = () => {
     // Simulate API call
     await new Promise(resolve => setTimeout(resolve, 1000));
     
-    setIsSubmitted(true);
-    toast({
-      title: "Success!",
-      description: "Check your email for your Origin Story Studio guide.",
-    });
+    navigate('/origin-story-thank-you');
   };
-
-  if (isSubmitted) {
-    return (
-      <div className="min-h-screen bg-background flex flex-col">
-        {/* Header */}
-        <header className="border-b border-border">
-          <div className="container mx-auto px-6 py-6 flex items-center">
-            <Link to="/" className="flex items-center space-x-3">
-              <ArrowLeft className="h-5 w-5 text-brass" />
-              <CyanSLogo size={32} />
-              <span className="font-display text-xl font-bold tracking-wider text-foreground">
-                SACRED SIGNAL OS
-              </span>
-            </Link>
-          </div>
-        </header>
-
-        {/* Success Content */}
-        <main className="flex-1 flex items-center justify-center p-6">
-          <div className="max-w-2xl mx-auto text-center">
-            <CheckCircle className="h-16 w-16 text-signal mx-auto mb-8" />
-            <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Check Your Email!
-            </h1>
-            <p className="text-lg text-muted-foreground mb-8">
-              Your Origin Story Studio access has been created! Check your inbox for your login details 
-              and get ready to craft your compelling origin story.
-            </p>
-            <Link to="/">
-              <Button className="bg-[hsl(43_85%_65%)] text-[hsl(var(--ssos-indigo))] hover:bg-[hsl(43_90%_70%)] font-bold tracking-wide px-8 py-3 text-lg">
-                Return to Sacred Signal OS
-              </Button>
-            </Link>
-          </div>
-        </main>
-      </div>
-    );
-  }
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
