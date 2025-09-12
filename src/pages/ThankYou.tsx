@@ -2,7 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import BrassRule from "@/components/accents/BrassRule";
 import { Link } from "react-router-dom";
-import { CheckCircle, Mail, Calendar, Users, FileText } from "lucide-react";
+import { Mail, Calendar, Users, FileText } from "lucide-react";
+import sacredCompletionSymbol from "@/assets/sacred-completion-symbol.png";
 
 const ThankYou = () => {
   return (
@@ -23,8 +24,12 @@ const ThankYou = () => {
           {/* Success Message */}
           <div className="text-center mb-12">
             <div className="flex items-center justify-center mb-6">
-              <div className="w-20 h-20 bg-signal/10 rounded-full flex items-center justify-center mb-4">
-                <CheckCircle className="w-12 h-12 text-signal" />
+              <div className="w-20 h-20 flex items-center justify-center mb-4">
+                <img 
+                  src={sacredCompletionSymbol} 
+                  alt="Sacred Completion Symbol" 
+                  className="w-16 h-16 object-contain"
+                />
               </div>
             </div>
             <div className="flex items-center justify-center mb-6">
