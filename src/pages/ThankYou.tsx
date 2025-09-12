@@ -179,28 +179,6 @@ const ThankYou = () => {
               </div>
             </Card>
           </div>
-
-          {/* CTA Section */}
-          <div className="text-center">
-            <div className="mb-8">
-              <h3 className="heading-ritual text-2xl mb-4 text-signal glow-text">
-                Ready to Begin Your Transformation?
-              </h3>
-              <p className="body-premium text-lg text-foreground/80 max-w-2xl mx-auto leading-relaxed">
-                While you wait for your welcome email, take a moment to envision where 
-                you'll be 12 weeks from now with a clear message and steady pipeline.
-              </p>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild className="bg-signal text-background hover:bg-signal/90 font-semibold px-8 py-3">
-                <Link to="/">Return to Homepage</Link>
-              </Button>
-              <Button variant="outline" asChild className="border-signal text-signal hover:bg-signal/10 font-semibold px-8 py-3">
-                <Link to="/origin-story-studio">Explore Origin Story Studio</Link>
-              </Button>
-            </div>
-          </div>
         </div>
       </main>
     </div>
