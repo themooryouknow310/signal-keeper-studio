@@ -66,11 +66,8 @@
     letter-spacing: 1px !important;
 }
 
-/* ===== "IT DOESN'T HAVE TO BE THIS WAY" SECTION FIXES ===== */
-.heading-ritual:contains("IT DOESN'T HAVE TO BE THIS WAY"),
-[class*="it-doesnt"],
-.transition-section h2,
-.transition-section .heading {
+/* ===== TRANSITION SECTION HEADING ===== */
+.transition-heading {
     display: inline-block !important;
     white-space: nowrap !important;
     text-align: center !important;
@@ -79,20 +76,6 @@
     border-radius: 15px !important;
     padding: 1.5rem 2.5rem !important;
     margin: 2rem auto !important;
-    background: rgba(0, 255, 255, 0.1) !important;
-    color: #00FFFF !important;
-    font-size: 2.5rem !important;
-    font-weight: bold !important;
-    letter-spacing: 2px !important;
-}
-
-/* Force horizontal layout for the specific text */
-p:contains("IT DOESN'T HAVE TO BE THIS WAY") {
-    display: inline-block !important;
-    white-space: nowrap !important;
-    border: 2px solid #00FFFF !important;
-    border-radius: 15px !important;
-    padding: 1.5rem 2.5rem !important;
     background: rgba(0, 255, 255, 0.1) !important;
     color: #00FFFF !important;
     font-size: 2.5rem !important;
@@ -197,9 +180,7 @@ p:contains("IT DOESN'T HAVE TO BE THIS WAY") {
         font-size: 1.2rem !important;
     }
     
-    .heading-ritual:contains("IT DOESN'T HAVE TO BE THIS WAY"),
-    [class*="it-doesnt"],
-    p:contains("IT DOESN'T HAVE TO BE THIS WAY") {
+    .transition-heading {
         font-size: 1.8rem !important;
         padding: 1rem 1.5rem !important;
         white-space: normal !important;
