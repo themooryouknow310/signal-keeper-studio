@@ -301,10 +301,8 @@
 .dilemma-card img,
 .dilemma-grid img,
 [class*="dilemma"] img {
-    max-width: 300px !important;
-    max-height: 200px !important;
-    width: auto !important;
-    height: auto !important;
+    width: 300px !important;
+    height: 200px !important;
     object-fit: cover !important;
     border-radius: var(--radius);
     margin-bottom: 20px !important;
