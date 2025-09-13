@@ -8,16 +8,10 @@
 get_header(); ?>
 
 <!-- Hero Section -->
-<section class="min-h-screen flex items-center justify-center relative overflow-hidden py-20 surface-dark cinema-surface-with-grain">
+<section class="min-h-screen flex items-center justify-center relative overflow-hidden py-20 surface-dark cinema-surface-with-grain" style="position: relative; overflow: hidden;">
     <!-- Cinematic Background -->
-    <div class="absolute inset-0">
-        <img 
-            src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/hero-spiritual-teacher.jpg" 
-            alt="Sacred Signal OS Background" 
-            class="w-full h-full object-cover opacity-70"
-        />
-        <div class="cinema-hero-overlay absolute inset-0"></div>
-    </div>
+    <div class="cinema-hero-bg" style="position:absolute; inset:0; background-image:url('<?php echo get_template_directory_uri(); ?>/assets/images/cinema/hero-spiritual-teacher.jpg'); background-size:cover; background-position:center; background-repeat:no-repeat; opacity:0.7;"></div>
+    <div class="cinema-hero-overlay" style="position:absolute; inset:0;"></div>
     
     <!-- Content -->
     <div class="relative z-10 container mx-auto px-6 text-center max-w-6xl">
