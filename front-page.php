@@ -189,17 +189,17 @@ get_header(); ?>
             <div class="ssos-grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto">
                 <div class="ssos-card">
                     <div class="text-center">
-                        <div class="w-64 h-40 mx-auto mb-6 rounded-lg overflow-hidden border border-brass/30">
+                        <div class="w-56 h-32 mx-auto mb-4 rounded-lg overflow-hidden border border-brass/30">
                             <img 
                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/content-treadmill-new.jpg" 
                                 alt="The endless content treadmill"
                                 class="w-full h-full object-cover"
                             />
                         </div>
-                        <h3 class="ssos-card-title text-xl mb-4">
+                        <h3 class="ssos-card-title mb-3">
                             The endless content treadmill
                         </h3>
-                        <p class="body-premium text-foreground/75 leading-relaxed">
+                        <p class="body-premium text-foreground/75 leading-relaxed text-sm">
                             Creating post after post, hoping something will finally stick.
                         </p>
                     </div>
@@ -207,17 +207,17 @@ get_header(); ?>
 
                 <div class="ssos-card">
                     <div class="text-center">
-                        <div class="w-64 h-40 mx-auto mb-6 rounded-lg overflow-hidden border border-brass/30">
+                        <div class="w-56 h-32 mx-auto mb-4 rounded-lg overflow-hidden border border-brass/30">
                             <img 
                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/algorithm-whiplash-new.jpg" 
                                 alt="The anxiety of algorithm whiplash"
                                 class="w-full h-full object-cover"
                             />
                         </div>
-                        <h3 class="ssos-card-title text-xl mb-4">
+                        <h3 class="ssos-card-title mb-3">
                             The anxiety of algorithm whiplash
                         </h3>
-                        <p class="body-premium text-foreground/75 leading-relaxed">
+                        <p class="body-premium text-foreground/75 leading-relaxed text-sm">
                             Watching your reach and leads disappear overnight.
                         </p>
                     </div>
@@ -225,17 +225,17 @@ get_header(); ?>
 
                 <div class="ssos-card">
                     <div class="text-center">
-                        <div class="w-64 h-40 mx-auto mb-6 rounded-lg overflow-hidden border border-brass/30">
+                        <div class="w-56 h-32 mx-auto mb-4 rounded-lg overflow-hidden border border-brass/30">
                             <img 
                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/leaky-funnel-new.jpg" 
                                 alt="The frustration of a leaky funnel"
                                 class="w-full h-full object-cover"
                             />
                         </div>
-                        <h3 class="ssos-card-title text-xl mb-4">
+                        <h3 class="ssos-card-title mb-3">
                             The frustration of a leaky funnel
                         </h3>
-                        <p class="body-premium text-foreground/75 leading-relaxed">
+                        <p class="body-premium text-foreground/75 leading-relaxed text-sm">
                             Attracting followers who "love your vibe" but never buy.
                         </p>
                     </div>
@@ -243,17 +243,17 @@ get_header(); ?>
 
                 <div class="ssos-card">
                     <div class="text-center">
-                        <div class="w-64 h-40 mx-auto mb-6 rounded-lg overflow-hidden border border-brass/30">
+                        <div class="w-56 h-32 mx-auto mb-4 rounded-lg overflow-hidden border border-brass/30">
                             <img 
                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/exhaustion-burnout-new.jpg" 
                                 alt="The exhaustion of over-delivering"
                                 class="w-full h-full object-cover"
                             />
                         </div>
-                        <h3 class="ssos-card-title text-xl mb-4">
+                        <h3 class="ssos-card-title mb-3">
                             The exhaustion of over-delivering
                         </h3>
-                        <p class="body-premium text-foreground/75 leading-relaxed">
+                        <p class="body-premium text-foreground/75 leading-relaxed text-sm">
                             Feeling resentful and burnt out, wondering if you'll ever make a real living.
                         </p>
                     </div>

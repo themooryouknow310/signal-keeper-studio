@@ -303,35 +303,13 @@
   }
 }
 
-/* Sacred Signal OS Grid and Cards */
-.ssos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-.ssos-card {
-  background: hsl(var(--background) / 0.5);
-  backdrop-filter: blur(10px);
-  border: 1px solid hsl(var(--border) / 0.3);
-  border-radius: 12px;
-  padding: 1.5rem;
-  transition: all var(--transition-base);
-}
-
-.ssos-card:hover {
-  transform: translateY(-4px);
-  border-color: hsl(var(--brass) / 0.4);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
+/* Remove duplicate SSOS grid/card definitions - using cinema-styles.css instead */
 
 .ssos-card-title {
   font-family: var(--font-heading);
   font-size: 1.125rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-weight: 600;
+  letter-spacing: 0.025em;
   color: hsl(var(--foreground));
   margin-bottom: 1rem;
 }

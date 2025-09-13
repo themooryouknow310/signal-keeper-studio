@@ -155,10 +155,11 @@
     background: linear-gradient(135deg, hsl(var(--card)) 0%, hsl(var(--secondary)) 100%);
     border: 1px solid hsl(var(--border));
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 1.5rem;
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    max-width: 100%;
 }
 
 .ssos-card::before {
@@ -194,6 +195,7 @@
     font-family: var(--font-heading);
     color: hsl(var(--foreground));
     font-weight: 600;
+    font-size: 1.125rem;
     margin-bottom: 1rem;
 }
 
@@ -268,19 +270,19 @@
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .ssos-grid {
-        gap: 1.5rem;
+        gap: 1rem;
     }
     
     .ssos-card {
-        padding: 1.5rem;
+        padding: 1rem;
     }
     
     .section-divider {
-        padding: 3rem 0;
+        padding: 2rem 0;
     }
     
     .cinema-hero {
-        border-radius: 0.75rem;
+        border-radius: 0.5rem;
     }
 }
 
