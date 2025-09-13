@@ -1082,7 +1082,7 @@ get_header(); ?>
                     <div class="testimonial-image-container mb-6">
                         <div class="testimonial-frame">
                             <img 
-                                src="<?php echo get_template_directory_uri(); ?>/assets/images/testimonials/marissa-fontana.jpg" 
+                                src="<?php echo get_template_directory_uri(); ?>/assets/images/testimonials/marissa-fontana.png" 
                                 alt="Marissa Fontana"
                                 class="testimonial-image"
                             />
@@ -1105,7 +1105,7 @@ get_header(); ?>
                     <div class="testimonial-image-container mb-6">
                         <div class="testimonial-frame">
                             <img 
-                                src="<?php echo get_template_directory_uri(); ?>/assets/images/testimonials/leora-leon.jpg" 
+                                src="<?php echo get_template_directory_uri(); ?>/assets/images/testimonials/leora-leon.png" 
                                 alt="Leora Leon"
                                 class="testimonial-image"
                             />
@@ -1128,7 +1128,7 @@ get_header(); ?>
                     <div class="testimonial-image-container mb-6">
                         <div class="testimonial-frame">
                             <img 
-                                src="<?php echo get_template_directory_uri(); ?>/assets/images/testimonials/susie-colles.jpg" 
+                                src="<?php echo get_template_directory_uri(); ?>/assets/images/testimonials/susie-colles.png" 
                                 alt="Dr. Susie Colles"
                                 class="testimonial-image"
                             />
