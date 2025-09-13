@@ -117,7 +117,7 @@ const AboutSection = () => {
             <div className="w-24 h-px bg-gradient-to-r from-transparent via-brass to-brass" />
             <div className="relative">
               <p className="heading-ritual text-2xl md:text-3xl text-signal px-6 glow-text">
-                IT DOESN'T HAVE TO BE THIS WAY
+                IT DOESN&apos;T HAVE TO BE THIS WAY
               </p>
               <div className="absolute -top-2 -bottom-2 -left-2 -right-2 border border-signal/20 rounded-lg"></div>
             </div>
