@@ -258,7 +258,7 @@ get_header(); ?>
             <div class="flex items-center justify-center space-x-8">
                 <div class="w-24 h-px bg-gradient-to-r from-transparent via-brass to-brass" />
                 <div class="relative">
-                    <p class="heading-ritual text-2xl md:text-3xl text-signal px-6 glow-text">
+                    <p class="heading-ritual text-2xl md:text-3xl text-signal px-6 glow-text transition-heading">
                         IT DOESN'T HAVE TO BE THIS WAY
                     </p>
                     <div class="absolute -top-2 -bottom-2 -left-2 -right-2 border border-signal/20 rounded-lg"></div>
