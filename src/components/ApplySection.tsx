@@ -57,11 +57,9 @@ const ApplySection = () => {
                     src="/lovable-uploads/83b74022-00a0-44c6-80b7-80c1741ef70b.png" 
                     alt="Marissa Fontana" 
                     className="w-full h-full object-cover"
-                    loading="lazy"
-                    decoding="async"
                   />
                 </div>
-                <img src="/lovable-uploads/3577b1e4-f101-4b3d-a7ac-74b52ee58e57.png" alt="Sacred geometry pattern" className="w-8 h-8 mb-4 mx-auto" loading="lazy" decoding="async" />
+                <img src="/lovable-uploads/3577b1e4-f101-4b3d-a7ac-74b52ee58e57.png" alt="Sacred geometry pattern" className="w-8 h-8 mb-4 mx-auto" />
                 <p className="body-premium text-foreground/80 leading-relaxed mb-6">
                   "Barack is the real deal with a business grounded in purpose. Since getting to know Barack and collaborating with him on multiple projects, it's evident how devoted Barack is to the mission of empowering women and nurturing the emergence of the divine feminine in all of us."
                 </p>
@@ -78,11 +76,9 @@ const ApplySection = () => {
                     src="/lovable-uploads/fad52807-7bca-494a-9d9a-b71b63f64115.png" 
                     alt="Leora Leon" 
                     className="w-full h-full object-cover"
-                    loading="lazy"
-                    decoding="async"
                   />
                 </div>
-                <img src="/lovable-uploads/3577b1e4-f101-4b3d-a7ac-74b52ee58e57.png" alt="Sacred geometry pattern" className="w-8 h-8 mb-4 mx-auto" loading="lazy" decoding="async" />
+                <img src="/lovable-uploads/3577b1e4-f101-4b3d-a7ac-74b52ee58e57.png" alt="Sacred geometry pattern" className="w-8 h-8 mb-4 mx-auto" />
                 <p className="body-premium text-foreground/80 leading-relaxed mb-6">
                   "Barack El is a force to be reckoned with. Not only is Barack a talented entrepreneur who created Femigod, a brilliant company that evokes spiritually and smart business techniques, he is also the real deal, a beautiful, kind and authentic human. It's a pleasure to know him and work with him."
                 </p>
@@ -99,11 +95,9 @@ const ApplySection = () => {
                     src="/lovable-uploads/03c116e4-31a0-45a3-8b78-5bac20b29afd.png" 
                     alt="Dr. Susie Colles" 
                     className="w-full h-full object-cover"
-                    loading="lazy"
-                    decoding="async"
                   />
                 </div>
-                <img src="/lovable-uploads/3577b1e4-f101-4b3d-a7ac-74b52ee58e57.png" alt="Sacred geometry pattern" className="w-8 h-8 mb-4 mx-auto" loading="lazy" decoding="async" />
+                <img src="/lovable-uploads/3577b1e4-f101-4b3d-a7ac-74b52ee58e57.png" alt="Sacred geometry pattern" className="w-8 h-8 mb-4 mx-auto" />
                 <p className="body-premium text-foreground/80 leading-relaxed mb-6">
                   "I recently had the pleasure of chatting with Barack about all things spiritual. What a pleasure to be associated with an individual so committed to helping women find and develop their spiritual nature. Of course, it stands to reason that Barack, so focused on helping others thrive, has a vibrant spirit himself!"
                 </p>
@@ -152,8 +146,6 @@ const ApplySection = () => {
                 src="/lovable-uploads/5e65f76b-c53c-4660-818b-dd55f3548ea0.png"
                 alt="Professional recognition and awards ceremony"
                 className="w-full h-full object-cover"
-                loading="lazy"
-                decoding="async"
               />
             </div>
             <h3 className="heading-ritual text-3xl md:text-4xl mb-16 glow-text">
@@ -206,7 +198,7 @@ const ApplySection = () => {
 
             <div className="ssos-card bg-gradient-to-br from-signal/5 via-background/80 to-signal/10">
               <div className="flex items-start space-x-4">
-                <img src="/lovable-uploads/3577b1e4-f101-4b3d-a7ac-74b52ee58e57.png" alt="Sacred geometry pattern" className="w-8 h-8 flex-shrink-0 mt-2" loading="lazy" decoding="async" />
+                <img src="/lovable-uploads/3577b1e4-f101-4b3d-a7ac-74b52ee58e57.png" alt="Sacred geometry pattern" className="w-8 h-8 flex-shrink-0 mt-2" />
                 <div className="flex-1">
                   <h4 className="ssos-card-title text-lg mb-3">
                     Why This Resonates

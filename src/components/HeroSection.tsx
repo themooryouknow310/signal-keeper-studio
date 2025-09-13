@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import SignalLineDivider from "@/components/accents/SignalLineDivider";
-// Using uploaded image for hero background
-const heroImage = "/lovable-uploads/5e65f76b-c53c-4660-818b-dd55f3548ea0.png";
+import heroImage from "@/assets/cinema/hero-spiritual-teacher.jpg";
 import AnimatedSection from "@/components/AnimatedSection";
 import { useState } from "react";
 import "../styles/hero-enhancements.css";

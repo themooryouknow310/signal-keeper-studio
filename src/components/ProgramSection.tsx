@@ -2,21 +2,20 @@ import Icon from "@/components/icons/Icon";
 import BrassMedallion from "@/components/accents/BrassMedallion";
 import BrassRule from "@/components/accents/BrassRule";
 import SignalEclipse from "@/components/accents/SignalEclipse";
-// Using uploaded images for program modules
-const nichePositioningImage = "/lovable-uploads/23d11c9b-c773-4598-b607-aa6556eafe46.png";
-const offerDesignImage = "/lovable-uploads/43b5c4db-0f9c-4433-aebb-19f3478779d6.png";
-const programArchitectureImage = "/lovable-uploads/82cbd216-75df-4709-8312-18cfb42d9a42.png";
-const storyMessageCraftImage = "/lovable-uploads/bc72b68e-82d2-4701-8e0d-4bff2f710d1f.png";
-const visualIdentityImage = "/lovable-uploads/ffd03cb6-2004-4121-a7bb-650b4939fb8c.png";
-const leadMagnetImage = "/lovable-uploads/197eeb61-edcc-4347-b214-8c726272e5cb.png";
-const trafficStrategyImage = "/lovable-uploads/3577b1e4-f101-4b3d-a7ac-74b52ee58e57.png";
-const contentStrategyImage = "/lovable-uploads/5e65f76b-c53c-4660-818b-dd55f3548ea0.png";
-const writingNewslettersImage = "/lovable-uploads/13c76ad3-eb71-4bb2-a9bc-e10b2d3946aa.png";
-const valueCommunicationImage = "/lovable-uploads/7d101e86-18f9-4285-bbbe-c9dc6f53ad53.png";
-const leadGenerationImage = "/lovable-uploads/9824b668-c088-4700-a584-451ec5b5a1e2.png";
-const audienceGrowthImage = "/lovable-uploads/4bec7975-8238-42f8-8aff-546b031f906f.png";
-const sacredProgramSymbolImage = "/lovable-uploads/3577b1e4-f101-4b3d-a7ac-74b52ee58e57.png";
-const spiritualMentorshipImage = "/lovable-uploads/ffd03cb6-2004-4121-a7bb-650b4939fb8c.png";
+import nichePositioningImage from "@/assets/cinema/niche-positioning.jpg";
+import offerDesignImage from "@/assets/cinema/offer-design.jpg";
+import programArchitectureImage from "@/assets/cinema/program-architecture.jpg";
+import storyMessageCraftImage from "@/assets/cinema/story-message-craft.jpg";
+import visualIdentityImage from "@/assets/cinema/visual-identity.jpg";
+import leadMagnetImage from "@/assets/cinema/lead-magnet.jpg";
+import trafficStrategyImage from "@/assets/cinema/traffic-strategy.jpg";
+import contentStrategyImage from "@/assets/cinema/content-strategy.jpg";
+import writingNewslettersImage from "@/assets/cinema/writing-newsletters.jpg";
+import valueCommunicationImage from "@/assets/cinema/value-communication.jpg";
+import leadGenerationImage from "@/assets/cinema/lead-generation.jpg";
+import audienceGrowthImage from "@/assets/cinema/audience-growth.jpg";
+import sacredProgramSymbolImage from "@/assets/cinema/sacred-program-symbol.jpg";
+import spiritualMentorshipImage from "@/assets/cinema/spiritual-mentorship.jpg";
 
 const ProgramSection = () => {
   const modules = [
@@ -114,8 +113,6 @@ const ProgramSection = () => {
               src="/lovable-uploads/ffd03cb6-2004-4121-a7bb-650b4939fb8c.png" 
               alt="Sacred Signal OS Mentorship"
               className="w-full h-full object-cover object-top"
-              loading="lazy"
-              decoding="async"
             />
           </div>
           <h2 className="heading-ritual text-4xl md:text-6xl mb-8 glow-text">
@@ -161,8 +158,6 @@ const ProgramSection = () => {
                       src={module.image} 
                       alt={module.title}
                       className="w-full h-full object-cover"
-                      loading="lazy"
-                      decoding="async"
                     />
                   </div>
                  <h3 className="heading-ritual text-xl text-brass glow-golden mb-2">

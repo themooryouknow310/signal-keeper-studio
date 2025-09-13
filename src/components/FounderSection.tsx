@@ -33,8 +33,6 @@ const FounderSection = () => {
                   src={barackImage} 
                   alt="Barack El - Sacred Signal OS Founder" 
                   className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
                 />
               </CinemaTestimonialFrame>
             </AnimatedSection>

@@ -1,6 +1,5 @@
 import BrassRule from "@/components/accents/BrassRule";
-// Using uploaded sacred geometry icon
-const sacredGeometryIcon = "/lovable-uploads/3577b1e4-f101-4b3d-a7ac-74b52ee58e57.png";
+import sacredGeometryIcon from "@/assets/sacred-geometry-icon.png";
 
 const OfferStackSection = () => {
   const scrollToApply = () => {
@@ -10,7 +9,7 @@ const OfferStackSection = () => {
 
   return (
     <section id="offer-stack" className="section-divider surface-dark relative overflow-hidden" style={{
-      backgroundImage: `linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('/lovable-uploads/5e65f76b-c53c-4660-818b-dd55f3548ea0.png')`,
+      backgroundImage: `linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('/src/assets/cinema/background-sacred-light.jpg')`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundAttachment: 'fixed'

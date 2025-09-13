@@ -1,12 +1,11 @@
-// Using uploaded images instead of missing cinema assets
-const contentTreadmillImage = "/lovable-uploads/4bec7975-8238-42f8-8aff-546b031f906f.png";
-const algorithmWhiplashImage = "/lovable-uploads/bd2cb781-a6cc-413a-80c6-1011862ff09a.png";
-const leakyFunnelImage = "/lovable-uploads/9824b668-c088-4700-a584-451ec5b5a1e2.png";
-const exhaustionBurnoutImage = "/lovable-uploads/64ec7f8a-dc71-4fd5-9bf6-b5ccf8ab1608.png";
-const clearResonantMessageImage = "/lovable-uploads/7d101e86-18f9-4285-bbbe-c9dc6f53ad53.png";
-const compellingOfferImage = "/lovable-uploads/4d952e22-1bf9-4446-b13a-7e118cf846e1.png";
-const sustainableContentImage = "/lovable-uploads/5ca86352-ff88-44a2-a9ba-b1da2125ae17.png";
-const authenticSalesImage = "/lovable-uploads/9b735b7f-7d36-48fc-9934-0a95148fc23c.png";
+import contentTreadmillImage from "@/assets/cinema/content-treadmill-new.jpg";
+import algorithmWhiplashImage from "@/assets/cinema/algorithm-whiplash-new.jpg";
+import leakyFunnelImage from "@/assets/cinema/leaky-funnel-new.jpg";
+import exhaustionBurnoutImage from "@/assets/cinema/exhaustion-burnout-new.jpg";
+import clearResonantMessageImage from "@/assets/cinema/clear-resonant-message.jpg";
+import compellingOfferImage from "@/assets/cinema/compelling-offer.jpg";
+import sustainableContentImage from "@/assets/cinema/sustainable-content.jpg";
+import authenticSalesImage from "@/assets/cinema/authentic-sales.jpg";
 
 import { LinearAccent } from "@/components/AccentElements";
 
@@ -87,8 +86,6 @@ const AboutSection = () => {
                       src={problem.image} 
                       alt={problem.title}
                       className="w-full h-full object-cover cinema-image-teal"
-                      loading="lazy"
-                      decoding="async"
                     />
                   </div>
                   <h3 className="ssos-card-title text-xl mb-4">
@@ -134,8 +131,6 @@ const AboutSection = () => {
                       src={outcome.image} 
                       alt={outcome.title}
                       className="w-full h-full object-cover"
-                      loading="lazy"
-                      decoding="async"
                     />
                   </div>
                   <div className="flex-1">
