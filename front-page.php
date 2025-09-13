@@ -303,7 +303,7 @@ get_header(); ?>
                         </div>
                         <div class="flex-1">
                             <p class="body-premium text-lg leading-relaxed">
-                                <span class="font-semibold text-foreground text-xl">Your message is so clear and resonant</span>{" "}
+                                <span class="font-semibold text-foreground text-xl">Your message is so clear and resonant</span> 
                                 <span class="text-foreground/80">that your ideal clients instantly know they're in the right place.</span>
                             </p>
                         </div>
@@ -321,7 +321,7 @@ get_header(); ?>
                         </div>
                         <div class="flex-1">
                             <p class="body-premium text-lg leading-relaxed">
-                                <span class="font-semibold text-foreground text-xl">Your offer is so compelling</span>{" "}
+                                <span class="font-semibold text-foreground text-xl">Your offer is so compelling</span> 
                                 <span class="text-foreground/80">that it feels like an answer to their prayers.</span>
                             </p>
                         </div>
@@ -339,7 +339,7 @@ get_header(); ?>
                         </div>
                         <div class="flex-1">
                             <p class="body-premium text-lg leading-relaxed">
-                                <span class="font-semibold text-foreground text-xl">Your content system is so sustainable</span>{" "}
+                                <span class="font-semibold text-foreground text-xl">Your content system is so sustainable</span> 
                                 <span class="text-foreground/80">that you can create a month's worth of high-impact content in a single day.</span>
                             </p>
                         </div>
@@ -357,7 +357,7 @@ get_header(); ?>
                         </div>
                         <div class="flex-1">
                             <p class="body-premium text-lg leading-relaxed">
-                                <span class="font-semibold text-foreground text-xl">Your sales process is so authentic</span>{" "}
+                                <span class="font-semibold text-foreground text-xl">Your sales process is so authentic</span> 
                                 <span class="text-foreground/80">that it feels like a natural extension of your spiritual work.</span>
                             </p>
                         </div>
