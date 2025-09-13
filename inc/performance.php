@@ -119,7 +119,8 @@ function sacred_signal_add_expires_headers() {
         header('Expires: ' . gmdate('D, d M Y H:i:s', time() + 31536000) . ' GMT');
     }
 }
-add_action('wp_head', 'sacred_signal_add_expires_headers', 1);
+// Use send_headers to set cache headers before any output
+add_action('send_headers', 'sacred_signal_add_expires_headers');
 
 /**
  * Optimize CSS delivery
