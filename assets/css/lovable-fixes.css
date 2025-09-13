@@ -525,3 +525,96 @@ p:contains("IT DOESN'T HAVE TO BE THIS WAY") {
     }
 }
 
+
+/* ===== IT DOESN'T HAVE TO BE THIS WAY SECTION FIXES ===== */
+/* Fix the vertical text display to horizontal like Lovable site */
+.heading-ritual {
+    white-space: nowrap !important;
+    display: inline-block !important;
+    text-align: center !important;
+    padding: 1.5rem 3rem !important;
+    border: 2px solid #00FFFF !important;
+    border-radius: 15px !important;
+    background: rgba(0, 255, 255, 0.05) !important;
+    color: #00FFFF !important;
+    font-size: 1.75rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase !important;
+    margin: 0 auto !important;
+    max-width: fit-content !important;
+    width: auto !important;
+}
+
+/* Container for the IT DOESN'T HAVE TO BE THIS WAY section */
+.text-center.mb-20.relative {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-bottom: 5rem !important;
+}
+
+/* Remove the decorative lines and border around the text */
+.text-center.mb-20.relative .flex.items-center.justify-center.space-x-8 {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0 !important;
+}
+
+/* Hide the decorative lines */
+.text-center.mb-20.relative .w-24.h-px {
+    display: none !important;
+}
+
+/* Remove the extra border around the text */
+.text-center.mb-20.relative .absolute {
+    display: none !important;
+}
+
+/* Ensure the text container is properly centered */
+.text-center.mb-20.relative .relative {
+    position: static !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+/* Override any conflicting styles */
+p.heading-ritual.text-2xl.md\:text-3xl.text-signal.px-6.glow-text {
+    white-space: nowrap !important;
+    display: inline-block !important;
+    text-align: center !important;
+    padding: 1.5rem 3rem !important;
+    border: 2px solid #00FFFF !important;
+    border-radius: 15px !important;
+    background: rgba(0, 255, 255, 0.05) !important;
+    color: #00FFFF !important;
+    font-size: 1.75rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase !important;
+    margin: 0 !important;
+    max-width: fit-content !important;
+    width: auto !important;
+}
+
+/* Responsive design for the section */
+@media (max-width: 768px) {
+    .heading-ritual,
+    p.heading-ritual.text-2xl.md\:text-3xl.text-signal.px-6.glow-text {
+        font-size: 1.25rem !important;
+        padding: 1rem 2rem !important;
+        letter-spacing: 1px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading-ritual,
+    p.heading-ritual.text-2xl.md\:text-3xl.text-signal.px-6.glow-text {
+        font-size: 1rem !important;
+        padding: 0.75rem 1.5rem !important;
+        letter-spacing: 0.5px !important;
+    }
+}
+
