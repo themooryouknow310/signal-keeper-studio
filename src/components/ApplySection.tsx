@@ -39,9 +39,6 @@ const ApplySection = () => {
       <div className="absolute top-20 left-20 opacity-10">
         <SignalRing size={150} />
       </div>
-      <div className="absolute bottom-20 right-20 opacity-5">
-        <SacredGeometry size={100} />
-      </div>
 
       <div className="container mx-auto px-6">
 
