@@ -249,17 +249,6 @@
     );
   }
 
-  .section-divider::after {
-    content: '◊';
-    position: absolute;
-    top: -8px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: hsl(var(--sacred-gold));
-    font-size: 1rem;
-    background: hsl(var(--background));
-    padding: 0 12px;
-  }
 
   /* Premium Cards */
   .premium-card {
