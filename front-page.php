@@ -189,7 +189,7 @@ get_header(); ?>
             <div class="ssos-grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto">
                 <div class="ssos-card">
                     <div class="text-center">
-                        <div class="w-56 h-32 mx-auto mb-4 rounded-lg overflow-hidden border border-brass/30">
+                        <div class="w-full h-32 mb-4 rounded-lg overflow-hidden border border-brass/30">
                             <img 
                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/content-treadmill-new.jpg" 
                                 alt="The endless content treadmill"
@@ -207,7 +207,7 @@ get_header(); ?>
 
                 <div class="ssos-card">
                     <div class="text-center">
-                        <div class="w-56 h-32 mx-auto mb-4 rounded-lg overflow-hidden border border-brass/30">
+                        <div class="w-full h-32 mb-4 rounded-lg overflow-hidden border border-brass/30">
                             <img 
                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/algorithm-whiplash-new.jpg" 
                                 alt="The anxiety of algorithm whiplash"
@@ -225,7 +225,7 @@ get_header(); ?>
 
                 <div class="ssos-card">
                     <div class="text-center">
-                        <div class="w-56 h-32 mx-auto mb-4 rounded-lg overflow-hidden border border-brass/30">
+                        <div class="w-full h-32 mb-4 rounded-lg overflow-hidden border border-brass/30">
                             <img 
                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/leaky-funnel-new.jpg" 
                                 alt="The frustration of a leaky funnel"
@@ -243,7 +243,7 @@ get_header(); ?>
 
                 <div class="ssos-card">
                     <div class="text-center">
-                        <div class="w-56 h-32 mx-auto mb-4 rounded-lg overflow-hidden border border-brass/30">
+                        <div class="w-full h-32 mb-4 rounded-lg overflow-hidden border border-brass/30">
                             <img 
                                 src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/exhaustion-burnout-new.jpg" 
                                 alt="The exhaustion of over-delivering"
