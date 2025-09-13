@@ -10,37 +10,38 @@ const OfferStackSection = () => {
   return (
     <section id="offer-stack" className="section-divider surface-dark relative overflow-hidden">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto">{/* Header */}
-        <div className="text-center mb-12 fade-up">
-          <div className="flex items-center justify-center mb-6">
-            <BrassRule width={300} />
+        <div className="max-w-5xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-20 fade-up">
+            <div className="flex items-center justify-center mb-8">
+              <BrassRule width={300} />
+            </div>
+            <h2 className="heading-ritual text-4xl md:text-5xl lg:text-6xl mb-8 glow-text">
+              EVERYTHING YOU GET INSIDE SACRED SIGNAL OS
+            </h2>
+            <p className="body-premium text-xl md:text-2xl text-foreground/90 max-w-4xl mx-auto leading-relaxed">
+              We don't shout; we stack real support. Here's exactly what's included and why it matters.
+            </p>
           </div>
-          <h2 className="heading-ritual text-4xl md:text-6xl mb-8 glow-text">
-            EVERYTHING YOU GET INSIDE SACRED SIGNAL OS
-          </h2>
-          <p className="body-premium text-xl md:text-2xl text-[hsl(var(--ssos-alabaster))] max-w-4xl mx-auto leading-relaxed">
-            We don't shout; we stack real support. Here's exactly what's included and why it matters.
-          </p>
-        </div>
 
-        {/* Core System */}
-        <div className="mb-10 fade-up">
-          <h3 className="heading-ritual text-xl md:text-2xl mb-6 text-center glow-text text-signal">
-            Core System
-          </h3>
+          {/* Core System */}
+          <div className="mb-16 fade-up">
+            <h3 className="heading-ritual text-2xl md:text-3xl mb-8 text-center glow-text text-signal">
+              Core System
+            </h3>
           
           <div className="space-y-4">
             <div className="ssos-card p-4 border-signal/30">
               <div className="flex items-start gap-4">
                 <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-8 h-8 mt-1" />
                 <div className="flex-1">
-                  <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
-                    <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
+                  <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-3">
+                    <h4 className="heading-ritual text-lg md:text-xl text-brass glow-golden mb-2 md:mb-0 font-semibold">
                       Sacred Signal OS: 12-Week System (Core Training)
                     </h4>
-                    <div className="text-signal font-display font-bold text-base">Value: $6,000</div>
+                    <div className="text-signal font-display font-bold text-lg">Value: $6,000</div>
                   </div>
-                  <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
+                  <p className="body-premium text-base text-foreground/85 leading-relaxed">
                     End-to-end operating system to tune your message, architect your offer, and install a steady, repeatable pipeline.
                   </p>
                 </div>
@@ -83,11 +84,11 @@ const OfferStackSection = () => {
           </div>
         </div>
 
-        {/* Tools for Speed & Certainty */}
-        <div className="mb-10 fade-up">
-          <h3 className="heading-ritual text-xl md:text-2xl mb-6 text-center glow-text text-signal">
-            Tools for Speed & Certainty
-          </h3>
+          {/* Tools for Speed & Certainty */}
+          <div className="mb-16 fade-up">
+            <h3 className="heading-ritual text-2xl md:text-3xl mb-8 text-center glow-text text-signal">
+              Tools for Speed & Certainty
+            </h3>
           
           <div className="space-y-4">
             <div className="ssos-card p-4 border-signal/30">
@@ -143,11 +144,11 @@ const OfferStackSection = () => {
           </div>
         </div>
 
-        {/* Tangible By-Products */}
-        <div className="mb-10 fade-up">
-          <h3 className="heading-ritual text-xl md:text-2xl mb-6 text-center glow-text text-signal">
-            Tangible By-Products (done-with-you assets)
-          </h3>
+          {/* Tangible By-Products */}
+          <div className="mb-16 fade-up">
+            <h3 className="heading-ritual text-2xl md:text-3xl mb-8 text-center glow-text text-signal">
+              Tangible By-Products (done-with-you assets)
+            </h3>
           
           <div className="space-y-4">
             <div className="ssos-card p-4 border-signal/30">
@@ -220,11 +221,11 @@ const OfferStackSection = () => {
           </div>
         </div>
 
-        {/* Limited-Time Bonuses */}
-        <div className="mb-10 fade-up">
-          <h3 className="heading-ritual text-xl md:text-2xl mb-6 text-center glow-text text-signal">
-            Limited-Time Bonuses (included when you enroll now)
-          </h3>
+          {/* Limited-Time Bonuses */}
+          <div className="mb-16 fade-up">
+            <h3 className="heading-ritual text-2xl md:text-3xl mb-8 text-center glow-text text-signal">
+              Limited-Time Bonuses (included when you enroll now)
+            </h3>
           
           <div className="space-y-4">
             <div className="ssos-card p-4 border-brass/40 bg-gradient-to-br from-brass/5 via-background/80 to-brass/10">
@@ -375,7 +376,7 @@ const OfferStackSection = () => {
             </div>
 
             <button 
-              className="bg-signal text-background hover:bg-signal/90 font-body font-semibold px-12 py-4 text-lg rounded-xl button-lift"
+              className="bg-[hsl(43_85%_65%)] text-background hover:bg-[hsl(43_90%_70%)] font-display font-bold tracking-wide px-16 py-5 rounded-lg transition-all duration-300 hover:scale-105 border-2 border-[hsl(43_90%_75%)] text-xl shadow-2xl glow-button"
               onClick={scrollToApply}
             >
               Apply Now for Sacred Signal OS

@@ -109,6 +109,20 @@
     transform: translateY(-2px);
 }
 
+/* Golden Button Glow Effect */
+.glow-button {
+    box-shadow: 
+        0 0 20px hsl(43 85% 65% / 0.4),
+        0 8px 16px hsl(var(--background) / 0.3);
+}
+
+.glow-button:hover {
+    box-shadow: 
+        0 0 30px hsl(43 85% 65% / 0.6),
+        0 0 50px hsl(43 85% 65% / 0.4),
+        0 12px 24px hsl(var(--background) / 0.4);
+}
+
 /* Image Color Treatment for Teal Effect */
 .cinema-image-teal {
     filter: sepia(1) hue-rotate(140deg) saturate(2.5) brightness(0.9);
