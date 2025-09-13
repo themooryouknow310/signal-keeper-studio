@@ -342,7 +342,7 @@ const OfferStackSection = () => {
             </div>
             
             <div className="mb-6">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+              <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-8">
                 <div className="ssos-card p-6 text-center border-signal/30 bg-gradient-to-br from-signal/10 via-background/80 to-signal/5">
                   <div className="mb-4">
                     <div className="text-2xl font-bold text-signal mb-2">$1,497</div>
