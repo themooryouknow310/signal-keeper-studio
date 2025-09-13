@@ -16,12 +16,13 @@ const HeroSection = () => {
     <section className="hero-section min-h-screen flex items-center justify-center relative overflow-hidden py-20">
       {/* Enhanced Cinematic Background */}
       <div className="absolute inset-0">
-        <img 
-          src={heroImage} 
-          alt="Sacred Signal OS - Transform Your Spiritual Business" 
-          className="w-full h-full object-cover opacity-50"
-          loading="eager"
-        />
+          <img 
+            src={heroImage} 
+            alt="Sacred Signal OS - Transform Your Spiritual Business" 
+            className="w-full h-full object-cover opacity-50"
+            loading="eager"
+            decoding="async"
+          />
         {/* Multi-layer gradient for better text contrast */}
         <div className="absolute inset-0 bg-gradient-to-b from-background/98 via-background/40 to-background/80" />
         <div className="absolute inset-0 bg-gradient-radial from-transparent via-background/20 to-background/60" />
@@ -75,8 +76,7 @@ const HeroSection = () => {
                 filter: 'contrast(1.1) saturate(1.1)'
               }}
             >
-              <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
-              <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.webm" type="video/webm" />
+            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             
@@ -90,11 +90,14 @@ const HeroSection = () => {
             </div>
           </div>
           
-          {/* Video Title Section */}
-          <div className="text-center mt-8 space-y-3">
-            <p className="text-signal font-medium text-lg glow-text">Sacred Signal OS Introduction</p>
-            <p className="text-foreground/70 font-light text-base">Discover Your Path To Authentic Business Growth</p>
-          </div>
+            {/* Video Title Section */}
+            <div className="text-center mt-8 space-y-3 relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-signal/10 to-transparent blur-2xl"></div>
+              <div className="relative z-10">
+                <p className="text-signal font-medium text-lg glow-text">Sacred Signal OS Introduction</p>
+                <p className="text-foreground/70 font-light text-base">Discover Your Path To Authentic Business Growth</p>
+              </div>
+            </div>
         </AnimatedSection>
 
         {/* Enhanced Subheading Section */}
@@ -125,10 +128,10 @@ const HeroSection = () => {
         <AnimatedSection delay={800} className="flex justify-center items-center">
           <Button 
             size="lg"
-            className="group relative bg-transparent border-2 border-signal text-signal hover:bg-signal hover:text-background font-body font-semibold px-8 sm:px-12 py-4 sm:py-6 text-lg sm:text-xl rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl overflow-hidden"
+            className="group relative bg-transparent border-2 border-signal text-signal hover:bg-signal hover:text-background font-body font-semibold px-8 sm:px-12 py-4 sm:py-6 text-lg sm:text-xl rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl overflow-hidden animate-pulse"
             onClick={navigateToApplication}
             style={{
-              boxShadow: '0 0 30px hsl(var(--signal-glow) / 0.3)'
+              boxShadow: '0 0 30px hsl(var(--signal-glow) / 0.3), 0 0 60px hsl(var(--signal-glow) / 0.1)'
             }}
           >
             {/* Button glow effect */}

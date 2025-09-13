@@ -8,7 +8,12 @@ const OfferStackSection = () => {
   };
 
   return (
-    <section id="offer-stack" className="section-divider surface-dark relative overflow-hidden">
+    <section id="offer-stack" className="section-divider surface-dark relative overflow-hidden" style={{
+      backgroundImage: `linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('/src/assets/cinema/background-sacred-light.jpg')`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundAttachment: 'fixed'
+    }}>
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           {/* Header */}
@@ -25,7 +30,9 @@ const OfferStackSection = () => {
           </div>
 
           {/* Core System */}
-          <div className="mb-16 fade-up">
+          <div className="mb-16 fade-up relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-signal/5 via-transparent to-signal/5 rounded-2xl blur-3xl"></div>
+            <div className="relative z-10">
             <h3 className="heading-ritual text-2xl md:text-3xl mb-8 text-center glow-text text-signal">
               Core System
             </h3>
@@ -33,7 +40,7 @@ const OfferStackSection = () => {
           <div className="space-y-4">
             <div className="ssos-card p-4 border-signal/30">
               <div className="flex items-start gap-4">
-                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-8 h-8 mt-1" />
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-8 h-8 mt-1" loading="lazy" decoding="async" />
                 <div className="flex-1">
                   <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-3">
                     <h4 className="heading-ritual text-lg md:text-xl text-brass glow-golden mb-2 md:mb-0 font-semibold">
@@ -80,12 +87,15 @@ const OfferStackSection = () => {
                   </p>
                 </div>
               </div>
-            </div>
           </div>
+        </div>
+        </div>
         </div>
 
           {/* Tools for Speed & Certainty */}
-          <div className="mb-16 fade-up">
+          <div className="mb-16 fade-up relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-brass/5 via-transparent to-brass/5 rounded-2xl blur-3xl"></div>
+            <div className="relative z-10">
             <h3 className="heading-ritual text-2xl md:text-3xl mb-8 text-center glow-text text-signal">
               Tools for Speed & Certainty
             </h3>
@@ -140,12 +150,15 @@ const OfferStackSection = () => {
                   </p>
                 </div>
               </div>
-            </div>
           </div>
+        </div>
+        </div>
         </div>
 
           {/* Tangible By-Products */}
-          <div className="mb-16 fade-up">
+          <div className="mb-16 fade-up relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-foreground/5 via-transparent to-foreground/5 rounded-2xl blur-3xl"></div>
+            <div className="relative z-10">
             <h3 className="heading-ritual text-2xl md:text-3xl mb-8 text-center glow-text text-signal">
               Tangible By-Products (done-with-you assets)
             </h3>
@@ -219,6 +232,7 @@ const OfferStackSection = () => {
               </div>
             </div>
           </div>
+        </div>
         </div>
 
           {/* Limited-Time Bonuses */}
