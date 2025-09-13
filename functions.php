@@ -153,6 +153,15 @@ function sacred_signal_os_scripts() {
         file_exists($perf_path) ? filemtime($perf_path) : $theme->get('Version')
     );
 
+    // Lovable site alignment fixes CSS (final overrides)
+    $lovable_fixes_path = $theme_dir . '/assets/css/lovable-fixes.css';
+    wp_enqueue_style(
+        'sacred-signal-os-lovable-fixes',
+        $theme_uri . '/assets/css/lovable-fixes.css',
+        array('sacred-signal-os-performance'),
+        file_exists($lovable_fixes_path) ? filemtime($lovable_fixes_path) : $theme->get('Version')
+    );
+
     // Main JS
     $main_js_path = $theme_dir . '/assets/js/main.js';
     wp_enqueue_script(

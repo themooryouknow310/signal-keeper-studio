@@ -43,15 +43,7 @@
             <div class="header-inner">
                 <!-- Logo / Brand -->
                 <div class="brand">
-                    <?php if (has_custom_logo()) : ?>
-                        <?php the_custom_logo(); ?>
-                    <?php else : ?>
-                        <img 
-                            src="<?php echo get_template_directory_uri(); ?>/assets/images/sacred-geometry-icon.png" 
-                            alt="<?php bloginfo('name'); ?>"
-                        />
-                    <?php endif; ?>
-                    <span class="text-xl font-semibold text-foreground"><?php bloginfo('name'); ?></span>
+                    <span class="text-xl font-semibold text-signal">SACRED SIGNAL OS</span>
                 </div>
 
                 <!-- Navigation -->

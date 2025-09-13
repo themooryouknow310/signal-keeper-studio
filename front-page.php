@@ -195,7 +195,7 @@ get_header(); ?>
                             class="w-full max-w-[200px] h-auto rounded-lg mx-auto mb-5 border border-brass/30"
                         />
                         <h3 class="ssos-card-title mb-3">
-                            The endless content treadmill
+                            THE ENDLESS CONTENT TREADMILL
                         </h3>
                         <p class="body-premium text-foreground/75 leading-relaxed text-sm">
                             Creating post after post, hoping something will finally stick.
@@ -211,7 +211,7 @@ get_header(); ?>
                             class="w-full max-w-[200px] h-auto rounded-lg mx-auto mb-5 border border-brass/30"
                         />
                         <h3 class="ssos-card-title mb-3">
-                            The anxiety of algorithm whiplash
+                            THE ANXIETY OF ALGORITHM WHIPLASH
                         </h3>
                         <p class="body-premium text-foreground/75 leading-relaxed text-sm">
                             Watching your reach and leads disappear overnight.
@@ -227,7 +227,7 @@ get_header(); ?>
                             class="w-full max-w-[200px] h-auto rounded-lg mx-auto mb-5 border border-brass/30"
                         />
                         <h3 class="ssos-card-title mb-3">
-                            The frustration of a leaky funnel
+                            THE FRUSTRATION OF A LEAKY FUNNEL
                         </h3>
                         <p class="body-premium text-foreground/75 leading-relaxed text-sm">
                             Attracting followers who "love your vibe" but never buy.
@@ -243,7 +243,7 @@ get_header(); ?>
                             class="w-full max-w-[200px] h-auto rounded-lg mx-auto mb-5 border border-brass/30"
                         />
                         <h3 class="ssos-card-title mb-3">
-                            The exhaustion of over-delivering
+                            THE EXHAUSTION OF OVER-DELIVERING
                         </h3>
                         <p class="body-premium text-foreground/75 leading-relaxed text-sm">
                             Feeling resentful and burnt out, wondering if you'll ever make a real living.
