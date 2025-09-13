@@ -43,8 +43,8 @@ get_header(); ?>
                     controls
                     preload="metadata"
                 >
-                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
-                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.webm" type="video/webm" />
+                    <source src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4" type="video/mp4" />
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 
@@ -1605,7 +1605,7 @@ get_header(); ?>
             
             <a 
                 href="<?php echo esc_url(home_url('/application/')); ?>" 
-                class="cinema-button inline-block text-xl py-4 px-12 rounded-full transition-all duration-300 transform hover:scale-105"
+                class="cinema-glow bg-transparent border-2 border-signal text-signal hover:bg-signal hover:text-background font-body font-medium px-12 py-6 text-xl motion-glow-hover rounded-full inline-block transition-all duration-300 transform hover:scale-105"
             >
                 Begin Your Transformation
             </a>

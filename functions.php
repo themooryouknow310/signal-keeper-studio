@@ -90,12 +90,21 @@ function sacred_signal_os_scripts() {
         file_exists($design_path) ? filemtime($design_path) : $theme->get('Version')
     );
 
+    // New comprehensive cinema styles (complete implementation)
+    $cinema_styles_path = $theme_dir . '/assets/css/cinema-styles.css';
+    wp_enqueue_style(
+        'sacred-signal-os-cinema-styles',
+        $theme_uri . '/assets/css/cinema-styles.css',
+        array('sacred-signal-os-design-system'),
+        file_exists($cinema_styles_path) ? filemtime($cinema_styles_path) : $theme->get('Version')
+    );
+
     // Cinema CSS
     $cinema_path = $theme_dir . '/assets/css/cinema.css';
     wp_enqueue_style(
         'sacred-signal-os-cinema-base',
         $theme_uri . '/assets/css/cinema.css',
-        array('sacred-signal-os-design-system'),
+        array('sacred-signal-os-cinema-styles'),
         file_exists($cinema_path) ? filemtime($cinema_path) : $theme->get('Version')
     );
 

@@ -1,0 +1,296 @@
+/* Sacred Signal OS Cinema Styles - Complete Implementation */
+
+/* Cinematic Surfaces and Effects */
+.cinema-surface {
+    background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%);
+    position: relative;
+}
+
+.cinema-surface-with-grain {
+    background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--secondary)) 100%);
+    position: relative;
+}
+
+.cinema-surface-with-grain::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 25% 25%, hsl(var(--signal) / 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, hsl(var(--brass) / 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.cinema-grain::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 1px 1px, hsl(var(--foreground) / 0.05) 1px, transparent 0);
+    background-size: 20px 20px;
+    pointer-events: none;
+}
+
+/* Cinematic Hero Elements */
+.cinema-hero {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 
+        0 25px 50px -12px hsl(var(--background) / 0.8),
+        0 0 0 1px hsl(var(--border));
+    position: relative;
+    background: hsl(var(--card));
+}
+
+.cinema-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+.cinema-hero:hover img {
+    transform: scale(1.05);
+}
+
+.cinema-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        hsl(var(--background) / 0.8) 0%,
+        hsl(var(--background) / 0.4) 50%,
+        hsl(var(--signal) / 0.1) 100%
+    );
+}
+
+/* Premium Light Effects */
+.cinema-bloom::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+        circle,
+        hsl(var(--signal) / 0.3) 0%,
+        hsl(var(--signal) / 0.1) 25%,
+        transparent 50%
+    );
+    mix-blend-mode: screen;
+    pointer-events: none;
+}
+
+/* Button and Interaction Styles */
+.cinema-glow {
+    position: relative;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.cinema-glow:focus-visible {
+    outline: 2px solid hsl(var(--signal));
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px hsl(var(--signal) / 0.2);
+}
+
+.motion-glow-hover:hover {
+    box-shadow: 
+        0 0 20px hsl(var(--signal) / 0.5),
+        0 0 40px hsl(var(--signal) / 0.3),
+        0 0 60px hsl(var(--signal) / 0.1);
+    transform: translateY(-2px);
+}
+
+/* Image Color Treatment for Teal Effect */
+.cinema-image-teal {
+    filter: sepia(1) hue-rotate(140deg) saturate(2.5) brightness(0.9);
+    transition: filter 0.3s ease;
+}
+
+.cinema-image-teal:hover {
+    filter: sepia(1) hue-rotate(140deg) saturate(3) brightness(1);
+}
+
+/* Apply teal treatment to problem card images */
+.ssos-card img {
+    filter: sepia(1) hue-rotate(140deg) saturate(2.5) brightness(0.9);
+    transition: all 0.3s ease;
+}
+
+.ssos-card:hover img {
+    filter: sepia(1) hue-rotate(140deg) saturate(3) brightness(1);
+    transform: scale(1.05);
+}
+
+/* Sacred Signal OS Grid and Card System */
+.ssos-grid {
+    display: grid;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.ssos-grid.grid-cols-1 {
+    grid-template-columns: 1fr;
+}
+
+.ssos-grid.grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+    .ssos-grid.md\\:grid-cols-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.ssos-card {
+    background: linear-gradient(135deg, hsl(var(--card)) 0%, hsl(var(--secondary)) 100%);
+    border: 1px solid hsl(var(--border));
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.ssos-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        135deg,
+        hsl(var(--signal) / 0.05) 0%,
+        transparent 50%,
+        hsl(var(--brass) / 0.02) 100%
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.ssos-card:hover::before {
+    opacity: 1;
+}
+
+.ssos-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 
+        0 20px 40px -12px hsl(var(--background) / 0.6),
+        0 0 0 1px hsl(var(--signal) / 0.2);
+}
+
+.ssos-card-title {
+    font-family: var(--font-heading);
+    color: hsl(var(--foreground));
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Surface and Section Styles */
+.surface-dark {
+    background: linear-gradient(
+        135deg,
+        hsl(var(--background)) 0%,
+        hsl(var(--secondary) / 0.8) 50%,
+        hsl(var(--background)) 100%
+    );
+    position: relative;
+}
+
+.section-divider {
+    padding: 5rem 0;
+    margin: 2rem 0;
+}
+
+/* Text Effects */
+.cinema-text-shadow {
+    text-shadow: 0 2px 4px hsl(var(--background) / 0.8);
+}
+
+.cinema-text-overlay {
+    position: relative;
+    z-index: 10;
+}
+
+/* Animation States */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Motion Classes */
+.motion-fade {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.motion-scale-hover:hover {
+    transform: scale(1.05);
+}
+
+/* Brass and Signal Color Utilities */
+.text-brass {
+    color: hsl(var(--brass));
+}
+
+.border-brass\\/30 {
+    border-color: hsl(var(--brass) / 0.3);
+}
+
+.via-brass\\/30 {
+    --tw-gradient-to: hsl(var(--brass) / 0.3);
+}
+
+.to-brass\\/60 {
+    --tw-gradient-to: hsl(var(--brass) / 0.6);
+}
+
+.to-brass {
+    --tw-gradient-to: hsl(var(--brass));
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .ssos-grid {
+        gap: 1.5rem;
+    }
+    
+    .ssos-card {
+        padding: 1.5rem;
+    }
+    
+    .section-divider {
+        padding: 3rem 0;
+    }
+    
+    .cinema-hero {
+        border-radius: 0.75rem;
+    }
+}
+
+/* Performance Optimizations */
+@media (prefers-reduced-motion: reduce) {
+    .cinema-hero img,
+    .ssos-card,
+    .motion-glow-hover,
+    .animate-on-scroll {
+        transition: none;
+        animation: none;
+    }
+}
