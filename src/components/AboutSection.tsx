@@ -1,5 +1,3 @@
-import SacredGeometry from "@/components/SacredGeometry";
-import SignalRing from "@/components/SignalRing";
 import contentTreadmillImage from "@/assets/cinema/content-treadmill-new.jpg";
 import algorithmWhiplashImage from "@/assets/cinema/algorithm-whiplash-new.jpg";
 import leakyFunnelImage from "@/assets/cinema/leaky-funnel-new.jpg";
@@ -9,7 +7,7 @@ import compellingOfferImage from "@/assets/cinema/compelling-offer.jpg";
 import sustainableContentImage from "@/assets/cinema/sustainable-content.jpg";
 import authenticSalesImage from "@/assets/cinema/authentic-sales.jpg";
 
-import { SacredMandala, EightPointStar, LinearAccent, GoldenRatioGrid } from "@/components/AccentElements";
+import { LinearAccent } from "@/components/AccentElements";
 
 const AboutSection = () => {
   const problems = [
@@ -60,15 +58,6 @@ const AboutSection = () => {
 
   return (
     <section id="about" className="section-divider relative overflow-hidden">
-      {/* Background Accent Elements */}
-      <div className="absolute top-1/2 right-1/4 opacity-4">
-        <GoldenRatioGrid size={80} />
-      </div>
-      
-      {/* Background Elements */}
-      <div className="absolute top-40 right-10 opacity-10">
-        <SacredGeometry size={150} animated />
-      </div>
 
       <div className="container mx-auto px-6">
         {/* Problem Section */}
