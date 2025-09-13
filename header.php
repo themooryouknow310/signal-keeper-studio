@@ -24,6 +24,10 @@
     
     <!-- SEO and Performance -->
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="description" content="<?php echo esc_attr( get_bloginfo( 'description' ) ); ?>">
+    <meta property="og:title" content="<?php echo esc_attr( wp_get_document_title() ); ?>">
+    <meta property="og:description" content="<?php echo esc_attr( get_bloginfo( 'description' ) ); ?>">
+    <meta property="og:type" content="website">
     
     <?php wp_head(); ?>
 </head>

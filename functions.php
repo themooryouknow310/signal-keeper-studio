@@ -70,7 +70,13 @@ function sacred_signal_os_scripts() {
     $theme_uri = get_template_directory_uri();
 
     // Google Fonts with proper display swap
-    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap', array(), null);
+    // Include heavier 900 weight for Playfair Display to match Lovable design
+    wp_enqueue_style(
+        'google-fonts',
+        'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;900&display=swap',
+        array(),
+        null
+    );
 
     // Base style.css (versioned with filemtime for cache busting)
     $style_path = $theme_dir . '/style.css';
