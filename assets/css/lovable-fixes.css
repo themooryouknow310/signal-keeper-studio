@@ -292,3 +292,141 @@ p:contains("IT DOESN'T HAVE TO BE THIS WAY") {
     border-bottom: 1px solid rgba(0, 255, 255, 0.1) !important;
 }
 
+
+/* ===== TESTIMONIALS SECTION FIXES ===== */
+.ssos-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 2rem !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+/* Force horizontal layout for testimonials */
+.ssos-grid.grid-cols-1.md\:grid-cols-3 {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 2rem !important;
+}
+
+/* Testimonial cards styling */
+.ssos-grid .ssos-card {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(0, 255, 255, 0.2) !important;
+    border-radius: 15px !important;
+    padding: 2rem !important;
+    text-align: center !important;
+    transition: transform 0.3s ease !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+}
+
+.ssos-grid .ssos-card:hover {
+    transform: translateY(-5px) !important;
+    border-color: #00FFFF !important;
+}
+
+/* Testimonial images */
+.testimonial-image-container {
+    margin-bottom: 1.5rem !important;
+}
+
+.testimonial-frame {
+    width: 80px !important;
+    height: 80px !important;
+    margin: 0 auto !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    border: 2px solid #FFD700 !important;
+}
+
+.testimonial-image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+}
+
+/* Testimonial text styling */
+.ssos-grid .ssos-card blockquote {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 1rem !important;
+    color: #cccccc !important;
+    font-style: italic !important;
+}
+
+.ssos-grid .ssos-card cite {
+    color: #FFD700 !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+}
+
+/* Sacred geometry icon in testimonials */
+.sacred-geometry-icon {
+    margin: 1rem auto !important;
+}
+
+.sacred-geometry-icon svg {
+    width: 2rem !important;
+    height: 2rem !important;
+    color: #FFD700 !important;
+}
+
+/* Responsive design for testimonials */
+@media (max-width: 1024px) {
+    .ssos-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.5rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .ssos-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+    
+    .ssos-grid .ssos-card {
+        padding: 1.5rem !important;
+    }
+    
+    .testimonial-frame {
+        width: 60px !important;
+        height: 60px !important;
+    }
+}
+
+/* Override any conflicting Tailwind classes */
+.grid-cols-1 {
+    grid-template-columns: repeat(3, 1fr) !important;
+}
+
+.md\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr) !important;
+}
+
+/* Ensure testimonials section has proper spacing */
+.testimonials-section {
+    margin-bottom: 8rem !important;
+}
+
+/* Fix testimonials heading */
+.testimonials-section h2 {
+    color: #00FFFF !important;
+    font-size: 3rem !important;
+    font-weight: 300 !important;
+    letter-spacing: 2px !important;
+    margin-bottom: 4rem !important;
+    text-align: center !important;
+}
+
+@media (max-width: 768px) {
+    .testimonials-section h2 {
+        font-size: 2rem !important;
+        margin-bottom: 2rem !important;
+    }
+}
+
