@@ -135,12 +135,21 @@ function sacred_signal_os_scripts() {
         file_exists($overrides_path) ? filemtime($overrides_path) : $theme->get('Version')
     );
 
+    // WordPress fixes CSS (corrects document errors)
+    $wp_fixes_path = $theme_dir . '/assets/css/wordpress-fixes.css';
+    wp_enqueue_style(
+        'sacred-signal-os-wordpress-fixes',
+        $theme_uri . '/assets/css/wordpress-fixes.css',
+        array('sacred-signal-os-overrides'),
+        file_exists($wp_fixes_path) ? filemtime($wp_fixes_path) : $theme->get('Version')
+    );
+
     // Performance fixes CSS
     $perf_path = $theme_dir . '/assets/css/performance-fixes.css';
     wp_enqueue_style(
         'sacred-signal-os-performance',
         $theme_uri . '/assets/css/performance-fixes.css',
-        array('sacred-signal-os-overrides'),
+        array('sacred-signal-os-wordpress-fixes'),
         file_exists($perf_path) ? filemtime($perf_path) : $theme->get('Version')
     );
 
@@ -154,12 +163,22 @@ function sacred_signal_os_scripts() {
         true
     );
 
+    // Scroll animations JS (enhanced video handling and performance)
+    $scroll_animations_path = $theme_dir . '/assets/js/scroll-animations.js';
+    wp_enqueue_script(
+        'sacred-signal-os-scroll-animations',
+        $theme_uri . '/assets/js/scroll-animations.js',
+        array('sacred-signal-os-main'),
+        file_exists($scroll_animations_path) ? filemtime($scroll_animations_path) : $theme->get('Version'),
+        true
+    );
+
     // Cinematic effects JS
     $cinema_js_path = $theme_dir . '/assets/js/cinematic-effects.js';
     wp_enqueue_script(
         'sacred-signal-os-cinematic',
         $theme_uri . '/assets/js/cinematic-effects.js',
-        array('sacred-signal-os-main'),
+        array('sacred-signal-os-scroll-animations'),
         file_exists($cinema_js_path) ? filemtime($cinema_js_path) : $theme->get('Version'),
         true
     );

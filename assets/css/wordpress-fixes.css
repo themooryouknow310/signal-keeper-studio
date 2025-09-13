@@ -1,0 +1,251 @@
+/* WordPress Theme CSS Variable and Style Fixes */
+
+/* Fix CSS Variable References - Correcting Document Errors */
+:root {
+  /* Ensure all color variables are properly defined */
+  --teal-accent: 180 100% 50%;  /* Same as --signal */
+  --golden-yellow: 43 85% 65%;  /* Same as --brass */
+  --light-text: 0 0% 98%;       /* Same as --foreground */
+  --dark-background: 240 10% 3.9%; /* Same as --background */
+}
+
+/* Navigation Menu Fixes */
+.main-navigation a {
+  color: hsl(var(--light-text));
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.main-navigation a:hover {
+  color: hsl(var(--signal));
+}
+
+/* Apply Now Button */
+.main-navigation .apply-now-button a,
+.apply-now-button {
+  background-color: hsl(var(--golden-yellow));
+  color: hsl(var(--dark-background));
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.main-navigation .apply-now-button a:hover,
+.apply-now-button:hover {
+  background-color: hsl(var(--golden-yellow) / 0.9);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px hsl(var(--golden-yellow) / 0.3);
+}
+
+/* Hero Section Background */
+.hero-section {
+  background-color: hsl(var(--dark-background));
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    hsl(var(--dark-background) / 0.8) 0%,
+    hsl(var(--dark-background) / 0.6) 50%,
+    hsl(var(--teal-accent) / 0.1) 100%
+  );
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Problem Cards Styling */
+.problem-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.problem-card {
+  background: linear-gradient(135deg, hsl(var(--card)) 0%, hsl(var(--secondary)) 100%);
+  border: 1px solid hsl(var(--border));
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.problem-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    hsl(var(--signal) / 0.05) 0%,
+    transparent 50%,
+    hsl(var(--brass) / 0.02) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.problem-card:hover::before {
+  opacity: 1;
+}
+
+.problem-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 
+    0 20px 40px -12px hsl(var(--background) / 0.6),
+    0 0 0 1px hsl(var(--signal) / 0.2);
+}
+
+.problem-card img {
+  width: 100%;
+  max-width: 250px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  /* Apply teal color treatment */
+  filter: sepia(1) hue-rotate(140deg) saturate(2.5) brightness(0.9);
+  transition: all 0.3s ease;
+}
+
+.problem-card:hover img {
+  filter: sepia(1) hue-rotate(140deg) saturate(3) brightness(1);
+  transform: scale(1.05);
+}
+
+.problem-card h3 {
+  font-family: var(--font-heading);
+  color: hsl(var(--foreground));
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.problem-card p {
+  color: hsl(var(--foreground) / 0.75);
+  line-height: 1.6;
+}
+
+/* Video Container Styling */
+.video-container {
+  position: relative;
+  max-width: 800px;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px hsl(var(--background) / 0.8);
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-container .video-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    hsl(var(--background) / 0.1) 0%,
+    transparent 50%,
+    hsl(var(--signal) / 0.05) 100%
+  );
+  pointer-events: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .problem-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .problem-card {
+    padding: 1.5rem;
+  }
+  
+  .main-navigation a {
+    margin: 0 10px;
+    font-size: 14px;
+  }
+  
+  .hero-content {
+    padding: 0 15px;
+  }
+}
+
+/* WordPress Specific Fixes */
+.wp-block-group {
+  margin: 0;
+}
+
+.entry-content {
+  margin: 0;
+}
+
+.site-main {
+  padding: 0;
+}
+
+/* Ensure proper font loading */
+body {
+  font-family: var(--font-body), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), Georgia, serif;
+}
+
+/* Performance optimizations */
+.cinema-hero img,
+.problem-card img,
+video {
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
