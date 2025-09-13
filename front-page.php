@@ -189,13 +189,11 @@ get_header(); ?>
             <div class="ssos-grid md:grid-cols-2 max-w-6xl mx-auto">
                 <div class="ssos-card">
                     <div class="text-center">
-                        <div class="w-full h-40 md:h-48 mb-4 rounded-lg overflow-hidden border border-brass/30">
-                            <img 
-                                src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/content-treadmill-new.jpg" 
-                                alt="The endless content treadmill"
-                                class="w-full h-full object-cover"
-                            />
-                        </div>
+                        <img 
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/content-treadmill-new.jpg" 
+                            alt="The endless content treadmill"
+                            class="w-full max-w-[200px] h-auto rounded-lg mx-auto mb-5 border border-brass/30"
+                        />
                         <h3 class="ssos-card-title mb-3">
                             The endless content treadmill
                         </h3>
@@ -207,13 +205,11 @@ get_header(); ?>
 
                 <div class="ssos-card">
                     <div class="text-center">
-                        <div class="w-full h-40 md:h-48 mb-4 rounded-lg overflow-hidden border border-brass/30">
-                            <img 
-                                src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/algorithm-whiplash-new.jpg" 
-                                alt="The anxiety of algorithm whiplash"
-                                class="w-full h-full object-cover"
-                            />
-                        </div>
+                        <img 
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/algorithm-whiplash-new.jpg" 
+                            alt="The anxiety of algorithm whiplash"
+                            class="w-full max-w-[200px] h-auto rounded-lg mx-auto mb-5 border border-brass/30"
+                        />
                         <h3 class="ssos-card-title mb-3">
                             The anxiety of algorithm whiplash
                         </h3>
@@ -225,13 +221,11 @@ get_header(); ?>
 
                 <div class="ssos-card">
                     <div class="text-center">
-                        <div class="w-full h-40 md:h-48 mb-4 rounded-lg overflow-hidden border border-brass/30">
-                            <img 
-                                src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/leaky-funnel-new.jpg" 
-                                alt="The frustration of a leaky funnel"
-                                class="w-full h-full object-cover"
-                            />
-                        </div>
+                        <img 
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/leaky-funnel-new.jpg" 
+                            alt="The frustration of a leaky funnel"
+                            class="w-full max-w-[200px] h-auto rounded-lg mx-auto mb-5 border border-brass/30"
+                        />
                         <h3 class="ssos-card-title mb-3">
                             The frustration of a leaky funnel
                         </h3>
@@ -243,13 +237,11 @@ get_header(); ?>
 
                 <div class="ssos-card">
                     <div class="text-center">
-                        <div class="w-full h-40 md:h-48 mb-4 rounded-lg overflow-hidden border border-brass/30">
-                            <img 
-                                src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/exhaustion-burnout-new.jpg" 
-                                alt="The exhaustion of over-delivering"
-                                class="w-full h-full object-cover"
-                            />
-                        </div>
+                        <img 
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/exhaustion-burnout-new.jpg" 
+                            alt="The exhaustion of over-delivering"
+                            class="w-full max-w-[200px] h-auto rounded-lg mx-auto mb-5 border border-brass/30"
+                        />
                         <h3 class="ssos-card-title mb-3">
                             The exhaustion of over-delivering
                         </h3>
