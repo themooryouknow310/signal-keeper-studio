@@ -15,22 +15,22 @@ const AboutSection = () => {
   const problems = [
     {
       image: contentTreadmillImage,
-      title: "The endless content treadmill",
+      title: "THE ENDLESS CONTENT TREADMILL",
       description: "Creating post after post, hoping something will finally stick."
     },
     {
       image: algorithmWhiplashImage, 
-      title: "The anxiety of algorithm whiplash",
+      title: "THE ANXIETY OF ALGORITHM WHIPLASH",
       description: "Watching your reach and leads disappear overnight."
     },
     {
       image: leakyFunnelImage,
-      title: "The frustration of a leaky funnel", 
+      title: "THE FRUSTRATION OF A LEAKY FUNNEL", 
       description: "Attracting followers who \"love your vibe\" but never buy."
     },
     {
       image: exhaustionBurnoutImage,
-      title: "The exhaustion of over-delivering",
+      title: "THE EXHAUSTION OF OVER-DELIVERING",
       description: "Feeling resentful and burnt out, wondering if you'll ever make a real living."
     }
   ];
