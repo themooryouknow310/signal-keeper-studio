@@ -135,6 +135,7 @@
     display: grid;
     gap: 2rem;
     margin: 0 auto;
+    grid-template-columns: 1fr;
 }
 
 .ssos-grid.grid-cols-1 {
@@ -146,9 +147,8 @@
 }
 
 @media (min-width: 768px) {
-    .ssos-grid.md\\:grid-cols-2 {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    .ssos-grid { grid-template-columns: repeat(2, 1fr); }
+    .ssos-grid.md\\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
 }
 
 .ssos-card {
