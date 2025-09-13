@@ -301,11 +301,13 @@
 .dilemma-card img,
 .dilemma-grid img,
 [class*="dilemma"] img {
-    width: 300px !important;
-    height: 200px !important;
+    width: 100% !important;
+    max-width: 200px !important;
+    height: 150px !important;
     object-fit: cover !important;
     border-radius: var(--radius);
     margin-bottom: 20px !important;
+    border: 1px solid hsl(var(--brass) / 0.3) !important;
 }
 
 /* Ensure cards have proper proportions and alignment */
