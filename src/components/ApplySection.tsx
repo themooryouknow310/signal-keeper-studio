@@ -39,13 +39,16 @@ const ApplySection = () => {
       <div className="absolute top-20 left-20 opacity-10">
         <SignalRing size={150} />
       </div>
+      <div className="absolute bottom-20 right-20 opacity-5">
+        <SacredGeometry size={100} />
+      </div>
 
       <div className="container mx-auto px-6">
 
 
         {/* Testimonials Section */}
-        <div className="max-w-6xl mx-auto mb-32">
-          <h3 className="heading-ritual text-4xl md:text-5xl mb-20 text-center glow-text">
+        <div className="max-w-5xl mx-auto mb-32">
+          <h3 className="heading-ritual text-3xl md:text-4xl mb-16 text-center glow-text">
             WHAT PEOPLE ARE SAYING
           </h3>
           
@@ -110,8 +113,8 @@ const ApplySection = () => {
         </div>
 
         {/* FAQ Section */}
-        <div className="max-w-6xl mx-auto mb-32">
-          <h3 className="heading-ritual text-4xl md:text-5xl mb-20 text-center glow-text">
+        <div className="max-w-5xl mx-auto">
+          <h3 className="heading-ritual text-3xl md:text-4xl mb-16 text-center glow-text">
             FREQUENTLY ASKED QUESTIONS
           </h3>
           
@@ -224,11 +227,12 @@ const ApplySection = () => {
             <SignalLineDivider className="mb-6" />
           </div>
           
-          <button 
-            className="bg-[hsl(43_85%_65%)] text-background hover:bg-[hsl(43_90%_70%)] font-display font-bold tracking-wide px-16 py-6 rounded-lg transition-all duration-300 hover:scale-105 border-2 border-[hsl(43_90%_75%)] text-xl shadow-2xl glow-button"
+          <Button 
+            size="lg"
+            className="signal-glow bg-signal text-background hover:bg-signal/90 font-body font-semibold px-16 py-6 text-xl transition-all duration-300"
           >
             Begin Your Transformation
-          </button>
+          </Button>
         </div>
       </div>
     </section>

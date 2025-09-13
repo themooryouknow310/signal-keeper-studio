@@ -8,47 +8,39 @@ const OfferStackSection = () => {
   };
 
   return (
-    <section id="offer-stack" className="section-divider surface-dark relative overflow-hidden" style={{
-      backgroundImage: `linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('/src/assets/cinema/background-sacred-light.jpg')`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundAttachment: 'fixed'
-    }}>
+    <section id="offer-stack" className="section-divider surface-dark relative overflow-hidden">
       <div className="container mx-auto px-6">
-        <div className="max-w-5xl mx-auto">
-          {/* Header */}
-          <div className="text-center mb-20 fade-up">
-            <div className="flex items-center justify-center mb-8">
-              <BrassRule width={300} />
-            </div>
-            <h2 className="heading-ritual text-4xl md:text-5xl lg:text-6xl mb-8 glow-text">
-              EVERYTHING YOU GET INSIDE SACRED SIGNAL OS
-            </h2>
-            <p className="body-premium text-xl md:text-2xl text-foreground/90 max-w-4xl mx-auto leading-relaxed">
-              We don't shout; we stack real support. Here's exactly what's included and why it matters.
-            </p>
+        <div className="max-w-4xl mx-auto">{/* Header */}
+        <div className="text-center mb-12 fade-up">
+          <div className="flex items-center justify-center mb-6">
+            <BrassRule width={300} />
           </div>
+          <h2 className="heading-ritual text-4xl md:text-6xl mb-8 glow-text">
+            EVERYTHING YOU GET INSIDE SACRED SIGNAL OS
+          </h2>
+          <p className="body-premium text-xl md:text-2xl text-[hsl(var(--ssos-alabaster))] max-w-4xl mx-auto leading-relaxed">
+            We don't shout; we stack real support. Here's exactly what's included and why it matters.
+          </p>
+        </div>
 
-          {/* Core System */}
-          <div className="mb-16 fade-up relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-signal/5 via-transparent to-signal/5 rounded-2xl blur-3xl"></div>
-            <div className="relative z-10">
-            <h3 className="heading-ritual text-2xl md:text-3xl mb-8 text-center glow-text text-signal">
-              Core System
-            </h3>
+        {/* Core System */}
+        <div className="mb-10 fade-up">
+          <h3 className="heading-ritual text-xl md:text-2xl mb-6 text-center glow-text text-signal">
+            Core System
+          </h3>
           
           <div className="space-y-4">
             <div className="ssos-card p-4 border-signal/30">
               <div className="flex items-start gap-4">
-                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-8 h-8 mt-1" loading="lazy" decoding="async" />
+                <img src={sacredGeometryIcon} alt="Sacred Geometry" className="w-8 h-8 mt-1" />
                 <div className="flex-1">
-                  <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-3">
-                    <h4 className="heading-ritual text-lg md:text-xl text-brass glow-golden mb-2 md:mb-0 font-semibold">
+                  <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+                    <h4 className="heading-ritual text-lg text-brass glow-golden mb-1 md:mb-0">
                       Sacred Signal OS: 12-Week System (Core Training)
                     </h4>
-                    <div className="text-signal font-display font-bold text-lg">Value: $6,000</div>
+                    <div className="text-signal font-display font-bold text-base">Value: $6,000</div>
                   </div>
-                  <p className="body-premium text-base text-foreground/85 leading-relaxed">
+                  <p className="body-premium text-sm text-[hsl(var(--ssos-alabaster))] leading-relaxed">
                     End-to-end operating system to tune your message, architect your offer, and install a steady, repeatable pipeline.
                   </p>
                 </div>
@@ -87,18 +79,15 @@ const OfferStackSection = () => {
                   </p>
                 </div>
               </div>
+            </div>
           </div>
         </div>
-        </div>
-        </div>
 
-          {/* Tools for Speed & Certainty */}
-          <div className="mb-16 fade-up relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-brass/5 via-transparent to-brass/5 rounded-2xl blur-3xl"></div>
-            <div className="relative z-10">
-            <h3 className="heading-ritual text-2xl md:text-3xl mb-8 text-center glow-text text-signal">
-              Tools for Speed & Certainty
-            </h3>
+        {/* Tools for Speed & Certainty */}
+        <div className="mb-10 fade-up">
+          <h3 className="heading-ritual text-xl md:text-2xl mb-6 text-center glow-text text-signal">
+            Tools for Speed & Certainty
+          </h3>
           
           <div className="space-y-4">
             <div className="ssos-card p-4 border-signal/30">
@@ -150,18 +139,15 @@ const OfferStackSection = () => {
                   </p>
                 </div>
               </div>
+            </div>
           </div>
         </div>
-        </div>
-        </div>
 
-          {/* Tangible By-Products */}
-          <div className="mb-16 fade-up relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-foreground/5 via-transparent to-foreground/5 rounded-2xl blur-3xl"></div>
-            <div className="relative z-10">
-            <h3 className="heading-ritual text-2xl md:text-3xl mb-8 text-center glow-text text-signal">
-              Tangible By-Products (done-with-you assets)
-            </h3>
+        {/* Tangible By-Products */}
+        <div className="mb-10 fade-up">
+          <h3 className="heading-ritual text-xl md:text-2xl mb-6 text-center glow-text text-signal">
+            Tangible By-Products (done-with-you assets)
+          </h3>
           
           <div className="space-y-4">
             <div className="ssos-card p-4 border-signal/30">
@@ -233,13 +219,12 @@ const OfferStackSection = () => {
             </div>
           </div>
         </div>
-        </div>
 
-          {/* Limited-Time Bonuses */}
-          <div className="mb-16 fade-up">
-            <h3 className="heading-ritual text-2xl md:text-3xl mb-8 text-center glow-text text-signal">
-              Limited-Time Bonuses (included when you enroll now)
-            </h3>
+        {/* Limited-Time Bonuses */}
+        <div className="mb-10 fade-up">
+          <h3 className="heading-ritual text-xl md:text-2xl mb-6 text-center glow-text text-signal">
+            Limited-Time Bonuses (included when you enroll now)
+          </h3>
           
           <div className="space-y-4">
             <div className="ssos-card p-4 border-brass/40 bg-gradient-to-br from-brass/5 via-background/80 to-brass/10">
@@ -356,7 +341,7 @@ const OfferStackSection = () => {
             </div>
             
             <div className="mb-6">
-              <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
                 <div className="ssos-card p-6 text-center border-signal/30 bg-gradient-to-br from-signal/10 via-background/80 to-signal/5">
                   <div className="mb-4">
                     <div className="text-2xl font-bold text-signal mb-2">$1,497</div>
@@ -390,7 +375,7 @@ const OfferStackSection = () => {
             </div>
 
             <button 
-              className="bg-[hsl(43_85%_65%)] text-background hover:bg-[hsl(43_90%_70%)] font-display font-bold tracking-wide px-16 py-5 rounded-lg transition-all duration-300 hover:scale-105 border-2 border-[hsl(43_90%_75%)] text-xl shadow-2xl glow-button"
+              className="bg-signal text-background hover:bg-signal/90 font-body font-semibold px-12 py-4 text-lg rounded-xl button-lift"
               onClick={scrollToApply}
             >
               Apply Now for Sacred Signal OS

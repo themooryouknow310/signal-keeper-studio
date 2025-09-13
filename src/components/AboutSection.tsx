@@ -1,3 +1,5 @@
+import SacredGeometry from "@/components/SacredGeometry";
+import SignalRing from "@/components/SignalRing";
 import contentTreadmillImage from "@/assets/cinema/content-treadmill-new.jpg";
 import algorithmWhiplashImage from "@/assets/cinema/algorithm-whiplash-new.jpg";
 import leakyFunnelImage from "@/assets/cinema/leaky-funnel-new.jpg";
@@ -7,28 +9,28 @@ import compellingOfferImage from "@/assets/cinema/compelling-offer.jpg";
 import sustainableContentImage from "@/assets/cinema/sustainable-content.jpg";
 import authenticSalesImage from "@/assets/cinema/authentic-sales.jpg";
 
-import { LinearAccent } from "@/components/AccentElements";
+import { SacredMandala, EightPointStar, LinearAccent, GoldenRatioGrid } from "@/components/AccentElements";
 
 const AboutSection = () => {
   const problems = [
     {
       image: contentTreadmillImage,
-      title: "THE ENDLESS CONTENT TREADMILL",
+      title: "The endless content treadmill",
       description: "Creating post after post, hoping something will finally stick."
     },
     {
       image: algorithmWhiplashImage, 
-      title: "THE ANXIETY OF ALGORITHM WHIPLASH",
+      title: "The anxiety of algorithm whiplash",
       description: "Watching your reach and leads disappear overnight."
     },
     {
       image: leakyFunnelImage,
-      title: "THE FRUSTRATION OF A LEAKY FUNNEL", 
+      title: "The frustration of a leaky funnel", 
       description: "Attracting followers who \"love your vibe\" but never buy."
     },
     {
       image: exhaustionBurnoutImage,
-      title: "THE EXHAUSTION OF OVER-DELIVERING",
+      title: "The exhaustion of over-delivering",
       description: "Feeling resentful and burnt out, wondering if you'll ever make a real living."
     }
   ];
@@ -58,6 +60,15 @@ const AboutSection = () => {
 
   return (
     <section id="about" className="section-divider relative overflow-hidden">
+      {/* Background Accent Elements */}
+      <div className="absolute top-1/2 right-1/4 opacity-4">
+        <GoldenRatioGrid size={80} />
+      </div>
+      
+      {/* Background Elements */}
+      <div className="absolute top-40 right-10 opacity-10">
+        <SacredGeometry size={150} animated />
+      </div>
 
       <div className="container mx-auto px-6">
         {/* Problem Section */}
@@ -74,18 +85,18 @@ const AboutSection = () => {
             </p>
           </div>
 
-          <div className="ssos-grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto dilemma-grid">
+          <div className="ssos-grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto">
             {problems.map((problem, index) => (
               <div 
                 key={index}
-                className="ssos-card dilemma-card"
+                className="ssos-card"
               >
                 <div className="text-center">
-                  <div className="w-48 h-32 mx-auto mb-6 rounded-lg overflow-hidden border border-brass/30">
+                  <div className="w-64 h-40 mx-auto mb-6 rounded-lg overflow-hidden border border-brass/30">
                     <img 
                       src={problem.image} 
                       alt={problem.title}
-                      className="w-full h-full object-cover cinema-image-teal"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                   <h3 className="ssos-card-title text-xl mb-4">
@@ -100,15 +111,20 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* IT DOESN'T HAVE TO BE THIS WAY Section */}
-        <div className="text-center mb-20">
-          <h2 className="it-doesnt-have-to-be-this-way inline-block whitespace-nowrap text-center w-full
-                         border-2 border-[#00FFFF] rounded-[15px] px-12 py-8 mx-auto my-12
-                         bg-[rgba(0,255,255,0.1)] text-[#00FFFF] text-5xl font-bold tracking-[2px]
-                         md:text-5xl md:px-12 md:py-8
-                         max-md:text-3xl max-md:px-8 max-md:py-6 max-md:whitespace-normal max-md:leading-tight">
-            IT DOESN&apos;T HAVE TO BE THIS WAY
-          </h2>
+        {/* Sacred Divider */}
+        <div className="text-center mb-20 relative">
+          <div className="flex items-center justify-center space-x-8">
+            <div className="w-24 h-px bg-gradient-to-r from-transparent via-brass to-brass" />
+            <div className="relative">
+              <p className="heading-ritual text-2xl md:text-3xl text-signal px-6 glow-text">
+                IT DOESN'T HAVE TO BE THIS WAY
+              </p>
+              <div className="absolute -top-2 -bottom-2 -left-2 -right-2 border border-signal/20 rounded-lg"></div>
+            </div>
+            <div className="w-24 h-px bg-gradient-to-l from-transparent via-brass/70 to-brass shadow-[0_0_20px_hsl(var(--brass)/0.4)] relative">
+              <div className="absolute inset-0 bg-gradient-to-l from-transparent via-white/20 to-white/10 blur-sm"></div>
+            </div>
+          </div>
         </div>
 
         {/* Vision Section */}

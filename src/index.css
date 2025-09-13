@@ -176,11 +176,6 @@
       0 0 120px hsl(var(--signal-glow) / 0.2);
   }
 
-  /* Radial gradient utility */
-  .bg-gradient-radial {
-    background: radial-gradient(circle, var(--tw-gradient-stops));
-  }
-
   /* Golden Glow Effect for Module Titles */
   .glow-golden {
     text-shadow: 
@@ -249,6 +244,17 @@
     );
   }
 
+  .section-divider::after {
+    content: '◊';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: hsl(var(--sacred-gold));
+    font-size: 1rem;
+    background: hsl(var(--background));
+    padding: 0 12px;
+  }
 
   /* Premium Cards */
   .premium-card {
@@ -429,66 +435,7 @@
   }
 }
 
-/* Hero-specific animations */
-@keyframes breathe {
-  0%, 100% {
-    opacity: 0.8;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.02);
-  }
-}
-
-@keyframes intensePulse {
-  0%, 100% {
-    text-shadow: 
-      0 0 20px hsl(var(--signal-glow) / 0.6),
-      0 0 40px hsl(var(--signal-glow) / 0.4);
-  }
-  50% {
-    text-shadow: 
-      0 0 30px hsl(var(--signal-glow) / 0.9),
-      0 0 60px hsl(var(--signal-glow) / 0.6),
-      0 0 100px hsl(var(--signal-glow) / 0.3);
-  }
-}
-
-@keyframes glowShift {
-  0%, 100% {
-    filter: hue-rotate(0deg);
-  }
-  50% {
-    filter: hue-rotate(30deg);
-  }
-}
-
-@keyframes metatronRotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-  /* Performance optimizations for hero elements */
-  .hero-shout,
-  .hero-void {
-    will-change: transform, opacity, text-shadow;
-    backface-visibility: hidden;
-    transform: translateZ(0);
-  }
-
-  /* Hero animation classes */
-  .hero-shout {
-    animation: breathe 4s ease-in-out infinite;
-  }
-
-  .hero-void {
-    animation: intensePulse 3s ease-in-out infinite;
-  }
+/* Reduced Motion - Full accessibility */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -622,16 +569,11 @@
 
   .ssos-card-title {
     font-family: var(--font-display);
-    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
     font-weight: 600;
     color: hsl(var(--ssos-alabaster));
-    margin-bottom: 16px;
-    line-height: 1.3;
-    transition: color 0.3s ease;
-  }
-
-  .ssos-card:hover .ssos-card-title {
-    color: hsl(var(--signal));
+    margin-bottom: 12px;
   }
 
   /* Pricing Cards */
