@@ -102,9 +102,11 @@ const AboutSection = () => {
 
         {/* IT DOESN'T HAVE TO BE THIS WAY Section */}
         <div className="text-center mb-20">
-          <h2 className="heading-ritual text-signal font-bold tracking-[2px] text-3xl md:text-4xl lg:text-5xl 
-                         border-2 border-signal rounded-2xl px-8 md:px-12 py-8 mx-auto mb-12 max-w-fit
-                         bg-signal/10 whitespace-nowrap">
+          <h2 className="it-doesnt-have-to-be-this-way inline-block whitespace-nowrap text-center w-full
+                         border-2 border-[#00FFFF] rounded-[15px] px-12 py-8 mx-auto my-12
+                         bg-[rgba(0,255,255,0.1)] text-[#00FFFF] text-5xl font-bold tracking-[2px]
+                         md:text-5xl md:px-12 md:py-8
+                         max-md:text-3xl max-md:px-8 max-md:py-6 max-md:whitespace-normal max-md:leading-tight">
             IT DOESN&apos;T HAVE TO BE THIS WAY
           </h2>
         </div>
