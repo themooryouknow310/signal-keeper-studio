@@ -186,8 +186,8 @@ get_header(); ?>
                 </p>
             </div>
 
-            <div class="ssos-grid md:grid-cols-2 max-w-6xl mx-auto">
-                <div class="ssos-card">
+            <div class="ssos-grid dilemma-grid md:grid-cols-2 max-w-6xl mx-auto">
+                <div class="ssos-card dilemma-card">
                     <div class="text-center">
                         <img 
                             src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/content-treadmill-new.jpg" 
@@ -203,7 +203,7 @@ get_header(); ?>
                     </div>
                 </div>
 
-                <div class="ssos-card">
+                <div class="ssos-card dilemma-card">
                     <div class="text-center">
                         <img 
                             src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/algorithm-whiplash-new.jpg" 
@@ -219,7 +219,7 @@ get_header(); ?>
                     </div>
                 </div>
 
-                <div class="ssos-card">
+                <div class="ssos-card dilemma-card">
                     <div class="text-center">
                         <img 
                             src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/leaky-funnel-new.jpg" 
@@ -235,7 +235,7 @@ get_header(); ?>
                     </div>
                 </div>
 
-                <div class="ssos-card">
+                <div class="ssos-card dilemma-card">
                     <div class="text-center">
                         <img 
                             src="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/exhaustion-burnout-new.jpg" 
