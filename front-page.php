@@ -8,7 +8,7 @@
 get_header(); ?>
 
 <!-- Hero Section -->
-<section class="min-h-screen flex items-center justify-center relative overflow-hidden py-20">
+<section class="min-h-screen flex items-center justify-center relative overflow-hidden py-20 surface-dark cinema-surface-with-grain">
     <!-- Cinematic Background -->
     <div class="absolute inset-0">
         <img 
@@ -16,7 +16,7 @@ get_header(); ?>
             alt="Sacred Signal OS Background" 
             class="w-full h-full object-cover opacity-70"
         />
-        <div class="absolute inset-0 bg-gradient-to-b from-background/95 via-background/30 to-background/50"></div>
+        <div class="cinema-hero-overlay absolute inset-0"></div>
     </div>
     
     <!-- Content -->
@@ -166,7 +166,7 @@ get_header(); ?>
 </section>
 
 <!-- About Section -->
-<section id="about" class="section-divider relative overflow-hidden">
+<section id="about" class="section-divider surface-dark cinema-grain relative overflow-hidden">
     <!-- Background Accent Elements -->
     <div class="absolute top-1/2 right-1/4 opacity-4">
         <div class="w-20 h-20 border border-brass/10 transform rotate-45"></div>
@@ -717,7 +717,7 @@ get_header(); ?>
 </section>
 
 <!-- Offer Stack Section -->
-<section id="offer-stack" class="section-divider surface-dark relative overflow-hidden">
+<section id="offer-stack" class="section-divider surface-dark cinema-grain relative overflow-hidden">
     <div class="container max-w-4xl mx-auto">
         <!-- Brass Rule Divider -->
         <div class="flex items-center justify-center mb-16 fade-up">
@@ -1368,7 +1368,7 @@ get_header(); ?>
         </div>
 
         <!-- Apply Section -->
-        <div class="section-divider surface-dark relative overflow-hidden">
+        <div class="section-divider surface-dark cinema-grain relative overflow-hidden">
             <!-- Background Elements -->
             <div class="absolute top-20 left-20 opacity-20">
                 <svg viewBox="0 0 100 100" class="w-24 h-24 text-signal">
