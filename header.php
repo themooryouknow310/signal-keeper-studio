@@ -10,15 +10,20 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0f0f23">
+    <meta name="color-scheme" content="dark light">
     <link rel="profile" href="https://gmpg.org/xfn/11">
     
-    <!-- Preload critical fonts -->
+    <!-- DNS Prefetch and Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Preload hero image for faster loading -->
+    <!-- Preload critical assets -->
     <link rel="preload" as="image" href="<?php echo get_template_directory_uri(); ?>/assets/images/cinema/hero-sacred-signals.jpg">
+    <link rel="preload" as="image" href="<?php echo get_template_directory_uri(); ?>/assets/images/sacred-geometry-icon.png">
+    
+    <!-- SEO and Performance -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     
     <?php wp_head(); ?>
 </head>

@@ -69,6 +69,9 @@ function sacred_signal_os_scripts() {
     $theme_dir = get_template_directory();
     $theme_uri = get_template_directory_uri();
 
+    // Google Fonts with proper display swap
+    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap', array(), null);
+
     // Base style.css (versioned with filemtime for cache busting)
     $style_path = $theme_dir . '/style.css';
     wp_enqueue_style(
@@ -78,13 +81,22 @@ function sacred_signal_os_scripts() {
         file_exists($style_path) ? filemtime($style_path) : $theme->get('Version')
     );
 
-    // Design system CSS
+    // Design system CSS (foundation)
     $design_path = $theme_dir . '/assets/css/design-system.css';
     wp_enqueue_style(
         'sacred-signal-os-design-system',
         $theme_uri . '/assets/css/design-system.css',
-        array('sacred-signal-os-style'),
+        array('sacred-signal-os-style', 'google-fonts'),
         file_exists($design_path) ? filemtime($design_path) : $theme->get('Version')
+    );
+
+    // Cinema CSS
+    $cinema_path = $theme_dir . '/assets/css/cinema.css';
+    wp_enqueue_style(
+        'sacred-signal-os-cinema-base',
+        $theme_uri . '/assets/css/cinema.css',
+        array('sacred-signal-os-design-system'),
+        file_exists($cinema_path) ? filemtime($cinema_path) : $theme->get('Version')
     );
 
     // Cinematic effects CSS
@@ -92,7 +104,7 @@ function sacred_signal_os_scripts() {
     wp_enqueue_style(
         'sacred-signal-os-cinema',
         $theme_uri . '/assets/css/cinematic-effects.css',
-        array('sacred-signal-os-design-system'),
+        array('sacred-signal-os-cinema-base'),
         file_exists($cinema_css_path) ? filemtime($cinema_css_path) : $theme->get('Version')
     );
 
@@ -112,6 +124,15 @@ function sacred_signal_os_scripts() {
         $theme_uri . '/assets/css/theme-overrides.css',
         array('sacred-signal-os-components'),
         file_exists($overrides_path) ? filemtime($overrides_path) : $theme->get('Version')
+    );
+
+    // Performance fixes CSS
+    $perf_path = $theme_dir . '/assets/css/performance-fixes.css';
+    wp_enqueue_style(
+        'sacred-signal-os-performance',
+        $theme_uri . '/assets/css/performance-fixes.css',
+        array('sacred-signal-os-overrides'),
+        file_exists($perf_path) ? filemtime($perf_path) : $theme->get('Version')
     );
 
     // Main JS
@@ -139,6 +160,18 @@ function sacred_signal_os_scripts() {
         'ajax_url' => admin_url('admin-ajax.php'),
         'nonce'    => wp_create_nonce('sacred_signal_nonce'),
     ));
+    
+    // Add inline CSS for immediate theme color application
+    $custom_css = "
+        :root {
+            --theme-loading: 1;
+        }
+        body.dark {
+            background: hsl(240 10% 3.9%);
+            color: hsl(0 0% 98%);
+        }
+    ";
+    wp_add_inline_style('sacred-signal-os-style', $custom_css);
 }
 add_action('wp_enqueue_scripts', 'sacred_signal_os_scripts');
 

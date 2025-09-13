@@ -1,0 +1,76 @@
+/* Sacred Signal OS Performance Fixes */
+
+/* Critical Performance Optimizations */
+.cinema-hero img,
+.cinema-grain::after,
+.cinema-bloom::before,
+.signal-ring,
+.cinema-brass-medallion {
+  will-change: transform, opacity;
+}
+
+/* Reduce paint operations */
+.cinema-surface,
+.cinema-surface-with-grain {
+  contain: layout style paint;
+}
+
+/* GPU acceleration for animations */
+.hero-shout,
+.hero-void {
+  transform: translateZ(0);
+  will-change: transform, filter;
+}
+
+/* Optimize background attachments */
+.cinema-hero-overlay {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* Preload animation states */
+@media (prefers-reduced-motion: no-preference) {
+  .motion-fade {
+    opacity: 0;
+    transform: translateY(8px);
+    transition: 
+      opacity 220ms cubic-bezier(.22,.61,.36,1),
+      transform 220ms cubic-bezier(.22,.61,.36,1);
+  }
+  
+  .motion-fade.is-in {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Critical font loading */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/playfairdisplay/v30/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDYbtXK-F2qC0s.woff2') format('woff2');
+}
+
+/* Optimize complex selectors */
+.cinema-testimonial-frame,
+.cinema-brass-medallion,
+.signal-ring {
+  isolation: isolate;
+}
+
+/* Memory optimization for large backgrounds */
+@media (max-width: 768px) {
+  .cinema-grain::after {
+    background-size: 2px 2px;
+  }
+}

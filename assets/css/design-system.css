@@ -94,23 +94,37 @@ body {
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.02em;
+  color: hsl(var(--foreground));
 }
 
 /* Hero Text Effects */
 .hero-shout {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 0.02em;
   background: linear-gradient(135deg, hsl(var(--signal)), hsl(var(--signal-glow-soft)));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 30px hsl(var(--signal) / 0.5);
-  animation: gradientShift 4s ease-in-out infinite;
+  animation: gradientShift 4s ease-in-out infinite, breathe 3s ease-in-out infinite;
 }
 
 .hero-void {
-  color: hsl(var(--muted-foreground));
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 6vw, 3.5rem);
   font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: hsl(var(--signal));
+  text-shadow: 
+    0 0 30px hsl(var(--signal) / 80%),
+    0 4px 16px hsl(0 0% 0% / 80%),
+    0 0 60px hsl(var(--signal) / 50%),
+    0 0 100px hsl(var(--signal) / 30%);
+  animation: intensePulse 2s ease-in-out infinite, glowShift 4s ease-in-out infinite;
 }
 
 .hero-title {
@@ -120,16 +134,19 @@ body {
 }
 
 .hero-subtitle {
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 2vw, 1.25rem);
   line-height: 1.6;
   max-width: 42rem;
   margin: 0 auto;
+  color: hsl(var(--foreground-muted));
 }
 
 .body-premium {
   font-family: var(--font-body);
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.7;
+  color: hsl(var(--foreground-muted));
 }
 
 .text-signal {
@@ -321,21 +338,45 @@ body {
 @keyframes gradientShift {
   0%, 100% {
     filter: hue-rotate(0deg) brightness(1);
+    background-position: 0% 50%;
   }
   50% {
     filter: hue-rotate(10deg) brightness(1.1);
+    background-position: 100% 50%;
   }
 }
 
 @keyframes breathe {
   0%, 100% {
     transform: scale(1);
-    opacity: 0.7;
+    opacity: 0.9;
   }
   50% {
-    transform: scale(1.05);
+    transform: scale(1.02);
     opacity: 1;
   }
+}
+
+@keyframes intensePulse {
+  0%, 100% { 
+    text-shadow: 
+      0 0 30px hsl(var(--signal) / 80%),
+      0 4px 16px hsl(0 0% 0% / 80%),
+      0 0 60px hsl(var(--signal) / 50%),
+      0 0 100px hsl(var(--signal) / 30%);
+  }
+  50% { 
+    text-shadow: 
+      0 0 40px hsl(var(--signal) / 100%),
+      0 4px 16px hsl(0 0% 0% / 80%),
+      0 0 80px hsl(var(--signal) / 70%),
+      0 0 120px hsl(var(--signal) / 50%);
+  }
+}
+
+@keyframes glowShift {
+  0%, 100% { filter: hue-rotate(0deg); }
+  50% { filter: hue-rotate(10deg); }
 }
 
 @keyframes signalPulse {
@@ -344,6 +385,22 @@ body {
   }
   50% {
     box-shadow: 0 0 40px hsl(var(--signal) / 0.6);
+  }
+}
+
+@keyframes metatronRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes signalTravel {
+  0%, 100% { 
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  50% { 
+    opacity: 1;
+    transform: scale(1.2);
   }
 }
 
