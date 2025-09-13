@@ -36,17 +36,14 @@ const HeroSection = () => {
         {/* Enhanced Headline with Better Visual Hierarchy */}
         <AnimatedSection delay={200}>
           <h1 className="heading-ritual text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-16 leading-[0.85]">
-            <div className="hero-shout text-foreground mb-2 drop-shadow-2xl" style={{
+            <div className="hero-shout text-foreground drop-shadow-2xl" style={{
               textShadow: `
                 0 0 40px hsl(var(--signal-glow) / 0.4),
                 0 8px 32px hsl(var(--background) / 0.9),
                 0 4px 16px hsl(var(--background) / 0.8)
               `
             }}>
-              TIRED OF SHOUTING
-            </div>
-            <div className="hero-void text-signal glow-text animate-pulse">
-              INTO THE VOID?
+              TIRED OF SHOUTING <span className="text-signal glow-text animate-pulse">INTO THE VOID?</span>
             </div>
           </h1>
         </AnimatedSection>

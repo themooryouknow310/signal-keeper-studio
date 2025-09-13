@@ -28,7 +28,7 @@ const FounderSection = () => {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             {/* Photo */}
             <AnimatedSection delay={200} className="relative">
-              <CinemaTestimonialFrame size={400} className="mx-auto">
+              <CinemaTestimonialFrame size={350} className="mx-auto">
                 <img 
                   src={barackImage} 
                   alt="Barack El - Sacred Signal OS Founder" 

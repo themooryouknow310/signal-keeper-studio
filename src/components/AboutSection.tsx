@@ -85,18 +85,18 @@ const AboutSection = () => {
             </p>
           </div>
 
-          <div className="ssos-grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto">
+          <div className="ssos-grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto dilemma-grid">
             {problems.map((problem, index) => (
               <div 
                 key={index}
-                className="ssos-card"
+                className="ssos-card dilemma-card"
               >
                 <div className="text-center">
-                  <div className="w-64 h-40 mx-auto mb-6 rounded-lg overflow-hidden border border-brass/30">
+                  <div className="w-48 h-32 mx-auto mb-6 rounded-lg overflow-hidden border border-brass/30">
                     <img 
                       src={problem.image} 
                       alt={problem.title}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover cinema-image-teal"
                     />
                   </div>
                   <h3 className="ssos-card-title text-xl mb-4">

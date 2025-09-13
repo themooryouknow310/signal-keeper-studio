@@ -14,10 +14,9 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6 py-4 flex items-center">
-        {/* Logo */}
-        <div className="flex items-center space-x-3">
-          <CyanSLogo size={32} />
-          <span className="font-display text-xl font-semibold tracking-wider text-brass hover:text-signal hover:glow-text transition-all duration-300">
+        {/* Logo - Clean text-based design */}
+        <div className="flex items-center">
+          <span className="font-display text-xl font-semibold tracking-wider text-signal hover:text-brass hover:glow-text transition-all duration-300">
             SACRED SIGNAL OS
           </span>
         </div>
