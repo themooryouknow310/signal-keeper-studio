@@ -1050,23 +1050,6 @@ get_header(); ?>
 
 <!-- Apply Section -->
 <section id="apply" class="apply-section relative py-32 overflow-hidden">
-    <!-- Background decorative elements -->
-    <div class="absolute inset-0">
-        <div class="absolute top-1/4 left-1/4 w-64 h-64 opacity-5">
-            <svg viewBox="0 0 200 200" class="w-full h-full text-brass">
-                <circle cx="100" cy="100" r="50" fill="none" stroke="currentColor" stroke-width="2"/>
-                <circle cx="100" cy="100" r="75" fill="none" stroke="currentColor" stroke-width="1" opacity="0.5"/>
-                <circle cx="100" cy="100" r="25" fill="none" stroke="currentColor" stroke-width="3"/>
-            </svg>
-        </div>
-        <div class="absolute bottom-1/4 right-1/4 w-48 h-48 opacity-5">
-            <svg viewBox="0 0 120 120" class="w-full h-full text-brass transform rotate-45">
-                <polygon points="60,10 90,30 90,60 60,80 30,60 30,30" fill="none" stroke="currentColor" stroke-width="2"/>
-                <polygon points="60,25 75,35 75,55 60,65 45,55 45,35" fill="none" stroke="currentColor" stroke-width="1"/>
-            </svg>
-        </div>
-    </div>
-
     <div class="container relative z-10">
         <!-- Testimonials Section -->
         <div class="mb-32">
