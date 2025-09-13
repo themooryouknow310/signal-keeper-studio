@@ -1257,7 +1257,7 @@ get_header(); ?>
                 </h2>
             </div>
 
-            <div class="ssos-grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div class="ssos-grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <!-- Outstanding Leadership Award -->
                 <div class="ssos-card animate-on-scroll">
                     <div class="flex items-start space-x-4">

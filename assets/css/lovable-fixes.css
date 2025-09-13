@@ -430,3 +430,98 @@ p:contains("IT DOESN'T HAVE TO BE THIS WAY") {
     }
 }
 
+
+
+/* ===== RECOGNITION SECTION FIXES ===== */
+/* Force 3-column horizontal layout for recognition section */
+.ssos-grid.grid-cols-1.md\:grid-cols-3 {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 2rem !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+/* Recognition cards styling */
+.ssos-grid.grid-cols-1.md\:grid-cols-3 .ssos-card {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(0, 255, 255, 0.2) !important;
+    border-radius: 15px !important;
+    padding: 2rem !important;
+    transition: transform 0.3s ease !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+}
+
+.ssos-grid.grid-cols-1.md\:grid-cols-3 .ssos-card:hover {
+    transform: translateY(-5px) !important;
+    border-color: #00FFFF !important;
+}
+
+/* Recognition card content styling */
+.ssos-grid.grid-cols-1.md\:grid-cols-3 .ssos-card h3 {
+    color: #FFD700 !important;
+    font-size: 1.25rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 1rem !important;
+    line-height: 1.4 !important;
+}
+
+.ssos-grid.grid-cols-1.md\:grid-cols-3 .ssos-card p {
+    color: #cccccc !important;
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Recognition section icons */
+.ssos-grid.grid-cols-1.md\:grid-cols-3 .ssos-card svg {
+    width: 2rem !important;
+    height: 2rem !important;
+    color: #FFD700 !important;
+    flex-shrink: 0 !important;
+}
+
+/* Responsive design for recognition section */
+@media (max-width: 1024px) {
+    .ssos-grid.grid-cols-1.md\:grid-cols-3 {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.5rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .ssos-grid.grid-cols-1.md\:grid-cols-3 {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+    
+    .ssos-grid.grid-cols-1.md\:grid-cols-3 .ssos-card {
+        padding: 1.5rem !important;
+    }
+}
+
+/* Override any conflicting grid classes for recognition section */
+.md\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr) !important;
+}
+
+/* Recognition section heading */
+.recognition-section h2 {
+    color: #00FFFF !important;
+    font-size: 3rem !important;
+    font-weight: 300 !important;
+    letter-spacing: 2px !important;
+    margin-bottom: 4rem !important;
+    text-align: center !important;
+}
+
+@media (max-width: 768px) {
+    .recognition-section h2 {
+        font-size: 2rem !important;
+        margin-bottom: 2rem !important;
+    }
+}
+
