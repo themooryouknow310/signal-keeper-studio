@@ -439,13 +439,10 @@ p:contains("IT DOESN'T HAVE TO BE THIS WAY") {
     grid-template-columns: repeat(3, 1fr) !important;
     gap: 2rem !important;
     max-width: 1200px !important;
-    margin: 0 auto !important;
-}
-
-/* Recognition cards styling */
+    margin: 0 auto !import/* Recognition cards styling */
 .ssos-grid.grid-cols-1.md\:grid-cols-3 .ssos-card {
     background: rgba(255, 255, 255, 0.05) !important;
-    border: 1px solid rgba(0, 255, 255, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
     border-radius: 15px !important;
     padding: 2rem !important;
     transition: transform 0.3s ease !important;
@@ -457,7 +454,8 @@ p:contains("IT DOESN'T HAVE TO BE THIS WAY") {
 
 .ssos-grid.grid-cols-1.md\:grid-cols-3 .ssos-card:hover {
     transform: translateY(-5px) !important;
-    border-color: #00FFFF !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}55, 255, 0.2) !important;
 }
 
 /* Recognition card content styling */
@@ -533,9 +531,9 @@ p:contains("IT DOESN'T HAVE TO BE THIS WAY") {
     display: inline-block !important;
     text-align: center !important;
     padding: 1.5rem 3rem !important;
-    border: 2px solid #00FFFF !important;
-    border-radius: 15px !important;
-    background: rgba(0, 255, 255, 0.05) !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background: transparent !important;
     color: #00FFFF !important;
     font-size: 1.75rem !important;
     font-weight: 600 !important;
@@ -586,9 +584,9 @@ p.heading-ritual.text-2xl.md\:text-3xl.text-signal.px-6.glow-text {
     display: inline-block !important;
     text-align: center !important;
     padding: 1.5rem 3rem !important;
-    border: 2px solid #00FFFF !important;
-    border-radius: 15px !important;
-    background: rgba(0, 255, 255, 0.05) !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background: transparent !important;
     color: #00FFFF !important;
     font-size: 1.75rem !important;
     font-weight: 600 !important;
@@ -616,5 +614,56 @@ p.heading-ritual.text-2xl.md\:text-3xl.text-signal.px-6.glow-text {
         padding: 0.75rem 1.5rem !important;
         letter-spacing: 0.5px !important;
     }
+}
+
+
+/* ===== REMOVE ALL CYAN BORDERS GLOBALLY ===== */
+/* Remove cyan borders from all elements */
+* {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Specifically target common cyan border classes */
+.border-signal,
+.border-cyan,
+.border-teal,
+[style*="border-color: #00FFFF"],
+[style*="border-color: cyan"],
+[style*="border-color: teal"] {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Remove cyan borders from cards */
+.ssos-card,
+.card,
+.testimonial-card,
+.dilemma-card,
+.recognition-card {
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.ssos-card:hover,
+.card:hover,
+.testimonial-card:hover,
+.dilemma-card:hover,
+.recognition-card:hover {
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Remove cyan backgrounds */
+[style*="background-color: rgba(0, 255, 255"],
+[style*="background: rgba(0, 255, 255"] {
+    background: transparent !important;
+}
+
+/* Ensure no cyan box shadows */
+* {
+    box-shadow: none !important;
+}
+
+/* Remove any cyan text shadows or glows */
+.glow-text,
+.text-glow {
+    text-shadow: none !important;
 }
 
