@@ -114,14 +114,14 @@ const AboutSection = () => {
         {/* Sacred Divider */}
         <div className="text-center mb-20 relative">
           <div className="flex items-center justify-center space-x-8">
-            <div className="w-24 h-px bg-gradient-to-r from-transparent via-brass to-brass" />
+            <div className="w-32 h-px bg-gradient-to-r from-transparent via-brass to-brass" />
             <div className="relative">
-              <p className="heading-ritual text-2xl md:text-3xl text-signal px-6 glow-text">
+              <p className="heading-ritual text-3xl md:text-4xl lg:text-5xl text-signal px-8 py-4 glow-text font-bold tracking-wider">
                 IT DOESN&apos;T HAVE TO BE THIS WAY
               </p>
-              <div className="absolute -top-2 -bottom-2 -left-2 -right-2 border border-signal/20 rounded-lg"></div>
+              <div className="absolute -top-4 -bottom-4 -left-4 -right-4 border-2 border-signal/30 rounded-xl shadow-[0_0_30px_hsl(var(--signal)/0.2)]"></div>
             </div>
-            <div className="w-24 h-px bg-gradient-to-l from-transparent via-brass/70 to-brass shadow-[0_0_20px_hsl(var(--brass)/0.4)] relative">
+            <div className="w-32 h-px bg-gradient-to-l from-transparent via-brass/70 to-brass shadow-[0_0_20px_hsl(var(--brass)/0.4)] relative">
               <div className="absolute inset-0 bg-gradient-to-l from-transparent via-white/20 to-white/10 blur-sm"></div>
             </div>
           </div>
