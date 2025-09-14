@@ -846,7 +846,7 @@ const EmpathEntrepreneurCoaching = () => {
                         <img 
                           src="/lovable-uploads/3577b1e4-f101-4b3d-a7ac-74b52ee58e57.png" 
                           alt="Sacred geometry pattern" 
-                          className="w-8 h-8 mt-4 mb-4 mx-auto"
+                          className="w-8 h-8 mt-6 mb-4 mx-auto"
                         />
                       </div>
                       <p className="body-premium text-lg text-foreground/90 leading-relaxed mb-6">
@@ -867,7 +867,7 @@ const EmpathEntrepreneurCoaching = () => {
                         <img 
                           src="/lovable-uploads/3577b1e4-f101-4b3d-a7ac-74b52ee58e57.png" 
                           alt="Sacred geometry pattern" 
-                          className="w-8 h-8 mt-4 mb-4 mx-auto"
+                          className="w-8 h-8 mt-6 mb-4 mx-auto"
                         />
                       </div>
                       <p className="body-premium text-lg text-foreground/90 leading-relaxed mb-6">
@@ -888,7 +888,7 @@ const EmpathEntrepreneurCoaching = () => {
                         <img 
                           src="/lovable-uploads/3577b1e4-f101-4b3d-a7ac-74b52ee58e57.png" 
                           alt="Sacred geometry pattern" 
-                          className="w-8 h-8 mt-4 mb-4 mx-auto"
+                          className="w-8 h-8 mt-6 mb-4 mx-auto"
                         />
                       </div>
                       <p className="body-premium text-lg text-foreground/90 leading-relaxed mb-6">
