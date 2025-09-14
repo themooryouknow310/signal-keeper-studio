@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
+import ErrorBoundary from "@/components/ErrorBoundary";
 import Index from "./pages/Index";
 import OriginStoryStudio from "./pages/OriginStoryStudio";
 import OriginStoryThankYou from "./pages/OriginStoryThankYou";
@@ -20,31 +21,33 @@ import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 
 const App = () => (
-  <HelmetProvider>
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/origin-story-studio" element={<OriginStoryStudio />} />
-          <Route path="/origin-story-thank-you" element={<OriginStoryThankYou />} />
-          <Route path="/dream-client-sprint" element={<DreamClientSprint />} />
-          <Route path="/empath-entrepreneur-coaching" element={<EmpathEntrepreneurCoaching />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/application" element={<Application />} />
-          <Route path="/full-application" element={<FullApplication />} />
-          <Route path="/next-steps" element={<NextSteps />} />
-          <Route path="/order" element={<Order />} />
-          <Route path="/thank-you" element={<ThankYou />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-  </HelmetProvider>
+  <ErrorBoundary>
+    <HelmetProvider>
+      <QueryClientProvider client={queryClient}>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/origin-story-studio" element={<OriginStoryStudio />} />
+              <Route path="/origin-story-thank-you" element={<OriginStoryThankYou />} />
+              <Route path="/dream-client-sprint" element={<DreamClientSprint />} />
+              <Route path="/empath-entrepreneur-coaching" element={<EmpathEntrepreneurCoaching />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/application" element={<Application />} />
+              <Route path="/full-application" element={<FullApplication />} />
+              <Route path="/next-steps" element={<NextSteps />} />
+              <Route path="/order" element={<Order />} />
+              <Route path="/thank-you" element={<ThankYou />} />
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </BrowserRouter>
+        </TooltipProvider>
+      </QueryClientProvider>
+    </HelmetProvider>
+  </ErrorBoundary>
 );
 
 export default App;

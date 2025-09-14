@@ -15,6 +15,9 @@ const EmpathEntrepreneurCoaching = () => {
     applySection?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const origin = typeof window !== "undefined" ? window.location.origin : "";
+  const href = typeof window !== "undefined" ? window.location.href : "";
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -62,13 +65,13 @@ const EmpathEntrepreneurCoaching = () => {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": window.location.origin
+        "item": origin
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Empath Entrepreneur Coaching",
-        "item": window.location.href
+        "item": href
       }
     ]
   };
@@ -81,17 +84,17 @@ const EmpathEntrepreneurCoaching = () => {
         <meta name="keywords" content="empath entrepreneur coaching, highly sensitive person business coach, spiritual entrepreneur coaching, sensitive soul business mentor, intuitive entrepreneur coaching, empathic business coaching" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Barack El" />
-        <link rel="canonical" href={window.location.href} />
+        <link rel="canonical" href={href} />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content={window.location.href} />
+        <meta property="og:url" content={href} />
         <meta property="og:title" content="Empath Entrepreneur Coaching | Sacred Signal OS" />
         <meta property="og:description" content="Transform your sensitivity into business success with Sacred Signal OS. Coaching specifically designed for highly sensitive entrepreneurs." />
         
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content={window.location.href} />
+        <meta property="twitter:url" content={href} />
         <meta property="twitter:title" content="Empath Entrepreneur Coaching | Sacred Signal OS" />
         <meta property="twitter:description" content="Transform your sensitivity into business success with Sacred Signal OS coaching for highly sensitive entrepreneurs." />
         
