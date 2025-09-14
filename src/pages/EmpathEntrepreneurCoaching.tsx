@@ -486,8 +486,8 @@ const EmpathEntrepreneurCoaching = () => {
                 <div className="ssos-card">
                   <div className="mb-8">
                     <div className="flex items-center gap-4 mb-6">
-                      <div className="w-14 h-14 rounded-full bg-gradient-to-br from-cyan/20 to-brass/20 flex items-center justify-center border-2 border-brass/40 shadow-lg">
-                        <span className="text-2xl font-bold text-foreground">1</span>
+                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-cyan/30 via-brass/25 to-brass/40 flex items-center justify-center border border-brass/60 shadow-[0_0_20px_rgba(0,255,255,0.3),0_0_40px_rgba(218,165,32,0.2),inset_0_1px_0_rgba(255,255,255,0.2)] backdrop-blur-sm relative before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-br before:from-white/10 before:to-transparent before:opacity-50">
+                        <span className="text-2xl font-bold text-foreground drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] relative z-10">1</span>
                       </div>
                       <h3 className="ssos-card-title text-2xl">
                         PHASE 1: FOUNDATION
