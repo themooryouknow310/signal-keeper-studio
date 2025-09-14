@@ -28,6 +28,7 @@ import barackElPortrait from "@/assets/barack-el-new-portrait.jpg";
 import marissaFontana from "@/assets/testimonials/marissa-fontana-new.jpg";
 import leoraLeon from "@/assets/testimonials/leora-leon-new.jpg";
 import susieColles from "@/assets/testimonials/susie-colles-new.jpg";
+import empathScienceNeural from "@/assets/cinema/empath-science-neural.jpg";
 import "../styles/cinema.css";
 
 const EmpathEntrepreneurCoaching = () => {
@@ -306,6 +307,19 @@ const EmpathEntrepreneurCoaching = () => {
             <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/80 to-background" />
             
             <div className="relative z-10 container mx-auto px-6">
+              {/* Science Image */}
+              <AnimatedSection>
+                <div className="text-center mb-16">
+                  <div className="relative w-full max-w-4xl mx-auto mb-16 rounded-2xl overflow-hidden">
+                    <img 
+                      src={empathScienceNeural} 
+                      alt="Neural networks representing empathic intelligence and emotional processing" 
+                      className="w-full h-auto object-cover cinema-image-glow"
+                    />
+                  </div>
+                </div>
+              </AnimatedSection>
+              
               <AnimatedSection>
                 <div className="text-center mb-20">
                   <h2 className="heading-ritual text-3xl md:text-5xl lg:text-6xl font-display font-bold mb-8 text-white cinema-text-shadow">
