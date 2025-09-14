@@ -5,6 +5,9 @@ import AnimatedSection from "@/components/AnimatedSection";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import SignalLineDivider from "@/components/accents/SignalLineDivider";
+import heroImage from "@/assets/cinema/hero-spiritual-teacher.jpg";
+import "../styles/cinema.css";
 
 const EmpathEntrepreneurCoaching = () => {
   const scrollToApply = () => {
@@ -106,43 +109,60 @@ const EmpathEntrepreneurCoaching = () => {
         
         <main>
           {/* Hero Section */}
-          <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
-            <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background/90" />
+          <section className="min-h-screen flex items-center justify-center relative overflow-hidden py-20">
+            {/* Cinematic Background */}
+            <div className="absolute inset-0">
+              <img 
+                src={heroImage} 
+                alt="Empath Entrepreneur Coaching Background" 
+                className="w-full h-full object-cover opacity-70"
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-background/95 via-background/30 to-background/50" />
+            </div>
             
-            <div className="relative z-10 container mx-auto px-4 text-center">
+            {/* Content */}
+            <div className="relative z-10 container mx-auto px-6 text-center max-w-6xl">
+              {/* Main Headline with Cinematic Typography */}
               <AnimatedSection delay={200}>
-                <div className="max-w-4xl mx-auto">
-                  {/* Premium Badge */}
-                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8">
-                    <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                    <span className="text-sm font-medium text-primary">For Empath Entrepreneurs</span>
+                <h1 className="heading-ritual text-4xl md:text-6xl lg:text-7xl xl:text-8xl mb-16 leading-none">
+                  <div className="hero-shout text-white mb-2">
+                    EMPATH ENTREPRENEUR
                   </div>
+                  <div className="hero-void text-signal">
+                    COACHING
+                  </div>
+                </h1>
+              </AnimatedSection>
 
-                  <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-8 leading-tight">
-                    Empath Entrepreneur Coaching
-                  </h1>
-
-                  <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
+              {/* Cinematic Subheading Section */}
+              <AnimatedSection delay={600} className="space-y-12 mb-16">
+                <div className="relative max-w-5xl mx-auto">
+                  <p className="body-premium text-2xl md:text-3xl text-foreground max-w-4xl mx-auto leading-relaxed font-light cinema-text-shadow">
                     Transform Your Sensitivity Into Your Greatest Business Superpower With Sacred Signal OS
                   </p>
-
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <Button 
-                      size="lg" 
-                      className="px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
-                      onClick={scrollToApply}
-                    >
-                      Start Your Transformation
-                    </Button>
-                    <Button 
-                      variant="outline" 
-                      size="lg" 
-                      className="px-8 py-6 text-lg font-semibold"
-                    >
-                      Learn More
-                    </Button>
+                  
+                  {/* Signal Line Divider */}
+                  <div className="mt-12 mb-8">
+                    <SignalLineDivider />
                   </div>
                 </div>
+                
+                <p className="body-premium text-xl md:text-2xl text-foreground/90 max-w-4xl mx-auto leading-relaxed font-light cinema-text-shadow">
+                  Authentic strategies for highly sensitive entrepreneurs ready to build 
+                  <span className="text-signal font-medium"> thriving businesses</span> 
+                  without compromising their nature.
+                </p>
+              </AnimatedSection>
+
+              {/* Cinematic CTA Button */}
+              <AnimatedSection delay={800} className="flex justify-center items-center">
+                <Button 
+                  size="lg"
+                  className="cinema-glow bg-transparent border-2 border-signal text-signal hover:bg-signal hover:text-background font-body font-medium px-12 py-6 text-xl motion-glow-hover rounded-full"
+                  onClick={scrollToApply}
+                >
+                  BEGIN YOUR TRANSFORMATION
+                </Button>
               </AnimatedSection>
             </div>
           </section>
