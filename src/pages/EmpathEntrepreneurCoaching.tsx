@@ -24,7 +24,7 @@ import valuesDrivenLeadershipImage from "@/assets/cinema/values-driven-leadershi
 import overwhelmBurnoutImage from "@/assets/cinema/overwhelm-burnout.jpg";
 import boundaryIssuesImage from "@/assets/cinema/boundary-issues.jpg";
 import inconsistentIncomeChallengesImage from "@/assets/cinema/inconsistent-income-challenges.jpg";
-import barackElPortrait from "@/assets/barack-el-portrait.jpg";
+import barackElPortrait from "@/assets/barack-el-new-portrait.jpg";
 import marissaFontana from "@/assets/testimonials/marissa-fontana.jpg";
 import leoraLeon from "@/assets/testimonials/leora-leon.jpg";
 import susieColles from "@/assets/testimonials/susie-colles.jpg";
