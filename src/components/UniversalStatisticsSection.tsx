@@ -1,4 +1,4 @@
-import { Copy, Twitter, Linkedin, TrendingUp, Users, Shield } from "lucide-react";
+import { Copy, Twitter, Linkedin, TrendingUp, Users, Shield, Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import AnimatedSection from "./AnimatedSection";
@@ -31,6 +31,12 @@ const UniversalStatisticsSection = ({ config }: UniversalStatisticsSectionProps)
         break;
       case 'linkedin':
         window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`, '_blank');
+        break;
+      case 'facebook':
+        window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank');
+        break;
+      case 'pinterest':
+        window.open(`https://pinterest.com/pin/create/button/?url=${encodeURIComponent(url)}&description=${encodeURIComponent(text)}`, '_blank');
         break;
       case 'copy':
         navigator.clipboard.writeText(url);
@@ -118,7 +124,7 @@ const UniversalStatisticsSection = ({ config }: UniversalStatisticsSectionProps)
             <h4 className="heading-ritual text-2xl mb-8 glow-text">
               SHARE THESE INSIGHTS
             </h4>
-            <div className="flex justify-center gap-4">
+            <div className="flex flex-wrap justify-center gap-4">
               <Button
                 variant="outline"
                 size="lg"
@@ -136,6 +142,28 @@ const UniversalStatisticsSection = ({ config }: UniversalStatisticsSectionProps)
               >
                 <Linkedin className="w-5 h-5 mr-2" />
                 LinkedIn
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                onClick={() => handleShare('facebook')}
+                className="cinema-glow border-signal/30 text-signal hover:bg-signal/10"
+              >
+                <Facebook className="w-5 h-5 mr-2" />
+                Facebook
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                onClick={() => handleShare('pinterest')}
+                className="cinema-glow border-brass/30 text-brass hover:bg-brass/10"
+              >
+                <div className="w-5 h-5 mr-2 flex items-center justify-center">
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0C5.374 0 0 5.374 0 12s5.374 12 12 12 12-5.374 12-12S18.626 0 12 0zm0 19c-.721 0-1.418-.109-2.073-.312.286-.483.685-1.163.933-1.775.142-.351.858-3.244.858-3.244.424.808 1.664 1.52 2.984 1.52 3.926 0 6.594-3.575 6.594-8.358 0-3.618-3.064-7.03-7.717-7.03-5.802 0-8.728 4.159-8.728 7.63 0 2.1.797 3.972 2.51 4.671.281.115.531.006.612-.309.058-.225.197-.78.258-1.011.084-.315.051-.426-.179-.7-.5-.596-.819-1.359-.819-2.444 0-3.148 2.354-5.966 6.13-5.966 3.341 0 5.177 2.041 5.177 4.766 0 3.588-1.587 6.616-3.946 6.616-1.297 0-2.267-.107-2.267-2.273 0-1.962 1.487-3.856 1.487-5.835 0-1.348-.723-2.475-2.216-2.475-1.758 0-3.17 1.82-3.17 4.257 0 1.552.525 2.604.525 2.604s-1.8 7.63-2.113 8.96c-.313 1.329-.047 2.957-.025 3.123C5.11 20.394 2 16.557 2 12 2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+                  </svg>
+                </div>
+                Pinterest
               </Button>
               <Button
                 variant="outline"
