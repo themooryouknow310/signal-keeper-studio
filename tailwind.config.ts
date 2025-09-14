@@ -58,6 +58,9 @@ export default {
         cyan: {
           DEFAULT: "hsl(var(--ssos-cyan))",
         },
+        white: {
+          DEFAULT: "hsl(var(--foreground))",
+        },
       },
       fontFamily: {
         display: ['Playfair Display', 'serif'],
