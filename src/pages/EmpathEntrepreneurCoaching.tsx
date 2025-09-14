@@ -172,7 +172,7 @@ const EmpathEntrepreneurCoaching = () => {
                 
                 <p className="body-premium text-xl md:text-2xl text-foreground/90 max-w-4xl mx-auto leading-relaxed font-light cinema-text-shadow">
                   Authentic strategies for highly sensitive entrepreneurs ready to build 
-                  <span className="text-signal font-medium"> thriving businesses</span> 
+                  <span className="text-signal font-medium"> thriving businesses</span>{" "}
                   without compromising their nature.
                 </p>
               </AnimatedSection>
