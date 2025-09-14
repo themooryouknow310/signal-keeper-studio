@@ -841,7 +841,7 @@ const EmpathEntrepreneurCoaching = () => {
                         <img 
                           src={marissaFontana} 
                           alt="Marissa Fontana" 
-                          className="w-5 h-5 rounded-full object-cover mx-auto border-2 border-signal/30"
+                          className="w-16 h-16 rounded-full object-cover mx-auto border-2 border-signal/30"
                         />
                         <img 
                           src="/lovable-uploads/3577b1e4-f101-4b3d-a7ac-74b52ee58e57.png" 
@@ -862,7 +862,7 @@ const EmpathEntrepreneurCoaching = () => {
                         <img 
                           src={leoraLeon} 
                           alt="Leora Leon" 
-                          className="w-5 h-5 rounded-full object-cover mx-auto border-2 border-signal/30"
+                          className="w-16 h-16 rounded-full object-cover mx-auto border-2 border-signal/30"
                         />
                         <img 
                           src="/lovable-uploads/3577b1e4-f101-4b3d-a7ac-74b52ee58e57.png" 
@@ -883,7 +883,7 @@ const EmpathEntrepreneurCoaching = () => {
                         <img 
                           src={susieColles} 
                           alt="Susie Colles, PhD" 
-                          className="w-5 h-5 rounded-full object-cover mx-auto border-2 border-signal/30"
+                          className="w-16 h-16 rounded-full object-cover mx-auto border-2 border-signal/30"
                         />
                         <img 
                           src="/lovable-uploads/3577b1e4-f101-4b3d-a7ac-74b52ee58e57.png" 
