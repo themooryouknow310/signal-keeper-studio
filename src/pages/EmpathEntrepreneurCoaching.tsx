@@ -805,68 +805,101 @@ const EmpathEntrepreneurCoaching = () => {
                   </p>
 
                   <AnimatedSection delay={200}>
-                    <Card className="cinema-surface border-signal/30 bg-background/20 backdrop-blur-sm p-12 mb-16">
-                      <CardContent className="p-0">
-                        <h3 className="text-2xl font-display font-semibold mb-8 text-signal">Your Next Steps:</h3>
-                        <div className="grid md:grid-cols-2 gap-8 text-left">
-                          <div className="space-y-6">
-                            <div className="flex items-start gap-4">
-                              <div className="w-8 h-8 rounded-full bg-signal/20 flex items-center justify-center flex-shrink-0 mt-1">
-                                <span className="text-signal font-bold text-sm">1</span>
-                              </div>
-                              <div>
-                                <p className="font-semibold mb-2">Complete Your Application</p>
-                                <p className="text-muted-foreground text-sm">Tell us about your current business situation and sensitivity challenges</p>
-                              </div>
+                    <div className="max-w-6xl mx-auto mb-16">
+                      <h3 className="heading-ritual text-3xl md:text-4xl mb-16 glow-text text-center">
+                        YOUR NEXT STEPS
+                      </h3>
+
+                      <div className="ssos-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                        <div className="ssos-card text-center">
+                          <div className="mb-8">
+                            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-cyan/30 to-brass/30 flex items-center justify-center border border-brass/40">
+                              <span className="text-2xl font-bold text-cyan">1</span>
                             </div>
-                            <div className="flex items-start gap-4">
-                              <div className="w-8 h-8 rounded-full bg-signal/20 flex items-center justify-center flex-shrink-0 mt-1">
-                                <span className="text-signal font-bold text-sm">2</span>
-                              </div>
-                              <div>
-                                <p className="font-semibold mb-2">Values Alignment Assessment</p>
-                                <p className="text-muted-foreground text-sm">Ensure Sacred Signal OS is the right fit for your goals and values</p>
-                              </div>
-                            </div>
+                            <h4 className="ssos-card-title text-xl mb-4">
+                              COMPLETE YOUR APPLICATION
+                            </h4>
                           </div>
-                          <div className="space-y-6">
-                            <div className="flex items-start gap-4">
-                              <div className="w-8 h-8 rounded-full bg-signal/20 flex items-center justify-center flex-shrink-0 mt-1">
-                                <span className="text-signal font-bold text-sm">3</span>
-                              </div>
-                              <div>
-                                <p className="font-semibold mb-2">Discovery Call</p>
-                                <p className="text-muted-foreground text-sm">Connect with our team to discuss your specific needs and answer any questions</p>
-                              </div>
-                            </div>
-                            <div className="flex items-start gap-4">
-                              <div className="w-8 h-8 rounded-full bg-signal/20 flex items-center justify-center flex-shrink-0 mt-1">
-                                <span className="text-signal font-bold text-sm">4</span>
-                              </div>
-                              <div>
-                                <p className="font-semibold mb-2">Begin Your Transformation</p>
-                                <p className="text-muted-foreground text-sm">Join the next Sacred Signal OS cohort and start building your authentic business</p>
-                              </div>
-                            </div>
-                          </div>
+                          <p className="body-premium text-foreground/75 leading-relaxed">
+                            Tell us about your current business situation and sensitivity challenges
+                          </p>
                         </div>
-                      </CardContent>
-                    </Card>
+
+                        <div className="ssos-card text-center">
+                          <div className="mb-8">
+                            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-cyan/30 to-brass/30 flex items-center justify-center border border-brass/40">
+                              <span className="text-2xl font-bold text-cyan">2</span>
+                            </div>
+                            <h4 className="ssos-card-title text-xl mb-4">
+                              VALUES ALIGNMENT ASSESSMENT
+                            </h4>
+                          </div>
+                          <p className="body-premium text-foreground/75 leading-relaxed">
+                            Ensure Sacred Signal OS is the right fit for your goals and values
+                          </p>
+                        </div>
+
+                        <div className="ssos-card text-center">
+                          <div className="mb-8">
+                            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-cyan/30 to-brass/30 flex items-center justify-center border border-brass/40">
+                              <span className="text-2xl font-bold text-cyan">3</span>
+                            </div>
+                            <h4 className="ssos-card-title text-xl mb-4">
+                              DISCOVERY CALL
+                            </h4>
+                          </div>
+                          <p className="body-premium text-foreground/75 leading-relaxed">
+                            Connect with our team to discuss your specific needs and answer any questions
+                          </p>
+                        </div>
+
+                        <div className="ssos-card text-center">
+                          <div className="mb-8">
+                            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-cyan/30 to-brass/30 flex items-center justify-center border border-brass/40">
+                              <span className="text-2xl font-bold text-cyan">4</span>
+                            </div>
+                            <h4 className="ssos-card-title text-xl mb-4">
+                              BEGIN YOUR TRANSFORMATION
+                            </h4>
+                          </div>
+                          <p className="body-premium text-foreground/75 leading-relaxed">
+                            Join the next Sacred Signal OS cohort and start building your authentic business
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </AnimatedSection>
 
                   <AnimatedSection delay={400}>
-                    <div className="flex justify-center mb-8">
-                      <Button 
-                        size="lg"
-                        className="cinema-glow bg-signal text-background hover:bg-signal/90 font-body font-medium px-16 py-8 text-xl motion-glow-hover rounded-full shadow-2xl"
-                      >
-                        Start Your Application Today
-                      </Button>
+                    <div className="text-center">
+                      <div className="max-w-4xl mx-auto mb-12">
+                        <div className="ssos-card bg-gradient-to-br from-cyan/10 via-background/95 to-brass/10 border-cyan/30 text-center">
+                          <Button 
+                            size="lg"
+                            className="cinema-glow bg-gradient-to-r from-cyan to-cyan/80 text-background hover:from-cyan/90 hover:to-cyan/70 font-display font-semibold px-16 py-8 text-xl motion-glow-hover rounded-full shadow-2xl border border-cyan/30 mb-6"
+                          >
+                            START YOUR APPLICATION TODAY
+                          </Button>
+                          
+                          <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-sm text-foreground/70">
+                            <div className="flex items-center gap-2">
+                              <div className="w-2 h-2 rounded-full bg-brass animate-pulse" />
+                              <span>Limited spots available</span>
+                            </div>
+                            <div className="hidden md:block w-1 h-1 rounded-full bg-foreground/30" />
+                            <div className="flex items-center gap-2">
+                              <div className="w-2 h-2 rounded-full bg-brass animate-pulse" />
+                              <span>Rolling start</span>
+                            </div>
+                            <div className="hidden md:block w-1 h-1 rounded-full bg-foreground/30" />
+                            <div className="flex items-center gap-2">
+                              <div className="w-2 h-2 rounded-full bg-brass animate-pulse" />
+                              <span className="font-medium">Investment begins at $1,497</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-
-                    <p className="text-sm opacity-80 cinema-text-shadow">
-                      <em>Limited spots available • Rolling start • Investment begins at $1,497</em>
-                    </p>
                   </AnimatedSection>
                 </div>
               </AnimatedSection>
