@@ -179,87 +179,71 @@ const EmpathEntrepreneurCoaching = () => {
               <AnimatedSection>
                 <div className="text-center mb-20">
                   <h2 className="heading-ritual text-3xl md:text-5xl lg:text-6xl font-display font-bold mb-8 text-white cinema-text-shadow">
-                    The Empath Entrepreneur's Dilemma
+                    THE EMPATH ENTREPRENEUR'S DILEMMA
                   </h2>
                   <div className="flex justify-center mb-12">
                     <SignalLineDivider />
                   </div>
                   <p className="body-premium text-xl md:text-2xl text-foreground/90 max-w-4xl mx-auto leading-relaxed font-light cinema-text-shadow mb-16">
-                    As an empathic entrepreneur, you face unique challenges that traditional business advice simply doesn't address:
+                    You Have A Gift To Share, A Calling To Serve. But Right Now, Your Days Are Likely Filled With The Frustrating Reality Of Trying To Grow Your Business Online:
                   </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <div className="space-y-20 max-w-5xl mx-auto">
                   <AnimatedSection delay={200}>
-                    <Card className="cinema-surface border-destructive/20 bg-background/30 backdrop-blur-sm p-8 hover:bg-background/40 transition-all duration-500 h-full">
-                      <CardContent className="p-0">
-                        <div className="flex items-start gap-4 mb-6">
-                          <div className="text-4xl">⚡</div>
-                          <div>
-                            <h3 className="text-xl font-display font-semibold text-destructive mb-3">
-                              Energy Drain From Aggressive Sales
-                            </h3>
-                            <p className="text-muted-foreground leading-relaxed">
-                              Traditional "hustle" marketing feels soul-crushing and leaves you energetically depleted instead of inspired.
-                            </p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
+                    <div className="text-center space-y-6">
+                      <p className="text-muted-foreground uppercase tracking-wider text-sm">
+                        The energy drain from aggressive sales
+                      </p>
+                      <h3 className="heading-ritual text-2xl md:text-4xl lg:text-5xl font-display font-bold text-destructive cinema-text-shadow leading-tight">
+                        ENERGY DRAIN FROM AGGRESSIVE SALES
+                      </h3>
+                      <p className="body-premium text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
+                        Traditional "hustle" marketing feels soul-crushing and leaves you energetically depleted instead of inspired.
+                      </p>
+                    </div>
                   </AnimatedSection>
 
                   <AnimatedSection delay={300}>
-                    <Card className="cinema-surface border-destructive/20 bg-background/30 backdrop-blur-sm p-8 hover:bg-background/40 transition-all duration-500 h-full">
-                      <CardContent className="p-0">
-                        <div className="flex items-start gap-4 mb-6">
-                          <div className="text-4xl">😵</div>
-                          <div>
-                            <h3 className="text-xl font-display font-semibold text-destructive mb-3">
-                              Overwhelm From Others' Emotions
-                            </h3>
-                            <p className="text-muted-foreground leading-relaxed">
-                              You absorb your clients' and prospects' stress, making it difficult to maintain professional boundaries.
-                            </p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
+                    <div className="text-center space-y-6">
+                      <p className="text-muted-foreground uppercase tracking-wider text-sm">
+                        The overwhelm from others' emotions
+                      </p>
+                      <h3 className="heading-ritual text-2xl md:text-4xl lg:text-5xl font-display font-bold text-destructive cinema-text-shadow leading-tight">
+                        OVERWHELM FROM OTHERS' EMOTIONS
+                      </h3>
+                      <p className="body-premium text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
+                        You absorb your clients' and prospects' stress, making it difficult to maintain professional boundaries.
+                      </p>
+                    </div>
                   </AnimatedSection>
 
                   <AnimatedSection delay={400}>
-                    <Card className="cinema-surface border-destructive/20 bg-background/30 backdrop-blur-sm p-8 hover:bg-background/40 transition-all duration-500 h-full">
-                      <CardContent className="p-0">
-                        <div className="flex items-start gap-4 mb-6">
-                          <div className="text-4xl">🎭</div>
-                          <div>
-                            <h3 className="text-xl font-display font-semibold text-destructive mb-3">
-                              Imposter Syndrome Amplified
-                            </h3>
-                            <p className="text-muted-foreground leading-relaxed">
-                              Your sensitivity makes you second-guess your expertise, even when you have profound gifts to offer.
-                            </p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
+                    <div className="text-center space-y-6">
+                      <p className="text-muted-foreground uppercase tracking-wider text-sm">
+                        The imposter syndrome amplified
+                      </p>
+                      <h3 className="heading-ritual text-2xl md:text-4xl lg:text-5xl font-display font-bold text-destructive cinema-text-shadow leading-tight">
+                        IMPOSTER SYNDROME AMPLIFIED
+                      </h3>
+                      <p className="body-premium text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
+                        Your sensitivity makes you second-guess your expertise, even when you have profound gifts to offer.
+                      </p>
+                    </div>
                   </AnimatedSection>
 
                   <AnimatedSection delay={500}>
-                    <Card className="cinema-surface border-destructive/20 bg-background/30 backdrop-blur-sm p-8 hover:bg-background/40 transition-all duration-500 h-full">
-                      <CardContent className="p-0">
-                        <div className="flex items-start gap-4 mb-6">
-                          <div className="text-4xl">🔄</div>
-                          <div>
-                            <h3 className="text-xl font-display font-semibold text-destructive mb-3">
-                              Inconsistent Income Patterns
-                            </h3>
-                            <p className="text-muted-foreground leading-relaxed">
-                              Your empathic nature leads to undercharging and over-delivering, creating financial instability.
-                            </p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
+                    <div className="text-center space-y-6">
+                      <p className="text-muted-foreground uppercase tracking-wider text-sm">
+                        The inconsistent income patterns
+                      </p>
+                      <h3 className="heading-ritual text-2xl md:text-4xl lg:text-5xl font-display font-bold text-destructive cinema-text-shadow leading-tight">
+                        INCONSISTENT INCOME PATTERNS
+                      </h3>
+                      <p className="body-premium text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
+                        Your empathic nature leads to undercharging and over-delivering, creating financial instability.
+                      </p>
+                    </div>
                   </AnimatedSection>
                 </div>
               </AnimatedSection>
