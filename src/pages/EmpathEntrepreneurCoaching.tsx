@@ -584,103 +584,148 @@ const EmpathEntrepreneurCoaching = () => {
           </section>
 
           {/* Success Metrics */}
-          <section className="py-32 relative overflow-hidden">
-            {/* Cinematic Background */}
-            <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/90 to-background" />
-            
-            <div className="relative z-10 container mx-auto px-6">
-              <AnimatedSection>
-                <div className="text-center mb-20">
-                  <h2 className="heading-ritual text-3xl md:text-5xl lg:text-6xl font-display font-bold mb-8 text-white cinema-text-shadow">
-                    Success Looks Different for Empath Entrepreneurs
-                  </h2>
-                  <div className="flex justify-center mb-12">
-                    <SignalLineDivider />
+          <section className="section-divider relative overflow-hidden">
+            {/* Background Accent Elements */}
+            <div className="absolute top-1/4 right-0 transform translate-x-1/2">
+              <MetatronsCube size={140} className="text-brass/8 animate-pulse" />
+            </div>
+            <div className="absolute bottom-1/3 left-0 transform -translate-x-1/2">
+              <SignalEclipse size={110} className="text-cyan/6" />
+            </div>
+
+            <div className="relative z-10">
+              <div className="text-center mb-20">
+                <h2 className="heading-ritual text-3xl md:text-5xl mb-16 glow-text">
+                  SUCCESS LOOKS DIFFERENT FOR EMPATH ENTREPRENEURS
+                </h2>
+                <div className="flex justify-center mb-12">
+                  <SignalLineDivider />
+                </div>
+                <p className="body-premium text-xl md:text-2xl text-foreground/90 max-w-4xl mx-auto leading-relaxed font-light">
+                  Success isn't just about revenue—it's about creating a business that honors your sensitivity while generating consistent, premium income.
+                </p>
+              </div>
+
+              <div className="ssos-grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto mb-16">
+                <div className="ssos-card">
+                  <div className="text-center mb-8">
+                    <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-cyan/20 to-brass/20 flex items-center justify-center border border-brass/30">
+                      <span className="text-2xl">💰</span>
+                    </div>
+                    <h3 className="ssos-card-title text-2xl mb-6">
+                      FINANCIAL OUTCOMES
+                    </h3>
                   </div>
-                  <p className="body-premium text-xl md:text-2xl text-foreground/90 max-w-4xl mx-auto leading-relaxed font-light cinema-text-shadow">
-                    Success isn't just about revenue—it's about creating a business that honors your sensitivity while generating consistent, premium income.
+                  
+                  <div className="space-y-6">
+                    <div className="flex items-start gap-4 border-l-2 border-brass/30 pl-6">
+                      <div className="w-3 h-3 rounded-full bg-cyan mt-2 flex-shrink-0" />
+                      <div>
+                        <p className="body-premium text-foreground/90 font-medium">Consistent Monthly Revenue</p>
+                        <p className="body-premium text-foreground/70 text-sm mt-1">$5K-$15K monthly recurring income</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-4 border-l-2 border-brass/30 pl-6">
+                      <div className="w-3 h-3 rounded-full bg-cyan mt-2 flex-shrink-0" />
+                      <div>
+                        <p className="body-premium text-foreground/90 font-medium">Premium Pricing Strategy</p>
+                        <p className="body-premium text-foreground/70 text-sm mt-1">$2K-$10K+ program pricing</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-4 border-l-2 border-brass/30 pl-6">
+                      <div className="w-3 h-3 rounded-full bg-cyan mt-2 flex-shrink-0" />
+                      <div>
+                        <p className="body-premium text-foreground/90 font-medium">Predictable Client Pipeline</p>
+                        <p className="body-premium text-foreground/70 text-sm mt-1">Sustainable lead generation systems</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-4 border-l-2 border-brass/30 pl-6">
+                      <div className="w-3 h-3 rounded-full bg-cyan mt-2 flex-shrink-0" />
+                      <div>
+                        <p className="body-premium text-foreground/90 font-medium">Optimized Profit Margins</p>
+                        <p className="body-premium text-foreground/70 text-sm mt-1">Higher efficiency through aligned systems</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-4 border-l-2 border-brass/30 pl-6">
+                      <div className="w-3 h-3 rounded-full bg-cyan mt-2 flex-shrink-0" />
+                      <div>
+                        <p className="body-premium text-foreground/90 font-medium">Diversified Revenue Streams</p>
+                        <p className="body-premium text-foreground/70 text-sm mt-1">Multiple income sources aligned with your gifts</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="ssos-card">
+                  <div className="text-center mb-8">
+                    <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-cyan/20 to-brass/20 flex items-center justify-center border border-brass/30">
+                      <span className="text-2xl">✨</span>
+                    </div>
+                    <h3 className="ssos-card-title text-2xl mb-6">
+                      PERSONAL OUTCOMES
+                    </h3>
+                  </div>
+                  
+                  <div className="space-y-6">
+                    <div className="flex items-start gap-4 border-l-2 border-brass/30 pl-6">
+                      <div className="w-3 h-3 rounded-full bg-cyan mt-2 flex-shrink-0" />
+                      <div>
+                        <p className="body-premium text-foreground/90 font-medium">Reduced Overwhelm</p>
+                        <p className="body-premium text-foreground/70 text-sm mt-1">Energy management & burnout prevention</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-4 border-l-2 border-brass/30 pl-6">
+                      <div className="w-3 h-3 rounded-full bg-cyan mt-2 flex-shrink-0" />
+                      <div>
+                        <p className="body-premium text-foreground/90 font-medium">Professional Boundaries</p>
+                        <p className="body-premium text-foreground/70 text-sm mt-1">Clear limits that protect your energy</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-4 border-l-2 border-brass/30 pl-6">
+                      <div className="w-3 h-3 rounded-full bg-cyan mt-2 flex-shrink-0" />
+                      <div>
+                        <p className="body-premium text-foreground/90 font-medium">Increased Authority</p>
+                        <p className="body-premium text-foreground/70 text-sm mt-1">Confidence in your expertise & value</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-4 border-l-2 border-brass/30 pl-6">
+                      <div className="w-3 h-3 rounded-full bg-cyan mt-2 flex-shrink-0" />
+                      <div>
+                        <p className="body-premium text-foreground/90 font-medium">Work-Life Integration</p>
+                        <p className="body-premium text-foreground/70 text-sm mt-1">Sustainable business practices</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-4 border-l-2 border-brass/30 pl-6">
+                      <div className="w-3 h-3 rounded-full bg-cyan mt-2 flex-shrink-0" />
+                      <div>
+                        <p className="body-premium text-foreground/90 font-medium">Values Alignment</p>
+                        <p className="body-premium text-foreground/70 text-sm mt-1">Business that honors your principles</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* The Ultimate Goal */}
+              <div className="max-w-5xl mx-auto">
+                <div className="ssos-card text-center bg-gradient-to-br from-cyan/10 via-background/95 to-brass/10 border-cyan/30">
+                  <div className="mb-8">
+                    <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-cyan/30 to-brass/30 flex items-center justify-center border border-brass/40">
+                      <span className="text-3xl">🎯</span>
+                    </div>
+                    <h3 className="ssos-card-title text-3xl mb-6 glow-text">
+                      THE ULTIMATE GOAL
+                    </h3>
+                  </div>
+                  
+                  <p className="body-premium text-xl md:text-2xl text-foreground/90 leading-relaxed max-w-4xl mx-auto">
+                    A thriving business that feels as good on the inside as it looks on the outside—where your sensitivity is 
+                    <span className="text-cyan font-medium"> celebrated</span>, your boundaries are 
+                    <span className="text-cyan font-medium"> respected</span>, and your income reflects the 
+                    <span className="text-cyan font-medium"> true value</span> of your gifts.
                   </p>
                 </div>
-
-                <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto mb-16">
-                  <AnimatedSection delay={200}>
-                    <Card className="cinema-surface border-signal/20 bg-background/30 backdrop-blur-sm p-10 hover:bg-background/40 transition-all duration-500 h-full">
-                      <CardContent className="p-0">
-                        <h3 className="text-2xl font-display font-semibold text-signal mb-8 flex items-center gap-3">
-                          <div className="w-3 h-3 rounded-full bg-signal animate-pulse" />
-                          Financial Outcomes
-                        </h3>
-                        <ul className="space-y-4">
-                          <li className="flex items-start gap-4">
-                            <div className="w-2 h-2 rounded-full bg-signal mt-2 flex-shrink-0" />
-                            <span className="text-foreground leading-relaxed">Consistent <span className="text-signal font-medium">$5K-$15K monthly revenue</span></span>
-                          </li>
-                          <li className="flex items-start gap-4">
-                            <div className="w-2 h-2 rounded-full bg-signal mt-2 flex-shrink-0" />
-                            <span className="text-foreground leading-relaxed">Premium pricing <span className="text-signal font-medium">($2K-$10K+ programs)</span></span>
-                          </li>
-                          <li className="flex items-start gap-4">
-                            <div className="w-2 h-2 rounded-full bg-signal mt-2 flex-shrink-0" />
-                            <span className="text-foreground leading-relaxed">Predictable client pipeline</span>
-                          </li>
-                          <li className="flex items-start gap-4">
-                            <div className="w-2 h-2 rounded-full bg-signal mt-2 flex-shrink-0" />
-                            <span className="text-foreground leading-relaxed">Higher profit margins through efficiency</span>
-                          </li>
-                          <li className="flex items-start gap-4">
-                            <div className="w-2 h-2 rounded-full bg-signal mt-2 flex-shrink-0" />
-                            <span className="text-foreground leading-relaxed">Multiple revenue streams aligned with your gifts</span>
-                          </li>
-                        </ul>
-                      </CardContent>
-                    </Card>
-                  </AnimatedSection>
-
-                  <AnimatedSection delay={400}>
-                    <Card className="cinema-surface border-signal/20 bg-background/30 backdrop-blur-sm p-10 hover:bg-background/40 transition-all duration-500 h-full">
-                      <CardContent className="p-0">
-                        <h3 className="text-2xl font-display font-semibold text-signal mb-8 flex items-center gap-3">
-                          <div className="w-3 h-3 rounded-full bg-signal animate-pulse" />
-                          Personal Outcomes
-                        </h3>
-                        <ul className="space-y-4">
-                          <li className="flex items-start gap-4">
-                            <div className="w-2 h-2 rounded-full bg-signal mt-2 flex-shrink-0" />
-                            <span className="text-foreground leading-relaxed">Reduced overwhelm and burnout</span>
-                          </li>
-                          <li className="flex items-start gap-4">
-                            <div className="w-2 h-2 rounded-full bg-signal mt-2 flex-shrink-0" />
-                            <span className="text-foreground leading-relaxed">Stronger professional boundaries</span>
-                          </li>
-                          <li className="flex items-start gap-4">
-                            <div className="w-2 h-2 rounded-full bg-signal mt-2 flex-shrink-0" />
-                            <span className="text-foreground leading-relaxed">Increased confidence and authority</span>
-                          </li>
-                          <li className="flex items-start gap-4">
-                            <div className="w-2 h-2 rounded-full bg-signal mt-2 flex-shrink-0" />
-                            <span className="text-foreground leading-relaxed">Better work-life integration</span>
-                          </li>
-                          <li className="flex items-start gap-4">
-                            <div className="w-2 h-2 rounded-full bg-signal mt-2 flex-shrink-0" />
-                            <span className="text-foreground leading-relaxed">Alignment between values and business</span>
-                          </li>
-                        </ul>
-                      </CardContent>
-                    </Card>
-                  </AnimatedSection>
-                </div>
-
-                <AnimatedSection delay={600}>
-                  <Card className="cinema-surface border-signal/30 bg-gradient-to-r from-signal/10 to-signal/5 backdrop-blur-sm p-12 max-w-5xl mx-auto">
-                    <CardContent className="p-0 text-center">
-                      <h3 className="text-3xl font-display font-semibold mb-6 text-signal">The Ultimate Goal</h3>
-                      <p className="text-xl leading-relaxed text-foreground">
-                        A thriving business that feels as good on the inside as it looks on the outside—where your sensitivity is celebrated, your boundaries are respected, and your income reflects the true value of your gifts.
-                      </p>
-                    </CardContent>
-                  </Card>
-                </AnimatedSection>
-              </AnimatedSection>
+              </div>
             </div>
           </section>
 
