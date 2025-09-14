@@ -753,7 +753,7 @@ const EmpathEntrepreneurCoaching = () => {
               <AnimatedSection>
                 <div className="text-center mb-20">
                   <h2 className="heading-ritual text-3xl md:text-5xl lg:text-6xl font-display font-bold mb-8 text-white cinema-text-shadow">
-                    Meet Barack El
+                    Meet Barack El, Your Empath Business Guide
                   </h2>
                   <div className="flex justify-center mb-12">
                     <SignalLineDivider />
