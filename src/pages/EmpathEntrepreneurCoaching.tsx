@@ -441,122 +441,145 @@ const EmpathEntrepreneurCoaching = () => {
           </section>
 
           {/* Sacred Signal OS Methodology */}
-          <section className="py-32 relative overflow-hidden">
-            {/* Cinematic Background */}
-            <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background/80" />
-            
-            <div className="relative z-10 container mx-auto px-6">
-              <AnimatedSection>
-                <div className="text-center mb-20">
-                  <h2 className="heading-ritual text-3xl md:text-5xl lg:text-6xl font-display font-bold mb-8 text-white cinema-text-shadow">
-                    The Sacred Signal OS Methodology
-                  </h2>
-                  <div className="flex justify-center mb-12">
-                    <SignalLineDivider />
+          <section className="section-divider relative overflow-hidden">
+            {/* Background Accent Elements */}
+            <div className="absolute top-1/4 left-0 transform -translate-x-1/2">
+              <MetatronsCube size={150} className="text-brass/8 animate-pulse" />
+            </div>
+            <div className="absolute bottom-1/3 right-0 transform translate-x-1/2">
+              <SignalEclipse size={120} className="text-cyan/6" />
+            </div>
+
+            <div className="relative z-10">
+              <div className="text-center mb-20">
+                <h2 className="heading-ritual text-3xl md:text-5xl mb-16 glow-text">
+                  THE SACRED SIGNAL OS METHODOLOGY
+                </h2>
+                <div className="flex justify-center mb-12">
+                  <SignalLineDivider />
+                </div>
+                <p className="body-premium text-xl md:text-2xl text-foreground/90 max-w-4xl mx-auto leading-relaxed font-light">
+                  Our proven framework combines ancient wisdom traditions with modern business psychology, specifically adapted for the unique needs of highly sensitive entrepreneurs.
+                </p>
+              </div>
+
+              <div className="ssos-grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto">
+                <div className="ssos-card">
+                  <div className="mb-8">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-cyan/20 to-brass/20 flex items-center justify-center border border-brass/30">
+                        <span className="text-2xl font-bold text-cyan">1</span>
+                      </div>
+                      <h3 className="ssos-card-title text-2xl">
+                        PHASE 1: FOUNDATION
+                      </h3>
+                    </div>
+                    <p className="body-premium text-foreground/60 mb-6 text-sm uppercase tracking-wider">Weeks 1-3</p>
                   </div>
-                  <p className="body-premium text-xl md:text-2xl text-foreground/90 max-w-4xl mx-auto leading-relaxed font-light cinema-text-shadow">
-                    Our proven framework combines ancient wisdom traditions with modern business psychology, specifically adapted for the unique needs of highly sensitive entrepreneurs.
-                  </p>
+                  
+                  <div className="space-y-6">
+                    <div className="border-l-2 border-brass/30 pl-6">
+                      <h4 className="font-display font-semibold text-lg mb-2 text-cyan">Empath Identity Integration</h4>
+                      <p className="body-premium text-foreground/75 leading-relaxed">Learn to see your sensitivity as a business asset rather than a liability.</p>
+                    </div>
+                    <div className="border-l-2 border-brass/30 pl-6">
+                      <h4 className="font-display font-semibold text-lg mb-2 text-cyan">Energy-Aligned Business Model</h4>
+                      <p className="body-premium text-foreground/75 leading-relaxed">Design a business structure that works with your natural energy patterns.</p>
+                    </div>
+                    <div className="border-l-2 border-brass/30 pl-6">
+                      <h4 className="font-display font-semibold text-lg mb-2 text-cyan">Sacred Boundaries Creation</h4>
+                      <p className="body-premium text-foreground/75 leading-relaxed">Establish professional boundaries that protect your energy while maintaining deep client connections.</p>
+                    </div>
+                  </div>
                 </div>
 
-                <div className="grid lg:grid-cols-2 xl:grid-cols-2 gap-8 max-w-7xl mx-auto">
-                  <AnimatedSection delay={200}>
-                    <Card className="cinema-surface border-signal/20 bg-background/30 backdrop-blur-sm p-8 hover:bg-background/40 transition-all duration-500 h-full">
-                      <CardContent className="p-0">
-                        <div className="flex items-center gap-3 mb-6">
-                          <div className="w-8 h-8 rounded-full bg-signal/20 flex items-center justify-center">
-                            <span className="text-signal font-bold">1</span>
-                          </div>
-                          <h3 className="text-xl font-display font-semibold text-signal">Phase 1: Foundation (Weeks 1-3)</h3>
-                        </div>
-                        <div className="space-y-4">
-                          <div className="border-l-2 border-signal/30 pl-4">
-                            <p><strong className="text-foreground">Empath Identity Integration:</strong> <span className="text-muted-foreground">Learn to see your sensitivity as a business asset rather than a liability.</span></p>
-                          </div>
-                          <div className="border-l-2 border-signal/30 pl-4">
-                            <p><strong className="text-foreground">Energy-Aligned Business Model:</strong> <span className="text-muted-foreground">Design a business structure that works with your natural energy patterns.</span></p>
-                          </div>
-                          <div className="border-l-2 border-signal/30 pl-4">
-                            <p><strong className="text-foreground">Sacred Boundaries Creation:</strong> <span className="text-muted-foreground">Establish professional boundaries that protect your energy while maintaining deep client connections.</span></p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </AnimatedSection>
-
-                  <AnimatedSection delay={300}>
-                    <Card className="cinema-surface border-signal/20 bg-background/30 backdrop-blur-sm p-8 hover:bg-background/40 transition-all duration-500 h-full">
-                      <CardContent className="p-0">
-                        <div className="flex items-center gap-3 mb-6">
-                          <div className="w-8 h-8 rounded-full bg-signal/20 flex items-center justify-center">
-                            <span className="text-signal font-bold">2</span>
-                          </div>
-                          <h3 className="text-xl font-display font-semibold text-signal">Phase 2: Attraction (Weeks 4-6)</h3>
-                        </div>
-                        <div className="space-y-4">
-                          <div className="border-l-2 border-signal/30 pl-4">
-                            <p><strong className="text-foreground">Authentic Messaging Development:</strong> <span className="text-muted-foreground">Craft marketing messages that attract ideal clients without feeling salesy.</span></p>
-                          </div>
-                          <div className="border-l-2 border-signal/30 pl-4">
-                            <p><strong className="text-foreground">Intuitive Content Creation:</strong> <span className="text-muted-foreground">Develop content strategy based on energetic alignment rather than algorithmic manipulation.</span></p>
-                          </div>
-                          <div className="border-l-2 border-signal/30 pl-4">
-                            <p><strong className="text-foreground">Sacred Story Alchemy:</strong> <span className="text-muted-foreground">Transform your personal journey with sensitivity into your most powerful marketing asset.</span></p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </AnimatedSection>
-
-                  <AnimatedSection delay={400}>
-                    <Card className="cinema-surface border-signal/20 bg-background/30 backdrop-blur-sm p-8 hover:bg-background/40 transition-all duration-500 h-full">
-                      <CardContent className="p-0">
-                        <div className="flex items-center gap-3 mb-6">
-                          <div className="w-8 h-8 rounded-full bg-signal/20 flex items-center justify-center">
-                            <span className="text-signal font-bold">3</span>
-                          </div>
-                          <h3 className="text-xl font-display font-semibold text-signal">Phase 3: Conversion (Weeks 7-9)</h3>
-                        </div>
-                        <div className="space-y-4">
-                          <div className="border-l-2 border-signal/30 pl-4">
-                            <p><strong className="text-foreground">Heart-Centered Sales Process:</strong> <span className="text-muted-foreground">Develop sales approaches that feel authentic while closing deals at premium prices.</span></p>
-                          </div>
-                          <div className="border-l-2 border-signal/30 pl-4">
-                            <p><strong className="text-foreground">Energetic Pricing Strategy:</strong> <span className="text-muted-foreground">Price services based on transformation and energy investment, not time.</span></p>
-                          </div>
-                          <div className="border-l-2 border-signal/30 pl-4">
-                            <p><strong className="text-foreground">Sacred Container Design:</strong> <span className="text-muted-foreground">Create program structures that protect your energy while delivering exceptional client transformation.</span></p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </AnimatedSection>
-
-                  <AnimatedSection delay={500}>
-                    <Card className="cinema-surface border-signal/20 bg-background/30 backdrop-blur-sm p-8 hover:bg-background/40 transition-all duration-500 h-full">
-                      <CardContent className="p-0">
-                        <div className="flex items-center gap-3 mb-6">
-                          <div className="w-8 h-8 rounded-full bg-signal/20 flex items-center justify-center">
-                            <span className="text-signal font-bold">4</span>
-                          </div>
-                          <h3 className="text-xl font-display font-semibold text-signal">Phase 4: Scaling (Weeks 10-12)</h3>
-                        </div>
-                        <div className="space-y-4">
-                          <div className="border-l-2 border-signal/30 pl-4">
-                            <p><strong className="text-foreground">Sustainable Growth Systems:</strong> <span className="text-muted-foreground">Build business growth mechanisms that honor your need for depth over breadth.</span></p>
-                          </div>
-                          <div className="border-l-2 border-signal/30 pl-4">
-                            <p><strong className="text-foreground">Community Building Mastery:</strong> <span className="text-muted-foreground">Leverage your natural ability to create deep connections to build a loyal community.</span></p>
-                          </div>
-                          <div className="border-l-2 border-signal/30 pl-4">
-                            <p><strong className="text-foreground">Intuitive Business Strategy:</strong> <span className="text-muted-foreground">Develop decision-making processes that combine business logic with intuitive abilities.</span></p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </AnimatedSection>
+                <div className="ssos-card">
+                  <div className="mb-8">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-cyan/20 to-brass/20 flex items-center justify-center border border-brass/30">
+                        <span className="text-2xl font-bold text-cyan">2</span>
+                      </div>
+                      <h3 className="ssos-card-title text-2xl">
+                        PHASE 2: ATTRACTION
+                      </h3>
+                    </div>
+                    <p className="body-premium text-foreground/60 mb-6 text-sm uppercase tracking-wider">Weeks 4-6</p>
+                  </div>
+                  
+                  <div className="space-y-6">
+                    <div className="border-l-2 border-brass/30 pl-6">
+                      <h4 className="font-display font-semibold text-lg mb-2 text-cyan">Authentic Messaging Development</h4>
+                      <p className="body-premium text-foreground/75 leading-relaxed">Craft marketing messages that attract ideal clients without feeling salesy.</p>
+                    </div>
+                    <div className="border-l-2 border-brass/30 pl-6">
+                      <h4 className="font-display font-semibold text-lg mb-2 text-cyan">Intuitive Content Creation</h4>
+                      <p className="body-premium text-foreground/75 leading-relaxed">Develop content strategy based on energetic alignment rather than algorithmic manipulation.</p>
+                    </div>
+                    <div className="border-l-2 border-brass/30 pl-6">
+                      <h4 className="font-display font-semibold text-lg mb-2 text-cyan">Sacred Story Alchemy</h4>
+                      <p className="body-premium text-foreground/75 leading-relaxed">Transform your personal journey with sensitivity into your most powerful marketing asset.</p>
+                    </div>
+                  </div>
                 </div>
-              </AnimatedSection>
+
+                <div className="ssos-card">
+                  <div className="mb-8">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-cyan/20 to-brass/20 flex items-center justify-center border border-brass/30">
+                        <span className="text-2xl font-bold text-cyan">3</span>
+                      </div>
+                      <h3 className="ssos-card-title text-2xl">
+                        PHASE 3: CONVERSION
+                      </h3>
+                    </div>
+                    <p className="body-premium text-foreground/60 mb-6 text-sm uppercase tracking-wider">Weeks 7-9</p>
+                  </div>
+                  
+                  <div className="space-y-6">
+                    <div className="border-l-2 border-brass/30 pl-6">
+                      <h4 className="font-display font-semibold text-lg mb-2 text-cyan">Heart-Centered Sales Process</h4>
+                      <p className="body-premium text-foreground/75 leading-relaxed">Develop sales approaches that feel authentic while closing deals at premium prices.</p>
+                    </div>
+                    <div className="border-l-2 border-brass/30 pl-6">
+                      <h4 className="font-display font-semibold text-lg mb-2 text-cyan">Energetic Pricing Strategy</h4>
+                      <p className="body-premium text-foreground/75 leading-relaxed">Price services based on transformation and energy investment, not time.</p>
+                    </div>
+                    <div className="border-l-2 border-brass/30 pl-6">
+                      <h4 className="font-display font-semibold text-lg mb-2 text-cyan">Sacred Container Design</h4>
+                      <p className="body-premium text-foreground/75 leading-relaxed">Create program structures that protect your energy while delivering exceptional client transformation.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="ssos-card">
+                  <div className="mb-8">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-cyan/20 to-brass/20 flex items-center justify-center border border-brass/30">
+                        <span className="text-2xl font-bold text-cyan">4</span>
+                      </div>
+                      <h3 className="ssos-card-title text-2xl">
+                        PHASE 4: SCALING
+                      </h3>
+                    </div>
+                    <p className="body-premium text-foreground/60 mb-6 text-sm uppercase tracking-wider">Weeks 10-12</p>
+                  </div>
+                  
+                  <div className="space-y-6">
+                    <div className="border-l-2 border-brass/30 pl-6">
+                      <h4 className="font-display font-semibold text-lg mb-2 text-cyan">Sustainable Growth Systems</h4>
+                      <p className="body-premium text-foreground/75 leading-relaxed">Build business growth mechanisms that honor your need for depth over breadth.</p>
+                    </div>
+                    <div className="border-l-2 border-brass/30 pl-6">
+                      <h4 className="font-display font-semibold text-lg mb-2 text-cyan">Community Building Mastery</h4>
+                      <p className="body-premium text-foreground/75 leading-relaxed">Leverage your natural ability to create deep connections to build a loyal community.</p>
+                    </div>
+                    <div className="border-l-2 border-brass/30 pl-6">
+                      <h4 className="font-display font-semibold text-lg mb-2 text-cyan">Intuitive Business Strategy</h4>
+                      <p className="body-premium text-foreground/75 leading-relaxed">Develop decision-making processes that combine business logic with intuitive abilities.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
 
