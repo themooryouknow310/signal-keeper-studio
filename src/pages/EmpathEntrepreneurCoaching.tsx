@@ -27,7 +27,7 @@ import inconsistentIncomeChallengesImage from "@/assets/cinema/inconsistent-inco
 import barackElPortrait from "@/assets/barack-el-new-portrait.jpg";
 import marissaFontana from "@/assets/testimonials/marissa-fontana-new.jpg";
 import leoraLeon from "@/assets/testimonials/leora-leon-new.jpg";
-import susieColles from "@/assets/testimonials/susie-colles.jpg";
+import susieColles from "@/assets/testimonials/susie-colles-new.jpg";
 import "../styles/cinema.css";
 
 const EmpathEntrepreneurCoaching = () => {
