@@ -24,6 +24,7 @@ import valuesDrivenLeadershipImage from "@/assets/cinema/values-driven-leadershi
 import overwhelmBurnoutImage from "@/assets/cinema/overwhelm-burnout.jpg";
 import boundaryIssuesImage from "@/assets/cinema/boundary-issues.jpg";
 import inconsistentIncomeChallengesImage from "@/assets/cinema/inconsistent-income-challenges.jpg";
+import barackElPortrait from "@/assets/barack-el-portrait.jpg";
 import "../styles/cinema.css";
 
 const EmpathEntrepreneurCoaching = () => {
@@ -741,6 +742,82 @@ const EmpathEntrepreneurCoaching = () => {
                   </p>
                 </div>
               </div>
+            </div>
+          </section>
+
+          {/* Barack El Bio Section */}
+          <section className="py-32 relative overflow-hidden bg-gradient-to-b from-background/40 via-background/60 to-background/80">
+            <div className="absolute inset-0 bg-[url('/src/assets/cinema/grain-texture-01.jpg')] opacity-20 mix-blend-overlay" />
+            
+            <div className="relative z-10 container mx-auto px-6">
+              <AnimatedSection>
+                <div className="text-center mb-20">
+                  <h2 className="heading-ritual text-3xl md:text-5xl lg:text-6xl font-display font-bold mb-8 text-white cinema-text-shadow">
+                    Meet Barack El
+                  </h2>
+                  <div className="flex justify-center mb-12">
+                    <SignalLineDivider />
+                  </div>
+                  <p className="body-premium text-xl text-foreground/90 max-w-3xl mx-auto leading-relaxed">
+                    The fellow empath entrepreneur who understands your journey because he's walked it himself
+                  </p>
+                </div>
+
+                <div className="max-w-6xl mx-auto">
+                  <div className="grid md:grid-cols-2 gap-16 items-center">
+                    {/* Photo */}
+                    <AnimatedSection delay={200} className="relative">
+                      <div className="cinema-testimonial-frame mx-auto" style={{ width: 400, height: 400 }}>
+                        <img 
+                          src={barackElPortrait} 
+                          alt="Barack El - Empath Entrepreneur Guide" 
+                          className="w-full h-full object-cover rounded-2xl border border-signal/30 shadow-2xl"
+                        />
+                      </div>
+                    </AnimatedSection>
+
+                    {/* Personal Story */}
+                    <AnimatedSection delay={400} className="space-y-8">
+                      <div>
+                        <h3 className="heading-ritual text-3xl md:text-4xl mb-6 glow-text font-bold">
+                          From Overwhelmed Empath to Thriving Entrepreneur
+                        </h3>
+                        <div className="space-y-6">
+                          <p className="body-premium text-lg text-foreground/90 leading-relaxed">
+                            "I used to think my sensitivity was my greatest weakness. The constant overwhelm, 
+                            the energy drain from traditional networking, the guilt around charging what I was worth—
+                            I lived it all."
+                          </p>
+                          <p className="body-premium text-lg text-foreground/90 leading-relaxed">
+                            "For years, I tried to fit into the 'hustle harder' mentality, pushing myself to be 
+                            someone I wasn't. It nearly broke me. That's when I realized: what if my sensitivity 
+                            wasn't a bug, but a feature?"
+                          </p>
+                          <p className="body-premium text-lg text-foreground/90 leading-relaxed">
+                            "The Sacred Signal OS was born from my own journey of transformation—from a burned-out, 
+                            overwhelmed empath to building a multi-seven-figure business that honors my nature and 
+                            serves from authentic overflow."
+                          </p>
+                        </div>
+                      </div>
+                    </AnimatedSection>
+                  </div>
+                </div>
+
+                {/* Personal Quote */}
+                <AnimatedSection delay={600} className="text-center mt-20">
+                  <div className="max-w-5xl mx-auto">
+                    <div className="ssos-card bg-gradient-to-br from-cyan/10 via-background/95 to-brass/10 border-cyan/30 text-center">
+                      <blockquote className="text-2xl md:text-3xl font-light text-foreground/90 leading-relaxed cinema-text-shadow mb-6">
+                        "If you're reading this, you're not broken. You're not 'too sensitive' for business. 
+                        You're simply wired differently—and that wiring is your greatest asset once you learn 
+                        how to work <em className="text-signal not-italic">with</em> it instead of against it."
+                      </blockquote>
+                      <cite className="block text-brass font-medium tracking-wide text-lg">— Barack El</cite>
+                    </div>
+                  </div>
+                </AnimatedSection>
+              </AnimatedSection>
             </div>
           </section>
 
