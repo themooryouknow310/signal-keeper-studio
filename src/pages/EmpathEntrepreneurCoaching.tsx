@@ -119,15 +119,11 @@ const EmpathEntrepreneurCoaching = () => {
                   </div>
 
                   <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold mb-8 leading-tight">
-                    Transform Your{" "}
-                    <span className="text-primary bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                      Sensitivity
-                    </span>{" "}
-                    Into Success
+                    Empath Entrepreneur Coaching
                   </h1>
 
                   <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-                    Sacred Signal OS coaching specifically designed for highly sensitive entrepreneurs ready to build thriving businesses without compromising their authentic nature.
+                    Transform Your Sensitivity Into Your Greatest Business Superpower With Sacred Signal OS
                   </p>
 
                   <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
