@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import SignalLineDivider from "@/components/accents/SignalLineDivider";
+import MetatronsCube from "@/components/accents/MetatronsCube";
+import SignalEclipse from "@/components/accents/SignalEclipse";
 import SacredGeometry from "@/components/SacredGeometry";
 import { SacredMandala, EightPointStar, LinearAccent, GoldenRatioGrid } from "@/components/AccentElements";
 import heroImage from "@/assets/cinema/hero-spiritual-teacher.jpg";
@@ -13,6 +15,12 @@ import energyDrainImage from "@/assets/cinema/energy-drain-sales.jpg";
 import emotionalOverwhelmImage from "@/assets/cinema/emotional-overwhelm.jpg";
 import imposterSyndromeImage from "@/assets/cinema/imposter-syndrome.jpg";
 import inconsistentIncomeImage from "@/assets/cinema/inconsistent-income.jpg";
+import enhancedIntuitionImage from "@/assets/cinema/enhanced-intuition.jpg";
+import authenticConnectionImage from "@/assets/cinema/authentic-connection.jpg";
+import valuesDrivenLeadershipImage from "@/assets/cinema/values-driven-leadership.jpg";
+import overwhelmBurnoutImage from "@/assets/cinema/overwhelm-burnout.jpg";
+import boundaryIssuesImage from "@/assets/cinema/boundary-issues.jpg";
+import inconsistentIncomeChallengesImage from "@/assets/cinema/inconsistent-income-challenges.jpg";
 import "../styles/cinema.css";
 
 const EmpathEntrepreneurCoaching = () => {
@@ -295,57 +303,137 @@ const EmpathEntrepreneurCoaching = () => {
                   </p>
                 </div>
 
-                <div className="max-w-7xl mx-auto">
-                  <div className="grid lg:grid-cols-2 gap-12 mb-20">
-                    <AnimatedSection delay={200}>
-                      <Card className="cinema-surface border-signal/20 bg-background/30 backdrop-blur-sm p-10 h-full">
-                        <CardContent className="p-0">
-                          <h3 className="text-2xl font-display font-semibold text-signal mb-8 flex items-center gap-3">
-                            <div className="w-3 h-3 rounded-full bg-signal animate-pulse" />
-                            The Empath Advantage in Business
-                          </h3>
-                          <div className="space-y-6">
-                            <div className="border-l-2 border-signal/30 pl-6">
-                              <h4 className="font-semibold mb-3 text-lg">Enhanced Intuition</h4>
-                              <p className="text-muted-foreground leading-relaxed">Empaths naturally pick up on subtle cues that others miss, allowing for deeper client understanding and more accurate business decisions.</p>
-                            </div>
-                            <div className="border-l-2 border-signal/30 pl-6">
-                              <h4 className="font-semibold mb-3 text-lg">Authentic Connection</h4>
-                              <p className="text-muted-foreground leading-relaxed">The ability to create genuine emotional connections leads to higher client satisfaction and retention rates.</p>
-                            </div>
-                            <div className="border-l-2 border-signal/30 pl-6">
-                              <h4 className="font-semibold mb-3 text-lg">Values-Driven Leadership</h4>
-                              <p className="text-muted-foreground leading-relaxed">Naturally align businesses with values, creating more sustainable and fulfilling ventures.</p>
-                            </div>
-                          </div>
-                        </CardContent>
-                      </Card>
-                    </AnimatedSection>
+                {/* The Empath Advantage in Business */}
+                <div className="section-divider relative overflow-hidden">
+                  {/* Background Accent Elements */}
+                  <div className="absolute top-1/4 left-0 transform -translate-x-1/2">
+                    <MetatronsCube size={120} className="text-brass/8 animate-pulse" />
+                  </div>
+                  <div className="absolute bottom-1/3 right-0 transform translate-x-1/2">
+                    <SignalEclipse size={100} className="text-cyan/6" />
+                  </div>
 
-                    <AnimatedSection delay={400}>
-                      <Card className="cinema-surface border-destructive/20 bg-background/30 backdrop-blur-sm p-10 h-full">
-                        <CardContent className="p-0">
-                          <h3 className="text-2xl font-display font-semibold text-destructive mb-8 flex items-center gap-3">
-                            <div className="w-3 h-3 rounded-full bg-destructive animate-pulse" />
-                            Common Challenges We Address
-                          </h3>
-                          <div className="space-y-6">
-                            <div className="border-l-2 border-destructive/30 pl-6">
-                              <h4 className="font-semibold mb-3 text-lg">Overwhelm and Burnout</h4>
-                              <p className="text-muted-foreground leading-relaxed">Traditional business advice doesn't account for empaths' need for processing time and energy management.</p>
-                            </div>
-                            <div className="border-l-2 border-destructive/30 pl-6">
-                              <h4 className="font-semibold mb-3 text-lg">Boundary Issues</h4>
-                              <p className="text-muted-foreground leading-relaxed">Struggling with saying no, undercharging, and taking on clients' emotional burdens.</p>
-                            </div>
-                            <div className="border-l-2 border-destructive/30 pl-6">
-                              <h4 className="font-semibold mb-3 text-lg">Inconsistent Income</h4>
-                              <p className="text-muted-foreground leading-relaxed">The tendency to undervalue services and over-deliver leads to financial instability.</p>
-                            </div>
+                  <div className="relative z-10">
+                    <h3 className="heading-ritual text-3xl md:text-5xl mb-16 glow-text text-center">
+                      THE EMPATH ADVANTAGE IN BUSINESS
+                    </h3>
+
+                    <div className="ssos-grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto mb-24">
+                      <div className="ssos-card">
+                        <div className="text-center">
+                          <div className="w-64 h-40 mx-auto mb-6 rounded-lg overflow-hidden border border-brass/30">
+                            <img 
+                              src={enhancedIntuitionImage} 
+                              alt="Enhanced Intuition"
+                              className="w-full h-full object-cover"
+                            />
                           </div>
-                        </CardContent>
-                      </Card>
-                    </AnimatedSection>
+                          <h4 className="ssos-card-title text-xl mb-4">
+                            ENHANCED INTUITION
+                          </h4>
+                          <p className="body-premium text-foreground/75 leading-relaxed">
+                            Empaths naturally pick up on subtle cues that others miss, allowing for deeper client understanding and more accurate business decisions.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="ssos-card">
+                        <div className="text-center">
+                          <div className="w-64 h-40 mx-auto mb-6 rounded-lg overflow-hidden border border-brass/30">
+                            <img 
+                              src={authenticConnectionImage} 
+                              alt="Authentic Connection"
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                          <h4 className="ssos-card-title text-xl mb-4">
+                            AUTHENTIC CONNECTION
+                          </h4>
+                          <p className="body-premium text-foreground/75 leading-relaxed">
+                            The ability to create genuine emotional connections leads to higher client satisfaction and retention rates.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="ssos-card">
+                        <div className="text-center">
+                          <div className="w-64 h-40 mx-auto mb-6 rounded-lg overflow-hidden border border-brass/30">
+                            <img 
+                              src={valuesDrivenLeadershipImage} 
+                              alt="Values-Driven Leadership"
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                          <h4 className="ssos-card-title text-xl mb-4">
+                            VALUES-DRIVEN LEADERSHIP
+                          </h4>
+                          <p className="body-premium text-foreground/75 leading-relaxed">
+                            Naturally align businesses with values, creating more sustainable and fulfilling ventures.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Common Challenges We Address */}
+                    <h3 className="heading-ritual text-3xl md:text-5xl mb-16 glow-text text-center">
+                      COMMON CHALLENGES WE ADDRESS
+                    </h3>
+
+                    <div className="ssos-grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto">
+                      <div className="ssos-card">
+                        <div className="text-center">
+                          <div className="w-64 h-40 mx-auto mb-6 rounded-lg overflow-hidden border border-brass/30">
+                            <img 
+                              src={overwhelmBurnoutImage} 
+                              alt="Overwhelm and Burnout"
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                          <h4 className="ssos-card-title text-xl mb-4">
+                            OVERWHELM AND BURNOUT
+                          </h4>
+                          <p className="body-premium text-foreground/75 leading-relaxed">
+                            Traditional business advice doesn't account for empaths' need for processing time and energy management.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="ssos-card">
+                        <div className="text-center">
+                          <div className="w-64 h-40 mx-auto mb-6 rounded-lg overflow-hidden border border-brass/30">
+                            <img 
+                              src={boundaryIssuesImage} 
+                              alt="Boundary Issues"
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                          <h4 className="ssos-card-title text-xl mb-4">
+                            BOUNDARY ISSUES
+                          </h4>
+                          <p className="body-premium text-foreground/75 leading-relaxed">
+                            Struggling with saying no, undercharging, and taking on clients' emotional burdens.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="ssos-card">
+                        <div className="text-center">
+                          <div className="w-64 h-40 mx-auto mb-6 rounded-lg overflow-hidden border border-brass/30">
+                            <img 
+                              src={inconsistentIncomeChallengesImage} 
+                              alt="Inconsistent Income"
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                          <h4 className="ssos-card-title text-xl mb-4">
+                            INCONSISTENT INCOME
+                          </h4>
+                          <p className="body-premium text-foreground/75 leading-relaxed">
+                            The tendency to undervalue services and over-deliver leads to financial instability.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </AnimatedSection>
