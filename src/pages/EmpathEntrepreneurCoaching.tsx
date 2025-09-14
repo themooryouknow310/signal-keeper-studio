@@ -784,19 +784,16 @@ const EmpathEntrepreneurCoaching = () => {
                         </h3>
                         <div className="space-y-6">
                           <p className="body-premium text-lg text-foreground/90 leading-relaxed">
-                            "Let me be direct: being an empath in business isn't a disadvantage—most people just don't know how to leverage it properly."
+                            Being an empath in business isn't a disadvantage—most people just don't know how to leverage it properly.
                           </p>
                           <p className="body-premium text-lg text-foreground/90 leading-relaxed">
-                            "I spent years watching other empaths struggle with the same predictable patterns: undercharging, over-delivering, getting drained by energy vampires, and buying into the myth that sensitivity equals weakness in business."
+                            I watched other empaths struggle with the same patterns: undercharging, over-delivering, getting drained by energy vampires. While everyone else taught 'energy management,' I reverse-engineered what actually works.
                           </p>
                           <p className="body-premium text-lg text-foreground/90 leading-relaxed">
-                            "While everyone else was teaching empaths to 'manage their energy' and 'set better boundaries,' I was reverse-engineering what actually works. I figured out how to turn empathic abilities into competitive advantages that actually drive revenue."
+                            The Sacred Signal OS isn't therapy. It's a systematic approach to building wealth as an empath—tested by hundreds of entrepreneurs who were tired of leaving money on the table.
                           </p>
                           <p className="body-premium text-lg text-foreground/90 leading-relaxed">
-                            "The Sacred Signal OS isn't therapy or feel-good coaching. It's a systematic approach to building wealth as an empath—one that's been tested and proven by hundreds of entrepreneurs who were tired of leaving money on the table."
-                          </p>
-                          <p className="body-premium text-lg text-foreground/90 leading-relaxed">
-                            "If you're ready to stop playing small and start leveraging your empathic gifts for serious business results, you're in the right place."
+                            Ready to stop playing small and start leveraging your empathic gifts for serious business results? You're in the right place.
                           </p>
                         </div>
                       </div>
