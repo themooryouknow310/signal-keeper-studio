@@ -4,14 +4,14 @@ export interface StatisticTemplate {
   value: string;
   title: string;
   description: string;
-  color: 'signal' | 'brass' | 'cyan' | 'white';
+  color: 'signal' | 'brass' | 'cyan';
 }
 
 export interface InsightTemplate {
   icon: string;
   title: string;
   description: string;
-  color: 'signal' | 'brass' | 'cyan' | 'white';
+  color: 'signal' | 'brass' | 'cyan';
 }
 
 export const universalStatistics: StatisticTemplate[] = [
@@ -31,7 +31,7 @@ export const universalStatistics: StatisticTemplate[] = [
     value: "45%",
     title: "LESS BURNOUT WITH {{MODALITY}} SUPPORT",
     description: "{{Audience}} with proper {{modality}} community support are 45% less likely to experience burnout symptoms",
-    color: "white"
+    color: "cyan"
   }
 ];
 
