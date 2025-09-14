@@ -6,7 +6,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import SignalLineDivider from "@/components/accents/SignalLineDivider";
+import SacredGeometry from "@/components/SacredGeometry";
+import { SacredMandala, EightPointStar, LinearAccent, GoldenRatioGrid } from "@/components/AccentElements";
 import heroImage from "@/assets/cinema/hero-spiritual-teacher.jpg";
+import energyDrainImage from "@/assets/cinema/energy-drain-sales.jpg";
+import emotionalOverwhelmImage from "@/assets/cinema/emotional-overwhelm.jpg";
+import imposterSyndromeImage from "@/assets/cinema/imposter-syndrome.jpg";
+import inconsistentIncomeImage from "@/assets/cinema/inconsistent-income.jpg";
 import "../styles/cinema.css";
 
 const EmpathEntrepreneurCoaching = () => {
@@ -168,98 +174,105 @@ const EmpathEntrepreneurCoaching = () => {
           </section>
 
           {/* The Empath Entrepreneur's Dilemma */}
-          <section className="py-32 relative overflow-hidden">
-            {/* Cinematic Background */}
-            <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background/80" />
+          <section className="section-divider relative overflow-hidden">
+            {/* Background Accent Elements */}
+            <div className="absolute top-1/2 right-1/4 opacity-4">
+              <GoldenRatioGrid size={80} />
+            </div>
             
-            <div className="relative z-10 container mx-auto px-6">
-              <AnimatedSection>
-                <div className="text-center mb-20">
-                  <h2 className="heading-ritual text-3xl md:text-5xl lg:text-6xl font-display font-bold mb-8 text-white cinema-text-shadow">
-                    The Empath Entrepreneur's Dilemma
-                  </h2>
-                  <div className="flex justify-center mb-12">
-                    <SignalLineDivider />
+            {/* Background Elements */}
+            <div className="absolute top-40 right-10 opacity-10">
+              <SacredGeometry size={150} animated />
+            </div>
+
+            <div className="container mx-auto px-6">
+              <div className="mb-20">
+                <div className="text-center mb-16">
+                  <div className="flex items-center justify-center mb-8">
+                    <LinearAccent width={300} />
                   </div>
-                  <p className="body-premium text-xl md:text-2xl text-foreground/90 max-w-4xl mx-auto leading-relaxed font-light cinema-text-shadow mb-16">
+                  <h2 className="heading-ritual text-3xl md:text-5xl mb-6 glow-text">
+                    THE EMPATH ENTREPRENEUR'S DILEMMA
+                  </h2>
+                  <p className="body-sacred text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
                     As an empathic entrepreneur, you face unique challenges that traditional business advice simply doesn't address:
                   </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                  <AnimatedSection delay={200}>
-                    <Card className="cinema-surface border-destructive/20 bg-background/30 backdrop-blur-sm p-8 hover:bg-background/40 transition-all duration-500 h-full">
-                      <CardContent className="p-0">
-                        <div className="flex items-start gap-4 mb-6">
-                          <div className="text-4xl">⚡</div>
-                          <div>
-                            <h3 className="text-xl font-display font-semibold text-destructive mb-3">
-                              Energy Drain From Aggressive Sales
-                            </h3>
-                            <p className="text-muted-foreground leading-relaxed">
-                              Traditional "hustle" marketing feels soul-crushing and leaves you energetically depleted instead of inspired.
-                            </p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </AnimatedSection>
+                <div className="ssos-grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto">
+                  <div className="ssos-card">
+                    <div className="text-center">
+                      <div className="w-64 h-40 mx-auto mb-6 rounded-lg overflow-hidden border border-brass/30">
+                        <img 
+                          src={energyDrainImage} 
+                          alt="Energy Drain From Aggressive Sales"
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <h3 className="ssos-card-title text-xl mb-4">
+                        ENERGY DRAIN FROM AGGRESSIVE SALES
+                      </h3>
+                      <p className="body-premium text-foreground/75 leading-relaxed">
+                        Traditional "hustle" marketing feels soul-crushing and leaves you energetically depleted instead of inspired.
+                      </p>
+                    </div>
+                  </div>
 
-                  <AnimatedSection delay={300}>
-                    <Card className="cinema-surface border-destructive/20 bg-background/30 backdrop-blur-sm p-8 hover:bg-background/40 transition-all duration-500 h-full">
-                      <CardContent className="p-0">
-                        <div className="flex items-start gap-4 mb-6">
-                          <div className="text-4xl">😵</div>
-                          <div>
-                            <h3 className="text-xl font-display font-semibold text-destructive mb-3">
-                              Overwhelm From Others' Emotions
-                            </h3>
-                            <p className="text-muted-foreground leading-relaxed">
-                              You absorb your clients' and prospects' stress, making it difficult to maintain professional boundaries.
-                            </p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </AnimatedSection>
+                  <div className="ssos-card">
+                    <div className="text-center">
+                      <div className="w-64 h-40 mx-auto mb-6 rounded-lg overflow-hidden border border-brass/30">
+                        <img 
+                          src={emotionalOverwhelmImage} 
+                          alt="Overwhelm From Others' Emotions"
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <h3 className="ssos-card-title text-xl mb-4">
+                        OVERWHELM FROM OTHERS' EMOTIONS
+                      </h3>
+                      <p className="body-premium text-foreground/75 leading-relaxed">
+                        You absorb your clients' and prospects' stress, making it difficult to maintain professional boundaries.
+                      </p>
+                    </div>
+                  </div>
 
-                  <AnimatedSection delay={400}>
-                    <Card className="cinema-surface border-destructive/20 bg-background/30 backdrop-blur-sm p-8 hover:bg-background/40 transition-all duration-500 h-full">
-                      <CardContent className="p-0">
-                        <div className="flex items-start gap-4 mb-6">
-                          <div className="text-4xl">🎭</div>
-                          <div>
-                            <h3 className="text-xl font-display font-semibold text-destructive mb-3">
-                              Imposter Syndrome Amplified
-                            </h3>
-                            <p className="text-muted-foreground leading-relaxed">
-                              Your sensitivity makes you second-guess your expertise, even when you have profound gifts to offer.
-                            </p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </AnimatedSection>
+                  <div className="ssos-card">
+                    <div className="text-center">
+                      <div className="w-64 h-40 mx-auto mb-6 rounded-lg overflow-hidden border border-brass/30">
+                        <img 
+                          src={imposterSyndromeImage} 
+                          alt="Imposter Syndrome Amplified"
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <h3 className="ssos-card-title text-xl mb-4">
+                        IMPOSTER SYNDROME AMPLIFIED
+                      </h3>
+                      <p className="body-premium text-foreground/75 leading-relaxed">
+                        Your sensitivity makes you second-guess your expertise, even when you have profound gifts to offer.
+                      </p>
+                    </div>
+                  </div>
 
-                  <AnimatedSection delay={500}>
-                    <Card className="cinema-surface border-destructive/20 bg-background/30 backdrop-blur-sm p-8 hover:bg-background/40 transition-all duration-500 h-full">
-                      <CardContent className="p-0">
-                        <div className="flex items-start gap-4 mb-6">
-                          <div className="text-4xl">🔄</div>
-                          <div>
-                            <h3 className="text-xl font-display font-semibold text-destructive mb-3">
-                              Inconsistent Income Patterns
-                            </h3>
-                            <p className="text-muted-foreground leading-relaxed">
-                              Your empathic nature leads to undercharging and over-delivering, creating financial instability.
-                            </p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </AnimatedSection>
+                  <div className="ssos-card">
+                    <div className="text-center">
+                      <div className="w-64 h-40 mx-auto mb-6 rounded-lg overflow-hidden border border-brass/30">
+                        <img 
+                          src={inconsistentIncomeImage} 
+                          alt="Inconsistent Income Patterns"
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <h3 className="ssos-card-title text-xl mb-4">
+                        INCONSISTENT INCOME PATTERNS
+                      </h3>
+                      <p className="body-premium text-foreground/75 leading-relaxed">
+                        Your empathic nature leads to undercharging and over-delivering, creating financial instability.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </AnimatedSection>
+              </div>
             </div>
           </section>
 
