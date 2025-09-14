@@ -55,6 +55,10 @@ export default {
           DEFAULT: "hsl(var(--sacred-gold))",
           foreground: "hsl(var(--sacred-gold-foreground))",
         },
+        cyan: {
+          DEFAULT: "hsl(var(--ssos-cyan))",
+          foreground: "hsl(var(--foreground))",
+        },
       },
       fontFamily: {
         display: ['Playfair Display', 'serif'],
