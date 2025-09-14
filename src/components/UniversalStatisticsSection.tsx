@@ -74,10 +74,10 @@ const UniversalStatisticsSection = ({ config }: UniversalStatisticsSectionProps)
             {statistics.map((stat, index) => (
               <div key={index} className="text-center group">
                 <div className="relative mb-8">
-                  <div className={`text-8xl md:text-9xl font-bold ${stat.value === '45%' ? 'text-cyan glow-text-enhanced' : `text-${stat.color}`} cinema-glow group-hover:scale-105 transition-transform duration-300`}>
+                  <div className={`text-8xl md:text-9xl font-bold text-${stat.color} cinema-glow group-hover:scale-105 transition-transform duration-300`}>
                     {stat.value}
                   </div>
-                  <div className={`absolute inset-0 ${stat.value === '45%' ? 'bg-cyan blur-2xl opacity-30' : `bg-${stat.color} blur-3xl opacity-10`} animate-pulse`} />
+                  <div className={`absolute inset-0 bg-${stat.color} blur-3xl opacity-10 animate-pulse`} />
                 </div>
                 <h3 className="ssos-card-title text-xl mb-4">
                   {stat.title}
