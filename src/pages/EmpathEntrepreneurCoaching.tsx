@@ -759,7 +759,7 @@ const EmpathEntrepreneurCoaching = () => {
                     <SignalLineDivider />
                   </div>
                   <p className="body-premium text-xl text-foreground/90 max-w-3xl mx-auto leading-relaxed">
-                    The empath entrepreneur who cracked the code on building real wealth without burning out
+                    The Empath Entrepreneur Who Cracked The Code On Building Real Wealth Without Burning Out
                   </p>
                 </div>
 
