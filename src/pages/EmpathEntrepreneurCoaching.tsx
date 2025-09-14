@@ -11,6 +11,7 @@ import SignalEclipse from "@/components/accents/SignalEclipse";
 import SacredGeometry from "@/components/SacredGeometry";
 import { SacredMandala, EightPointStar, LinearAccent, GoldenRatioGrid } from "@/components/AccentElements";
 import EmpathReadinessQuiz from "@/components/EmpathReadinessQuiz";
+import IndustryStatisticsSection from "@/components/IndustryStatisticsSection";
 import heroImage from "@/assets/cinema/hero-spiritual-teacher.jpg";
 import energyDrainImage from "@/assets/cinema/energy-drain-sales.jpg";
 import emotionalOverwhelmImage from "@/assets/cinema/emotional-overwhelm.jpg";
@@ -284,6 +285,9 @@ const EmpathEntrepreneurCoaching = () => {
               </div>
             </div>
           </section>
+
+          {/* Industry Statistics & Research */}
+          <IndustryStatisticsSection />
 
           {/* The Science Behind Empath Entrepreneurship */}
           <section className="py-32 relative overflow-hidden">
