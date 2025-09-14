@@ -792,9 +792,6 @@ const EmpathEntrepreneurCoaching = () => {
                           <p className="body-premium text-lg text-foreground/90 leading-relaxed">
                             The Sacred Signal OS isn't therapy. It's a systematic approach to building wealth as an empath—tested by hundreds of entrepreneurs who were tired of leaving money on the table.
                           </p>
-                          <p className="body-premium text-lg text-foreground/90 leading-relaxed">
-                            Ready to stop playing small and start leveraging your empathic gifts for serious business results? You're in the right place.
-                          </p>
                         </div>
                       </div>
                     </AnimatedSection>
