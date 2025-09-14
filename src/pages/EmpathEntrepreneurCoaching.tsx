@@ -329,7 +329,7 @@ const EmpathEntrepreneurCoaching = () => {
                     <SignalLineDivider />
                   </div>
                   <p className="body-premium text-xl md:text-2xl text-foreground/90 max-w-4xl mx-auto leading-relaxed font-light cinema-text-shadow">
-                    Research shows that approximately 15-20% of the population are highly sensitive persons (HSPs), characterized by deeper processing of sensory information, increased empathy, and heightened emotional responsiveness.
+                    Research shows that approximately 30% of the population are highly sensitive persons (HSPs), characterized by deeper processing of sensory information, increased empathy, and heightened emotional responsiveness.
                   </p>
                 </div>
 
