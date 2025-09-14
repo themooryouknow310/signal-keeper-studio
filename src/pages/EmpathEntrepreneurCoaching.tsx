@@ -26,7 +26,7 @@ import boundaryIssuesImage from "@/assets/cinema/boundary-issues.jpg";
 import inconsistentIncomeChallengesImage from "@/assets/cinema/inconsistent-income-challenges.jpg";
 import barackElPortrait from "@/assets/barack-el-new-portrait.jpg";
 import marissaFontana from "@/assets/testimonials/marissa-fontana-new.jpg";
-import leoraLeon from "@/assets/testimonials/leora-leon.jpg";
+import leoraLeon from "@/assets/testimonials/leora-leon-new.jpg";
 import susieColles from "@/assets/testimonials/susie-colles.jpg";
 import "../styles/cinema.css";
 
