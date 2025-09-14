@@ -759,7 +759,7 @@ const EmpathEntrepreneurCoaching = () => {
                     <SignalLineDivider />
                   </div>
                   <p className="body-premium text-xl text-foreground/90 max-w-3xl mx-auto leading-relaxed">
-                    The fellow empath entrepreneur who understands your journey because he's walked it himself
+                    The empath entrepreneur who cracked the code on building real wealth without burning out
                   </p>
                 </div>
 
@@ -780,23 +780,23 @@ const EmpathEntrepreneurCoaching = () => {
                     <AnimatedSection delay={400} className="space-y-8">
                       <div>
                         <h3 className="heading-ritual text-3xl md:text-4xl mb-6 glow-text font-bold">
-                          From Overwhelmed Empath to Thriving Entrepreneur
+                          From Sensitive to Unstoppable
                         </h3>
                         <div className="space-y-6">
                           <p className="body-premium text-lg text-foreground/90 leading-relaxed">
-                            "I used to think my sensitivity was my greatest weakness. The constant overwhelm, 
-                            the energy drain from traditional networking, the guilt around charging what I was worth—
-                            I lived it all."
+                            "Let me be direct: being an empath in business isn't a disadvantage—most people just don't know how to leverage it properly."
                           </p>
                           <p className="body-premium text-lg text-foreground/90 leading-relaxed">
-                            "For years, I tried to fit into the 'hustle harder' mentality, pushing myself to be 
-                            someone I wasn't. It nearly broke me. That's when I realized: what if my sensitivity 
-                            wasn't a bug, but a feature?"
+                            "I spent years watching other empaths struggle with the same predictable patterns: undercharging, over-delivering, getting drained by energy vampires, and buying into the myth that sensitivity equals weakness in business."
                           </p>
                           <p className="body-premium text-lg text-foreground/90 leading-relaxed">
-                            "The Sacred Signal OS was born from my own journey of transformation—from a burned-out, 
-                            overwhelmed empath to building a multi-seven-figure business that honors my nature and 
-                            serves from authentic overflow."
+                            "While everyone else was teaching empaths to 'manage their energy' and 'set better boundaries,' I was reverse-engineering what actually works. I figured out how to turn empathic abilities into competitive advantages that actually drive revenue."
+                          </p>
+                          <p className="body-premium text-lg text-foreground/90 leading-relaxed">
+                            "The Sacred Signal OS isn't therapy or feel-good coaching. It's a systematic approach to building wealth as an empath—one that's been tested and proven by hundreds of entrepreneurs who were tired of leaving money on the table."
+                          </p>
+                          <p className="body-premium text-lg text-foreground/90 leading-relaxed">
+                            "If you're ready to stop playing small and start leveraging your empathic gifts for serious business results, you're in the right place."
                           </p>
                         </div>
                       </div>
