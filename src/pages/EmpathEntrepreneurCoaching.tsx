@@ -25,6 +25,9 @@ import overwhelmBurnoutImage from "@/assets/cinema/overwhelm-burnout.jpg";
 import boundaryIssuesImage from "@/assets/cinema/boundary-issues.jpg";
 import inconsistentIncomeChallengesImage from "@/assets/cinema/inconsistent-income-challenges.jpg";
 import barackElPortrait from "@/assets/barack-el-portrait.jpg";
+import marissaFontana from "@/assets/testimonials/marissa-fontana.jpg";
+import leoraLeon from "@/assets/testimonials/leora-leon.jpg";
+import susieColles from "@/assets/testimonials/susie-colles.jpg";
 import "../styles/cinema.css";
 
 const EmpathEntrepreneurCoaching = () => {
@@ -833,7 +836,14 @@ const EmpathEntrepreneurCoaching = () => {
 
                 <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
                   <AnimatedSection delay={200} className="space-y-6">
-                    <div className="cinema-surface border border-signal/20 rounded-2xl p-8 bg-background/30 backdrop-blur-sm">
+                    <div className="cinema-surface border border-signal/20 rounded-2xl p-8 bg-background/30 backdrop-blur-sm text-center">
+                      <div className="mb-6">
+                        <img 
+                          src={marissaFontana} 
+                          alt="Marissa Fontana" 
+                          className="w-20 h-20 rounded-full object-cover mx-auto border-2 border-signal/30"
+                        />
+                      </div>
                       <p className="body-premium text-lg text-foreground/90 leading-relaxed mb-6">
                         "Barack is the real deal with a business grounded in purpose. Since getting to know Barack and collaborating with him on multiple projects, it's evident how devoted Barack is to the mission of empowering women and nurturing the emergence of the divine feminine in all of us."
                       </p>
@@ -842,7 +852,14 @@ const EmpathEntrepreneurCoaching = () => {
                   </AnimatedSection>
 
                   <AnimatedSection delay={400} className="space-y-6">
-                    <div className="cinema-surface border border-signal/20 rounded-2xl p-8 bg-background/30 backdrop-blur-sm">
+                    <div className="cinema-surface border border-signal/20 rounded-2xl p-8 bg-background/30 backdrop-blur-sm text-center">
+                      <div className="mb-6">
+                        <img 
+                          src={leoraLeon} 
+                          alt="Leora Leon" 
+                          className="w-20 h-20 rounded-full object-cover mx-auto border-2 border-signal/30"
+                        />
+                      </div>
                       <p className="body-premium text-lg text-foreground/90 leading-relaxed mb-6">
                         "Barack El is a force to be reckoned with. Not only is Barack a talented entrepreneur who created Femigod, a brilliant company that evokes spiritually and smart business techniques, he is also the real deal, a beautiful, kind and authentic human. It's a pleasure to know him and work with him."
                       </p>
@@ -851,7 +868,14 @@ const EmpathEntrepreneurCoaching = () => {
                   </AnimatedSection>
 
                   <AnimatedSection delay={600} className="space-y-6">
-                    <div className="cinema-surface border border-signal/20 rounded-2xl p-8 bg-background/30 backdrop-blur-sm">
+                    <div className="cinema-surface border border-signal/20 rounded-2xl p-8 bg-background/30 backdrop-blur-sm text-center">
+                      <div className="mb-6">
+                        <img 
+                          src={susieColles} 
+                          alt="Susie Colles, PhD" 
+                          className="w-20 h-20 rounded-full object-cover mx-auto border-2 border-signal/30"
+                        />
+                      </div>
                       <p className="body-premium text-lg text-foreground/90 leading-relaxed mb-6">
                         "I recently had the pleasure of chatting with Barack about all things spiritual. What a pleasure to be associated with an individual so committed to helping women find and develop their spiritual nature. Of course, it stands to reason that Barack, so focused on helping others thrive, has a vibrant spirit himself!"
                       </p>
