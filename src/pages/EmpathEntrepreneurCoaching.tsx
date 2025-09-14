@@ -486,8 +486,8 @@ const EmpathEntrepreneurCoaching = () => {
                 <div className="ssos-card">
                   <div className="mb-8">
                     <div className="flex items-center gap-4 mb-6">
-                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-cyan/20 to-brass/20 flex items-center justify-center border border-brass/30">
-                        <span className="text-2xl font-bold text-cyan">1</span>
+                      <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary/15 to-primary/25 flex items-center justify-center border-2 border-primary/30 shadow-lg">
+                        <span className="text-lg font-bold text-primary">1</span>
                       </div>
                       <h3 className="ssos-card-title text-2xl">
                         PHASE 1: FOUNDATION
@@ -515,8 +515,8 @@ const EmpathEntrepreneurCoaching = () => {
                 <div className="ssos-card">
                   <div className="mb-8">
                     <div className="flex items-center gap-4 mb-6">
-                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-cyan/20 to-brass/20 flex items-center justify-center border border-brass/30">
-                        <span className="text-2xl font-bold text-cyan">2</span>
+                      <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary/15 to-primary/25 flex items-center justify-center border-2 border-primary/30 shadow-lg">
+                        <span className="text-lg font-bold text-primary">2</span>
                       </div>
                       <h3 className="ssos-card-title text-2xl">
                         PHASE 2: ATTRACTION
@@ -544,8 +544,8 @@ const EmpathEntrepreneurCoaching = () => {
                 <div className="ssos-card">
                   <div className="mb-8">
                     <div className="flex items-center gap-4 mb-6">
-                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-cyan/20 to-brass/20 flex items-center justify-center border border-brass/30">
-                        <span className="text-2xl font-bold text-cyan">3</span>
+                      <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary/15 to-primary/25 flex items-center justify-center border-2 border-primary/30 shadow-lg">
+                        <span className="text-lg font-bold text-primary">3</span>
                       </div>
                       <h3 className="ssos-card-title text-2xl">
                         PHASE 3: CONVERSION
@@ -573,8 +573,8 @@ const EmpathEntrepreneurCoaching = () => {
                 <div className="ssos-card">
                   <div className="mb-8">
                     <div className="flex items-center gap-4 mb-6">
-                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-cyan/20 to-brass/20 flex items-center justify-center border border-brass/30">
-                        <span className="text-2xl font-bold text-cyan">4</span>
+                      <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary/15 to-primary/25 flex items-center justify-center border-2 border-primary/30 shadow-lg">
+                        <span className="text-lg font-bold text-primary">4</span>
                       </div>
                       <h3 className="ssos-card-title text-2xl">
                         PHASE 4: SCALING
