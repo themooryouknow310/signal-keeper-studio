@@ -11,7 +11,8 @@ import SignalEclipse from "@/components/accents/SignalEclipse";
 import SacredGeometry from "@/components/SacredGeometry";
 import { SacredMandala, EightPointStar, LinearAccent, GoldenRatioGrid } from "@/components/AccentElements";
 import EmpathReadinessQuiz from "@/components/EmpathReadinessQuiz";
-import IndustryStatisticsSection from "@/components/IndustryStatisticsSection";
+import UniversalStatisticsSection from '@/components/UniversalStatisticsSection';
+import { getConfigBySlug } from '@/config/modalityServiceConfig';
 import heroImage from "@/assets/cinema/hero-spiritual-teacher.jpg";
 import energyDrainImage from "@/assets/cinema/energy-drain-sales.jpg";
 import emotionalOverwhelmImage from "@/assets/cinema/emotional-overwhelm.jpg";
@@ -26,10 +27,16 @@ import inconsistentIncomeChallengesImage from "@/assets/cinema/inconsistent-inco
 import "../styles/cinema.css";
 
 const EmpathEntrepreneurCoaching = () => {
+  const config = getConfigBySlug('empath-entrepreneur-coaching');
+  
   const scrollToApply = () => {
     const applySection = document.getElementById('apply');
     applySection?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  if (!config) {
+    return <div>Page configuration not found</div>;
+  }
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -287,7 +294,7 @@ const EmpathEntrepreneurCoaching = () => {
           </section>
 
           {/* Industry Statistics & Research */}
-          <IndustryStatisticsSection />
+          <UniversalStatisticsSection config={config} />
 
           {/* The Science Behind Empath Entrepreneurship */}
           <section className="py-32 relative overflow-hidden">
