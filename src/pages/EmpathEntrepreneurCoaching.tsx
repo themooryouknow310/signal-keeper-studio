@@ -167,6 +167,102 @@ const EmpathEntrepreneurCoaching = () => {
             </div>
           </section>
 
+          {/* The Empath Entrepreneur's Dilemma */}
+          <section className="py-32 relative overflow-hidden">
+            {/* Cinematic Background */}
+            <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background/80" />
+            
+            <div className="relative z-10 container mx-auto px-6">
+              <AnimatedSection>
+                <div className="text-center mb-20">
+                  <h2 className="heading-ritual text-3xl md:text-5xl lg:text-6xl font-display font-bold mb-8 text-white cinema-text-shadow">
+                    The Empath Entrepreneur's Dilemma
+                  </h2>
+                  <div className="flex justify-center mb-12">
+                    <SignalLineDivider />
+                  </div>
+                  <p className="body-premium text-xl md:text-2xl text-foreground/90 max-w-4xl mx-auto leading-relaxed font-light cinema-text-shadow mb-16">
+                    As an empathic entrepreneur, you face unique challenges that traditional business advice simply doesn't address:
+                  </p>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                  <AnimatedSection delay={200}>
+                    <Card className="cinema-surface border-destructive/20 bg-background/30 backdrop-blur-sm p-8 hover:bg-background/40 transition-all duration-500 h-full">
+                      <CardContent className="p-0">
+                        <div className="flex items-start gap-4 mb-6">
+                          <div className="text-4xl">⚡</div>
+                          <div>
+                            <h3 className="text-xl font-display font-semibold text-destructive mb-3">
+                              Energy Drain From Aggressive Sales
+                            </h3>
+                            <p className="text-muted-foreground leading-relaxed">
+                              Traditional "hustle" marketing feels soul-crushing and leaves you energetically depleted instead of inspired.
+                            </p>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </AnimatedSection>
+
+                  <AnimatedSection delay={300}>
+                    <Card className="cinema-surface border-destructive/20 bg-background/30 backdrop-blur-sm p-8 hover:bg-background/40 transition-all duration-500 h-full">
+                      <CardContent className="p-0">
+                        <div className="flex items-start gap-4 mb-6">
+                          <div className="text-4xl">😵</div>
+                          <div>
+                            <h3 className="text-xl font-display font-semibold text-destructive mb-3">
+                              Overwhelm From Others' Emotions
+                            </h3>
+                            <p className="text-muted-foreground leading-relaxed">
+                              You absorb your clients' and prospects' stress, making it difficult to maintain professional boundaries.
+                            </p>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </AnimatedSection>
+
+                  <AnimatedSection delay={400}>
+                    <Card className="cinema-surface border-destructive/20 bg-background/30 backdrop-blur-sm p-8 hover:bg-background/40 transition-all duration-500 h-full">
+                      <CardContent className="p-0">
+                        <div className="flex items-start gap-4 mb-6">
+                          <div className="text-4xl">🎭</div>
+                          <div>
+                            <h3 className="text-xl font-display font-semibold text-destructive mb-3">
+                              Imposter Syndrome Amplified
+                            </h3>
+                            <p className="text-muted-foreground leading-relaxed">
+                              Your sensitivity makes you second-guess your expertise, even when you have profound gifts to offer.
+                            </p>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </AnimatedSection>
+
+                  <AnimatedSection delay={500}>
+                    <Card className="cinema-surface border-destructive/20 bg-background/30 backdrop-blur-sm p-8 hover:bg-background/40 transition-all duration-500 h-full">
+                      <CardContent className="p-0">
+                        <div className="flex items-start gap-4 mb-6">
+                          <div className="text-4xl">🔄</div>
+                          <div>
+                            <h3 className="text-xl font-display font-semibold text-destructive mb-3">
+                              Inconsistent Income Patterns
+                            </h3>
+                            <p className="text-muted-foreground leading-relaxed">
+                              Your empathic nature leads to undercharging and over-delivering, creating financial instability.
+                            </p>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </AnimatedSection>
+                </div>
+              </AnimatedSection>
+            </div>
+          </section>
+
           {/* The Science Behind Empath Entrepreneurship */}
           <section className="py-32 relative overflow-hidden">
             {/* Cinematic Background */}
