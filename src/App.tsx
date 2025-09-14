@@ -3,10 +3,12 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import OriginStoryStudio from "./pages/OriginStoryStudio";
 import OriginStoryThankYou from "./pages/OriginStoryThankYou";
 import DreamClientSprint from "./pages/DreamClientSprint";
+import EmpathEntrepreneurCoaching from "./pages/EmpathEntrepreneurCoaching";
 import Blog from "./pages/Blog";
 import Application from "./pages/Application";
 import FullApplication from "./pages/FullApplication";
@@ -18,16 +20,18 @@ import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
+  <HelmetProvider>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/origin-story-studio" element={<OriginStoryStudio />} />
           <Route path="/origin-story-thank-you" element={<OriginStoryThankYou />} />
           <Route path="/dream-client-sprint" element={<DreamClientSprint />} />
+          <Route path="/empath-entrepreneur-coaching" element={<EmpathEntrepreneurCoaching />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/application" element={<Application />} />
           <Route path="/full-application" element={<FullApplication />} />
@@ -40,6 +44,7 @@ const App = () => (
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
+  </HelmetProvider>
 );
 
 export default App;
