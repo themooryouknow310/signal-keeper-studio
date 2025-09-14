@@ -56,12 +56,18 @@
     /* Signal and brass aliases for consistency */
     --signal: var(--ssos-cyan);
     --brass: var(--ssos-brass);
+    --ssos-charcoal: 225 56% 8%;        /* #0b0d14 - Charcoal darker */
+    --ssos-alabaster: 44 17% 95%;       /* #f4f3ef - Alabaster text */
+    --ssos-cyan: 190 100% 53%;          /* #11e6ff - Cyan signal/action */
+    --ssos-brass: 38 24% 52%;           /* #b08d57 - Brass rules/dividers */
     
     /* Legacy brand colors (mapped to new tokens) */
     --sacred-indigo: var(--ssos-indigo);
     --sacred-charcoal: var(--ssos-charcoal);
     --sacred-alabaster: var(--ssos-alabaster);
-
+    --signal: var(--ssos-cyan);
+    --brass: var(--ssos-brass);
+    
     /* SSOS Layout & Visual Tokens */
     --ssos-radius-xl: 16px;
     --ssos-radius-2xl: 24px;
