@@ -815,6 +815,54 @@ const EmpathEntrepreneurCoaching = () => {
             </div>
           </section>
 
+          {/* Testimonials Section */}
+          <section className="py-32 relative overflow-hidden cinema-surface-with-grain">
+            <div className="cinema-grain absolute inset-0" />
+            <div className="absolute inset-0 bg-[url('/src/assets/cinema/grain-texture-01.jpg')] opacity-20 mix-blend-overlay" />
+            
+            <div className="relative z-10 container mx-auto px-6">
+              <AnimatedSection>
+                <div className="text-center mb-20">
+                  <h2 className="heading-ritual text-3xl md:text-5xl lg:text-6xl font-display font-bold mb-8 text-white cinema-text-shadow">
+                    What People Are Saying
+                  </h2>
+                  <div className="flex justify-center mb-12">
+                    <SignalLineDivider />
+                  </div>
+                </div>
+
+                <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+                  <AnimatedSection delay={200} className="space-y-6">
+                    <div className="cinema-surface border border-signal/20 rounded-2xl p-8 bg-background/30 backdrop-blur-sm">
+                      <p className="body-premium text-lg text-foreground/90 leading-relaxed mb-6">
+                        "Barack is the real deal with a business grounded in purpose. Since getting to know Barack and collaborating with him on multiple projects, it's evident how devoted Barack is to the mission of empowering women and nurturing the emergence of the divine feminine in all of us."
+                      </p>
+                      <cite className="block text-brass font-medium tracking-wide">— Marissa Fontana</cite>
+                    </div>
+                  </AnimatedSection>
+
+                  <AnimatedSection delay={400} className="space-y-6">
+                    <div className="cinema-surface border border-signal/20 rounded-2xl p-8 bg-background/30 backdrop-blur-sm">
+                      <p className="body-premium text-lg text-foreground/90 leading-relaxed mb-6">
+                        "Barack El is a force to be reckoned with. Not only is Barack a talented entrepreneur who created Femigod, a brilliant company that evokes spiritually and smart business techniques, he is also the real deal, a beautiful, kind and authentic human. It's a pleasure to know him and work with him."
+                      </p>
+                      <cite className="block text-brass font-medium tracking-wide">— Leora Leon</cite>
+                    </div>
+                  </AnimatedSection>
+
+                  <AnimatedSection delay={600} className="space-y-6">
+                    <div className="cinema-surface border border-signal/20 rounded-2xl p-8 bg-background/30 backdrop-blur-sm">
+                      <p className="body-premium text-lg text-foreground/90 leading-relaxed mb-6">
+                        "I recently had the pleasure of chatting with Barack about all things spiritual. What a pleasure to be associated with an individual so committed to helping women find and develop their spiritual nature. Of course, it stands to reason that Barack, so focused on helping others thrive, has a vibrant spirit himself!"
+                      </p>
+                      <cite className="block text-brass font-medium tracking-wide">— Susie Colles, PhD</cite>
+                    </div>
+                  </AnimatedSection>
+                </div>
+              </AnimatedSection>
+            </div>
+          </section>
+
           {/* FAQ Section */}
           <section className="py-32 relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-b from-background via-background/95 to-background/80" />
