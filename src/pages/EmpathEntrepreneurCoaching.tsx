@@ -876,7 +876,7 @@ const EmpathEntrepreneurCoaching = () => {
                         <div className="ssos-card bg-gradient-to-br from-cyan/10 via-background/95 to-brass/10 border-cyan/30 text-center">
                           <Button 
                             size="lg"
-                            className="cinema-glow bg-gradient-to-r from-cyan to-cyan/80 text-background hover:from-cyan/90 hover:to-cyan/70 font-display font-semibold px-16 py-8 text-xl motion-glow-hover rounded-full shadow-2xl border border-cyan/30 mb-6"
+                            className="cinema-glow bg-gradient-to-r from-cyan to-cyan/80 text-charcoal hover:from-cyan/90 hover:to-cyan/70 font-display font-semibold px-16 py-8 text-xl motion-glow-hover rounded-full shadow-2xl border border-cyan/30 mb-6"
                           >
                             START YOUR APPLICATION TODAY
                           </Button>
