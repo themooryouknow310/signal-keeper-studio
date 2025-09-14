@@ -628,8 +628,8 @@ const EmpathEntrepreneurCoaching = () => {
               <div className="ssos-grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto mb-16">
                 <div className="ssos-card">
                   <div className="text-center mb-8">
-                    <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-br from-cyan/20 to-brass/20 flex items-center justify-center border border-brass/30">
-                      <span className="text-2xl">💰</span>
+                    <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-cyan/30 via-brass/25 to-brass/40 flex items-center justify-center border border-brass/60 shadow-[0_0_20px_rgba(0,255,255,0.3),0_0_40px_rgba(218,165,32,0.2),inset_0_1px_0_rgba(255,255,255,0.2)] backdrop-blur-sm relative before:absolute before:inset-0 before:rounded-full before:bg-gradient-to-br before:from-white/10 before:to-transparent before:opacity-50">
+                      <span className="text-3xl drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] relative z-10">💰</span>
                     </div>
                     <h3 className="ssos-card-title text-2xl mb-6">
                       FINANCIAL OUTCOMES
