@@ -10,6 +10,7 @@ import MetatronsCube from "@/components/accents/MetatronsCube";
 import SignalEclipse from "@/components/accents/SignalEclipse";
 import SacredGeometry from "@/components/SacredGeometry";
 import { SacredMandala, EightPointStar, LinearAccent, GoldenRatioGrid } from "@/components/AccentElements";
+import EmpathReadinessQuiz from "@/components/EmpathReadinessQuiz";
 import heroImage from "@/assets/cinema/hero-spiritual-teacher.jpg";
 import energyDrainImage from "@/assets/cinema/energy-drain-sales.jpg";
 import emotionalOverwhelmImage from "@/assets/cinema/emotional-overwhelm.jpg";
@@ -439,6 +440,9 @@ const EmpathEntrepreneurCoaching = () => {
               </AnimatedSection>
             </div>
           </section>
+
+          {/* Empath Readiness Quiz */}
+          <EmpathReadinessQuiz />
 
           {/* Sacred Signal OS Methodology */}
           <section className="section-divider relative overflow-hidden">
