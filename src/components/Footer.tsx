@@ -23,7 +23,7 @@ const Footer = () => {
           {/* Tagline */}
           <div className="text-center">
             <p className="body-sacred text-lg text-foreground/80 max-w-2xl leading-relaxed">
-              Turn scattered messages into clear, repeatable signals that clients remember and trust.
+              Turn Scattered Messages Into Clear, Repeatable Signals That Clients Remember And Trust.
             </p>
           </div>
 
