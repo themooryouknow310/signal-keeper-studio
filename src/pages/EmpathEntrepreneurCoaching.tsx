@@ -682,8 +682,8 @@ const EmpathEntrepreneurCoaching = () => {
                     <div className="flex items-start gap-4 border-l-2 border-brass/30 pl-6">
                       <div className="w-3 h-3 rounded-full bg-cyan mt-2 flex-shrink-0" />
                       <div>
-                        <p className="body-premium text-foreground/90 font-medium">Diversified Revenue Streams</p>
-                        <p className="body-premium text-foreground/70 text-sm mt-1">Multiple income sources aligned with your gifts</p>
+                        <p className="body-premium text-foreground/90 font-medium">Steady Revenue Stream</p>
+                        <p className="body-premium text-foreground/70 text-sm mt-1">A steady income source aligned with your gifts</p>
                       </div>
                     </div>
                   </div>
