@@ -807,7 +807,7 @@ const EmpathEntrepreneurCoaching = () => {
                             I watched other empaths struggle with the same patterns: undercharging, over-delivering, getting drained by energy vampires. While everyone else taught 'energy management,' I reverse-engineered what actually works.
                           </p>
                           <p className="body-premium text-lg text-foreground/90 leading-relaxed">
-                            The Sacred Signal OS isn't therapy. It's a systematic approach to building wealth as an empath—tested by hundreds of entrepreneurs who were tired of leaving money on the table.
+                            The Sacred Signal OS isn't therapy. It's a systematic approach to building wealth as an empath—tested by dozens of entrepreneurs who were tired of leaving money on the table.
                           </p>
                         </div>
                       </div>
