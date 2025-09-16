@@ -217,7 +217,7 @@ const EmpathEntrepreneurCoaching = () => {
                     THE EMPATH ENTREPRENEUR'S DILEMMA
                   </h2>
                   <p className="body-sacred text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
-                    As an empathic entrepreneur, you face unique challenges that traditional business advice simply doesn't address:
+                    As An Empathic Entrepreneur, You Face Unique Challenges That Traditional Business Advice Simply Doesn't Address:
                   </p>
                 </div>
 
