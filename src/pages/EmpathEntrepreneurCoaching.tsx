@@ -1081,7 +1081,7 @@ const EmpathEntrepreneurCoaching = () => {
                             <div className="hidden md:block w-1 h-1 rounded-full bg-foreground/30" />
                             <div className="flex items-center gap-2">
                               <div className="w-2 h-2 rounded-full bg-brass animate-pulse" />
-                              <span className="font-medium">Investment begins at $1,497</span>
+                              <span className="font-medium">Investment begins at $1,597</span>
                             </div>
                           </div>
                         </div>
