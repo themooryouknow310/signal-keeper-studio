@@ -1036,7 +1036,7 @@ const EmpathEntrepreneurCoaching = () => {
                             </h4>
                           </div>
                           <p className="body-premium text-foreground/75 leading-relaxed">
-                            Connect with our team to discuss your specific needs and answer any questions
+                            Connect with us to discuss your specific needs and answer any questions
                           </p>
                         </div>
 
@@ -1050,7 +1050,7 @@ const EmpathEntrepreneurCoaching = () => {
                             </h4>
                           </div>
                           <p className="body-premium text-foreground/75 leading-relaxed">
-                            Join the next Sacred Signal OS cohort and start building your authentic business
+                            Start implementing Sacred Signal OS and build your authentic business
                           </p>
                         </div>
                       </div>
