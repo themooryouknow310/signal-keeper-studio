@@ -105,7 +105,7 @@ const EmpathEntrepreneurCoaching = () => {
     <>
       <Helmet>
         <title>Empath Entrepreneur Coaching | Sacred Signal OS - Transform Sensitivity Into Success</title>
-        <meta name="description" content="Transform your sensitivity into business success with Sacred Signal OS empath entrepreneur coaching. Authentic strategies for highly sensitive entrepreneurs ready to build thriving businesses without compromising their nature." />
+        <meta name="description" content="Transform your sensitivity into business success with Sacred Signal OS empath entrepreneur coaching. Authentic Strategies For Highly Sensitive Entrepreneurs Ready To Build Thriving Businesses Without Compromising Their Nature." />
         <meta name="keywords" content="empath entrepreneur coaching, highly sensitive person business coach, spiritual entrepreneur coaching, sensitive soul business mentor, intuitive entrepreneur coaching, empathic business coaching" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Barack El" />
