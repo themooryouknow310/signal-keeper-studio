@@ -662,7 +662,7 @@ const EmpathEntrepreneurCoaching = () => {
                       <div className="w-3 h-3 rounded-full bg-cyan mt-2 flex-shrink-0" />
                       <div>
                         <p className="body-premium text-foreground/90 font-medium">Premium Pricing Strategy</p>
-                        <p className="body-premium text-foreground/70 text-sm mt-1">$2K-$10K+ program pricing</p>
+                        <p className="body-premium text-foreground/70 text-sm mt-1">$1.5K-$3K+ program pricing</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-4 border-l-2 border-brass/30 pl-6">
