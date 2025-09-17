@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import SignalRing from "@/components/SignalRing";
 import SignalLineDivider from "@/components/accents/SignalLineDivider";
 import heroImage from "@/assets/cinema/hero-spiritual-teacher.jpg";
+import thumbnailImage from "/lovable-uploads/sacred-signal-thumbnail.png";
 import AnimatedSection from "@/components/AnimatedSection";
 import "../styles/cinema.css";
 
@@ -42,7 +43,7 @@ const HeroSection = () => {
             {/* Video Element */}
             <video 
               className="w-full h-full object-cover"
-              poster={heroImage}
+              poster={thumbnailImage}
               controls
               preload="metadata"
             >
