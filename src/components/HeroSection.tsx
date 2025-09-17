@@ -46,8 +46,7 @@ const HeroSection = () => {
               controls
               preload="metadata"
             >
-              <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
-              <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.webm" type="video/webm" />
+              <source src="https://video.gumlet.io/64c74116333da2f3f158e7c0/68ca24e8d32bbf54d868a2eb/main.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             
